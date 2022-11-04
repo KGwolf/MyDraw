@@ -1,13 +1,13 @@
-<mxfile host="app.diagrams.net" modified="2022-11-04T07:37:15.918Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="Oz7Xf6mrIRrqL8jmuhfP" version="20.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-04T08:34:29.782Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="0PoufzTWRoVfLfUs6iyK" version="20.5.1" type="github">
   <diagram id="c6MPomSf8zc9xdUtyQ0a" name="第 1 页">
     <mxGraphModel dx="3076" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="3LjUvsTypOvNlFt_LuZn-70" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-70" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="-890" y="285" width="920" height="355" as="geometry" />
         </mxCell>
-        <mxCell id="3LjUvsTypOvNlFt_LuZn-68" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-68" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="-640" y="345" width="580" height="115" as="geometry" />
         </mxCell>
         <mxCell id="3LjUvsTypOvNlFt_LuZn-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="3LjUvsTypOvNlFt_LuZn-1">
@@ -83,6 +83,39 @@
         </mxCell>
         <mxCell id="3LjUvsTypOvNlFt_LuZn-71" value="类的生命周期" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontSize=15;" vertex="1" parent="1">
           <mxGeometry x="-510" y="250" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-72" value="&lt;font style=&quot;&quot;&gt;1.加载：把文件加载到内存，可以从很多地方进行加载（class、数据库、文本文件）。&lt;br&gt;2.&lt;span style=&quot;font-size: 15px; font-variant-ligatures: no-common-ligatures;&quot;&gt;验证：验证文件格式、元&lt;/span&gt;&lt;span style=&quot;font-size: 15px; font-variant-ligatures: no-common-ligatures;&quot;&gt;数据&lt;/span&gt;&lt;span style=&quot;font-size: 15px; font-variant-ligatures: no-common-ligatures;&quot;&gt;、字节码是是否正确、符号引用是否正确。&lt;br&gt;3.准备：&lt;/span&gt;&lt;span style=&quot;font-variant-ligatures: no-common-ligatures; font-weight: 600;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot; color=&quot;#4f4f4f&quot;&gt;为类变量分配内存并赋值（这个赋值只会赋一个初始值，如int就会是0），加上final修饰之后就回赋默认值！&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 15px; font-variant-ligatures: no-common-ligatures;&quot;&gt;4.解析：&lt;/span&gt;&lt;span style=&quot;font-variant-ligatures: no-common-ligatures;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot; color=&quot;#4f4f4f&quot;&gt;解析阶段主要就是将一部分符号引用转变成直接引用。&lt;b&gt;某些情况下这个阶段可以在初始化之后才开始。&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 15px; font-variant-ligatures: no-common-ligatures;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;fontSize=15;align=left;" vertex="1" parent="1">
+          <mxGeometry x="41" y="360" width="470" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-74" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;哪些条件下会触发加载？&lt;/span&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=#e1d5e7;strokeColor=#9673a6;rounded=0;labelBackgroundColor=none;fontFamily=Helvetica;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="-970" y="840" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-75" value="1.遇到一些jvm指令：new、getstatic等" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;labelBackgroundColor=none;fontFamily=Helvetica;fontSize=15;fontColor=#4F4F4F;" vertex="1" parent="1">
+          <mxGeometry x="-728" y="740" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-76" value="1.new实例化" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;labelBackgroundColor=none;fontFamily=Helvetica;fontSize=15;fontColor=#4F4F4F;" vertex="1" parent="1">
+          <mxGeometry x="-448" y="680" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-77" value="2.读取或设置一个类型的静态字段" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;labelBackgroundColor=none;fontFamily=Helvetica;fontSize=15;fontColor=#4F4F4F;" vertex="1" parent="1">
+          <mxGeometry x="-450" y="740" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-78" value="3.调用类型的静态方法" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;labelBackgroundColor=none;fontFamily=Helvetica;fontSize=15;fontColor=#4F4F4F;" vertex="1" parent="1">
+          <mxGeometry x="-448" y="800" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-80" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontFamily=Helvetica;fontSize=15;fontColor=#4F4F4F;" vertex="1" parent="1">
+          <mxGeometry x="-458" y="695" width="20" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-81" value="2.反射调用未初始化的类" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;labelBackgroundColor=none;fontFamily=Helvetica;fontSize=15;fontColor=#4F4F4F;" vertex="1" parent="1">
+          <mxGeometry x="-731" y="820" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-82" value="3.作为父类，子类初始化调用时" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;labelBackgroundColor=none;fontFamily=Helvetica;fontSize=15;fontColor=#4F4F4F;" vertex="1" parent="1">
+          <mxGeometry x="-729" y="870" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-83" value="4.jdk8的接口里的default修饰的方法，当接口的实现类初始化时" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;labelBackgroundColor=none;fontFamily=Helvetica;fontSize=15;fontColor=#4F4F4F;" vertex="1" parent="1">
+          <mxGeometry x="-729" y="920" width="440" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-85" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontFamily=Helvetica;fontSize=15;fontColor=#4F4F4F;" vertex="1" parent="1">
+          <mxGeometry x="-760" y="750" width="20" height="190" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
