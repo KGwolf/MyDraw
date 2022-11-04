@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2022-11-04T08:34:29.782Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="0PoufzTWRoVfLfUs6iyK" version="20.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-04T08:53:08.307Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="7edj644ZVsCShY9lSPaM" version="20.5.1" type="github">
   <diagram id="c6MPomSf8zc9xdUtyQ0a" name="第 1 页">
     <mxGraphModel dx="3076" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-86" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Helvetica;fontSize=15;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-1130" y="695" width="1030" height="340" as="geometry" />
+        </mxCell>
         <mxCell id="3LjUvsTypOvNlFt_LuZn-70" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="-890" y="285" width="920" height="355" as="geometry" />
         </mxCell>
@@ -88,34 +91,34 @@
           <mxGeometry x="41" y="360" width="470" height="190" as="geometry" />
         </mxCell>
         <mxCell id="3LjUvsTypOvNlFt_LuZn-74" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;哪些条件下会触发加载？&lt;/span&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=#e1d5e7;strokeColor=#9673a6;rounded=0;labelBackgroundColor=none;fontFamily=Helvetica;fontSize=15;" vertex="1" parent="1">
-          <mxGeometry x="-970" y="840" width="190" height="30" as="geometry" />
+          <mxGeometry x="-1076" y="890" width="190" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3LjUvsTypOvNlFt_LuZn-75" value="1.遇到一些jvm指令：new、getstatic等" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;labelBackgroundColor=none;fontFamily=Helvetica;fontSize=15;fontColor=#4F4F4F;" vertex="1" parent="1">
-          <mxGeometry x="-728" y="740" width="280" height="30" as="geometry" />
+          <mxGeometry x="-834" y="790" width="280" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3LjUvsTypOvNlFt_LuZn-76" value="1.new实例化" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;labelBackgroundColor=none;fontFamily=Helvetica;fontSize=15;fontColor=#4F4F4F;" vertex="1" parent="1">
-          <mxGeometry x="-448" y="680" width="110" height="30" as="geometry" />
+          <mxGeometry x="-554" y="730" width="110" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="3LjUvsTypOvNlFt_LuZn-77" value="2.读取或设置一个类型的静态字段" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;labelBackgroundColor=none;fontFamily=Helvetica;fontSize=15;fontColor=#4F4F4F;" vertex="1" parent="1">
-          <mxGeometry x="-450" y="740" width="250" height="30" as="geometry" />
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-77" value="2.读取或设置一个类型的静态字段&lt;br&gt;（&lt;b&gt;被final修饰、编译期把结果放入常量池的静态字段除外&lt;/b&gt;）" style="text;html=1;resizable=0;autosize=1;align=left;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;labelBackgroundColor=none;fontFamily=Helvetica;fontSize=15;fontColor=#4F4F4F;" vertex="1" parent="1">
+          <mxGeometry x="-544" y="780" width="410" height="50" as="geometry" />
         </mxCell>
         <mxCell id="3LjUvsTypOvNlFt_LuZn-78" value="3.调用类型的静态方法" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;labelBackgroundColor=none;fontFamily=Helvetica;fontSize=15;fontColor=#4F4F4F;" vertex="1" parent="1">
-          <mxGeometry x="-448" y="800" width="170" height="30" as="geometry" />
+          <mxGeometry x="-554" y="850" width="170" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3LjUvsTypOvNlFt_LuZn-80" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontFamily=Helvetica;fontSize=15;fontColor=#4F4F4F;" vertex="1" parent="1">
-          <mxGeometry x="-458" y="695" width="20" height="120" as="geometry" />
+          <mxGeometry x="-564" y="745" width="20" height="120" as="geometry" />
         </mxCell>
         <mxCell id="3LjUvsTypOvNlFt_LuZn-81" value="2.反射调用未初始化的类" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;labelBackgroundColor=none;fontFamily=Helvetica;fontSize=15;fontColor=#4F4F4F;" vertex="1" parent="1">
-          <mxGeometry x="-731" y="820" width="190" height="30" as="geometry" />
+          <mxGeometry x="-837" y="870" width="190" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3LjUvsTypOvNlFt_LuZn-82" value="3.作为父类，子类初始化调用时" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;labelBackgroundColor=none;fontFamily=Helvetica;fontSize=15;fontColor=#4F4F4F;" vertex="1" parent="1">
-          <mxGeometry x="-729" y="870" width="230" height="30" as="geometry" />
+          <mxGeometry x="-835" y="920" width="230" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3LjUvsTypOvNlFt_LuZn-83" value="4.jdk8的接口里的default修饰的方法，当接口的实现类初始化时" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;labelBackgroundColor=none;fontFamily=Helvetica;fontSize=15;fontColor=#4F4F4F;" vertex="1" parent="1">
-          <mxGeometry x="-729" y="920" width="440" height="30" as="geometry" />
+          <mxGeometry x="-835" y="970" width="440" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3LjUvsTypOvNlFt_LuZn-85" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontFamily=Helvetica;fontSize=15;fontColor=#4F4F4F;" vertex="1" parent="1">
-          <mxGeometry x="-760" y="750" width="20" height="190" as="geometry" />
+          <mxGeometry x="-866" y="800" width="20" height="190" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
