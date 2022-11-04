@@ -1,1 +1,90 @@
-<mxfile host="app.diagrams.net" modified="2022-11-04T06:33:02.446Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" version="20.5.1" etag="KDU1x6bqk2nDGiEqiD12" type="github"><diagram id="c6MPomSf8zc9xdUtyQ0a">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-11-04T07:37:15.918Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="Oz7Xf6mrIRrqL8jmuhfP" version="20.5.1" type="github">
+  <diagram id="c6MPomSf8zc9xdUtyQ0a" name="第 1 页">
+    <mxGraphModel dx="3076" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-70" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="-890" y="285" width="920" height="355" as="geometry" />
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-68" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-640" y="345" width="580" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="3LjUvsTypOvNlFt_LuZn-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-281" y="115" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-1" value=".java文件" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="-541" y="85" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-4" value="编译器编译" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="-411" y="80" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-5" value="class文件" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="-281" y="85" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-6" value="虚拟机如何加载这些class文件？" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="-770" y="185" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="3LjUvsTypOvNlFt_LuZn-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-590" y="405" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-8" value="加载" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="-800" y="375" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3LjUvsTypOvNlFt_LuZn-57">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-380" y="405" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-57" value="验证" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="-590" y="375" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3LjUvsTypOvNlFt_LuZn-59">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-200" y="405" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-59" value="准备" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="-380" y="375" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3LjUvsTypOvNlFt_LuZn-61">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-140" y="495" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-61" value="解析" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="-200" y="375" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3LjUvsTypOvNlFt_LuZn-63">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-280" y="525" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-63" value="初始化" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="-200" y="495" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3LjUvsTypOvNlFt_LuZn-65">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-480" y="525" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-65" value="使用" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="-400" y="495" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-67" value="卸载" style="rounded=1;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="-600" y="495" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-69" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;连接&lt;/font&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-392" y="320" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3LjUvsTypOvNlFt_LuZn-71" value="类的生命周期" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="-510" y="250" width="110" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
