@@ -1,1 +1,104 @@
-<mxfile host="app.diagrams.net" modified="2022-11-17T03:46:20.110Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" version="20.5.3" etag="I8tJ3-4UftOAbJsIaRRH" type="github"><diagram id="oAzEaGaUQTRbANgigkAJ">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-11-17T06:41:09.085Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="FlpmXUiJ6X_DrLAjCsRM" version="20.5.3" type="github">
+  <diagram id="oAzEaGaUQTRbANgigkAJ" name="第 1 页">
+    <mxGraphModel dx="1435" dy="1542" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="oppgy_vlvS0_JxThyo8Q-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="oppgy_vlvS0_JxThyo8Q-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oppgy_vlvS0_JxThyo8Q-1" value="Mobaxterm.exe" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="210" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oppgy_vlvS0_JxThyo8Q-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="oppgy_vlvS0_JxThyo8Q-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oppgy_vlvS0_JxThyo8Q-3" value="bash.shell&lt;br&gt;进程程序" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="210" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oppgy_vlvS0_JxThyo8Q-4" value="登录" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="150" y="210" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oppgy_vlvS0_JxThyo8Q-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="oppgy_vlvS0_JxThyo8Q-6" target="oppgy_vlvS0_JxThyo8Q-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oppgy_vlvS0_JxThyo8Q-6" value="执行一个命令&lt;br&gt;cd /home&lt;br&gt;mysql -uroot" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="210" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oppgy_vlvS0_JxThyo8Q-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="oppgy_vlvS0_JxThyo8Q-10" target="oppgy_vlvS0_JxThyo8Q-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oppgy_vlvS0_JxThyo8Q-10" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;bash进程解析命令，根据空格分割，得到的第一个就是命令名称，后面的都是参数。&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" vertex="1" parent="1">
+          <mxGeometry x="335" y="80" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="oppgy_vlvS0_JxThyo8Q-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="oppgy_vlvS0_JxThyo8Q-12" target="oppgy_vlvS0_JxThyo8Q-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oppgy_vlvS0_JxThyo8Q-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="oppgy_vlvS0_JxThyo8Q-12" target="oppgy_vlvS0_JxThyo8Q-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oppgy_vlvS0_JxThyo8Q-12" value="linux命令" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="-60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oppgy_vlvS0_JxThyo8Q-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="oppgy_vlvS0_JxThyo8Q-13" target="oppgy_vlvS0_JxThyo8Q-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oppgy_vlvS0_JxThyo8Q-13" value="内部命令&lt;br&gt;shell自带的" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="215" y="-110" width="85" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oppgy_vlvS0_JxThyo8Q-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="oppgy_vlvS0_JxThyo8Q-14" target="oppgy_vlvS0_JxThyo8Q-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oppgy_vlvS0_JxThyo8Q-14" value="外部命令" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="215" y="-10" width="85" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oppgy_vlvS0_JxThyo8Q-19" value="通过type命令来判断是内部还是外部命令。" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" vertex="1" parent="1">
+          <mxGeometry x="30" y="-180" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="oppgy_vlvS0_JxThyo8Q-20" value="&lt;div&gt;[root@izbp19nv7e19wvineu7g9uz /]# &lt;b&gt;type cd&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;cd is a shell builtin&lt;/b&gt;&lt;/div&gt;&lt;div&gt;[root@izbp19nv7e19wvineu7g9uz /]# &lt;b&gt;type mysql&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;mysql is /usr/bin/mysql&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" vertex="1" parent="1">
+          <mxGeometry x="190" y="-210" width="290" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oppgy_vlvS0_JxThyo8Q-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="oppgy_vlvS0_JxThyo8Q-23" target="oppgy_vlvS0_JxThyo8Q-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oppgy_vlvS0_JxThyo8Q-23" value="寻找这个命令的可执行文件" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="505" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oppgy_vlvS0_JxThyo8Q-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="oppgy_vlvS0_JxThyo8Q-25" target="oppgy_vlvS0_JxThyo8Q-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oppgy_vlvS0_JxThyo8Q-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="oppgy_vlvS0_JxThyo8Q-25" target="oppgy_vlvS0_JxThyo8Q-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oppgy_vlvS0_JxThyo8Q-25" value="是外部命令？" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="200" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oppgy_vlvS0_JxThyo8Q-29" value="是" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="535" y="280" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oppgy_vlvS0_JxThyo8Q-30" value="&lt;b style=&quot;text-align: left;&quot;&gt;is a shell builtin&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="-110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oppgy_vlvS0_JxThyo8Q-32" value="&lt;b style=&quot;text-align: left;&quot;&gt;is /usr/bin/xxx&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="-10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oppgy_vlvS0_JxThyo8Q-34" value="交给kernel内核执行" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oppgy_vlvS0_JxThyo8Q-37" value="否" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="620" y="215" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oppgy_vlvS0_JxThyo8Q-38" value="linux寻找命令不是全局搜索&lt;br&gt;1.查找的PATH里面的路径&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2.linux会存储一个hash表，也可以从里面获取路径&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" vertex="1" parent="1">
+          <mxGeometry x="240" y="330" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oppgy_vlvS0_JxThyo8Q-39" value="linux寻找命令不是全局搜索&lt;br&gt;1.查找的PATH里面的路径&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2.linux会存储一个hash表，也可以从里面获取路径&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="330" width="240" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
