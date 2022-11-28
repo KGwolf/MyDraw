@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-28T08:20:19.585Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="TyY5iKIj-gdCc10eiu61" version="20.5.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-28T09:15:14.706Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="mYh6AmrtTpYDhRQSYpaM" version="20.6.0" type="github">
   <diagram id="ho1o4B3E-l8eYltIAmrv" name="第 1 页">
     <mxGraphModel dx="1662" dy="706" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -13,8 +13,23 @@
         <mxCell id="7geZkpw3Z43b3UevWiiN-3" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;这几种模式，哪些能通过一个或者少量线程处理海量IO的连接？&lt;br&gt;首先，BIO，accept没啥影响，反正也是由连接会直接来，拿出来了直接交给&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=24;" parent="1" vertex="1">
           <mxGeometry x="50" y="990" width="580" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="La09_VNI6gY7_joqpI0x-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;https://www.cnblogs.com/codderYouzg/p/14723720.html&lt;br&gt;讲解NIO&amp;nbsp; Selector底层&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="La09_VNI6gY7_joqpI0x-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;https://www.cnblogs.com/codderYouzg/p/14723720.html&lt;br&gt;讲解NIO&amp;nbsp; Selector底层&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="40" y="180" width="470" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="w--zyUQJSbkvS63GyZV3-1" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="1890" width="640" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="w--zyUQJSbkvS63GyZV3-2" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Server&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="850" y="1890" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="w--zyUQJSbkvS63GyZV3-3" value="" style="ellipse;whiteSpace=wrap;html=1;fontSize=24;" vertex="1" parent="1">
+          <mxGeometry x="580" y="2090" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="w--zyUQJSbkvS63GyZV3-4" value="" style="ellipse;whiteSpace=wrap;html=1;fontSize=24;" vertex="1" parent="1">
+          <mxGeometry x="980" y="1990" width="210" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="w--zyUQJSbkvS63GyZV3-5" value="epoll" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;" vertex="1" parent="1">
+          <mxGeometry x="1055" y="1990" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
