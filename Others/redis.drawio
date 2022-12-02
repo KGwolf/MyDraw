@@ -1,1 +1,19 @@
-<mxfile host="app.diagrams.net" modified="2022-12-02T03:11:57.183Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" version="20.6.0" etag="tX3EDbIwLnEUt6ZLg1Ns" type="github"><diagram id="W6A_uX0gggYwr_Bl3jhM">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-12-02T07:31:28.695Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" version="20.6.0" etag="sP9nlFywj0tNuiouHga6" type="github">
+  <diagram id="dQEuB5v866ZaRb3VbNek" name="第 1 页">
+    <mxGraphModel dx="822" dy="413" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zNigKXp1gIyEoJ-Kyh-0-1" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;分布式锁&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="50" width="350" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="zNigKXp1gIyEoJ-Kyh-0-2" value="分布式锁用于多个进程以互斥的行为访问共享资源" style="rounded=0;whiteSpace=wrap;html=1;fontSize=24;" vertex="1" parent="1">
+          <mxGeometry x="60" y="150" width="570" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zNigKXp1gIyEoJ-Kyh-0-3" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;实现一个分布式锁的最低要求：&lt;/b&gt;&lt;br&gt;&lt;br&gt;1.同一时刻，只能有一个客户端获得锁。&lt;br&gt;&lt;br&gt;2.能释放死锁，客户端获取到锁之后，宕机或者分区，别的客户端也能获取到锁。&lt;br&gt;&lt;br&gt;3.容错性，只要服务端大多数节点都正常时（n/2+1），客户端就能正常获取或者释放锁。&lt;br&gt;&lt;/font&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontSize=24;align=left;" vertex="1" parent="1">
+          <mxGeometry x="65" y="260" width="725" height="240" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
