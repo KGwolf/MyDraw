@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2023-01-05T08:31:13.417Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" version="20.7.4" etag="qAyA0hsrXQyXBrJiGBV_" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-05T08:33:21.591Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" version="20.7.4" etag="rYLTbG7GC5JKjG9ZSnsM" type="github">
   <diagram id="n1ftZFPXeWoBccRL3Ds-" name="第 1 页">
     <mxGraphModel dx="2261" dy="1933" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="UYtDyfvaQPsocZmwA6KJ-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;OA：Spring&amp;nbsp; &amp;nbsp;SpringBoot&amp;nbsp; 工作流引擎&lt;br&gt;难点：领导签字的真伪，比如有人跨过账号登录，直接操作数据库给签字的那个字段打标记。---解决：非对称加密。Activity框架。跟答题考试系统很像。&lt;br&gt;&lt;br&gt;thymeleaf&lt;br&gt;&lt;br&gt;jpa、mybatis、mybatisPlus、mybatisgenerator&lt;br&gt;&lt;br&gt;RBAC 权限架构&lt;br&gt;&lt;br&gt;dubbo&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="10" y="-520" width="760" height="350" as="geometry" />
+        <mxCell id="UYtDyfvaQPsocZmwA6KJ-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;OA：Spring&amp;nbsp; &amp;nbsp;SpringBoot&amp;nbsp; 工作流引擎&lt;br&gt;难点：领导签字的真伪，比如有人跨过账号登录，直接操作数据库给签字的那个字段打标记。---解决：非对称加密。Activity框架。跟答题考试系统很像。&lt;br&gt;&lt;br&gt;thymeleaf&lt;br&gt;&lt;br&gt;jpa、mybatis、mybatisPlus、mybatisgenerator&lt;br&gt;&lt;br&gt;RBAC 权限架构&lt;br&gt;&lt;br&gt;文件上传、FastDFS&lt;br&gt;&lt;br&gt;Nginx（用得最多）、Tengin（用得不多）、Openresty（京东）&lt;br&gt;&lt;br&gt;dubbo&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="-680" width="820" height="510" as="geometry" />
         </mxCell>
         <mxCell id="UYtDyfvaQPsocZmwA6KJ-3" value="JAVA基础" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="-270" y="310" width="1700" height="90" as="geometry" />
