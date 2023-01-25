@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-21T04:01:05.455Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.139 Safari/537.36" etag="UoSKnE_Nhg1TauUTocm3" version="20.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-25T10:47:05.165Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.139 Safari/537.36" etag="Ch_IJcrqXcKyej3WnZ7k" version="20.6.0" type="github">
   <diagram id="c6MPomSf8zc9xdUtyQ0a" name="第 1 页">
     <mxGraphModel dx="3320" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -138,8 +138,8 @@
             <mxPoint x="-780" y="430" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="YBLSV3wSIFu5p-33r_xj-6" value="静态变量分配内存并赋值" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-40" y="185" width="120" height="60" as="geometry" />
+        <mxCell id="YBLSV3wSIFu5p-33r_xj-6" value="静态变量分配内存并赋值，jdk8之前hotspot都是放在方法区里面的（永久代来实现），8之后都是放在堆上的。" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="185" width="250" height="60" as="geometry" />
         </mxCell>
         <mxCell id="YBLSV3wSIFu5p-33r_xj-8" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="3LjUvsTypOvNlFt_LuZn-59" target="YBLSV3wSIFu5p-33r_xj-6">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
