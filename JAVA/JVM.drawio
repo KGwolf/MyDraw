@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-01-25T10:47:05.165Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.139 Safari/537.36" etag="Ch_IJcrqXcKyej3WnZ7k" version="20.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-26T00:55:43.556Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.139 Safari/537.36" etag="jZ94CebB2j0bkaOYpiSm" version="20.6.0" type="github">
   <diagram id="c6MPomSf8zc9xdUtyQ0a" name="第 1 页">
-    <mxGraphModel dx="3320" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3080" dy="1941" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -138,8 +138,8 @@
             <mxPoint x="-780" y="430" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="YBLSV3wSIFu5p-33r_xj-6" value="静态变量分配内存并赋值，jdk8之前hotspot都是放在方法区里面的（永久代来实现），8之后都是放在堆上的。" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="-40" y="185" width="250" height="60" as="geometry" />
+        <mxCell id="YBLSV3wSIFu5p-33r_xj-6" value="静态变量分配内存并赋值，jdk8之前hotspot都是放在方法区里面的（永久代来实现），8之后都是放在堆上的。&lt;br&gt;永久代是HotSpot虚拟机基于JVM规范对方法区的一个落地实现。在JDK8被移除。" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="165" width="260" height="85" as="geometry" />
         </mxCell>
         <mxCell id="YBLSV3wSIFu5p-33r_xj-8" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="3LjUvsTypOvNlFt_LuZn-59" target="YBLSV3wSIFu5p-33r_xj-6">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -147,8 +147,38 @@
             <mxPoint x="-400" y="420" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="YBLSV3wSIFu5p-33r_xj-51" value="方法区跟堆的区别？？？？&lt;br&gt;Java虚拟机有一个在所有Java虚拟机线程之间共享的方法区域。方法区类似于传统语言编译代码的存储区，或类似于操作系统进程中的“文本”段。它存储每类结构，如运行时常量池、字段和方法数据，以及方法和构造函数的代码，包括类和接口初始化以及实例初始化中使用的特殊方法（§2.9）。方法区域在虚拟机启动时创建。尽管方法区域在逻辑上是堆的一部分，但简单的实现可能选择不进行垃圾收集或压缩。此规范不强制要求方法区域的位置或用于管理编译代码的策略。方法区域可以是固定的大小，或者可以根据计算的需要进行扩展。方法区域的内存不需要是连续的。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-1290" y="1620" width="490" height="180" as="geometry" />
+        <mxCell id="YBLSV3wSIFu5p-33r_xj-52" value="&lt;h1 style=&quot;box-sizing: border-box; outline: 0px; margin: 0px; padding: 0px; font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, SimHei, Arial, SimSun; font-size: 28px; overflow-wrap: break-word; color: rgb(34, 34, 38); word-break: break-all; text-align: start; background-color: rgb(255, 255, 255);&quot; id=&quot;articleContentId&quot; class=&quot;title-article&quot;&gt;方法区、永久代、元空间的区别&lt;/h1&gt;&lt;div&gt;https://blog.csdn.net/a1489540461/article/details/120968113&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="165" width="430" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="YBLSV3wSIFu5p-33r_xj-53" value="方法区跟堆的区别？？？？&lt;br&gt;Java虚拟机有一个在所有Java虚拟机线程之间共享的方法区域。方法区类似于传统语言编译代码的存储区，或类似于操作系统进程中的“文本”段。它存储每类结构，如运行时常量池、字段和方法数据，以及方法和构造函数的代码，包括类和接口初始化以及实例初始化中使用的特殊方法（§2.9）。方法区域在虚拟机启动时创建。尽管方法区域在逻辑上是堆的一部分，但简单的实现可能选择不进行垃圾收集或压缩。此规范不强制要求方法区域的位置或用于管理编译代码的策略。方法区域可以是固定的大小，或者可以根据计算的需要进行扩展。方法区域的内存不需要是连续的。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="117.5" width="490" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="YBLSV3wSIFu5p-33r_xj-54" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="760" y="-180" width="550" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="YBLSV3wSIFu5p-33r_xj-57" value="虚拟机栈&lt;br&gt;VM Stack" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="965" y="-100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YBLSV3wSIFu5p-33r_xj-61" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="780" y="-140" width="150" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="YBLSV3wSIFu5p-33r_xj-58" value="程序计数器&lt;br&gt;Program Counter Register" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="965" y="-12.5" width="310" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="YBLSV3wSIFu5p-33r_xj-59" value="本地方法栈&lt;br&gt;Native Method Stack" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1135" y="-100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YBLSV3wSIFu5p-33r_xj-60" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;运行时数据区&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="950" y="-170" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="YBLSV3wSIFu5p-33r_xj-55" value="方法区&lt;br&gt;Method Area" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="795" y="-100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YBLSV3wSIFu5p-33r_xj-56" value="堆&lt;br&gt;Heap" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="795" y="-15" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YBLSV3wSIFu5p-33r_xj-62" value="线程共享" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="810" y="-140" width="90" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
