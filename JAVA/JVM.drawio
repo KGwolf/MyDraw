@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-28T03:53:13.165Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="d48NEveKQDLtW6W_johK" version="20.8.3" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-28T05:15:05.096Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="x6N40RP2CtVSiilI5FhF" version="20.8.3" type="github">
   <diagram id="c6MPomSf8zc9xdUtyQ0a" name="第 1 页">
     <mxGraphModel dx="4742" dy="1933" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -357,8 +357,8 @@
             <mxPoint x="1350" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BQRNtxm04CMjzgzUIQnh-6" value="&lt;b&gt;&lt;font&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;JVM执行引擎---方法调用：解析、分派&lt;/span&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;所有方法调用的目标方法在Class文件里面都是一个常量池中的符&lt;br&gt;号引用，在类加载的解析阶段，会将其中的一部分符号引用转化为直接引用（&lt;b&gt;非虚方法或者接口&lt;/b&gt;）------这就是&lt;b&gt;解析&lt;br&gt;&lt;font&gt;&lt;br&gt;分派：处理多态性，找到正确的目标方法。&lt;br&gt;静态分派：典型应用就是 重载。&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1760" y="495" width="500" height="170" as="geometry" />
+        <mxCell id="BQRNtxm04CMjzgzUIQnh-6" value="&lt;b&gt;&lt;font&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;JVM执行引擎---方法调用：解析、分派&lt;/span&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;所有方法调用的目标方法在Class文件里面都是一个常量池中的符&lt;br&gt;号引用，在类加载的解析阶段，会将其中的一部分符号引用转化为直接引用（&lt;b&gt;非虚方法或者接口&lt;/b&gt;）------这就是&lt;b&gt;解析&lt;br&gt;&lt;font&gt;&lt;br&gt;分派：处理多态性，找到正确的目标方法。&lt;br&gt;静态分派：典型应用就是 重载，在编译期间都能够确定的，也可以理解成是“解析”。&lt;br&gt;动态分派：重写。&lt;/font&gt;&lt;/b&gt;invokevirtual指令。&lt;b&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1760" y="495" width="520" height="235" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
