@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-01-28T05:25:34.863Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="D6oATg7Zwrqf2l0Q_ebd" version="20.8.3" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-22T08:39:58.306Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.139 Safari/537.36" etag="IxK6C2lLXYP6xmduCVY-" version="20.6.0" type="github">
   <diagram id="c6MPomSf8zc9xdUtyQ0a" name="第 1 页">
-    <mxGraphModel dx="4742" dy="1933" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4974" dy="1941" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -122,15 +122,6 @@
         </mxCell>
         <mxCell id="3LjUvsTypOvNlFt_LuZn-85" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontFamily=Helvetica;fontSize=15;fontColor=#4F4F4F;" parent="1" vertex="1">
           <mxGeometry x="-866" y="800" width="20" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="3LjUvsTypOvNlFt_LuZn-89" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontFamily=Helvetica;fontSize=15;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
-          <mxGeometry x="-1120" y="1060" width="1030" height="340" as="geometry" />
-        </mxCell>
-        <mxCell id="3LjUvsTypOvNlFt_LuZn-90" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;哪些条件下不会触发加载？&lt;/span&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=#e1d5e7;strokeColor=#9673a6;rounded=0;labelBackgroundColor=none;fontFamily=Helvetica;fontSize=15;" parent="1" vertex="1">
-          <mxGeometry x="-1066" y="1245" width="200" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="3LjUvsTypOvNlFt_LuZn-99" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fontFamily=Helvetica;fontSize=15;fontColor=#4F4F4F;" parent="1" vertex="1">
-          <mxGeometry x="-856" y="1165" width="20" height="190" as="geometry" />
         </mxCell>
         <mxCell id="YBLSV3wSIFu5p-33r_xj-1" value="1.大多情况是java类文件编译成class文件，类加载器从磁盘上读取到内存&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2.可以从网络或者zip等方式加载class 文件到内存。&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-1410" y="350" width="420" height="50" as="geometry" />
@@ -339,29 +330,47 @@
             <mxPoint x="1370" y="190" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BQRNtxm04CMjzgzUIQnh-1" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Java虚拟机的解释执行引擎被称为“基于栈的执行引擎”，里面的“栈”就是操作数栈。&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="BQRNtxm04CMjzgzUIQnh-1" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Java虚拟机的解释执行引擎被称为“基于栈的执行引擎”，里面的“栈”就是操作数栈。&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1241" y="700" width="510" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="BQRNtxm04CMjzgzUIQnh-2" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;JAVA执行引擎&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=24;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+        <mxCell id="BQRNtxm04CMjzgzUIQnh-2" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;JAVA执行引擎&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=24;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="890" y="-60" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="BQRNtxm04CMjzgzUIQnh-4" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontSize=14;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="BQRNtxm04CMjzgzUIQnh-2" target="YBLSV3wSIFu5p-33r_xj-54">
+        <mxCell id="BQRNtxm04CMjzgzUIQnh-4" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontSize=14;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" parent="1" source="BQRNtxm04CMjzgzUIQnh-2" target="YBLSV3wSIFu5p-33r_xj-54" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1300" y="50" as="sourcePoint" />
             <mxPoint x="1350" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BQRNtxm04CMjzgzUIQnh-5" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontSize=14;exitX=0.162;exitY=1.012;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="YBLSV3wSIFu5p-33r_xj-54" target="BQRNtxm04CMjzgzUIQnh-2">
+        <mxCell id="BQRNtxm04CMjzgzUIQnh-5" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontSize=14;exitX=0.162;exitY=1.012;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="YBLSV3wSIFu5p-33r_xj-54" target="BQRNtxm04CMjzgzUIQnh-2" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1300" y="50" as="sourcePoint" />
             <mxPoint x="1350" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BQRNtxm04CMjzgzUIQnh-6" value="&lt;b&gt;&lt;font&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;JVM执行引擎---方法调用：解析、分派&lt;/span&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;所有方法调用的目标方法在Class文件里面都是一个常量池中的符&lt;br&gt;号引用，在类加载的解析阶段，会将其中的一部分符号引用转化为直接引用（&lt;b&gt;非虚方法或&lt;/b&gt;）------这就是&lt;b&gt;解析&lt;br&gt;&lt;font&gt;&lt;br&gt;分派：处理多态性，找到正确的目标方法。&lt;br&gt;静态分派：典型应用就是 重载，在编译期间都能够确定的，也可以理解成是“解析”。&lt;br&gt;动态分派：重写。&lt;/font&gt;&lt;/b&gt;invokevirtual指令。&lt;b&gt;运行期根据实际类型确定方法执行版本的分派过程称为动态分派。&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;align=left;" vertex="1" parent="1">
+        <mxCell id="BQRNtxm04CMjzgzUIQnh-6" value="&lt;b&gt;&lt;font&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;JVM执行引擎---方法调用：解析、分派&lt;/span&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;所有方法调用的目标方法在Class文件里面都是一个常量池中的符&lt;br&gt;号引用，在类加载的解析阶段，会将其中的一部分符号引用转化为直接引用（&lt;b&gt;非虚方法或&lt;/b&gt;）------这就是&lt;b&gt;解析&lt;br&gt;&lt;font&gt;&lt;br&gt;分派：处理多态性，找到正确的目标方法。&lt;br&gt;静态分派：典型应用就是 重载，在编译期间都能够确定的，也可以理解成是“解析”。&lt;br&gt;动态分派：重写。&lt;/font&gt;&lt;/b&gt;invokevirtual指令。&lt;b&gt;运行期根据实际类型确定方法执行版本的分派过程称为动态分派。&lt;font&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;align=left;" parent="1" vertex="1">
           <mxGeometry x="1760" y="495" width="540" height="215" as="geometry" />
         </mxCell>
-        <mxCell id="BQRNtxm04CMjzgzUIQnh-7" value="&lt;b&gt;Invokevirtual指令的执行步骤：&lt;/b&gt;&lt;br&gt;&lt;br&gt;1）找到操作数栈顶的第一个元素所指向的对象的实际类型，记作C。&lt;br&gt;2）如果在类型C中找到与常量中的描述符和简单名称都相符的方法，则进行访问权限校验，如果通过则返回这个方法的直接引用，查找过程结束；不通过则返回java.lang.IllegalAccessError异常。&lt;br&gt;3）否则，&lt;b&gt;按照继承关系从下往上依次对C的各个父类进行第二步的搜索和验证过程。&lt;/b&gt;&lt;br&gt;4）如果始终没有找到合适的方法，则抛出java.lang.AbstractMethodError异常。&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;align=left;" vertex="1" parent="1">
+        <mxCell id="BQRNtxm04CMjzgzUIQnh-7" value="&lt;b&gt;Invokevirtual指令的执行步骤：&lt;/b&gt;&lt;br&gt;&lt;br&gt;1）找到操作数栈顶的第一个元素所指向的对象的实际类型，记作C。&lt;br&gt;2）如果在类型C中找到与常量中的描述符和简单名称都相符的方法，则进行访问权限校验，如果通过则返回这个方法的直接引用，查找过程结束；不通过则返回java.lang.IllegalAccessError异常。&lt;br&gt;3）否则，&lt;b&gt;按照继承关系从下往上依次对C的各个父类进行第二步的搜索和验证过程。&lt;/b&gt;&lt;br&gt;4）如果始终没有找到合适的方法，则抛出java.lang.AbstractMethodError异常。&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;align=left;" parent="1" vertex="1">
           <mxGeometry x="2350" y="490" width="639" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="sx9aAlQffDROaUUm2oaW-3" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;JUC&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1460" y="1320" width="1780" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="sx9aAlQffDROaUUm2oaW-4" value="1.线程的几种状态" style="rounded=1;whiteSpace=wrap;html=1;fontSize=24;" vertex="1" parent="1">
+          <mxGeometry x="-1194" y="1460" width="694" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="sx9aAlQffDROaUUm2oaW-5" value="2.Synchronizaed工作原理、锁升级过程" style="rounded=1;whiteSpace=wrap;html=1;fontSize=24;" vertex="1" parent="1">
+          <mxGeometry x="-1194" y="1580" width="704" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sx9aAlQffDROaUUm2oaW-6" value="3.&amp;nbsp;Synchronizaed和ReentryLock的区别" style="rounded=1;whiteSpace=wrap;html=1;fontSize=24;" vertex="1" parent="1">
+          <mxGeometry x="-1194" y="1694" width="674" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="sx9aAlQffDROaUUm2oaW-7" value="4.Volaitile的作用和原理" style="rounded=1;whiteSpace=wrap;html=1;fontSize=24;" vertex="1" parent="1">
+          <mxGeometry x="-1194" y="1810" width="674" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="sx9aAlQffDROaUUm2oaW-8" value="5.CAS的原理和ABA问题解决" style="rounded=1;whiteSpace=wrap;html=1;fontSize=24;" vertex="1" parent="1">
+          <mxGeometry x="-1193" y="1920" width="674" height="66" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
