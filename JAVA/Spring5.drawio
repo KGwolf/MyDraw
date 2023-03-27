@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-27T14:07:55.756Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.139 Safari/537.36" etag="JgD7kPWrDi-yMKBbBNsD" version="21.0.10" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-27T14:17:56.833Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.139 Safari/537.36" etag="nu1eozj3oK6wGNkNYuej" version="21.0.10" type="github">
   <diagram name="第 1 页" id="j0T0W_XY4i96COsHRtta">
     <mxGraphModel dx="2868" dy="1548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -96,7 +96,7 @@
         <mxCell id="MSwICJZJJ-8O9ppRQRhp-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0R7P9N3aFObu-qyjlIBD-2" target="MSwICJZJJ-8O9ppRQRhp-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="0R7P9N3aFObu-qyjlIBD-2" value="创建对象的时候，如何选取合适的构造函数？&lt;br&gt;以及lookup-method和override-method是在什么时候处理的呢？&lt;br&gt;&lt;br&gt;doCreateBean方法执行到createBeanInstance()那里，会先判断supplier和factory-method，然后determineConstructorsFromBeanPostProcessors()，从bean后置处理器中为自动装配寻找构造方法, &lt;b&gt;&lt;font style=&quot;font-size: 25px;&quot;&gt;有且仅有一个有参构造或者有且仅有@Autowired注解构造&lt;/font&gt;&lt;/b&gt;：&lt;br&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;首先找到实现了InstantiationAwareBeanPostProcessor的那些BPP实例，循环调用它们的determineCandidateConstructors()，返回的是一个构造器类，" style="rounded=1;whiteSpace=wrap;html=1;fontSize=22;align=left;" parent="1" vertex="1">
+        <mxCell id="0R7P9N3aFObu-qyjlIBD-2" value="创建对象的时候，如何选取合适的构造函数？&lt;br&gt;以及lookup-method和override-method是在什么时候处理的呢？&lt;br&gt;&lt;br&gt;doCreateBean方法执行到createBeanInstance()那里，会先判断supplier和factory-method，然后determineConstructorsFromBeanPostProcessors()，&lt;b&gt;&lt;font style=&quot;font-size: 25px;&quot;&gt;这里是找出不用默认构造方法进行实例化的构造函数！！！！！&lt;/font&gt;，&lt;/b&gt;从bean后置处理器中为自动装配寻找构造方法, &lt;b&gt;&lt;font style=&quot;font-size: 25px;&quot;&gt;有且仅有一个有参构造或者有且仅有@Autowired注解构造&lt;/font&gt;&lt;/b&gt;：&lt;br&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;首先找到实现了InstantiationAwareBeanPostProcessor的那些BPP实例，循环调用它们的determineCandidateConstructors()，返回的是一个构造器类，" style="rounded=1;whiteSpace=wrap;html=1;fontSize=22;align=left;" parent="1" vertex="1">
           <mxGeometry x="1370" y="2750" width="750" height="360" as="geometry" />
         </mxCell>
         <mxCell id="N0wu8gUbkJhDh__TXsF7-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;applyMergedBeanDefinitionPostProcessors为什么要在实例化之后再调用呢？为什么不能在loadBeanDefinition的时候就一起处理了？&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#ff0000&quot;&gt;中途会修改？具体的解释？&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -105,8 +105,8 @@
         <mxCell id="MSwICJZJJ-8O9ppRQRhp-1" value="Spring 源码里面一共有几种方式创建对象？&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=22;" vertex="1" parent="1">
           <mxGeometry x="1405.5" y="3450" width="440" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="MSwICJZJJ-8O9ppRQRhp-2" value="1.首先，如果只有一个有参构造(无Autowired)，且方法参数是基础类型，那么必须使用@Value给参数注解。否则会报错！因为注入的时候找不到参数值进行注入，如果是引用类型，则会再进行解析依赖，进行创建对象。" style="whiteSpace=wrap;html=1;fontSize=22;align=left;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="2275" y="2765" width="675" height="330" as="geometry" />
+        <mxCell id="MSwICJZJJ-8O9ppRQRhp-2" value="determineConstructorsFromBeanPostProcessors，&lt;font style=&quot;font-size: 25px;&quot;&gt;&lt;b&gt;这里是找出不用默认构造方法进行实例化的构造函数！！！！！&lt;/b&gt;&lt;/font&gt;&lt;br&gt;1.首先，如果只有一个有参构造(无Autowired)，且方法参数是基础类型，那么必须使用@Value给参数注解。否则会报错！因为注入的时候找不到参数值进行注入，如果是引用类型，则会再进行解析依赖，进行创建对象。&lt;br&gt;&lt;br&gt;2.无参构造、有参构造混合，且无任何@Autowire注解时，那么这一步是找不到构造器的。意思是默认走无参构造。&lt;br&gt;&lt;br&gt;3.无参构造、有参构造混合，且有1个@Autowire注解时，返回被注解的那个。&lt;br&gt;&lt;br&gt;4.有多个@Autowire注解，会报错，识别不了你到底想用哪个。" style="whiteSpace=wrap;html=1;fontSize=22;align=left;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="2310" y="2722.5" width="745" height="415" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
