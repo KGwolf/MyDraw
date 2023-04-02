@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-04-02T03:41:35.515Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.139 Safari/537.36" etag="QqzfYHJTtbVcraNkyHX3" version="21.0.10" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-02T13:51:20.112Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.139 Safari/537.36" etag="JMgJFeUulrUFzUEbGfhV" version="21.0.10" type="github">
   <diagram name="第 1 页" id="j0T0W_XY4i96COsHRtta">
-    <mxGraphModel dx="3585" dy="1935" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2390" dy="1290" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -128,6 +128,9 @@
         </mxCell>
         <mxCell id="OvKJ4s5Kua3Mngv0WgQv-6" value="JDK和CGLIB的源码区别" style="rounded=1;whiteSpace=wrap;html=1;fontSize=22;" vertex="1" parent="1">
           <mxGeometry x="1940" y="4290" width="440" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="OvKJ4s5Kua3Mngv0WgQv-7" value="Spring中什么时候用JDK创建代理对象？&lt;br&gt;什么时候用CGLIB创建对象？" style="rounded=1;whiteSpace=wrap;html=1;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry x="2630" y="4290" width="440" height="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
