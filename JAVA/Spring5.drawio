@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-04T09:30:42.747Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="vFRiYxAVO46A8kivtyfw" version="21.1.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-04T09:35:38.220Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="W6pEtuJnPwj-aewm7psb" version="21.1.2" type="github">
   <diagram name="第 1 页" id="j0T0W_XY4i96COsHRtta">
     <mxGraphModel dx="1793" dy="955" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -257,8 +257,8 @@
         <mxCell id="FS2boHwgYnbtg82Xrflb-40" value="&lt;pre style=&quot;font-size: 16px;&quot;&gt;CacheKey.valueOf(key, refQueue);获取一个CacheKey,&lt;/pre&gt;&lt;pre style=&quot;font-size: 16px;&quot;&gt;传入了2个参数，第一个是AppClassLoader,第二个是一个ReferenceQueue。&lt;/pre&gt;&lt;pre style=&quot;font-size: 16px;&quot;&gt;传入一个引用队列是为了监测哪些对象被GC回收了。&lt;/pre&gt;&lt;pre style=&quot;font-size: 16px;&quot;&gt;返回的是一个CacheKey对象，其中的hash值是用AppClassLoader计算的。&lt;/pre&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="1260" y="5860" width="540" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="FS2boHwgYnbtg82Xrflb-41" value="&lt;pre style=&quot;font-size: 16px;&quot;&gt;map.get(cacheKey);根据CacheKey来获取一个map集合。&lt;/pre&gt;&lt;pre style=&quot;font-size: 16px;&quot;&gt;其中map的结构是：ConcurrentMap&amp;lt;Object,ConcurrentMap&amp;lt;Object,Supplier&amp;lt;V&amp;gt;&amp;gt;&amp;gt;，Map里面&lt;/pre&gt;&lt;pre style=&quot;font-size: 16px;&quot;&gt;继续嵌套一个Map。&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;/pre&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="1860" y="5860" width="650" height="150" as="geometry" />
+        <mxCell id="FS2boHwgYnbtg82Xrflb-41" value="&lt;pre style=&quot;font-size: 16px;&quot;&gt;map.get(cacheKey);根据CacheKey来获取一个map集合。&lt;/pre&gt;&lt;pre style=&quot;font-size: 16px;&quot;&gt;其中map的结构是：ConcurrentMap&amp;lt;Object,ConcurrentMap&amp;lt;Object,Supplier&amp;lt;V&amp;gt;&amp;gt;&amp;gt;，Map里面&lt;/pre&gt;&lt;pre style=&quot;font-size: 16px;&quot;&gt;继续嵌套一个Map。&lt;font color=&quot;#ff0000&quot;&gt;其中第二个Map的key是subKey，是根据实现了的那些接口分别hash之后相加得到的&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;/pre&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1860" y="5860" width="720" height="150" as="geometry" />
         </mxCell>
         <mxCell id="FS2boHwgYnbtg82Xrflb-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FS2boHwgYnbtg82Xrflb-42" target="FS2boHwgYnbtg82Xrflb-40">
           <mxGeometry relative="1" as="geometry" />
@@ -269,8 +269,11 @@
         <mxCell id="FS2boHwgYnbtg82Xrflb-42" value="&lt;pre style=&quot;font-size: 16px;&quot;&gt;Object cacheKey =CacheKey.valueOf(key, refQueue);&lt;/pre&gt;" style="whiteSpace=wrap;html=1;rounded=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="1330" y="5720" width="400" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="FS2boHwgYnbtg82Xrflb-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.388;entryY=-0.033;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FS2boHwgYnbtg82Xrflb-45" target="FS2boHwgYnbtg82Xrflb-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="FS2boHwgYnbtg82Xrflb-45" value="&lt;pre style=&quot;font-size: 16px;&quot;&gt;ConcurrentMap&amp;lt;Object, Supplier&amp;lt;V&amp;gt;&amp;gt; valuesMap = map.get(cacheKey);&lt;/pre&gt;" style="whiteSpace=wrap;html=1;align=left;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="1840" y="5725" width="530" height="50" as="geometry" />
+          <mxGeometry x="1875" y="5725" width="530" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
