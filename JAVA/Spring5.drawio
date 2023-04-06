@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-06T03:36:57.205Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="rEUy5LTZ35Hd9WhUsaI5" version="21.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-06T03:52:05.457Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="4BT8yRstop-arrxGVovI" version="21.1.4" type="github">
   <diagram name="第 1 页" id="j0T0W_XY4i96COsHRtta">
     <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -338,8 +338,14 @@
         <mxCell id="79H3neIrfh4pA5MsCUdm-21" value="&lt;pre style=&quot;font-size: 16px;&quot;&gt;这里的valueFactory，是ProxyClassFactory类型，调用其apply方法。&lt;/pre&gt;&lt;pre style=&quot;font-size: 16px;&quot;&gt;&lt;pre style=&quot;border-color: var(--border-color);&quot;&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;key是AppClassLoader,parameter是实现的接口集合。&lt;/b&gt;&lt;/pre&gt;&lt;pre style=&quot;border-color: var(--border-color);&quot;&gt;确保代理类和非公共接口处于同一个包路径下面。如果没有非公共的接口，&lt;/pre&gt;&lt;pre style=&quot;border-color: var(--border-color);&quot;&gt;就用com.sun.proxy作为包路径，com.sun.proxy.$Proxy0(最后的数字是递增)&lt;/pre&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;/pre&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="4080" y="5860" width="550" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="79H3neIrfh4pA5MsCUdm-23" value="&lt;pre style=&quot;&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;pre style=&quot;font-size: 16px;&quot;&gt;&lt;pre style=&quot;&quot;&gt;ProxyGenerator.generateProxyClass(proxyName, interfaces, accessFlags)&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;" style="whiteSpace=wrap;html=1;align=left;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="4668" y="5720" width="572" height="50" as="geometry" />
+        <mxCell id="79H3neIrfh4pA5MsCUdm-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.411;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="79H3neIrfh4pA5MsCUdm-23" target="79H3neIrfh4pA5MsCUdm-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="79H3neIrfh4pA5MsCUdm-23" value="&lt;pre style=&quot;&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;pre style=&quot;font-size: 16px;&quot;&gt;ProxyGenerator.generateProxyClass(proxyName, interfaces, accessFlags)&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;generateClassFile();&lt;/font&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;" style="whiteSpace=wrap;html=1;align=left;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="4780" y="5715" width="572" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="79H3neIrfh4pA5MsCUdm-25" value="&lt;pre style=&quot;font-size: 16px;&quot;&gt;1.添加3个方法hashCode,equals,toString。&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;/pre&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="4791" y="5860" width="550" height="210" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
