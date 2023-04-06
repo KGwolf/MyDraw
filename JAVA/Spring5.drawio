@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-04-06T02:24:50.458Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="-nN8F2bIRfP1-Jw352mV" version="21.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-06T02:38:59.478Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="JUErF152R7Igkf4ihLnY" version="21.1.4" type="github">
   <diagram name="第 1 页" id="j0T0W_XY4i96COsHRtta">
-    <mxGraphModel dx="1687" dy="899" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2390" dy="1273" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -135,7 +135,7 @@
         <mxCell id="OvKJ4s5Kua3Mngv0WgQv-7" value="Spring中什么时候用JDK创建代理对象？&lt;br&gt;什么时候用CGLIB创建对象？" style="rounded=1;whiteSpace=wrap;html=1;fontSize=22;" parent="1" vertex="1">
           <mxGeometry x="2630" y="4290" width="440" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="wgn3H3yoNKP2OQnmM37o-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;JDK:&lt;br&gt;被代理类必须实现一个接口。调用Proxy.newProxyInstance()方法来创建，其中需要传入3个参数：&lt;br&gt;1.被代理类的类加载器。&lt;br&gt;2.被代理类实现的接口集合。&lt;br&gt;3.InvocationHandler接口实现类（可以用匿名内部类，或者Lambda表达式），重写invoke方法。其中invoke方法有3个参数：&lt;/font&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;invoke(Object proxy, Method method, Object[] args)，proxy为创建好的代理对象，method为要调用的方法，args是调用的参数。&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+        <mxCell id="wgn3H3yoNKP2OQnmM37o-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;JDK:&lt;br&gt;&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;核心思想：有一个map，key是由AppClassLoader，value是一个map，这个map的key是实现的接口所组成的，value，是一个Supplier函数式接口，Lambda表达式。&lt;/font&gt;&lt;/b&gt;&lt;br&gt;被代理类必须实现一个接口。调用Proxy.newProxyInstance()方法来创建，其中需要传入3个参数：&lt;br&gt;1.被代理类的类加载器。&lt;br&gt;2.被代理类实现的接口集合。&lt;br&gt;3.InvocationHandler接口实现类（可以用匿名内部类，或者Lambda表达式），重写invoke方法。其中invoke方法有3个参数：&lt;/font&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;invoke(Object proxy, Method method, Object[] args)，proxy为创建好的代理对象，method为要调用的方法，args是调用的参数。&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="250" y="4830" width="820" height="490" as="geometry" />
         </mxCell>
         <mxCell id="wgn3H3yoNKP2OQnmM37o-2" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Proxy&lt;/font&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -222,7 +222,7 @@
           <mxGeometry y="60" width="390" height="70" as="geometry" />
         </mxCell>
         <mxCell id="FS2boHwgYnbtg82Xrflb-25" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;CacheValue&amp;lt;V&amp;gt;&lt;/font&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="3010" y="5289" width="390" height="130" as="geometry" />
+          <mxGeometry x="3010" y="5389" width="390" height="130" as="geometry" />
         </mxCell>
         <mxCell id="FS2boHwgYnbtg82Xrflb-26" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;- hash: int&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="FS2boHwgYnbtg82Xrflb-25" vertex="1">
           <mxGeometry y="26" width="390" height="26" as="geometry" />
@@ -287,6 +287,9 @@
         <mxCell id="79H3neIrfh4pA5MsCUdm-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.345;entryY=-0.033;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="79H3neIrfh4pA5MsCUdm-1" target="79H3neIrfh4pA5MsCUdm-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="79H3neIrfh4pA5MsCUdm-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="79H3neIrfh4pA5MsCUdm-1" target="79H3neIrfh4pA5MsCUdm-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="79H3neIrfh4pA5MsCUdm-1" value="&lt;pre style=&quot;font-size: 16px;&quot;&gt;subKeyFactory.apply(key, parameter)&lt;/pre&gt;" style="whiteSpace=wrap;html=1;align=left;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="2780" y="5715" width="330" height="70" as="geometry" />
         </mxCell>
@@ -310,6 +313,9 @@
         </mxCell>
         <mxCell id="79H3neIrfh4pA5MsCUdm-12" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;«interface»&lt;br&gt;&lt;b&gt;Supplier&amp;lt;V&amp;gt;&lt;/b&gt;&lt;/font&gt;" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="2111" y="5270" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="79H3neIrfh4pA5MsCUdm-14" value="&lt;pre style=&quot;font-size: 16px;&quot;&gt;new Factory(key, parameter, subKey, valuesMap)&lt;/pre&gt;" style="whiteSpace=wrap;html=1;align=left;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="3630" y="5715" width="380" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
