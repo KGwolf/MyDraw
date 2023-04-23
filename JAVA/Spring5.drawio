@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-23T09:32:56.812Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="8gBylIB_2GuK1c5MHLeh" version="21.2.1" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-23T09:36:21.593Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="9dxY981HkGOp9vYmRHfY" version="21.2.1" type="github">
   <diagram name="第 1 页" id="j0T0W_XY4i96COsHRtta">
     <mxGraphModel dx="2206" dy="1175" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -433,7 +433,7 @@
         <mxCell id="hN_zkdhQLPIIuHM2AoxG-8" value="AOP的创建过程？&lt;br&gt;在Spring Ioc的基础上，怎么做的扩展？" style="rounded=1;whiteSpace=wrap;html=1;fontSize=22;" vertex="1" parent="1">
           <mxGeometry x="173.5" y="8620" width="443" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="hN_zkdhQLPIIuHM2AoxG-9" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;background-color: initial; font-size: 22px;&quot;&gt;1.在loadBeanDefinition的时候做了很多事情。在解析aop标签的时候，parser.parse()会交给ConfigBeanDefinitionParser进行处理，&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;background-color: initial; font-size: 22px;&quot;&gt;这个类是aop包下面的。有个疑问，component-scan解析的时候，交给谁处理的呢？&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="hN_zkdhQLPIIuHM2AoxG-9" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;background-color: initial; font-size: 22px;&quot;&gt;根据不同的包命名空间，找到不同的NamespaceHandler，调用不用的parse方法。&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;background-color: initial; font-size: 22px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;background-color: initial; font-size: 22px;&quot;&gt;1.在loadBeanDefinition的时候做了很多事情。在解析aop标签的时候，parser.parse()会交给ConfigBeanDefinitionParser进行处理，&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;background-color: initial; font-size: 22px;&quot;&gt;这个类是aop包下面的。有个疑问，component-scan解析的时候，交给谁处理的呢？&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="770" y="8590" width="1310" height="240" as="geometry" />
         </mxCell>
       </root>
