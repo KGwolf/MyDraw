@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-04-09T13:17:47.161Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.139 Safari/537.36" etag="lUsXqbCNFgjHbGfLZyt3" version="21.0.10" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-23T03:30:19.912Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="mdEv1PHl56pP0eDJm-60" version="21.2.1" type="github">
   <diagram name="第 1 页" id="j0T0W_XY4i96COsHRtta">
-    <mxGraphModel dx="1434" dy="774" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2607" dy="1389" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -404,8 +404,20 @@
         <mxCell id="79H3neIrfh4pA5MsCUdm-46" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="79H3neIrfh4pA5MsCUdm-43" vertex="1">
           <mxGeometry y="60" width="270" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="1ie5nHcKkA8HW09lX4hZ-1" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;所有的@Configuration注解的类，都会被代理！&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="1ie5nHcKkA8HW09lX4hZ-1" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;所有的@Configuration注解的类，都会被代理！&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="420" y="7220" width="470" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="hN_zkdhQLPIIuHM2AoxG-1" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;开始AOP&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="7440" width="2140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="hN_zkdhQLPIIuHM2AoxG-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hN_zkdhQLPIIuHM2AoxG-2" target="hN_zkdhQLPIIuHM2AoxG-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hN_zkdhQLPIIuHM2AoxG-2" value="AOP 的几个专业术语代表什么意思？" style="rounded=1;whiteSpace=wrap;html=1;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry x="110" y="7750" width="440" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="hN_zkdhQLPIIuHM2AoxG-3" value="1.切面：&lt;br&gt;2.切点：&lt;br&gt;3.连接点：&lt;br&gt;4.通知：&lt;br&gt;" style="whiteSpace=wrap;html=1;fontSize=22;rounded=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="840" y="7670" width="210" height="300" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
