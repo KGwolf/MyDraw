@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-23T07:08:12.496Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="3Z0yj1Z-H24Sft3czmej" version="21.2.1" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-23T08:20:56.303Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="nNJoFYqwZIXFDU6LQ4Da" version="21.2.1" type="github">
   <diagram name="第 1 页" id="j0T0W_XY4i96COsHRtta">
     <mxGraphModel dx="2206" dy="1175" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -418,7 +418,7 @@
         <mxCell id="hN_zkdhQLPIIuHM2AoxG-2" value="AOP 的几个专业术语代表什么意思？" style="rounded=1;whiteSpace=wrap;html=1;fontSize=22;" vertex="1" parent="1">
           <mxGeometry x="195" y="8170" width="440" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="hN_zkdhQLPIIuHM2AoxG-3" value="1.切面：Logutils这个类就是一个切面。是一个模块化的横切关注点，它是一个定义了切点和通知的类&lt;br&gt;2.切点：&lt;br&gt;3.连接点：&lt;br&gt;4.通知：" style="whiteSpace=wrap;html=1;fontSize=22;rounded=1;align=left;" vertex="1" parent="1">
+        <mxCell id="hN_zkdhQLPIIuHM2AoxG-3" value="1.切面：Logutils这个类就是一个切面。是一个模块化的横切关注点，它是一个定义了切点和通知的类。&lt;br&gt;&lt;br&gt;2.切点：一个切面可以有多个切点。切点是一个表达式，用于描述哪些连接点应该被拦截和处理。&lt;br&gt;&lt;br&gt;3.连接点：&lt;br&gt;&lt;br&gt;4.通知：通知是在切面的某个切点上执行的代码" style="whiteSpace=wrap;html=1;fontSize=22;rounded=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="925" y="8100" width="1065" height="290" as="geometry" />
         </mxCell>
         <mxCell id="hN_zkdhQLPIIuHM2AoxG-5" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;AOP（面向切面编程）是一种编程范式，用于将应用程序的横切关注点（如事务管理、安全、日志记录等）从业务逻辑中分离出来，以提高代码重用性和可维护性。&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
