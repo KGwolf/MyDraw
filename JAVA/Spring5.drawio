@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-04-23T09:36:21.593Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="9dxY981HkGOp9vYmRHfY" version="21.2.1" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-27T02:54:52.658Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="7y1bz6WyXHCRM9IyNCSS" version="21.2.2" type="github">
   <diagram name="第 1 页" id="j0T0W_XY4i96COsHRtta">
-    <mxGraphModel dx="2206" dy="1175" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2049" dy="1091" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -407,34 +407,34 @@
         <mxCell id="1ie5nHcKkA8HW09lX4hZ-1" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;所有的@Configuration注解的类，都会被代理！&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="420" y="7220" width="470" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="hN_zkdhQLPIIuHM2AoxG-1" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;开始AOP&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="hN_zkdhQLPIIuHM2AoxG-1" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;开始AOP&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="130" y="7440" width="2140" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="hN_zkdhQLPIIuHM2AoxG-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hN_zkdhQLPIIuHM2AoxG-2">
+        <mxCell id="hN_zkdhQLPIIuHM2AoxG-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="hN_zkdhQLPIIuHM2AoxG-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="925" y="8240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="hN_zkdhQLPIIuHM2AoxG-2" value="AOP 的几个专业术语代表什么意思？" style="rounded=1;whiteSpace=wrap;html=1;fontSize=22;" vertex="1" parent="1">
+        <mxCell id="hN_zkdhQLPIIuHM2AoxG-2" value="AOP 的几个专业术语代表什么意思？" style="rounded=1;whiteSpace=wrap;html=1;fontSize=22;" parent="1" vertex="1">
           <mxGeometry x="195" y="8170" width="440" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="hN_zkdhQLPIIuHM2AoxG-3" value="1.切面：Logutils这个类就是一个切面。是一个模块化的横切关注点，它是一个定义了切点和通知的类。&lt;br&gt;&lt;br&gt;2.切点：一个切面可以有多个切点。&lt;b&gt;切点是一个表达式&lt;/b&gt;，&lt;b&gt;用于描述哪些连接点应该被拦截和处理&lt;/b&gt;。&lt;br&gt;&lt;br&gt;3.连接点：连接点是程序执行过程中的一个特定点，比如方法调用、对象实例化等等。通常情况下，&lt;b&gt;连接点可以被一个或多个切点所描述&lt;/b&gt;。&lt;br&gt;&lt;br&gt;4.通知：通知是在切面的&lt;b&gt;某个切点上执行的代码&lt;/b&gt;。5种通知类型：前置、后置、环绕、异常、最终。" style="whiteSpace=wrap;html=1;fontSize=22;rounded=1;align=left;" vertex="1" parent="1">
+        <mxCell id="hN_zkdhQLPIIuHM2AoxG-3" value="1.切面：Logutils这个类就是一个切面。是一个模块化的横切关注点，它是一个定义了切点和通知的类。&lt;br&gt;&lt;br&gt;2.切点：一个切面可以有多个切点。&lt;b&gt;切点是一个表达式&lt;/b&gt;，&lt;b&gt;用于描述哪些连接点应该被拦截和处理&lt;/b&gt;。&lt;br&gt;&lt;br&gt;3.连接点：连接点是程序执行过程中的一个特定点，比如方法调用、对象实例化等等。通常情况下，&lt;b&gt;连接点可以被一个或多个切点所描述&lt;/b&gt;。&lt;br&gt;&lt;br&gt;4.通知：通知是在切面的&lt;b&gt;某个切点上执行的代码&lt;/b&gt;。5种通知类型：前置、后置、环绕、异常、最终。" style="whiteSpace=wrap;html=1;fontSize=22;rounded=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="925" y="8100" width="1065" height="290" as="geometry" />
         </mxCell>
-        <mxCell id="hN_zkdhQLPIIuHM2AoxG-5" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;AOP（面向切面编程）是一种编程范式，用于将应用程序的横切关注点（如事务管理、安全、日志记录等）从业务逻辑中分离出来，以提高代码重用性和可维护性。&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="hN_zkdhQLPIIuHM2AoxG-5" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;AOP（面向切面编程）是一种编程范式，用于将应用程序的横切关注点（如事务管理、安全、日志记录等）从业务逻辑中分离出来，以提高代码重用性和可维护性。&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="270" y="7570" width="2090" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="hN_zkdhQLPIIuHM2AoxG-6" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;编程范式是指编程的基本风格或编写代码的基本方式。它是一种关于如何组织和结构化程序的思想方法和规范。不同的编程范式具有不同的思想基础和实现方式，比如面向过程编程、面向对象编程、函数式编程等。选择不同的编程范式可以使程序员更加灵活地解决问题，提高代码的可读性、可重用性和可维护性。&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="hN_zkdhQLPIIuHM2AoxG-6" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;编程范式是指编程的基本风格或编写代码的基本方式。它是一种关于如何组织和结构化程序的思想方法和规范。不同的编程范式具有不同的思想基础和实现方式，比如面向过程编程、面向对象编程、函数式编程等。选择不同的编程范式可以使程序员更加灵活地解决问题，提高代码的可读性、可重用性和可维护性。&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="270" y="7720" width="2100" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="hN_zkdhQLPIIuHM2AoxG-7" value="&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 23px;&quot;&gt;切面定义了一个或多个切点，切点（表达式）又是表明了哪些方法可以被拦截代理，这些被拦截的方法就是连接点。&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="hN_zkdhQLPIIuHM2AoxG-7" value="&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 23px;&quot;&gt;切面定义了一个或多个切点，切点（表达式）又是表明了哪些方法可以被拦截代理，这些被拦截的方法就是连接点。&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="827" y="8020" width="1222.5" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="hN_zkdhQLPIIuHM2AoxG-8" value="AOP的创建过程？&lt;br&gt;在Spring Ioc的基础上，怎么做的扩展？" style="rounded=1;whiteSpace=wrap;html=1;fontSize=22;" vertex="1" parent="1">
+        <mxCell id="hN_zkdhQLPIIuHM2AoxG-8" value="AOP的创建过程？&lt;br&gt;在Spring Ioc的基础上，怎么做的扩展？" style="rounded=1;whiteSpace=wrap;html=1;fontSize=22;" parent="1" vertex="1">
           <mxGeometry x="173.5" y="8620" width="443" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="hN_zkdhQLPIIuHM2AoxG-9" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;background-color: initial; font-size: 22px;&quot;&gt;根据不同的包命名空间，找到不同的NamespaceHandler，调用不用的parse方法。&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;background-color: initial; font-size: 22px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;background-color: initial; font-size: 22px;&quot;&gt;1.在loadBeanDefinition的时候做了很多事情。在解析aop标签的时候，parser.parse()会交给ConfigBeanDefinitionParser进行处理，&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;background-color: initial; font-size: 22px;&quot;&gt;这个类是aop包下面的。有个疑问，component-scan解析的时候，交给谁处理的呢？&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="770" y="8590" width="1310" height="240" as="geometry" />
+        <mxCell id="hN_zkdhQLPIIuHM2AoxG-9" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;background-color: initial; font-size: 22px;&quot;&gt;根据不同的包命名空间，找到不同的NamespaceHandler，调用不用的parse方法。&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;background-color: initial; font-size: 22px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 22px;&quot;&gt;包命名空间：&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 22px;&quot;&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;component-scan----&amp;gt;http://www.springframework.org/schema/&lt;font color=&quot;#ff0000&quot;&gt;context&lt;/font&gt;-----&amp;gt;ContextNamespaceHandler---&amp;gt;ComponentScanBeanDefinitionParser&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 22px;&quot;&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 22px;&quot;&gt;aop:config----&amp;gt;http://www.springframework.org/schema/&lt;font color=&quot;#ff0000&quot;&gt;aop&lt;/font&gt;-----&amp;gt;AopNamespaceHandler---&amp;gt;ConfigBeanDefinitionParser&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="770" y="8590" width="1520" height="290" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
