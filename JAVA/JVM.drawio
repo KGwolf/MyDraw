@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-31T02:40:05.711Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="fUXHL7eFo5y4_6pMg6A6" version="21.7.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-31T05:23:15.546Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="1jhxKob2NnE3a9ZHtfAk" version="21.7.0" type="github">
   <diagram id="c6MPomSf8zc9xdUtyQ0a" name="第 1 页">
     <mxGraphModel dx="4742" dy="1927" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -422,6 +422,9 @@
         </mxCell>
         <mxCell id="_LLzrMq1k3NQDTwSfW2R-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;volatile为什么只能保证可见性和有序性，不能保证原子性？&lt;br&gt;volatile实现可见性和有序性的原理是加了内存屏障。&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="-134" y="1634" width="544" height="156" as="geometry" />
+        </mxCell>
+        <mxCell id="_LLzrMq1k3NQDTwSfW2R-2" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;什么是内存屏障呢？&lt;br&gt;JVM层面的内存屏障和操作系统层面的内存屏障？lock指令是什么？&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="480" y="1634" width="544" height="156" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
