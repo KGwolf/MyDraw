@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2023-09-02T14:03:49.234Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.62" etag="sv0wPJdE_3cCBD6u4jui" version="21.7.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-02T14:23:24.388Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.62" etag="MrlZMmTq2dQK8mYrWjkS" version="21.7.2" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="3280" dy="2062" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="rkv5G4KE9S5kMJV3ECuV-1" value="&lt;b style=&quot;border-color: var(--border-color); font-size: 18px;&quot;&gt;volatile为什么只能保证可见性和有序性，不能保证原子性？&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;volatile实现可见性和有序性的原理是加了内存屏障。&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="70" y="590" width="690" height="170" as="geometry" />
+          <mxGeometry x="90" y="650" width="690" height="170" as="geometry" />
         </mxCell>
         <mxCell id="rkv5G4KE9S5kMJV3ECuV-2" value="&lt;font style=&quot;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 48px;&quot;&gt;并发编程的三大特性：可见性、有序性、原子性。&lt;br&gt;&lt;/font&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="-350" y="-10" width="2810" height="120" as="geometry" />
@@ -19,8 +19,8 @@
         <mxCell id="rkv5G4KE9S5kMJV3ECuV-5" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;那其实JMM跟硬件CPU读取内存变量其实是有差异的。&lt;br&gt;硬件可能也会有缓存一致性的问题。那么硬件的工作模型是：主存存放所有的计算数据。多核CPU的情况，每个CPU核心都会有自己的一二级缓存，有的计算机也会有共享的三级缓存。那么CPU会将主存中的数据，读取到自己的一二级缓存中去。这样也可能会有修改了数据，其它核心不可见。&lt;br&gt;&lt;font color=&quot;#ff3333&quot;&gt;JVM中的数据（线程栈和堆）可能会来自计算机硬件上的一二三级缓存、寄存器、主内存、IO设备。&lt;/font&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="1070" y="150" width="660" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="rkv5G4KE9S5kMJV3ECuV-6" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;那么硬件上怎么处理这种缓存不一致的问题呢？有各种针对不同CPU架构的协议，比如MESI协议，MESI的原理是什么呢？&lt;br&gt;&lt;br&gt;那么硬件的缓存一致性协议跟JMM规定的内存访问方式的区别是什么呢？&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;" vertex="1" parent="1">
-          <mxGeometry x="1801" y="170" width="680" height="160" as="geometry" />
+        <mxCell id="rkv5G4KE9S5kMJV3ECuV-6" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;那么硬件上怎么处理这种缓存不一致的问题呢？有各种针对不同CPU架构的协议，比如MESI协议，MESI的原理是什么呢？&lt;br&gt;那么硬件的缓存一致性协议跟JMM规定的内存访问方式的区别是什么呢？&lt;br&gt;&lt;br&gt;从硬件的模型上来说，保证2个CPU核心处理同一个内存变量的缓存一直问题，有2种方式：&lt;br&gt;1.锁总线，一次只能有1个CPU核心来处理数据，这样就不会有问题，但是效率极低。&lt;br&gt;2.锁缓存行，&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1800" y="150" width="709" height="240" as="geometry" />
         </mxCell>
         <mxCell id="rkv5G4KE9S5kMJV3ECuV-7" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;什么是有序性？有序性会导致什么问题？怎么解决有序性的问题呢？&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="-1170" y="950" width="670" height="150" as="geometry" />
@@ -50,10 +50,10 @@
           <mxGeometry x="199" y="920" width="421" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rkv5G4KE9S5kMJV3ECuV-19" value="&lt;div style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 18px; background-color: initial;&quot;&gt;什么是happen-before原则？有一个原则是关于volatile的。&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
-          <mxGeometry x="220" y="350" width="430" height="150" as="geometry" />
+          <mxGeometry x="210" y="440" width="430" height="150" as="geometry" />
         </mxCell>
         <mxCell id="rkv5G4KE9S5kMJV3ECuV-20" value="&lt;div style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 18px; background-color: initial;&quot;&gt;硬件层面的缓存行是什么。缓存行对齐是什么？有什么好处？&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
-          <mxGeometry x="790" y="390" width="430" height="150" as="geometry" />
+          <mxGeometry x="790" y="440" width="430" height="150" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
