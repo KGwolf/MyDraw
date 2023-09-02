@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-09-02T09:08:34.628Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.62" etag="r7CR-j85EbQtKQAU0pIT" version="21.7.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-02T09:10:50.572Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.62" etag="hCucEBlVjyMv10frzuJi" version="21.7.2" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="2209" dy="759" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -19,7 +19,7 @@
         <mxCell id="rkv5G4KE9S5kMJV3ECuV-5" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;那其实JMM跟硬件CPU读取内存变量其实是有差异的。&lt;br&gt;硬件可能也会有缓存一致性的问题。那么硬件的工作模型是：主存存放所有的计算数据。多核CPU的情况，每个CPU核心都会有自己的一二级缓存，有的计算机也会有共享的三级缓存。那么CPU会将主存中的数据，读取到自己的一二级缓存中去。这样也可能会有修改了数据，其它核心不可见。&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="1070" y="170" width="680" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="rkv5G4KE9S5kMJV3ECuV-6" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;那么硬件上怎么处理这种缓存不一致的问题呢？有各种针对不同CPU架构的协议，比如MESI协议&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="rkv5G4KE9S5kMJV3ECuV-6" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;那么硬件上怎么处理这种缓存不一致的问题呢？有各种针对不同CPU架构的协议，比如MESI协议，MESI的原理是什么呢？&lt;br&gt;&lt;br&gt;那么硬件的缓存一致性协议跟JMM规定的内存访问方式的区别是什么呢？&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="1801" y="170" width="680" height="160" as="geometry" />
         </mxCell>
       </root>
