@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-09-03T09:09:13.382Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.69" etag="35FZ_2a9hDBwvf8IRlgS" version="21.7.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-03T09:09:43.721Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.69" etag="yvHLZzyvUgDswamFKbl3" version="21.7.2" type="github">
   <diagram id="n1ftZFPXeWoBccRL3Ds-" name="第 1 页">
     <mxGraphModel dx="2959" dy="2337" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -6,7 +6,7 @@
         <mxCell id="1" parent="0" />
         <object label="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;p style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 18px;&quot;&gt;&lt;b&gt;jdk中内置的几个函数式接口&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 18px;&quot;&gt;&lt;b&gt;1.消费型：&lt;/b&gt;&lt;/span&gt;&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Consumer&amp;lt;T&amp;gt;: void accept(T t);&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;2.生产型：Supplier&amp;lt;T&amp;gt;：T get();&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;3.判断型：Predicate&amp;lt;T&amp;gt;：boolean test(T t);&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;4.转换型：Function&amp;lt;T,R&amp;gt;：R apply(T t);&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;/blockquote&gt;" id="dE8tGidKXlard7vzW_5X-1">
           <mxCell style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" parent="1" vertex="1">
-            <mxGeometry x="490" y="460" width="1340" height="480" as="geometry" />
+            <mxGeometry x="490" y="460" width="720" height="220" as="geometry" />
           </mxCell>
         </object>
         <mxCell id="vPuZBKZ0nRlixl8lQZM2-37" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=24;" parent="1" vertex="1">
@@ -197,6 +197,11 @@
         <mxCell id="wAd16G1q3QmwsLUsO97l-1" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;ThreadLocal源码&lt;br&gt;强弱软需引用&lt;br&gt;内存泄漏问题&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1970" y="2439" width="560" height="90" as="geometry" />
         </mxCell>
+        <object label="&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;p style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Stream的内部原理？&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;" id="vIZYO1OWG7_-pbuaIZX5-1">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+            <mxGeometry x="1430" y="460" width="720" height="220" as="geometry" />
+          </mxCell>
+        </object>
       </root>
     </mxGraphModel>
   </diagram>
