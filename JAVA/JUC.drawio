@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-09-07T01:18:18.912Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="XxGe1V1T--E3J-s1__Je" version="21.7.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-07T01:18:28.716Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="d8BXraYFJamERN2iQWF3" version="21.7.2" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="4522" dy="3854" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -77,10 +77,10 @@
           <mxGeometry x="740" y="-1590" width="900" height="210" as="geometry" />
         </mxCell>
         <mxCell id="H64BaJxj17bUCx6KOZhM-2" value="&lt;b style=&quot;border-color: var(--border-color); font-size: 18px;&quot;&gt;synchronized的原理，底层实现，锁升级的过程&lt;br&gt;&lt;/b&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;b style=&quot;border-color: var(--border-color); font-size: 18px;&quot;&gt;&lt;br&gt;synchronized、AQS、管程、MESA之间的关系&lt;br&gt;&lt;br&gt;锁的种类体系有哪些？&lt;br&gt;&lt;/b&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
-          <mxGeometry x="170" y="2270" width="440" height="140" as="geometry" />
+          <mxGeometry x="170" y="2270" width="470" height="200" as="geometry" />
         </mxCell>
         <mxCell id="H64BaJxj17bUCx6KOZhM-3" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;AQS的数据结构，&lt;br&gt;找一个实现类比如ReEntryLock，是如何时间加锁解锁的，如何实现可重入的，如何并发的创建一个链表。如何并发的入队。比如实现一个AQS，哪些操作会存在线程安全呢？&lt;br&gt;&lt;br&gt;AQS和CAS之间的关系&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
-          <mxGeometry x="810" y="2270" width="440" height="140" as="geometry" />
+          <mxGeometry x="810" y="2270" width="480" height="190" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
