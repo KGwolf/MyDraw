@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-09-07T01:48:56.629Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="Bi9Otl1EdJHIwvhR5cVm" version="21.7.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-07T02:00:01.675Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="zvEAdV60eeWz1mxk1JQY" version="21.7.2" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="4522" dy="3854" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -81,6 +81,9 @@
         </mxCell>
         <mxCell id="H64BaJxj17bUCx6KOZhM-3" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;AQS的数据结构，&lt;br&gt;找一个实现类比如ReEntryLock，是如何时间加锁解锁的，&lt;br&gt;AQS实现的独占锁、共享锁的区别，&lt;br&gt;自己实现一个AQS锁，只需要重写哪些方法就行？一些公共的比如加锁解锁、入队出队操作AQS都已经做好了，这些是基础的逻辑？&lt;br&gt;如何实现可重入的，如何并发的创建一个链表。如何并发的入队。比如实现一个AQS，哪些操作会存在线程安全呢？&lt;br&gt;&lt;br&gt;AQS和CAS之间的关系&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
           <mxGeometry x="1001" y="2270" width="619" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="H64BaJxj17bUCx6KOZhM-4" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;reentrylock有2个for循环，1个保证入队，1个保证加锁&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="2590" width="590" height="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
