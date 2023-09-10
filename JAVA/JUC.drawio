@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-09-09T01:47:43.761Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="GC_4mcLPy0fDGEuEaw-D" version="21.7.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-10T02:07:17.814Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="SO0yat3-xotU9t5jHMWG" version="21.7.4" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
-    <mxGraphModel dx="4044" dy="3601" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3341" dy="3230" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -85,8 +85,11 @@
         <mxCell id="H64BaJxj17bUCx6KOZhM-4" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;reentrylock有2个for循环，1个保证入队，1个保证加锁&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="1030" y="2590" width="590" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="a_CxjOE-Pm3qPwXydxJE-1" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;循环屏障，跟信号量的比较：&lt;br&gt;1.底层方法不同，信号量是用aqs共享锁。循环屏障是reentrylock+条件队列。&lt;br&gt;&lt;br&gt;2.循环屏障有一个资源数量的副本，用它来保证循环。&lt;br&gt;&lt;br&gt;3.循环屏障解锁步骤中，从条件队列转到等待队列中。&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
+        <mxCell id="a_CxjOE-Pm3qPwXydxJE-1" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;循环屏障，跟信号量的比较：&lt;br&gt;1.底层方法不同，信号量是用aqs共享锁。循环屏障是reentrylock+条件队列。&lt;br&gt;&lt;br&gt;2.循环屏障有一个资源数量的副本，用它来保证循环。&lt;br&gt;&lt;br&gt;3.循环屏障解锁步骤中，从条件队列转到等待队列中。&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="1750" y="2325" width="610" height="205" as="geometry" />
+        </mxCell>
+        <mxCell id="u7wBqT6pgAy-At1QbIa8-1" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;读写锁：&lt;br&gt;基于AQS，那AQS只有1个state变量，怎么知道是读状态还是写状态呢？&lt;br&gt;可以用int的前16位表示读状态，后16位表示写状态？因为int有4个字节，32位。&lt;br&gt;&lt;br&gt;读写锁有一个锁降级的过程。具体是怎么的呢，为什么不能先释放写锁，再获取读锁呢？跟高并发的效率有关？&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1900" y="2620" width="720" height="190" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
