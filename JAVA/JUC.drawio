@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-09-12T02:11:16.831Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="P7zLXoHtUWZiRZbUnugA" version="21.7.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-13T06:53:36.731Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="98TgkT_8UflozuOdTBOM" version="21.7.4" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
-    <mxGraphModel dx="4522" dy="3842" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4044" dy="3591" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -91,7 +91,7 @@
         <mxCell id="u7wBqT6pgAy-At1QbIa8-1" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;读写锁：&lt;br&gt;基于AQS，那AQS只有1个state变量，怎么知道是读状态还是写状态呢？&lt;br&gt;可以用int的前16位表示读状态，后16位表示写状态？因为int有4个字节，32位。&lt;br&gt;&lt;br&gt;读写锁有一个锁降级的过程。具体是怎么的呢，为什么不能先释放写锁，再获取读锁呢？跟高并发的效率有关？&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="1900" y="2620" width="720" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="Y7wJ-IQT0KlVhRbs83s6-1" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;阻塞队列：阻塞的是线程&lt;br&gt;生产者消费者模型：队列满了，阻塞生产者，队列空了，阻塞消费者。&lt;br&gt;各种阻塞队列的对比，以及使用场景？&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
+        <mxCell id="Y7wJ-IQT0KlVhRbs83s6-1" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;阻塞队列：阻塞的是线程&lt;br&gt;生产者消费者模型：队列满了，阻塞生产者，队列空了，阻塞消费者。&lt;br&gt;各种阻塞队列的对比，以及使用场景？&lt;br&gt;&lt;br&gt;优先级队列：大小堆&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="1520" y="2960" width="720" height="190" as="geometry" />
         </mxCell>
       </root>
