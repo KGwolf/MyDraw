@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-09-13T06:53:36.731Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="98TgkT_8UflozuOdTBOM" version="21.7.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-14T01:13:16.707Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="JAbqCwTIdwudJ2EfxcEj" version="21.7.4" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
-    <mxGraphModel dx="4044" dy="3591" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4522" dy="3842" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -67,8 +67,8 @@
         <mxCell id="dvuJLhcE7HCTMrbFaXMl-8" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;什么是进程、线程、协程、什么是并发、什么是并行？&lt;br&gt;&lt;br&gt;&lt;br&gt;线程间通信的方式有哪些？进程间通信的方式有哪些？&lt;br&gt;&lt;br&gt;&lt;br&gt;线程作为操作系统执行调度资源的最小单位。且每个CPU核心不是一直执行在一个进程（线程）上面，它会有时间片的概念，在某一段时间之内（比如10ms）会进行上下文切换，保存现场环境（主要是将寄存器等的值保存到主存里面），去执行另外的进程。&lt;br&gt;&lt;br&gt;这个上下文切换是会从用户态切换到内核态，这样会耗费很多时间。所以我们要尽量避免这种切换（选择哪种锁来同步的时候）。&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="-630" y="-1630" width="1200" height="330" as="geometry" />
         </mxCell>
-        <mxCell id="dvuJLhcE7HCTMrbFaXMl-9" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;线程池的使用方式，原理是什么，那7个参数代表什么意思？&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="1" vertex="1">
-          <mxGeometry x="-650" y="-1080" width="900" height="210" as="geometry" />
+        <mxCell id="dvuJLhcE7HCTMrbFaXMl-9" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;线程池的使用方式，原理是什么，那7个参数代表什么意思？&lt;br&gt;&lt;br&gt;线程池的核心数应该怎么设置?&lt;br&gt;&lt;br&gt;不同的业务最好使用不同的线程池。如果都共用一个线程池，那么极可能某个业务模块阻塞，引起全局阻塞。&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="1" vertex="1">
+          <mxGeometry x="-650" y="-1190" width="900" height="210" as="geometry" />
         </mxCell>
         <mxCell id="dvuJLhcE7HCTMrbFaXMl-10" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;ThreadLocal的原理是什么，有什么作用？&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="570" y="-1120" width="900" height="210" as="geometry" />
@@ -93,6 +93,9 @@
         </mxCell>
         <mxCell id="Y7wJ-IQT0KlVhRbs83s6-1" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;阻塞队列：阻塞的是线程&lt;br&gt;生产者消费者模型：队列满了，阻塞生产者，队列空了，阻塞消费者。&lt;br&gt;各种阻塞队列的对比，以及使用场景？&lt;br&gt;&lt;br&gt;优先级队列：大小堆&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="1520" y="2960" width="720" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Wc7oVt73z48dbTy0IHfl-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;forkjoin框架原理？&lt;br&gt;&lt;br&gt;分而治之，跟mapreduce有点像&lt;br&gt;&lt;br&gt;stream流式计算跟forkjoin的关系&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-650" y="-930" width="900" height="210" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
