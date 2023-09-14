@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-09-14T01:13:16.707Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="JAbqCwTIdwudJ2EfxcEj" version="21.7.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-14T01:14:06.771Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="-je5Cr8atDQt_lnEzC1I" version="21.7.4" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="4522" dy="3842" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -71,7 +71,7 @@
           <mxGeometry x="-650" y="-1190" width="900" height="210" as="geometry" />
         </mxCell>
         <mxCell id="dvuJLhcE7HCTMrbFaXMl-10" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;ThreadLocal的原理是什么，有什么作用？&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="1" vertex="1">
-          <mxGeometry x="570" y="-1120" width="900" height="210" as="geometry" />
+          <mxGeometry x="470" y="-1230" width="900" height="210" as="geometry" />
         </mxCell>
         <mxCell id="H64BaJxj17bUCx6KOZhM-1" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;线程有哪些方法，如何优雅的停止一个线程？&lt;br&gt;&lt;br&gt;&lt;br&gt;wait notify 底层都是调用的park&amp;nbsp; unpark？&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="740" y="-1590" width="900" height="210" as="geometry" />
@@ -96,6 +96,9 @@
         </mxCell>
         <mxCell id="Wc7oVt73z48dbTy0IHfl-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;forkjoin框架原理？&lt;br&gt;&lt;br&gt;分而治之，跟mapreduce有点像&lt;br&gt;&lt;br&gt;stream流式计算跟forkjoin的关系&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
           <mxGeometry x="-650" y="-930" width="900" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="Wc7oVt73z48dbTy0IHfl-2" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;环形队列框架：&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="390" y="-930" width="900" height="210" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
