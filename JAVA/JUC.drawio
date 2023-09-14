@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-09-14T01:14:38.117Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="EjPDFgboWO_4J1sB7OzH" version="21.7.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-14T01:15:06.783Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="wzjY5nu93zt3lr8xcyJf" version="21.7.4" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="4522" dy="3842" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -97,7 +97,7 @@
         <mxCell id="Wc7oVt73z48dbTy0IHfl-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;forkjoin框架原理？&lt;br&gt;&lt;br&gt;分而治之，跟mapreduce有点像&lt;br&gt;&lt;br&gt;stream流式计算跟forkjoin的关系&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
           <mxGeometry x="-650" y="-930" width="900" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="Wc7oVt73z48dbTy0IHfl-2" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;环形队列框架：&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
+        <mxCell id="Wc7oVt73z48dbTy0IHfl-2" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;环形队列框架：&lt;br&gt;&lt;br&gt;利用了缓存行对齐的功能。&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
           <mxGeometry x="390" y="-930" width="900" height="210" as="geometry" />
         </mxCell>
       </root>
