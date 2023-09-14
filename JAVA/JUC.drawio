@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-09-14T06:56:57.564Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="BSIx4V98hnJ6d_CM4-AV" version="21.7.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-14T07:01:21.854Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="m1wG7_w_88RbBKHCBH7S" version="21.7.4" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="4044" dy="3591" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -73,8 +73,8 @@
         <mxCell id="dvuJLhcE7HCTMrbFaXMl-10" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;ThreadLocal的原理是什么，有什么作用？&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="470" y="-1230" width="900" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="H64BaJxj17bUCx6KOZhM-1" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;线程有哪些方法，如何优雅的停止一个线程？&lt;br&gt;&lt;br&gt;start()&lt;br&gt;run()&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;wait notify 底层都是调用的park&amp;nbsp; unpark？为什么wait notify是在Object类里面的方法？&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="1" vertex="1">
-          <mxGeometry x="740" y="-1590" width="900" height="210" as="geometry" />
+        <mxCell id="H64BaJxj17bUCx6KOZhM-1" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;线程有哪些方法，如何优雅的停止一个线程？&lt;br&gt;&lt;br&gt;start()&lt;br&gt;run()&lt;br&gt;sleep()&lt;br&gt;yeild()&lt;br&gt;join()&lt;br&gt;stop()&lt;br&gt;interrupt()&lt;br&gt;isInterrupted()&lt;br&gt;Thread.interrupted()&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;wait notify 底层都是调用的park&amp;nbsp; unpark？为什么wait notify是在Object类里面的方法？&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="1" vertex="1">
+          <mxGeometry x="640" y="-1700" width="1060" height="400" as="geometry" />
         </mxCell>
         <mxCell id="H64BaJxj17bUCx6KOZhM-2" value="&lt;b style=&quot;border-color: var(--border-color); font-size: 18px;&quot;&gt;synchronized的原理，底层实现，锁升级的过程&lt;br&gt;&lt;/b&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;b style=&quot;border-color: var(--border-color); font-size: 18px;&quot;&gt;&lt;br&gt;synchronized、AQS、管程、MESA之间的关系&lt;br&gt;&lt;br&gt;锁的种类体系有哪些？&lt;br&gt;&lt;/b&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;&lt;br&gt;什么是可重入的锁？为什么要实现可重入呢？&lt;br&gt;&lt;br&gt;一个对象占多少字节（一个Object、一个自定义类的对象）&lt;br&gt;&lt;br&gt;为什么Object里面有wait和notify呢？且这2个方法不是在Thread类里面？&lt;br&gt;&lt;br&gt;对象头有哪些内容，跟锁有什么关系？&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="160" y="2270" width="660" height="340" as="geometry" />
