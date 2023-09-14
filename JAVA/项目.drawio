@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2023-09-14T08:34:05.745Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="rtXisLNU2m0dka1C8LwG" version="21.7.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-14T08:34:55.070Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="UOBIW4Q1rqpLWp7kFLIC" version="21.7.4" type="github">
   <diagram name="第 1 页" id="1XJYP80JxbJxhC29MnGr">
     <mxGraphModel dx="1434" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="axaWvUbI3fm5PjR0QgIP-2" value="分布式：&lt;br&gt;问题：如果我们每个缓存状态更改，都需要通知Redis来广播到每个节点，那么会不会导致服务器压力变大？我们的状态变更还是很频繁的" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
-          <mxGeometry x="100" y="260" width="770" height="60" as="geometry" />
+        <mxCell id="axaWvUbI3fm5PjR0QgIP-2" value="分布式：&lt;br&gt;选择Redis作为分布式存储中间件。&lt;br&gt;为什么我们不存储具体的任务信息，&lt;br&gt;问题：如果我们每个缓存状态更改，都需要通知Redis来广播到每个节点，那么会不会导致服务器压力变大？我们的状态变更还是很频繁的" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="100" y="260" width="780" height="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
