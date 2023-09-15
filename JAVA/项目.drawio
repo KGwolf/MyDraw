@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-09-15T09:15:55.063Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="_9hx4Fu95wkg3AGvstig" version="21.7.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-15T09:16:03.075Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="D9LWdJDcYyKEaJl1fhDC" version="21.7.5" type="github">
   <diagram name="第 1 页" id="1XJYP80JxbJxhC29MnGr">
     <mxGraphModel dx="1434" dy="1921" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -20,7 +20,7 @@
           <mxGeometry x="290" y="-30" width="320" height="110" as="geometry" />
         </mxCell>
         <mxCell id="lYMavn7DF4E9moOjVgNg-4" value="由于reids的广播消息不算很靠谱的，那我们要怎么保证各个节点的内存数据同步呢？&lt;br&gt;&lt;br&gt;跑定时任务？每个缓存对象（caseid对应的一个任务）查看其中的时间戳，是不是跟数据库的能对应上。如果不能则更新最新的数据到未成功同步的节点？那么是否会导致效率的问题呢？&lt;br&gt;&lt;br&gt;方案2：每个PR后端节点链接redis的时候，都在redis里面存上各自的ip。" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
-          <mxGeometry x="260" y="390" width="620" height="180" as="geometry" />
+          <mxGeometry x="150" y="380" width="620" height="180" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
