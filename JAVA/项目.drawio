@@ -1,14 +1,17 @@
-<mxfile host="app.diagrams.net" modified="2023-09-14T09:04:48.352Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="cRH_PzmIk6J5c2lo5b89" version="21.7.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-15T01:26:14.902Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="1sSEd8YqUPsCi-4qilbr" version="21.7.5" type="github">
   <diagram name="第 1 页" id="1XJYP80JxbJxhC29MnGr">
     <mxGraphModel dx="1434" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="axaWvUbI3fm5PjR0QgIP-2" value="分布式缓存：&lt;br&gt;选择Redis作为分布式存储中间件。&lt;br&gt;我们存储的是什么？&lt;br&gt;我们用redis来存储消息ID，当我们需要通知消息的时候，就生成一条记录（id，content）保存到数据库的一张表,content为具体的任务的json串。&lt;br&gt;那为什么我们不存储具体的任务信息？&lt;br&gt;因为考虑到信息安全问题。可能是想防止小pass。以及信息安全吧，最主要的可能是pass的规则问题。那是公司的命根子，不能让实施或者开发轻易拿到，他们现在的方式是存到一个加密的文件，具体怎么加密的，确实不清楚。&lt;br&gt;&lt;br&gt;问题：我们为什么不用消息队列呢？&lt;br&gt;&lt;br&gt;问题：如果我们每个缓存状态更改，都需要通知Redis来广播到每个节点，那么会不会导致服务器压力变大？我们的状态变更还是很频繁的&lt;br&gt;&lt;br&gt;经过讨论，第一版本，是在网关端做负载均衡的配置，同一个ip的所有请求负载到同一个节点上面。这样就不用频繁的进行内存数据的同步了。然后在保存数据库的时候（包括业务本身的数据入库，和缓存消息的入库），再给redis发缓存消息ID&quot;{\&quot;messageid\&quot;,\&#39;xxx\&#39;}&quot;，由redis进行广播，所有的PR分布式节点都进行订阅去同步消息（根据消息ID去数据库里面查询具体的任务信息串）。" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
-          <mxGeometry x="90" y="60" width="840" height="250" as="geometry" />
+        <mxCell id="axaWvUbI3fm5PjR0QgIP-2" value="分布式缓存：&lt;br&gt;选择Redis作为分布式存储中间件。&lt;br&gt;我们存储的是什么？&lt;br&gt;我们用redis来存储消息ID，当我们需要通知消息的时候，就生成一条记录（id，content）保存到数据库的一张表,content为具体的任务的json串。&lt;br&gt;那为什么我们不存储具体的任务信息？&lt;br&gt;因为考虑到信息安全问题。可能是想防止小pass。以及信息安全吧，最主要的可能是pass的规则问题。那是公司的命根子，不能让实施或者开发轻易拿到，他们现在的方式是存到一个加密的文件，具体怎么加密的，确实不清楚。&lt;br&gt;&lt;br&gt;问题：我们为什么不用消息队列呢？&lt;br&gt;&lt;br&gt;问题：如果我们每个缓存状态更改，都需要通知Redis来广播到每个节点，那么会不会导致服务器压力变大？我们的状态变更还是很频繁的&lt;br&gt;&lt;br&gt;经过讨论，第一版本，是在网关端做负载均衡的配置，同一个ip的所有请求负载到同一个节点上面。这样就不用频繁的进行内存数据的同步了。然后在保存数据库的时候（包括业务本身的数据入库，和缓存消息的入库），再给redis发缓存消息ID&quot;{\&quot;messageid\&quot;,\&#39;xxx\&#39;}&quot;，由redis进行广播，所有的PR分布式节点都进行订阅去同步消息（根据消息ID去数据库里面查询具体的任务信息串）。" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="1" vertex="1">
+          <mxGeometry x="70" y="100" width="840" height="250" as="geometry" />
         </mxCell>
-        <mxCell id="axaWvUbI3fm5PjR0QgIP-3" value="分布式数据库：&lt;br&gt;读写分离（主从，没有做主备），历史库。&lt;br&gt;&lt;br&gt;只要有写的方法，都走的是主库。只有查询的都走的是从库。&lt;br&gt;然后历史库，需要前端来配合，需要前端根据页面选择查询的时间来判断走的是不是历史库。然后传值给后端，进行注解的判断？&lt;br&gt;&lt;br&gt;数据库使用的pgsql，可以自己做主从复制，中间件的主从复制一般有2种，1.快照模式。2.增量语句执行。&lt;br&gt;我们公司的pgsql应该用的是WAL（Write-Ahead Logging）来在主服务器和从服务器之间传输事务日志，从而保持从服务器的数据与主服务器的数据同步。&lt;br&gt;&lt;br&gt;在程序里，使用dynamicdatasource来做的主从读写分离。配置多个数据源。然后在每个方法上面加上注解@DS(&quot;slave&quot;)。" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
+        <mxCell id="axaWvUbI3fm5PjR0QgIP-3" value="分布式数据库：&lt;br&gt;读写分离（主从，没有做主备），历史库。&lt;br&gt;&lt;br&gt;只要有写的方法，都走的是主库。只有查询的都走的是从库。&lt;br&gt;然后历史库，需要前端来配合，需要前端根据页面选择查询的时间来判断走的是不是历史库。然后传值给后端，进行注解的判断？&lt;br&gt;&lt;br&gt;数据库使用的pgsql，可以自己做主从复制，中间件的主从复制一般有2种，1.快照模式。2.增量语句执行。&lt;br&gt;我们公司的pgsql应该用的是WAL（Write-Ahead Logging）来在主服务器和从服务器之间传输事务日志，从而保持从服务器的数据与主服务器的数据同步。&lt;br&gt;&lt;br&gt;在程序里，使用dynamicdatasource来做的主从读写分离。配置多个数据源。然后在每个方法上面加上注解@DS(&quot;slave&quot;)。" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="90" y="480" width="800" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="lYMavn7DF4E9moOjVgNg-1" value="如果网关层不使用IP负载的模式，那么请求就可能会被打散到所有的pr服务节点上面，那么就必须要求缓存一致性，且强一一致缓存。" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="100" width="320" height="110" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
