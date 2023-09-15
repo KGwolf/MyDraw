@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-09-15T01:26:14.902Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="1sSEd8YqUPsCi-4qilbr" version="21.7.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-15T07:58:10.047Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="hFQ8jx5j9uI8YR_9b7K6" version="21.7.5" type="github">
   <diagram name="第 1 页" id="1XJYP80JxbJxhC29MnGr">
-    <mxGraphModel dx="1434" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="1921" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -12,6 +12,12 @@
         </mxCell>
         <mxCell id="lYMavn7DF4E9moOjVgNg-1" value="如果网关层不使用IP负载的模式，那么请求就可能会被打散到所有的pr服务节点上面，那么就必须要求缓存一致性，且强一一致缓存。" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
           <mxGeometry x="1010" y="100" width="320" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="lYMavn7DF4E9moOjVgNg-2" value="如果网关层不使用IP负载的模式，那么请求就可能会被打散到所有的pr服务节点上面，那么就必须要求缓存一致性，且强一一致缓存。" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="980" y="250" width="320" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="lYMavn7DF4E9moOjVgNg-3" value="公司整个PASS项目是一个微服务项目。&lt;br&gt;&lt;br&gt;PR作为其中的一个微服务。&lt;br&gt;&lt;br&gt;我们做的是集群。分担医生站来的请求压力。" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="290" y="-30" width="320" height="110" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
