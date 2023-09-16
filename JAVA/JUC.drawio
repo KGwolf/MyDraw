@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-09-16T08:28:10.314Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="liCNCzWKIDNDGrsNEYLB" version="21.7.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-16T08:28:40.911Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="pl_vosjjx1zvufCDxXRE" version="21.7.5" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="4261" dy="3705" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -115,7 +115,7 @@
         <mxCell id="IVNExg8nK1z2wexTNMPN-3" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;LockSupport的park、unpark底层实现原理分析：&lt;br&gt;每个线程都有一个Parker实例，通过控制_counter的值来实现阻塞唤醒。park() 设置_counter为0，unpark()设置为1。类似于信号量机制&lt;br&gt;class Parker : public os::PlatformParker{&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;private :&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;volatile int _counter;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;......&lt;br&gt;}&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="2950" y="-1700" width="1000" height="240" as="geometry" />
         </mxCell>
-        <mxCell id="yG67OjCnjpooLuY3BTsW-1" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;CAS是什么？JUC包下面的哪些类用的是CAS呢？CAS的优缺点是什么？&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
+        <mxCell id="yG67OjCnjpooLuY3BTsW-1" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;CAS是什么？JUC包下面的哪些类用的是CAS呢？CAS跟自旋的关系？自旋的优缺点是什么？&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
           <mxGeometry x="70" y="2230" width="630" height="130" as="geometry" />
         </mxCell>
       </root>
