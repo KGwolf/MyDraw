@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-09-15T01:24:20.238Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="735yzqBl3nMGQfcefXTc" version="21.7.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-16T06:05:49.095Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="9_MyA5DL0WdV-kJJzQst" version="21.7.5" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
-    <mxGraphModel dx="3703" dy="3412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4044" dy="3591" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -103,8 +103,11 @@
         <mxCell id="Wc7oVt73z48dbTy0IHfl-3" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;强弱软虚引用是什么意思？&lt;br&gt;&lt;br&gt;ThreadLocal会引起内存泄漏的原因是什么？怎么防止？&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="1500" y="-1250" width="900" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="lDbzRusFP7WFiIEDMvLj-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;future、callable、futuretask、completedfuture的使用场景&amp;nbsp; 适合用于IO密集型的任务&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
+        <mxCell id="lDbzRusFP7WFiIEDMvLj-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;future、callable、futuretask、completedfuture的使用场景&amp;nbsp; 适合用于IO密集型的任务&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="370" y="-930" width="900" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="IVNExg8nK1z2wexTNMPN-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;java层面的线程、JVM层面的线程、操作系统层面的线程之间的关系？new&amp;nbsp; Thread().start()方法的底层怎样实现的？&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1790" y="-1700" width="1060" height="210" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
