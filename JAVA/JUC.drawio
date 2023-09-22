@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-09-22T02:52:34.224Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="m9REIZ9dV7W48HgABB6Z" version="21.8.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-22T03:56:47.199Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="XvM8ANshvpON1Y74BsQe" version="21.8.0" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="3703" dy="3421" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -124,7 +124,7 @@
         <mxCell id="HAI3M6Fy5APt2cnuJqtc-1" value="&lt;b style=&quot;border-color: var(--border-color); font-size: 18px;&quot;&gt;synchronized:&lt;br&gt;sync是java提供的一种原子性内置锁，也叫作监视器锁（Monitor）。&lt;br&gt;&lt;br&gt;&lt;br&gt;sync使用：可以在方法上面加（锁的是类实例），可以在代码块上面加（锁一个自己创建的对象）。&lt;br&gt;&lt;/b&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;b style=&quot;border-color: var(--border-color); font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/b&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="50" y="3380" width="660" height="340" as="geometry" />
         </mxCell>
-        <mxCell id="umGzx3-XIBLnXrGLzLXI-1" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;为什么需要引入JMM呢？&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;总所周知，JMM是一种规范，屏蔽了各类的操作系统的差异，帮助程序员更好的写多线程代码。&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;其实是因为现代计算机基本上都是多核CPU了，那么硬件层面的多核CPU，在高并发下容易出现各种问题，&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+        <mxCell id="umGzx3-XIBLnXrGLzLXI-1" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;为什么需要引入JMM呢？&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;总所周知，JMM是一种规范，屏蔽了各类的操作系统的差异，帮助程序员更好的写多线程代码。&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;其实是因为现代计算机基本上都是多核CPU了，那么硬件层面的多核CPU，在高并发下容易出现各种问题，比如缓存一致性问题。那么硬件层面为了解决这种问题，产生了一些协议或者指令（操作系统是对硬件的一些指令那些的高级抽象）。那么java为了屏蔽了各种操作系统的差异，所以引入了JMM，来规范如何访问共享变量。&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="-520" y="70" width="690" height="220" as="geometry" />
         </mxCell>
       </root>
