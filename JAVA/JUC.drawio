@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-09-23T08:34:38.951Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="a9rE_pADE8k33viT_Zi6" version="21.8.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-23T13:20:19.653Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.36" etag="1hQKr826Zqq1zIQ2yBIp" version="21.7.2" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
-    <mxGraphModel dx="3341" dy="3230" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3285" dy="3231" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -127,7 +127,7 @@
         <mxCell id="umGzx3-XIBLnXrGLzLXI-1" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;为什么需要引入JMM呢？&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;总所周知，JMM是一种规范，屏蔽了各类的操作系统的差异，帮助程序员更好的写多线程代码。&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;其实是因为现代计算机基本上都是多核CPU了，那么硬件层面的多核CPU，在高并发下容易出现各种问题，比如缓存一致性问题。那么硬件层面为了解决这种问题，产生了一些协议或者指令（操作系统是对硬件的一些指令那些的高级抽象）。那么java为了屏蔽了各种操作系统的差异，所以引入了JMM，来规范如何访问共享变量。&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="-520" y="70" width="690" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="qf07nM2vf6hVkLz7YUws-1" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;管程是什么？&lt;br&gt;管程是一种&lt;font color=&quot;#ff0000&quot;&gt;高级（并不是操作系统或者硬件有的）&lt;/font&gt;的同步机制。用于控制多线程对共享资源的访问。&lt;br&gt;&lt;br&gt;MESA模型是什么？&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
+        <mxCell id="qf07nM2vf6hVkLz7YUws-1" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;&lt;font color=&quot;#3333ff&quot;&gt;管程是什么？&lt;/font&gt;&lt;br&gt;管程是一种&lt;font color=&quot;#ff0000&quot;&gt;高级（并不是操作系统或者硬件有的）&lt;/font&gt;的同步机制。用于控制多线程对共享资源的访问。管程包括了锁、条件变量、进入和退出等操作。synchronized就是它的一种实现。&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#3333ff&quot;&gt;MESA模型是什么？&lt;br&gt;&lt;/font&gt;也是一种高级同步模型，强调在互斥操作之后，等待线程释放资源时要重新获取锁。强调了一些细节的执行顺序，可以看做是管程的一种实现方式&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="-360" y="3360" width="660" height="340" as="geometry" />
         </mxCell>
       </root>
