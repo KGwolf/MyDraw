@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-09-24T14:45:15.883Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.36" etag="442TRSRhVeEKKLuMo0PG" version="21.8.1" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-24T15:19:14.643Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.36" etag="TxF--QvmOFDcfw4Qb1MT" version="21.8.1" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="3040" dy="3097" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -138,6 +138,9 @@
         </mxCell>
         <mxCell id="9fsa6vycXgHaBqepKxoh-4" value="&lt;font color=&quot;#3333ff&quot;&gt;&amp;nbsp;Object的wait()、notify()、nitifyall()方法跟Monitor机制的关系？&lt;/font&gt;&lt;br&gt;在java中，是使用对象上的wait、notify方法来实现监视器机制的。&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#3333ff&quot;&gt;那么这几个方法底层具体是怎么实现的呢？&lt;/font&gt;&lt;br&gt;C++来实现的，有一个ObjectMonitor类，这个类里面有几个属性很重要：&lt;br&gt;&lt;font color=&quot;#ff3333&quot;&gt;_owner：指向持有ObjectMonitor类的线程。&lt;br&gt;_WaitSet：存放状态为wait的线程队列（调用wait方法）。&lt;br&gt;_cxq：多线程竞争锁会先存入这里。FIFO的栈结构。&lt;br&gt;_EntrySet：存放处于block状态的线程队列。（竞争锁失败的线程）&lt;br&gt;_recursions：锁的重入次数。&lt;br&gt;_count：该线程获取锁的次数。&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="330" y="3700" width="620" height="252" as="geometry" />
+        </mxCell>
+        <mxCell id="YKvjpTfDzlw1Ftx9wZLT-1" value="&lt;font color=&quot;#3333ff&quot;&gt;&amp;nbsp;Object的wait()、notify()、其实就是调用的JVM里面的ObjectMonitor类的方法。跟Synchronized一起使用，实现MESA模型。&lt;br&gt;&lt;br&gt;而LockSupport的park&amp;nbsp; unpark也是阻塞和唤醒线程，但是灵活性比wait notify要高，不用再sync里面使用。 它两的底层应该不是一套东西。&lt;br&gt;&lt;br&gt;虽然&lt;/font&gt;ObjectMonitor也调用了park unpark，但是这跟LockSupport的不是一个东西，可能只是名字一样而已？&lt;font color=&quot;#3333ff&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-340" y="3810" width="620" height="252" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
