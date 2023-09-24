@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-09-24T09:25:57.610Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.36" etag="M-xXvr1Ukb-kuO7nacdG" version="21.8.1" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-24T09:28:14.565Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.36" etag="gg2IsBuAvvV-MXErY249" version="21.8.1" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="2974" dy="3061" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -136,7 +136,7 @@
         <mxCell id="9fsa6vycXgHaBqepKxoh-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.002;entryY=0.483;entryDx=0;entryDy=0;entryPerimeter=0;shape=flexArrow;" edge="1" parent="1" source="9fsa6vycXgHaBqepKxoh-2" target="qf07nM2vf6hVkLz7YUws-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="9fsa6vycXgHaBqepKxoh-4" value="&lt;font color=&quot;#3333ff&quot;&gt;&amp;nbsp;Object的wait()、notify()、nitifyall()方法跟Monitor机制的关系？&lt;/font&gt;&lt;br&gt;在java中，是使用对象上的wait、notify方法来实现监视器机制的。&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#3333ff&quot;&gt;那么这几个方法底层具体是怎么实现的呢？&lt;/font&gt;&lt;br&gt;C++来实现的，有一个ObjectMonitor类，这个类里面有几个属性很重要：&lt;br&gt;&lt;font color=&quot;#ff3333&quot;&gt;_owner：指向持有ObjectMonitor类的线程。&lt;br&gt;_WaitSet：存放状态为wait的线程队列。&lt;br&gt;_EntrySet：存放处于block状态的线程队列。&lt;br&gt;_recursions：锁的重入次数。&lt;br&gt;_count：该线程获取锁的次数。&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
+        <mxCell id="9fsa6vycXgHaBqepKxoh-4" value="&lt;font color=&quot;#3333ff&quot;&gt;&amp;nbsp;Object的wait()、notify()、nitifyall()方法跟Monitor机制的关系？&lt;/font&gt;&lt;br&gt;在java中，是使用对象上的wait、notify方法来实现监视器机制的。&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#3333ff&quot;&gt;那么这几个方法底层具体是怎么实现的呢？&lt;/font&gt;&lt;br&gt;C++来实现的，有一个ObjectMonitor类，这个类里面有几个属性很重要：&lt;br&gt;&lt;font color=&quot;#ff3333&quot;&gt;_owner：指向持有ObjectMonitor类的线程。&lt;br&gt;_WaitSet：存放状态为wait的线程队列。&lt;br&gt;_cxq：多线程竞争锁会先存入这里。FIFO的栈结构。&lt;br&gt;_EntrySet：存放处于block状态的线程队列。（竞争锁失败的线程）&lt;br&gt;_recursions：锁的重入次数。&lt;br&gt;_count：该线程获取锁的次数。&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
           <mxGeometry x="350" y="3588" width="620" height="252" as="geometry" />
         </mxCell>
       </root>
