@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2023-09-27T03:56:40.082Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="QDjTwUk4MqnJUc9PA62e" version="21.8.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-28T05:43:48.954Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="WeFzcihh5nWKGMk_5Ps_" version="21.8.2" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
-    <mxGraphModel dx="3703" dy="3421" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3088" dy="3096" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="TSejh3glgtPiAfNafjIw-1" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;管程、Monotor机制、MESA模型、Sunchronized、Object(wait、notify)、ObjectMonitor之间的关系&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+        <mxCell id="TSejh3glgtPiAfNafjIw-1" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;管程、Monotor机制、MESA模型、Sunchronized、Object(wait、notify)、ObjectMonitor之间的关系&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="-680" y="3420" width="2110" height="880" as="geometry" />
         </mxCell>
         <mxCell id="dvuJLhcE7HCTMrbFaXMl-6" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
@@ -144,6 +144,9 @@
         </mxCell>
         <mxCell id="YKvjpTfDzlw1Ftx9wZLT-1" value="&lt;font color=&quot;#3333ff&quot;&gt;&amp;nbsp;Object的wait()、notify()、其实就是调用的JVM里面的ObjectMonitor类的方法。跟Synchronized一起使用，实现MESA模型。&lt;br&gt;&lt;br&gt;而LockSupport的park&amp;nbsp; unpark也是阻塞和唤醒线程，但是灵活性比wait notify要高，不用在sync里面使用。 它两的底层应该不是一套东西。&lt;br&gt;&lt;br&gt;虽然&lt;/font&gt;ObjectMonitor也调用了park unpark，但是这跟LockSupport的不是一个东西，可能只是名字一样而已？&lt;font color=&quot;#3333ff&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="20" y="4000" width="620" height="252" as="geometry" />
+        </mxCell>
+        <mxCell id="_kFdbrx6OBA9QcJ1wg29-1" value="管程的由来：&lt;br&gt;管程最初是操作系统里面的术语：若干的公共变量，以及能对这些公共变量进行操作的过程&amp;nbsp; 组成的资源管理程序。&lt;br&gt;&lt;br&gt;管程是用来管理公共资源的，并提供了对共享资源同步与互斥的操作。&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-620" y="3990" width="540" height="270" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
