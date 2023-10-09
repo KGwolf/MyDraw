@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-10-07T09:15:26.809Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="Xk5KCtlfsCoLlzwZK36z" version="21.8.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-09T08:16:53.420Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="UG-O6_fh_wgX97DN0r5W" version="22.0.4" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
-    <mxGraphModel dx="3703" dy="3421" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3088" dy="3096" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -156,6 +156,9 @@
         </mxCell>
         <mxCell id="W6nCtt2OGi9H1s5-sHQB-1" value="ObjectMonitor对象，有以下几个方法：&lt;br&gt;1、enter：通过自旋操作去获取锁，没获取到则加入到_cxq队列中。&lt;br&gt;2、exit：退出锁，同时需要唤醒其它线程。如果_cxq不为空，则根据QMode的值，来选取从_cxq获取线程唤醒，还是把_cxq拿一个线程到_EntryList再进行唤醒。&lt;br&gt;3、wait：释放锁，并挂起当前线程。加入到_waitSet队列。&lt;br&gt;4、notify：唤醒锁，如果_waitSet为空就立即返回。不为空则取出一个线程，根据Policy值来将线程放到_cxq或者_EntryList。" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="1440" y="4062" width="690" height="188" as="geometry" />
+        </mxCell>
+        <mxCell id="PU4XsjiOUyInTJ6AcaFx-1" value="对象的内存布局&lt;br&gt;&lt;br&gt;在HotSpot中，" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="2470" y="3430" width="490" height="260" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
