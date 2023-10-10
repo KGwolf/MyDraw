@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-09-22T01:25:17.691Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="zm9T2eYStfg1X7ep2MTa" version="21.8.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-10T03:59:02.573Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="Zz9v_1xiaGcqwKZf5tq2" version="22.0.4" type="github">
   <diagram name="第 1 页" id="1XJYP80JxbJxhC29MnGr">
     <mxGraphModel dx="1434" dy="1927" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -22,8 +22,8 @@
         <mxCell id="lYMavn7DF4E9moOjVgNg-4" value="由于reids的广播消息不算很靠谱的，那我们要怎么保证各个节点的内存数据同步呢？&lt;br&gt;&lt;br&gt;跑定时任务？每个缓存对象（caseid对应的一个任务）查看其中的时间戳，是不是跟数据库的能对应上。如果不能则更新最新的数据到未成功同步的节点？那么是否会导致效率的问题呢？&lt;br&gt;&lt;br&gt;方案2：每个PR后端节点链接redis的时候，都在redis里面存上各自的ip？有什么用呢？&lt;br&gt;&lt;br&gt;因为我们缓存只存消息ID，所以不管是同步消息，还是定时任务去查缓存不一致，都需要查询数据库，这样会不会导致数据库崩掉？？" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="150" y="380" width="620" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="azIFYM6eBztKxtA_MHt6-1" value="性能优化：&lt;br&gt;用jmiter做压测，我们.net版本的 门诊80，住院120，加起来就是200。应该说的是QPS？&lt;br&gt;java版本的性能要差点。首次排查可能是因为Disruptor的线程引起的，生产者线程1个，然后消费者线程N个。还未排查出是不是这个问题。" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
-          <mxGeometry x="90" y="910" width="800" height="180" as="geometry" />
+        <mxCell id="azIFYM6eBztKxtA_MHt6-1" value="性能优化：&lt;br&gt;用jmiter做压测，我们.net版本的 门诊80，住院120，加起来就是200。应该说的是QPS？&lt;br&gt;java版本的性能要差点。首次排查可能是因为Disruptor的线程引起的，生产者线程1个，然后消费者线程N个。还未排查出是不是这个问题。&lt;br&gt;&lt;br&gt;&lt;br&gt;bs优化：&lt;br&gt;首先后端逻辑很多+=，改成StringBuilder。&lt;br&gt;然后页面优化（重点）：因为业务需求原因，我们需要在页面存储2个大的JSON串。还有就是JS文件，刚开始也是跟html写到一起的，大概有几千行JS代码，且里面有需要thymleaf解析的代码。&lt;br&gt;解决步骤：大的JSOn串缓存在后端，根据taskid来进行缓存，当页面加载完成之后，再ajax同步从后端缓存取，取完就删除，这样也不会占用内存。&lt;br&gt;同时，把JS分离开到单独的文件。需要后端在JS解析的代码，修改成Js变量。这样不用解析。&lt;br&gt;改完之后，完全能撑住200并发了。" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="1" vertex="1">
+          <mxGeometry x="90" y="910" width="810" height="230" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
