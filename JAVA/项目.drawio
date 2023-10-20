@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-13T01:51:19.159Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="Q2LFhsKgNTLpbC_7o7Dw" version="22.0.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-20T02:27:29.574Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="UATH-z0uQs8AuGudhwgH" version="22.0.5" type="github">
   <diagram name="第 1 页" id="1XJYP80JxbJxhC29MnGr">
     <mxGraphModel dx="1434" dy="1927" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -27,6 +27,9 @@
         </mxCell>
         <mxCell id="OiV16W11Bcy6xy-m6XNg-1" value="要搞清楚.net版本和java版本统计分析和查询的逻辑，从开始的查询和统计分析进行硬查询，到进行预处理查询，再到进行优化。&lt;br&gt;&lt;br&gt;.net版本的统计分析痛点：预处理到表里面的是具体的count，比如预处理表的字段：提交数-10，干预数-20，双签数-30等等，而点击链接是进行代码逻辑硬查询（虽然也是查询预处理表，但是指标逻辑是可以跟随需求而变动的），但是预处理到表里面的历史数据，count是不能改变的，就导致了count跟实际链接查询出来的数据不一致。解决办法就要进行刷历史数据，这个过程比较耗时。&lt;br&gt;&lt;br&gt;java版本解决了这个痛点，首先预处理到表里面的不在是count，而是一个标记，比如：auditmodeid&amp;nbsp; 提交数-1 干预数-0，当查询详情的时候，根据只需要判断&amp;gt;0即可。这样能跟整个统计出来的数字对应上。但是这种情况虽然对应上了，如果指标算法变了的话（具体怎么变化？），那么历史数据的count跟变了之后想要的count是对不上的。但是这个就容错高些了。看医院需不需要统一，如果需要就刷历史数据。主动权给到医院。有的医院不需要刷，有的可能需要。" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="980" y="440" width="460" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="0i6LU9kepRgSpGDFbb0o-1" value="公共的逻辑可以放哪里，会变化的逻辑放哪里，怎么进行封装，可以看看AQS源码，Spring源码，Tomcat源码" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="750" y="-110" width="300" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
