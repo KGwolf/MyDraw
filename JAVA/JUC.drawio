@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-24T03:16:29.911Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="BmrDzXbdzZqebwrUbHj_" version="22.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-24T03:20:04.174Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="0d04bpDArPfKBp4ROU2Y" version="22.0.6" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="3088" dy="3096" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -184,7 +184,7 @@
         <mxCell id="96queV0YBfUC88dK2yDL-1" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;非公平锁&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1617" y="3480" width="163" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="96queV0YBfUC88dK2yDL-2" value="一个对象创建时，要么是偏向锁的可偏向状态，要么是无锁状态。&lt;br&gt;锁升级不存在无锁---&amp;gt;偏向锁！！！！&lt;br&gt;偏向锁撤销会变成无锁，如果再获取锁，要么升级成轻量级锁，要么升级重量级锁&lt;br&gt;&lt;br&gt;轻微的竞争会升级成轻量级锁，竞争大升级为重量级锁&lt;br&gt;&lt;br&gt;偏向锁和轻量级锁都是在用户态进行操作Mark Word进行标记的（CAS操作）？重量级锁会进行内核态进行操作？重量级锁是ObjectMonitor对象进行操作，cas之后还不行就要进行Park操作了，这就要进行内核态阻塞线程？&lt;br&gt;&lt;br&gt;偏向锁撤销需要在安全点进行（STW）" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" parent="1" vertex="1">
+        <mxCell id="96queV0YBfUC88dK2yDL-2" value="一个对象创建时，要么是偏向锁的可偏向状态，要么是无锁状态。&lt;br&gt;锁升级不存在无锁---&amp;gt;偏向锁！！！！&lt;br&gt;偏向锁撤销会变成无锁，如果再获取锁，要么升级成轻量级锁，要么升级重量级锁&lt;br&gt;&lt;br&gt;轻微的竞争会升级成轻量级锁，竞争大升级为重量级锁&lt;br&gt;&lt;br&gt;偏向锁和轻量级锁都是在用户态进行操作Mark Word进行标记的（CAS操作）？重量级锁会进行内核态进行操作？重量级锁是走管程模型，ObjectMonitor对象进行操作，cas之后还不行就要进行Park操作了，这就要进行内核态阻塞线程？&lt;br&gt;&lt;br&gt;偏向锁撤销需要在安全点进行（STW）" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="3740" y="4640" width="640" height="280" as="geometry" />
         </mxCell>
         <mxCell id="96queV0YBfUC88dK2yDL-4" value="偏向锁可以变成无锁，再升级成轻量级锁、重量级锁？&lt;br&gt;&lt;br&gt;偏向锁进行偏向之后，线程执行完，再起另外的线程，进行获取同样的锁，这时候，可能偏向锁的线程还是第一个已经执行完的线程。可能JVM进行了优化，直接用上一个线程ID来进行操作下一个线程？&lt;br&gt;&lt;br&gt;升级：偏向锁-&amp;gt;轻量级-&amp;gt;重量级&lt;br&gt;释放：轻量级-&amp;gt;无锁&amp;nbsp; &amp;nbsp;重量级-&amp;gt;无锁&lt;br&gt;只有释放成无锁之后，别的线程才能CAS获取锁。" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" parent="1" vertex="1">
