@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-10-24T03:30:57.453Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="ISRo5BVaofnp3_RU59Fd" version="22.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-24T03:33:53.812Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="jZWNHczcEKA0AtQC7QMy" version="22.0.6" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
-    <mxGraphModel dx="4044" dy="3601" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3703" dy="3421" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -190,7 +190,7 @@
         <mxCell id="96queV0YBfUC88dK2yDL-4" value="偏向锁可以变成无锁，再升级成轻量级锁、重量级锁？&lt;br&gt;&lt;br&gt;偏向锁进行偏向之后，线程执行完，再起另外的线程，进行获取同样的锁，这时候，可能偏向锁的线程还是第一个已经执行完的线程。可能JVM进行了优化，直接用上一个线程ID来进行操作下一个线程？&lt;br&gt;&lt;br&gt;升级：偏向锁-&amp;gt;轻量级-&amp;gt;重量级&lt;br&gt;释放：轻量级-&amp;gt;无锁&amp;nbsp; &amp;nbsp;重量级-&amp;gt;无锁&lt;br&gt;只有释放成无锁之后，别的线程才能CAS获取锁。" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="4440" y="4640" width="640" height="250" as="geometry" />
         </mxCell>
-        <mxCell id="zqnxL4niUSFOhtIvhrIF-1" value="轻量级锁：线程交替竞争，且能快速完成逻辑执行。" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="zqnxL4niUSFOhtIvhrIF-1" value="轻量级锁：线程交替竞争，且能快速完成逻辑执行。&lt;br&gt;&lt;br&gt;轻量级锁里面只有CAS，并不存在自旋逻辑（意思是没有while循环）" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="5140" y="4640" width="640" height="250" as="geometry" />
         </mxCell>
       </root>
