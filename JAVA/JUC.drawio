@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-24T03:53:20.979Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="jLgxaKSQC0oGjPLinJlz" version="22.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-24T12:44:02.999Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="JdkmOZYz9YFNUhdD_HQd" version="22.0.6" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="3703" dy="3421" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -192,6 +192,9 @@
         </mxCell>
         <mxCell id="zqnxL4niUSFOhtIvhrIF-1" value="轻量级锁：线程交替竞争，且能快速完成逻辑执行。&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#ff0000&quot;&gt;轻量级锁里面只有CAS，并不存在自旋逻辑（意思是没有while循环）&lt;br&gt;&lt;br&gt;重量级锁里面有自旋操作，自旋多少次之后，获取不到锁才进行Park操作。&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="5140" y="4640" width="640" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="zqnxL4niUSFOhtIvhrIF-2" value="轻量级锁重入是怎样的过程，是用的什么数据结构？&lt;br&gt;线程栈--锁对象之间的关系图&lt;br&gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="3740" y="4990" width="640" height="250" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
