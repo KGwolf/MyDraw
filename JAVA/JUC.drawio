@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-27T08:52:39.173Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="uxa2bdP7Ta1CfBss0uB5" version="22.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-27T09:47:05.558Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="clsPtEILrtOF2yv97CeH" version="22.0.8" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="4261" dy="3716" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -187,14 +187,17 @@
         <mxCell id="96queV0YBfUC88dK2yDL-2" value="一个对象创建时，要么是偏向锁的可偏向状态，要么是无锁状态。&lt;br&gt;&lt;font color=&quot;#ff0000&quot;&gt;锁升级不存在无锁---&amp;gt;偏向锁！！！！&lt;/font&gt;&lt;br&gt;偏向锁撤销会变成无锁，如果再获取锁，要么升级成轻量级锁，要么升级重量级锁&lt;br&gt;&lt;br&gt;轻微的竞争会升级成轻量级锁，竞争大升级为重量级锁&lt;br&gt;&lt;br&gt;偏向锁和轻量级锁都是在用户态进行操作Mark Word进行标记的（CAS操作）？重量级锁会进行内核态进行操作？重量级锁是走管程模型，ObjectMonitor对象进行操作，cas之后还不行就要进行Park操作了，这就要进行内核态阻塞线程？&lt;br&gt;&lt;br&gt;偏向锁撤销需要在安全点进行（STW）" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="3740" y="4640" width="640" height="280" as="geometry" />
         </mxCell>
-        <mxCell id="96queV0YBfUC88dK2yDL-4" value="偏向锁可以变成无锁，再升级成轻量级锁、重量级锁？&lt;br&gt;&lt;br&gt;偏向锁进行偏向之后，线程执行完，再起另外的线程，进行获取同样的锁，这时候，可能偏向锁的线程还是第一个已经执行完的线程。可能JVM进行了优化，直接用上一个线程ID来进行操作下一个线程？&lt;br&gt;&lt;br&gt;偏向锁的线程ID并不是java中的线程id，是操作系统的线程ID。&lt;br&gt;&lt;br&gt;升级：偏向锁-&amp;gt;轻量级-&amp;gt;重量级&lt;br&gt;释放：轻量级-&amp;gt;无锁&amp;nbsp; &amp;nbsp;重量级-&amp;gt;无锁&lt;br&gt;只有释放成无锁之后，别的线程才能CAS获取锁。&lt;br&gt;&lt;br&gt;偏向锁撤销的具体过程：" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" parent="1" vertex="1">
-          <mxGeometry x="4440" y="4640" width="650" height="300" as="geometry" />
+        <mxCell id="96queV0YBfUC88dK2yDL-4" value="偏向锁可以变成无锁，再升级成轻量级锁、重量级锁？&lt;br&gt;&lt;br&gt;偏向锁进行偏向之后，线程执行完，再起另外的线程，进行获取同样的锁，这时候，可能偏向锁的线程还是第一个已经执行完的线程。可能JVM进行了优化，直接用上一个线程ID来进行操作下一个线程？&lt;br&gt;&lt;br&gt;偏向锁的线程ID并不是java中的线程id，是操作系统的线程ID。&lt;br&gt;&lt;br&gt;升级：偏向锁-&amp;gt;轻量级-&amp;gt;重量级&lt;br&gt;释放：轻量级-&amp;gt;无锁&amp;nbsp; &amp;nbsp;重量级-&amp;gt;无锁&lt;br&gt;只有释放成无锁之后，别的线程才能CAS获取锁。&lt;br&gt;&lt;br&gt;偏向锁只要偏向了某一个线程，就算执行完了同步代码块，状态也不会变化。除非：&lt;br&gt;1.调用hashcode (可以在同步代码块外面调用，而wait notify只能在内部调用)。&lt;br&gt;2.有竞争锁的情况：不管偏向的那个线程执行完同步块没有，只要遇到了竞争，都会先进行撤销，然后直接升级成轻量级锁或者重量级锁（取决于竞争激烈度）&lt;br&gt;&lt;br&gt;偏向锁撤销的具体过程：" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="4440" y="4640" width="650" height="470" as="geometry" />
         </mxCell>
         <mxCell id="zqnxL4niUSFOhtIvhrIF-1" value="轻量级锁：线程交替竞争，且能快速完成逻辑执行。&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#ff0000&quot;&gt;轻量级锁里面只有CAS，并不存在自旋逻辑（意思是没有while循环）&lt;br&gt;&lt;br&gt;重量级锁里面有自旋操作，自旋多少次之后，获取不到锁才进行Park操作。&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="5140" y="4640" width="640" height="250" as="geometry" />
         </mxCell>
-        <mxCell id="zqnxL4niUSFOhtIvhrIF-2" value="轻量级锁重入是怎样的过程，是用的什么数据结构？&lt;br&gt;线程栈--锁对象之间的关系图&lt;br&gt;&lt;br&gt;&lt;br&gt;无锁状态，通过CAS没有成功，直接膨胀成重量级锁。&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" parent="1" vertex="1">
+        <mxCell id="zqnxL4niUSFOhtIvhrIF-2" value="轻量级锁重入是怎样的过程，是用的什么数据结构？&lt;br&gt;线程栈--锁对象之间的关系图&lt;br&gt;&lt;br&gt;&lt;br&gt;无锁状态，通过CAS没有成功，直接膨胀成重量级锁。&lt;br&gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="3740" y="4990" width="640" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="cYvpGsQSHPA-NUDGqWch-1" value="synchronized的优化：&lt;br&gt;&lt;br&gt;针对偏向锁的优化：批量重偏向、批量重撤销" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="4410" y="5210" width="640" height="250" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
