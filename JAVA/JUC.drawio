@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-10-27T09:47:05.558Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="clsPtEILrtOF2yv97CeH" version="22.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-30T02:47:57.528Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="ViBQQxsuCxlGxDo0iIyZ" version="22.0.8" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
-    <mxGraphModel dx="4261" dy="3716" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3088" dy="3096" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -196,8 +196,11 @@
         <mxCell id="zqnxL4niUSFOhtIvhrIF-2" value="轻量级锁重入是怎样的过程，是用的什么数据结构？&lt;br&gt;线程栈--锁对象之间的关系图&lt;br&gt;&lt;br&gt;&lt;br&gt;无锁状态，通过CAS没有成功，直接膨胀成重量级锁。&lt;br&gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="3740" y="4990" width="640" height="250" as="geometry" />
         </mxCell>
-        <mxCell id="cYvpGsQSHPA-NUDGqWch-1" value="synchronized的优化：&lt;br&gt;&lt;br&gt;针对偏向锁的优化：批量重偏向、批量重撤销" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="cYvpGsQSHPA-NUDGqWch-1" value="synchronized的优化：&lt;br&gt;&lt;br&gt;针对偏向锁的优化：批量重偏向、批量重撤销" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="4410" y="5210" width="640" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="1t7oCo8xRB_ytcqKvnRW-1" value="轻量级锁已经是用户态操作的锁了，为什么还要引用偏向锁呢？它们之间差了哪些效率？" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="4790" y="3990" width="740" height="130" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
