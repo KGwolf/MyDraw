@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-31T12:58:47.174Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="7bvSFkDmD_1-GgB-17D-" version="22.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-31T13:00:14.406Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="gqWu-25dVUnL2XHLQVzI" version="22.0.8" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="3341" dy="3230" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -205,7 +205,7 @@
         <mxCell id="0XNCiBe3AtECMIUiExkp-1" value="&lt;div&gt;偏向锁的撤销为什么需要在安全点下进行（STW）?&lt;/div&gt;&lt;div&gt;官方就是这样说的，具体为啥不清楚。如果不等到安全点进行撤销，那么原来偏向锁的线程可能还在执行，会发生冲突。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;虚拟机要所有线程在最近的安全点阻塞,vm线程伪造一个displaced mark word到持有者线程的栈桢,更改监视器的标记位,然后让所有线程继续执行.此时持有锁的线程会因此自视为轻量锁,竞争者也将按照轻量锁的规则去竞争.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="4790" y="4240" width="740" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="F_tByIE6tKeEy0x2wPol-1" value="&lt;font color=&quot;#ff0000&quot;&gt;轻量级锁的升级、解锁过程：&lt;/font&gt;&lt;br&gt;1.判断对象头锁标记，是无锁？如果是无锁（大概率禁用了偏向锁）：&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1) 把锁对象头的mark word复制到需要锁的线程的线程栈里面去，线程栈保存有1个数据结构：Lock Record，&lt;br&gt;&lt;br&gt;2.如果对象头标记是有锁（偏向锁、轻量级锁、重量级锁）：&lt;br&gt;&amp;nbsp; &amp;nbsp; 1)偏向锁，如果线程ID是当前线程，重入锁，继续执行。如果不是当前线程ID，则CAS将线程ID替换，成功则继续执行，不成功则走轻量级锁！" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="F_tByIE6tKeEy0x2wPol-1" value="&lt;font color=&quot;#ff0000&quot;&gt;轻量级锁的升级、解锁过程：&lt;/font&gt;&lt;br&gt;1.判断对象头锁标记，是无锁？如果是无锁（大概率禁用了偏向锁）：&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1) 把锁对象头的mark word复制到需要锁的线程的线程栈里面去，线程栈保存有1个数据结构：Lock Record，&lt;br&gt;&lt;br&gt;2.如果对象头标记是有锁（偏向锁、轻量级锁、重量级锁）：&lt;br&gt;&amp;nbsp; &amp;nbsp; 1)偏向锁，如果线程ID是当前线程，重入锁，继续执行。如果不是当前线程ID，则CAS将线程ID替换，成功则继续执行，不成功则走轻量级锁！&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="5160" y="4930" width="640" height="250" as="geometry" />
         </mxCell>
       </root>
