@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-01T08:05:16.684Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="T7Me5unwwsnFstuDP7tI" version="22.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-01T09:20:10.730Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="ygx7WuxRexXB8j5COFyh" version="22.0.8" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="4261" dy="3716" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -208,7 +208,7 @@
         <mxCell id="F_tByIE6tKeEy0x2wPol-1" value="&lt;font color=&quot;#ff0000&quot;&gt;轻量级锁的升级、解锁过程：&lt;/font&gt;&lt;br&gt;1.判断对象头锁标记，是无锁？如果是无锁（大概率禁用了偏向锁）：&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1) 把锁对象头的mark word复制到需要锁的线程的线程栈里面去，线程栈保存有1个数据结构：Lock Record，&lt;br&gt;&lt;br&gt;2.如果对象头标记是有锁（偏向锁、轻量级锁、重量级锁）：&lt;br&gt;&amp;nbsp; &amp;nbsp; 1)偏向锁，如果线程ID是当前线程，重入锁，继续执行。如果不是当前线程ID，则CAS将线程ID替换，成功则继续执行，不成功则走轻量级锁！&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="5160" y="4930" width="640" height="250" as="geometry" />
         </mxCell>
-        <mxCell id="7F4d7PTJm_oGwGfwfZ12-1" value="&lt;font color=&quot;#ff0000&quot;&gt;BasicObjectLock、&lt;/font&gt;BasicLock、markOop、markOopDesc、ObjectSynchronizer.cpp&amp;nbsp; &amp;nbsp;InterpreterRuntime.cpp" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="7F4d7PTJm_oGwGfwfZ12-1" value="&lt;font color=&quot;#ff0000&quot;&gt;BasicObjectLock、&lt;/font&gt;BiasedLocking&lt;span style=&quot;background-color: initial;&quot;&gt;、markOop、markOopDesc、&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;JavaThread&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;ObjectSynchronizer.cpp&amp;nbsp; &amp;nbsp;InterpreterRuntime.cpp&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="5920" y="4940" width="640" height="250" as="geometry" />
         </mxCell>
       </root>
