@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-02T02:08:42.422Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="qcrp8JPObC3wKbbUK_OQ" version="22.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-02T02:09:26.377Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="AH-_2tD5yltSUuo8T5Iw" version="22.0.8" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="4044" dy="3601" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -209,7 +209,10 @@
           <mxGeometry x="5160" y="4930" width="640" height="250" as="geometry" />
         </mxCell>
         <mxCell id="7F4d7PTJm_oGwGfwfZ12-1" value="&lt;font color=&quot;#ff0000&quot;&gt;HotSpot源码中，下面这些类都跟Synchronized有关系，具体是什么关系呢？&lt;br&gt;&lt;br&gt;BasicObjectLock、&lt;/font&gt;BiasedLocking&lt;span style=&quot;background-color: initial;&quot;&gt;、markOop、markOopDesc、&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;JavaThread&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;ObjectSynchronizer.cpp&amp;nbsp; &amp;nbsp;InterpreterRuntime.cpp&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" parent="1" vertex="1">
-          <mxGeometry x="5920" y="4940" width="640" height="250" as="geometry" />
+          <mxGeometry x="5930" y="4630" width="640" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="8tr2HTGCT_E7Gt2VhBMD-1" value="&lt;font color=&quot;#ff0000&quot;&gt;先简单理一下大概的流程，以后C、C++学会了之后再来看具体的HotSpot源码！！！&lt;br&gt;&lt;/font&gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="5920" y="4950" width="640" height="250" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
