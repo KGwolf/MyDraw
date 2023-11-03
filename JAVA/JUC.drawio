@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-11-03T09:07:28.437Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="OBOAarSVwB4HGXx3bZGH" version="22.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-03T09:27:27.425Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="sUSOvMxfR_iI5JFOwfjL" version="22.0.8" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
-    <mxGraphModel dx="4261" dy="3716" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3860" dy="3504" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -214,8 +214,8 @@
         <mxCell id="7F4d7PTJm_oGwGfwfZ12-1" value="&lt;font color=&quot;#ff0000&quot;&gt;HotSpot源码中，下面这些类都跟Synchronized有关系，具体是什么关系呢？&lt;br&gt;&lt;br&gt;BasicObjectLock、&lt;/font&gt;BiasedLocking&lt;span style=&quot;background-color: initial;&quot;&gt;、markOop、markOopDesc、&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;JavaThread&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;ObjectSynchronizer.cpp&amp;nbsp; &amp;nbsp;InterpreterRuntime.cpp&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="5930" y="4630" width="640" height="250" as="geometry" />
         </mxCell>
-        <mxCell id="8tr2HTGCT_E7Gt2VhBMD-1" value="&lt;font color=&quot;#ff0000&quot;&gt;先简单理一下大概的流程，以后C、C++学会了之后再来看具体的HotSpot源码！！！&lt;br&gt;&lt;/font&gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" parent="1" vertex="1">
-          <mxGeometry x="5920" y="4950" width="640" height="250" as="geometry" />
+        <mxCell id="8tr2HTGCT_E7Gt2VhBMD-1" value="&lt;font style=&quot;font-size: 18px;&quot; color=&quot;#ff0000&quot;&gt;先简单理一下大概的流程，以后C、C++学会了之后再来看具体的HotSpot源码！！！&lt;br&gt;&lt;br&gt;首先，我们的sync作用在代码块上，那么字节码生成的就是monitorenter 和monitorexit，我们先看monitorenter，首先JVM遇到这个指令会调用&lt;/font&gt;&lt;font color=&quot;#ff0000&quot;&gt;InterpreterRuntime::monitorenter方法来进行处理：&lt;br&gt;1.判断开启偏向锁：如果开启，进入&lt;/font&gt;ObjectSynchronizer::fast_enter方法，如果没开启，则进入ObjectSynchronizer::slow_enter方法。&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="5920" y="4950" width="640" height="290" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
