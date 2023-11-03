@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-09-03T08:55:00.713Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.69" etag="uHKLGZo6iFHkQgWtfpiR" version="21.7.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-03T08:42:50.397Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="8ze6UV8fxaEqAYOgERpf" version="22.0.8" type="github">
   <diagram id="c6MPomSf8zc9xdUtyQ0a" name="第 1 页">
-    <mxGraphModel dx="4694" dy="1928" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4742" dy="1927" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -419,6 +419,9 @@
         </mxCell>
         <mxCell id="CEbuADpDmsKtZHsj_Mng-21" value="tail" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="-185" y="2360" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MhkcWFQ4XmXa5c6hUbXc-1" value="垃圾回收器：&lt;br&gt;Serial&lt;br&gt;Parall&lt;br&gt;ParNew&lt;br&gt;&lt;br&gt;CMS（回收老年代，Concurrent Mark Sweap）&lt;br&gt;&lt;br&gt;回收年轻代可以使用标记复制算法。 老年代使用标记清除算法。&lt;br&gt;CMS可能垃圾回收的时间较长，但是STW的时间很短。&lt;br&gt;CMS适用于大内存的情况。其它的老垃圾回收器适用于2G左右小内存。&lt;br&gt;因为STW的时间就全部用于去回收所有的垃圾，内存小STW的时间才短，对用户的影响就很小。&lt;br&gt;&lt;br&gt;CMS的缺点就是容易产生浮动垃圾。第一段STW只会去标记根root的对象。第二段就是并发（这个并发指的是不会STW，用户线程和垃圾回收线程会一起工作，应该是垃圾回收线程标记从根root对象往下找引用的对象，进行标记？），后续还有一段STW？" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="-837" y="2940" width="787" height="390" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
