@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-03T09:05:19.223Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="OcV4VFN3tiXwMw9SYXQR" version="22.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-06T03:50:16.187Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="EHPH4_dUsbRmjKR2hmcF" version="22.0.8" type="github">
   <diagram id="c6MPomSf8zc9xdUtyQ0a" name="第 1 页">
     <mxGraphModel dx="4742" dy="1927" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -420,11 +420,14 @@
         <mxCell id="CEbuADpDmsKtZHsj_Mng-21" value="tail" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="-185" y="2360" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="MhkcWFQ4XmXa5c6hUbXc-1" value="垃圾回收器：&lt;br&gt;Serial&lt;br&gt;Parall&lt;br&gt;ParNew&lt;br&gt;&lt;br&gt;CMS（回收老年代，Concurrent Mark Sweap）&lt;br&gt;&lt;br&gt;回收年轻代可以使用标记复制算法。 老年代使用标记清除算法。&lt;br&gt;CMS可能垃圾回收的时间较长，但是STW的时间很短。&lt;br&gt;CMS适用于大内存的情况。其它的老垃圾回收器适用于2G左右小内存。&lt;br&gt;因为STW的时间就全部用于去回收所有的垃圾，内存小STW的时间才短，对用户的影响就很小。&lt;br&gt;&lt;br&gt;CMS的缺点就是容易产生浮动垃圾。第一段STW只会去标记根root的对象。第二段就是并发（这个并发指的是不会STW，用户线程和垃圾回收线程会一起工作，应该是垃圾回收线程标记从根root对象往下找引用的对象，进行标记？），后续还有一段STW？" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="MhkcWFQ4XmXa5c6hUbXc-1" value="垃圾回收器：&lt;br&gt;Serial&lt;br&gt;Parall&lt;br&gt;ParNew&lt;br&gt;&lt;br&gt;CMS（回收老年代，Concurrent Mark Sweap）&lt;br&gt;&lt;br&gt;回收年轻代可以使用标记复制算法。 老年代使用标记清除算法。&lt;br&gt;CMS可能垃圾回收的时间较长，但是STW的时间很短。&lt;br&gt;CMS适用于大内存的情况。其它的老垃圾回收器适用于2G左右小内存。&lt;br&gt;因为STW的时间就全部用于去回收所有的垃圾，内存小STW的时间才短，对用户的影响就很小。&lt;br&gt;&lt;br&gt;CMS的缺点就是容易产生浮动垃圾。第一段STW只会去标记根root的对象。第二段就是并发（这个并发指的是不会STW，用户线程和垃圾回收线程会一起工作，应该是垃圾回收线程标记从根root对象往下找引用的对象，进行标记？），后续还有一段STW？" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="-823.5" y="3140" width="787" height="390" as="geometry" />
         </mxCell>
-        <mxCell id="MhkcWFQ4XmXa5c6hUbXc-3" value="JVM的内存模型。&lt;br&gt;从类加载开始，JVM会启动一个加载器（C++实现的），加载main？然后调用main？需要看看HotSpot的C++源码&lt;br&gt;&lt;br&gt;栈内存，线程独有的内存，每个方法都有一个栈帧，栈帧里面包含了 局部变量表、操作数栈等。&lt;br&gt;&lt;br&gt;int a = 1+1;jvm是如何执行这个代码的？首先转换成字节码，一条一条的执行：具体是怎样的？&lt;br&gt;&lt;br&gt;为什么说局部变量表的长度信息，在字节码里面都已经确定了？&lt;br&gt;&lt;br&gt;为什么程序报错之后能打印出具体出错的代码行号信息呢？跟字节码有什么关系？&lt;br&gt;&lt;br&gt;找一个案例自己分析一下字节码，看看能不能数出来？" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="MhkcWFQ4XmXa5c6hUbXc-3" value="JVM的内存模型。&lt;br&gt;从类加载开始，JVM会启动一个加载器（C++实现的），加载main？然后调用main？需要看看HotSpot的C++源码&lt;br&gt;&lt;br&gt;栈内存，线程独有的内存，每个方法都有一个栈帧，栈帧里面包含了 局部变量表、操作数栈等。&lt;br&gt;&lt;br&gt;int a = 1+1;jvm是如何执行这个代码的？首先转换成字节码，一条一条的执行：具体是怎样的？&lt;br&gt;&lt;br&gt;为什么说局部变量表的长度信息，在字节码里面都已经确定了？&lt;br&gt;&lt;br&gt;为什么程序报错之后能打印出具体出错的代码行号信息呢？跟字节码有什么关系？&lt;br&gt;&lt;br&gt;找一个案例自己分析一下字节码，看看能不能数出来？" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="-823.5" y="2630" width="787" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="Pc6EA4D_d4uomxyGBglH-1" value="跨代引用的问题怎么解决呢？&lt;br&gt;当yongGC的时候，肯定是从yong区去找根root扫描吧，如果这时候有老年代里面的对象引用年轻代里面的对象（虽然这种情况比较少），这时候，其实年轻代里面的对象不应该是垃圾。这难道要把老年代里面的对象也都扫描一遍吗？&lt;br&gt;&lt;br&gt;记忆集与卡表&amp;nbsp; &amp;nbsp;就是解决这个问题的。大概就是年轻代里面有一张表记录着老年代引用了年轻代的哪些对象？" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="-807" y="3560" width="787" height="390" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
