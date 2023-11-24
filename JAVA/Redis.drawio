@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-24T06:54:50.681Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="aLB1MsZKRLKQm-iHQG8D" version="22.1.3" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-24T06:56:34.137Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="2sna8r_XjwH7De-V1z25" version="22.1.3" type="github">
   <diagram name="第 1 页" id="Ui-6xDZG4yXv-m0ysYRE">
     <mxGraphModel dx="2607" dy="1378" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -17,7 +17,7 @@
           <mxGeometry x="1000" y="380" width="720" height="160" as="geometry" />
         </mxCell>
         <mxCell id="iayUrk5L2lRTLvckCghS-5" value="cluster集群模式，&lt;br&gt;&lt;br&gt;cluster模式建议最多不超过多少个主备集群呢？可能是因为集群之间是需要进行通信的，太多节点，通信压力也大。&lt;br&gt;&lt;br&gt;cluster模式，建议使用奇数个主节点（主备集群）？不是必须使用奇数个节点，因为只需要半数以上就行了，4个挂一个需要2个节点选举同一个slave节点，3个也是一样，这样奇数可以少用一个节点，当然，多一个节点可以分担一下整个集群的压力。&lt;br&gt;&lt;br&gt;节点间的通信是怎么样的？当某一个主节点发生宕机的情况，如何发起重新选举的操作呢？&lt;br&gt;&lt;br&gt;当进行节点增加时候，只需要执行一行语句，就可以增加一个节点，但是还需要进行槽位的分配，和数据的迁移，那么迁移和客户端操作会不会有冲突呢？这时候redis会进行阻塞等待吗？我猜测应该不会，可能会用到写时复制的原理？" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="107" y="1100" width="1083" height="260" as="geometry" />
+          <mxGeometry x="107" y="1100" width="1093" height="320" as="geometry" />
         </mxCell>
         <mxCell id="iayUrk5L2lRTLvckCghS-6" value="分布式锁&lt;br&gt;&lt;br&gt;为什么需要分布式锁？&lt;br&gt;&lt;br&gt;分布式锁的实现方式（redis、zookepper、数据库）&lt;br&gt;&lt;br&gt;redis实现分布式锁的方式：setnx、redisson（框架）&lt;br&gt;&lt;br&gt;其中如果用setnx，需要自己处理很多的复杂情况：代码原子性、释放锁的时机问题、超时时间设置的长短。&lt;br&gt;&lt;br&gt;那么redission很好的封装了这些复杂的逻辑。包括锁的续期。&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="100" y="1480" width="930" height="330" as="geometry" />
