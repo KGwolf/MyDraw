@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-24T02:47:57.299Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="pzCubcGZ7tyDuKvMnhH6" version="22.1.3" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-24T02:51:00.747Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="3ueUjE5xXjX4O4yS1mNF" version="22.1.3" type="github">
   <diagram name="第 1 页" id="Ui-6xDZG4yXv-m0ysYRE">
     <mxGraphModel dx="2607" dy="1378" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -15,6 +15,9 @@
         </mxCell>
         <mxCell id="iayUrk5L2lRTLvckCghS-4" value="redis的缓存淘汰策略有哪些？LRU算法是什么？操作系统是不是也有一个LRU算法？" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="1000" y="380" width="720" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="iayUrk5L2lRTLvckCghS-5" value="cluster集群模式，&lt;br&gt;&lt;br&gt;&lt;br&gt;当进行节点增加时候，只需要执行一行语句，就可以增加一个节点，但是还需要进行槽位的分配，和数据的迁移，那么迁移和客户端操作会不会有冲突呢？这时候redis会进行阻塞等待吗？我猜测应该不会，可能会用到写时复制的原理？" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="110" y="1030" width="720" height="160" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
