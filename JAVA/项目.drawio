@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-27T02:17:27.509Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="Q438DR-Y23OtH7B9SOyh" version="22.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-27T02:17:32.133Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="DiNl9bz7LGNY_doyCKJO" version="22.1.4" type="github">
   <diagram name="第 1 页" id="1XJYP80JxbJxhC29MnGr">
     <mxGraphModel dx="1434" dy="1927" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -35,7 +35,7 @@
           <mxGeometry x="690" y="-10" width="300" height="80" as="geometry" />
         </mxCell>
         <mxCell id="pnb352GZgsO-i2-xDFfo-1" value="可以吧PR的任务生成，加上一个抢单的功能！！！&lt;br&gt;&lt;br&gt;分布式环境下的！！！！&lt;br&gt;&lt;br&gt;redis可以用reddison来做分布式锁的框架！" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="1" vertex="1">
-          <mxGeometry x="340" y="-180" width="300" height="60" as="geometry" />
+          <mxGeometry x="340" y="-180" width="310" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
