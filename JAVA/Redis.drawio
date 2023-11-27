@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-27T03:37:56.552Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="FxRnGTMYG1RGO6tLsUWM" version="22.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-27T03:41:52.410Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="8VnBUL1Txp3_flcvWkvY" version="22.1.4" type="github">
   <diagram name="第 1 页" id="Ui-6xDZG4yXv-m0ysYRE">
     <mxGraphModel dx="1434" dy="758" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -25,8 +25,8 @@
         <mxCell id="_cNctXotL4sYTQS76gGQ-1" value="分布式锁，在主从架构下面的失效问题。&lt;br&gt;主从同步期间，主节点宕机。setnx的命令还没同步到从节点呢。&lt;br&gt;可以参考zookeper，CAP中的CP，半数节点以上同步完主从数据之后，才返回给客户端命令执行成功，在这之后如果主节点宕机，那么集群选主，会在已经同步完成的那些从节点之中选举。&lt;br&gt;&lt;br&gt;那redis怎么来解决呢？redlock红锁？红锁也还是会有问题的（只要红锁集群不搞从节点就行，但是都用上红锁了，肯定高可用是要考虑的），但是这种解决问题，牺牲了高可用性。（跟持久化的问题一样，每条命令都持久化，很耗费性能。推荐1s Aof）" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="100" y="2090" width="870" height="280" as="geometry" />
         </mxCell>
-        <mxCell id="_cNctXotL4sYTQS76gGQ-2" value="锁优化：&lt;br&gt;分段锁：参考concurryhashmap（1.7版本），联合redisson怎么实现？。比如常规的锁，setnx apple18&amp;nbsp; 1，这个value 1是随便写的。所有的线程都会抢这一个key，那么如果我这个apple18有1000个名额优惠，就可以分成10段，setnx apple18_100 1，setnx apple18_200 1，......setnx apple18_1000 1，" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="110" y="2410" width="870" height="280" as="geometry" />
+        <mxCell id="_cNctXotL4sYTQS76gGQ-2" value="锁优化：&lt;br&gt;分段锁：参考concurryhashmap（1.7版本），联合redisson怎么实现？。比如常规的锁，setnx apple18&amp;nbsp; 1，这个value 1是随便写的。所有的线程都会抢这一个key，那么如果我这个apple18有1000个名额优惠，就可以分成10段，setnx apple18_100 1，setnx apple18_200 1，......setnx apple18_1000 1，客户端可以进行随机、权重、轮训等方式去抢这10个锁，这样，并发就降低了10倍。但是有个问题就是，如何去控制数量呢？" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="110" y="2410" width="880" height="170" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
