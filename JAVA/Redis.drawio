@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-27T02:52:24.142Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="d-YifUaEWj5jHDxynIl7" version="22.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-27T03:02:42.515Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="VlsyuzZTDqmUVMN4LbXN" version="22.1.4" type="github">
   <diagram name="第 1 页" id="Ui-6xDZG4yXv-m0ysYRE">
     <mxGraphModel dx="1434" dy="758" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -21,6 +21,9 @@
         </mxCell>
         <mxCell id="iayUrk5L2lRTLvckCghS-6" value="分布式锁&lt;br&gt;&lt;br&gt;为什么需要分布式锁？&lt;br&gt;&lt;br&gt;分布式锁的实现方式（redis、zookepper、数据库）&lt;br&gt;&lt;br&gt;redis实现分布式锁的方式：setnx、redisson（框架）&lt;br&gt;&lt;br&gt;其中如果用setnx，需要自己处理很多的复杂情况：代码原子性、释放锁的时机问题、超时时间设置的长短。&lt;br&gt;&lt;br&gt;那么redission很好的封装了这些复杂的逻辑。包括锁的续期。&lt;br&gt;&lt;br&gt;当并发抢锁时候，redisson用lua脚本来执行原子性的命令，redis执行命令也是单线程执行的，所以，只会有1个线程能够抢到锁，相当于我们自己写程序用的setnx。 锁的过期时间默认30s，抢完锁就继续执行业务逻辑，这时候后台会用方法递归的方式来进行锁的续期，默认30/3=10s钟一次。其它等待的线程进行while自旋获取锁操作，先会进入阻塞状态，让出CPU的执行时间片，这个等待的时间，就是锁的过期时间TTL。如果线程执行很快，那么等待的这些线程就需要被唤醒继续抢锁，reddison利用了redis的发布订阅机制来进行唤醒的。&lt;br&gt;&lt;br&gt;redisson那些地方设计很好？&lt;br&gt;lua脚本原子性执行、线程阻塞，过期时间使用TTL、使用递归的方式来进行续期、发布订阅来唤醒所有的线程。&lt;br&gt;看门狗逻辑就是锁续命？" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="93.5" y="1580" width="946.5" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="_cNctXotL4sYTQS76gGQ-1" value="分布式锁，在主从架构下面的失效问题，" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="100" y="2090" width="870" height="280" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
