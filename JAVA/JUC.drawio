@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-28T01:15:40.464Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="EyzMH9VX2-KkS8nFft_z" version="22.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-28T01:17:25.942Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="60cuhiZXApsQwFsiGe9F" version="22.1.4" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="4044" dy="3601" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -267,6 +267,14 @@
         </mxCell>
         <mxCell id="RMwA_HqicnO8PUb4kJed-16" value="BasicObjectLock（重入才有）" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="8427.5" y="4760" width="252.5" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="NuOH9yvHqTFYKx_gXAmS-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="RMwA_HqicnO8PUb4kJed-17" target="RMwA_HqicnO8PUb4kJed-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="8565" y="4790" />
+              <mxPoint x="9080" y="4790" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="RMwA_HqicnO8PUb4kJed-17" value="BasicLock" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="8490" y="4800" width="150" height="50" as="geometry" />
