@@ -1,13 +1,13 @@
-<mxfile host="app.diagrams.net" modified="2023-11-27T13:02:29.625Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="dQ2kdrBIkXUAp2tpx_dU" version="22.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-28T01:15:40.464Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="EyzMH9VX2-KkS8nFft_z" version="22.1.4" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="4044" dy="3601" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="RMwA_HqicnO8PUb4kJed-13" value="&lt;font style=&quot;font-size: 35px;&quot;&gt;&lt;b&gt;synchronized的堆栈情况图&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=21;" vertex="1" parent="1">
+        <mxCell id="RMwA_HqicnO8PUb4kJed-13" value="&lt;font style=&quot;font-size: 35px;&quot;&gt;&lt;b&gt;synchronized的堆栈情况图&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=21;" parent="1" vertex="1">
           <mxGeometry x="8300" y="4450" width="1160" height="860" as="geometry" />
         </mxCell>
-        <mxCell id="RMwA_HqicnO8PUb4kJed-6" value="堆" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="RMwA_HqicnO8PUb4kJed-6" value="堆" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="8970" y="4530" width="370" height="440" as="geometry" />
         </mxCell>
         <mxCell id="kMqMq4y_Rdl73i2ZY386-1" value="&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 27px;&quot;&gt;&lt;b&gt;根据源码理解Synchronized&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;" parent="1" vertex="1">
@@ -229,55 +229,55 @@
         <mxCell id="-xeI0Jfz6cBN4sZCXLh4-1" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;ObjectSynchronizer::slow_enter：&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;1.获取对象头标记。&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;2.断言不会存在偏向锁。&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;3.判断对象头标记，是不是无锁状态：&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;是-:保存对象头标记到BasicLock对象上。&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;if&amp;nbsp;(mark&amp;nbsp;==&amp;nbsp;(markOop)&amp;nbsp;Atomic::cmpxchg_ptr(lock,&amp;nbsp;obj()-&amp;gt;mark_addr(),&amp;nbsp;mark))&amp;nbsp;{}&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;这行代码是判断mark（保存起来的对象头标记）跟对象的mark_addr是不是相同的，如果是相同的，表示在这期间没有线程竞争，则将lock替换为mark_addr。&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="5960" y="5350" width="1010" height="370" as="geometry" />
         </mxCell>
-        <mxCell id="RMwA_HqicnO8PUb4kJed-1" value="&lt;font color=&quot;#ff0000&quot;&gt;basicLock.hpp文件里面定义了BasicLock类型，BasicObjectLock类型&lt;br&gt;&lt;/font&gt;&lt;code&gt;BasicLock&lt;/code&gt; 是一个用于实现轻量级锁和偏向锁基础结构的类，而 &lt;code&gt;BasicObjectLock&lt;/code&gt; 则是关联了特定 Java 对象和 &lt;code&gt;BasicLock&lt;/code&gt; 的类。&lt;font color=&quot;#ff0000&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="RMwA_HqicnO8PUb4kJed-1" value="&lt;font color=&quot;#ff0000&quot;&gt;basicLock.hpp文件里面定义了BasicLock类型，BasicObjectLock类型&lt;br&gt;&lt;/font&gt;&lt;code&gt;BasicLock&lt;/code&gt; 是一个用于实现轻量级锁和偏向锁基础结构的类，而 &lt;code&gt;BasicObjectLock&lt;/code&gt; 则是关联了特定 Java 对象和 &lt;code&gt;BasicLock&lt;/code&gt; 的类。&lt;font color=&quot;#ff0000&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="6880" y="4560" width="880" height="260" as="geometry" />
         </mxCell>
-        <mxCell id="RMwA_HqicnO8PUb4kJed-2" value="线程栈" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="RMwA_HqicnO8PUb4kJed-2" value="线程栈" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="8380" y="4510" width="370" height="440" as="geometry" />
         </mxCell>
-        <mxCell id="RMwA_HqicnO8PUb4kJed-3" value="BasicObjectLock" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;" vertex="1" parent="1">
+        <mxCell id="RMwA_HqicnO8PUb4kJed-3" value="BasicObjectLock" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="8427.5" y="4570" width="252.5" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="RMwA_HqicnO8PUb4kJed-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RMwA_HqicnO8PUb4kJed-4" target="RMwA_HqicnO8PUb4kJed-7">
+        <mxCell id="RMwA_HqicnO8PUb4kJed-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="RMwA_HqicnO8PUb4kJed-4" target="RMwA_HqicnO8PUb4kJed-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="RMwA_HqicnO8PUb4kJed-4" value="BasicLock" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="RMwA_HqicnO8PUb4kJed-4" value="BasicLock" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="8478.75" y="4610" width="150" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="RMwA_HqicnO8PUb4kJed-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RMwA_HqicnO8PUb4kJed-5" target="RMwA_HqicnO8PUb4kJed-9">
+        <mxCell id="RMwA_HqicnO8PUb4kJed-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="RMwA_HqicnO8PUb4kJed-5" target="RMwA_HqicnO8PUb4kJed-9" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="RMwA_HqicnO8PUb4kJed-5" value="oop" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="RMwA_HqicnO8PUb4kJed-5" value="oop" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="8478.75" y="4676" width="150" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="RMwA_HqicnO8PUb4kJed-7" value="BasicLock" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;" vertex="1" parent="1">
+        <mxCell id="RMwA_HqicnO8PUb4kJed-7" value="BasicLock" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="9010" y="4580" width="280" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="RMwA_HqicnO8PUb4kJed-9" value="oop 锁对象" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;" vertex="1" parent="1">
+        <mxCell id="RMwA_HqicnO8PUb4kJed-9" value="oop 锁对象" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="9010" y="4830" width="220" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="RMwA_HqicnO8PUb4kJed-11" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;_displaced_header&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="RMwA_HqicnO8PUb4kJed-11" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;_displaced_header&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="9070" y="4620" width="180" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="RMwA_HqicnO8PUb4kJed-12" value="对象头信息&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="RMwA_HqicnO8PUb4kJed-12" value="对象头信息&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="9030" y="4870" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="RMwA_HqicnO8PUb4kJed-14" value="1.首先monitorenter的方法就组织好了这么一个堆栈情况了。" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=20;" vertex="1" parent="1">
+        <mxCell id="RMwA_HqicnO8PUb4kJed-14" value="1.首先monitorenter的方法就组织好了这么一个堆栈情况了。" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=20;" parent="1" vertex="1">
           <mxGeometry x="8340" y="5040" width="800" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="RMwA_HqicnO8PUb4kJed-16" value="BasicObjectLock" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;" vertex="1" parent="1">
+        <mxCell id="RMwA_HqicnO8PUb4kJed-16" value="BasicObjectLock（重入才有）" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="8427.5" y="4760" width="252.5" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="RMwA_HqicnO8PUb4kJed-17" value="BasicLock" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="RMwA_HqicnO8PUb4kJed-17" value="BasicLock" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="8490" y="4800" width="150" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="RMwA_HqicnO8PUb4kJed-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="RMwA_HqicnO8PUb4kJed-18" target="RMwA_HqicnO8PUb4kJed-19">
+        <mxCell id="RMwA_HqicnO8PUb4kJed-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="RMwA_HqicnO8PUb4kJed-18" target="RMwA_HqicnO8PUb4kJed-19" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="RMwA_HqicnO8PUb4kJed-18" value="oop" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="RMwA_HqicnO8PUb4kJed-18" value="oop" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="8490" y="4866" width="150" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="RMwA_HqicnO8PUb4kJed-19" value="null" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;rounded=0;" vertex="1" parent="1">
+        <mxCell id="RMwA_HqicnO8PUb4kJed-19" value="null" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="8760" y="4940" width="80" height="80" as="geometry" />
         </mxCell>
       </root>
