@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-28T07:56:08.828Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="8NH-m5gv_qlUexRJeLJJ" version="22.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-28T07:56:27.951Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="TXd6KwFIvVPXE7-VkCEA" version="22.1.4" type="github">
   <diagram name="第 1 页" id="Ui-6xDZG4yXv-m0ysYRE">
     <mxGraphModel dx="1434" dy="758" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -28,7 +28,7 @@
         <mxCell id="_cNctXotL4sYTQS76gGQ-2" value="锁优化：&lt;br&gt;分段锁：参考concurryhashmap（1.7版本），联合redisson怎么实现？。比如常规的锁，setnx apple18&amp;nbsp; 1，这个value 1是随便写的。所有的线程都会抢这一个key，那么如果我这个apple18有1000个名额优惠，就可以分成10段，setnx apple18_100 1，setnx apple18_200 1，......setnx apple18_1000 1，客户端可以进行随机、权重、轮训等方式去抢这10个锁，这样，并发就降低了10倍。但是有个问题就是，如何去控制数量呢？" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="110" y="2410" width="880" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="oPHmPLFePxrs62uWGmC0-1" value="redis的实战优化：&lt;br&gt;&lt;br&gt;1.所有的数据如果都存redis，肯定会很占用内存，需要加一个过期时间，一般为24小时。如果24小时有访问，则再续期24小时。&lt;br&gt;&lt;br&gt;2.缓存击穿（失效）：有种业务场景，后台操作人员，进行批量上线操作，这时候，在缓存里面的过期时间是一样的，如果刚好在失效的时候全部来访问（大促销），这时候巨量的访问都会直接导数据库上面。&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;解决方案：在上线操作的时候，过期时间：24小时+随机几个小时。这样就不会在同一时间失效了。&lt;br&gt;&lt;br&gt;3.缓存穿透：场景：1.黑客攻击（找数据库和缓存都没有的key进行访问）。2.误操作删除数据（包括数据库和缓存都删了）。这种情况就是缓存和数据库都找不到数据。" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
+        <mxCell id="oPHmPLFePxrs62uWGmC0-1" value="redis的实战优化：&lt;br&gt;&lt;br&gt;1.所有的数据如果都存redis，肯定会很占用内存，需要加一个过期时间，一般为24小时。如果24小时有访问，则再续期24小时。这样能区分开热点数据进行缓存。&lt;br&gt;&lt;br&gt;2.缓存击穿（失效）：有种业务场景，后台操作人员，进行批量上线操作，这时候，在缓存里面的过期时间是一样的，如果刚好在失效的时候全部来访问（大促销），这时候巨量的访问都会直接导数据库上面。&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;解决方案：在上线操作的时候，过期时间：24小时+随机几个小时。这样就不会在同一时间失效了。&lt;br&gt;&lt;br&gt;3.缓存穿透：场景：1.黑客攻击（找数据库和缓存都没有的key进行访问）。2.误操作删除数据（包括数据库和缓存都删了）。这种情况就是缓存和数据库都找不到数据。" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="110" y="2720" width="890" height="330" as="geometry" />
         </mxCell>
       </root>
