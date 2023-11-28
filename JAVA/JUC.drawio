@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-28T08:04:12.736Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="fEerwQC2_pxITOdhxCET" version="22.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-28T08:32:09.013Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="FgprzkL0NmL_aqQBVF_4" version="22.1.4" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="3341" dy="3230" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -302,6 +302,9 @@
         </mxCell>
         <mxCell id="NuOH9yvHqTFYKx_gXAmS-8" value="锁记录指针" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=middle;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="9055" y="4940" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BeAXbf0iqVBGtO86R6WJ-5" value="&lt;div class=&quot;flex-shrink-0 flex flex-col relative items-end&quot;&gt;&lt;div class=&quot;pt-0.5&quot;&gt;&lt;div class=&quot;gizmo-shadow-stroke flex h-6 w-6 items-center justify-center overflow-hidden rounded-full&quot;&gt;&lt;div class=&quot;relative flex&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;既然堆上面已经有了o1对象，那么它的对象头信息已经可以表示锁状态了，为什么还需要一个BasicLock呢？&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;relative flex&quot;&gt;BasicLock对象是 JVM 内部为了实现高效的锁管理而引入的，它不仅包含了对象头中的锁状态信息，还可能包含其他 JVM 内部需要的信息。这有助于 JVM 在更复杂的情况下进行更灵活和高效的锁管理。&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="9511" y="4575" width="800" height="160" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
