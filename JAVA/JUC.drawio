@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-01T09:51:41.089Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="dSfVK2evu9SfZVRq6jXw" version="22.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-01T09:52:32.949Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="E47q6C1LgqLhuIUUZ7JC" version="22.1.5" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="3341" dy="3230" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -292,8 +292,8 @@
         <mxCell id="BeAXbf0iqVBGtO86R6WJ-6" value="null&lt;br&gt;重入的时候" style="ellipse;whiteSpace=wrap;html=1;fontSize=18;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="9360" y="4585" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="YXokXPAAKOrksbMZ3ekQ-1" value="&lt;font color=&quot;#ff0000&quot;&gt;第一次偏向并不是在MonotroEnter方法里面的！！！！！&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" vertex="1" parent="1">
-          <mxGeometry x="6010" y="4845" width="410" height="65" as="geometry" />
+        <mxCell id="YXokXPAAKOrksbMZ3ekQ-1" value="&lt;font color=&quot;#ff0000&quot;&gt;第一次偏向并不是在MonotroEnter方法里面的！！！！！但是写代码观察并不是呢？？？？？&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" vertex="1" parent="1">
+          <mxGeometry x="6010" y="4845" width="720" height="95" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
