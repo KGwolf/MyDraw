@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-05T03:57:53.795Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="sZNPMTjs6rOQs3F3TZtX" version="22.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-05T03:59:09.579Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="ljtg67dG9y7S0bervhNJ" version="22.1.5" type="github">
   <diagram name="第 1 页" id="Ui-6xDZG4yXv-m0ysYRE">
     <mxGraphModel dx="2206" dy="1166" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -31,8 +31,11 @@
         <mxCell id="oPHmPLFePxrs62uWGmC0-1" value="redis的实战优化：&lt;br&gt;&lt;br&gt;1.所有的数据如果都存redis，肯定会很占用内存，需要加一个过期时间，一般为24小时。如果24小时有访问，则再续期24小时。这样能区分开热点数据进行缓存。&lt;br&gt;&lt;br&gt;2.缓存击穿（失效）：有种业务场景，后台操作人员，进行批量上线操作，这时候，在缓存里面的过期时间是一样的，如果刚好在失效的时候全部来访问（大促销），这时候巨量的访问都会直接导数据库上面。&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;解决方案：在上线操作的时候，过期时间：24小时+随机几个小时。这样就不会在同一时间失效了。&lt;br&gt;&lt;br&gt;3.缓存穿透：场景：1.黑客攻击（找数据库和缓存都没有的key进行访问）。2.误操作删除数据（包括数据库和缓存都删了）。这种情况就是缓存和数据库都找不到数据。、&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;解决方案：1.当缓存和数据库都没有找到数据时，在缓存里面设置一个空的对象（非null），&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;2.布隆过滤器。&lt;br&gt;&lt;br&gt;4.缓存雪崩：场景：1.redis挂了。2.大量并发请求打到redis，或者大量并发访问大key，超过负载，最后请求大量到达数据库，导致全局雪崩。&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;解决方案：1.redis集群，保证高可用。2.限流，前端nginx限流、微服务组件限流。3.多级缓存。nginx+lua+静态页面、redis缓存、jvm缓存。其中jvm缓存大公司都是用的一个项目去做热点缓存更新？&lt;br&gt;&lt;br&gt;4.分布式锁的用途：&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1.当高并发来到首次查询的逻辑时，缓存里面没有数据，全部都会集中到数据库，不太好。&lt;br&gt;所以可以用分布式锁，分布式锁的key需要细粒化，比如细粒化到商品ID。&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;2.缓存数据库双写不一致问题的解决。&lt;br&gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;上面如果加上分布式锁，会有效率问题，怎么优化分布式锁呢？&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1.redisson的读写锁，针对双写不一致的分布式锁解决方案。&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;2.redisson的一些特殊的方法。trygetkey。" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="111" y="2720" width="939" height="610" as="geometry" />
         </mxCell>
-        <mxCell id="7Gq7ySSlHzUSGOugI9tr-1" value="什么是布隆过滤器，作用是什么？" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
+        <mxCell id="7Gq7ySSlHzUSGOugI9tr-1" value="什么是布隆过滤器，作用是什么？&lt;br&gt;&lt;br&gt;bitmap是什么，作用场景有哪些？&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="1188" y="2700" width="880" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="7Gq7ySSlHzUSGOugI9tr-2" value="redis各种类型的底层数据结构是什么？&lt;br&gt;&lt;br&gt;为什么key的数据结构redis不用c语言的char数组？而是用SDS呢？" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="3030" width="880" height="170" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
