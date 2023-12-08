@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-08T02:11:18.885Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="nd5JGCPAg0uRTX2ek9SO" version="22.1.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-08T02:13:34.848Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="51JuruZ0CPL14uc2hQM0" version="22.1.7" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="3703" dy="3421" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -236,19 +236,19 @@
           <mxGeometry x="8390" y="4510" width="360" height="490" as="geometry" />
         </mxCell>
         <mxCell id="RMwA_HqicnO8PUb4kJed-3" value="BasicObjectLock" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="8427.5" y="4570" width="252.5" height="170" as="geometry" />
+          <mxGeometry x="8431" y="4820" width="252.5" height="170" as="geometry" />
         </mxCell>
         <mxCell id="RMwA_HqicnO8PUb4kJed-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="RMwA_HqicnO8PUb4kJed-4" target="RMwA_HqicnO8PUb4kJed-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="RMwA_HqicnO8PUb4kJed-4" value="BasicLock" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
-          <mxGeometry x="8478.75" y="4610" width="150" height="50" as="geometry" />
+          <mxGeometry x="8478.75" y="4855" width="150" height="50" as="geometry" />
         </mxCell>
         <mxCell id="RMwA_HqicnO8PUb4kJed-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="RMwA_HqicnO8PUb4kJed-5" target="RMwA_HqicnO8PUb4kJed-9" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="RMwA_HqicnO8PUb4kJed-5" value="oop" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
-          <mxGeometry x="8478.75" y="4676" width="150" height="50" as="geometry" />
+          <mxGeometry x="8478.75" y="4921" width="150" height="50" as="geometry" />
         </mxCell>
         <mxCell id="RMwA_HqicnO8PUb4kJed-7" value="BasicLock" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="9010" y="4585" width="280" height="100" as="geometry" />
@@ -297,6 +297,15 @@
         </mxCell>
         <mxCell id="ldg9dvFK6Idkhoo2FDhu-1" value="&lt;font color=&quot;#ff0000&quot;&gt;字节码monitorenter，从哪里进入的？可以看bytecodeInterpreter.cpp、templateTable_x86_64.cpp&lt;br&gt;其中1个是字节码解释器，1个是模版解释器。程序应该走的后面那个。但是我们只看逻辑的话，可以看字节码解释器，方便阅读一点。&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="5950" y="4220" width="880" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="cqHzi6L1h3COtgTWxIpi-1" value="BasicObjectLock" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="8440" y="4610" width="252.5" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="cqHzi6L1h3COtgTWxIpi-2" value="BasicLock" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="8487.75" y="4645" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cqHzi6L1h3COtgTWxIpi-3" value="oop" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="8487.75" y="4711" width="150" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
