@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-08T01:32:54.987Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="O5xJDOvXBKs3V8H0d4If" version="22.1.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-08T03:58:09.371Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="v3lVVQA16XB_bfbVkfis" version="22.1.7" type="github">
   <diagram name="第 1 页" id="Ui-6xDZG4yXv-m0ysYRE">
     <mxGraphModel dx="1434" dy="758" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -37,8 +37,8 @@
         <mxCell id="7Gq7ySSlHzUSGOugI9tr-2" value="HyperLogLog 是用作哪些场景？ 网站PV、UV的统计。用小内存来进行这样的大数据量统计&lt;br&gt;&lt;br&gt;底层原理是怎样的？最大似然估计？" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="1188" y="2900" width="880" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="PHccF4N-XfR_OPHLK2SQ-1" value="Redis6 和 Redis7 有哪些改进呢？&lt;br&gt;&lt;br&gt;多线程（网络模型的改进）、主从同步的改进" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="1188" y="3110" width="880" height="170" as="geometry" />
+        <mxCell id="PHccF4N-XfR_OPHLK2SQ-1" value="Redis6 和 Redis7 有哪些改进呢？&lt;br&gt;&lt;br&gt;多线程（网络模型的改进）、&lt;br&gt;&lt;br&gt;Redis7主从同步的改进：&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;问题：多个从库，首先RDB全量复制，之后的命令也需要进行发送给从库。那么redis7之前设计的有2个中间缓冲区，从库复制缓冲区、复制积压区（防止意外丢失命令）。&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1.每一个从库都需要有从库复制缓冲区，这可能会很浪费内存空间。" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1188" y="3110" width="892" height="250" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
