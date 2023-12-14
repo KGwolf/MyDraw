@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-14T01:57:14.239Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="4H9HqQrZJXPA_gGd123P" version="22.1.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-14T01:59:08.559Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="NaN5jjGEQUrFtN37A7md" version="22.1.8" type="github">
   <diagram name="第 1 页" id="1XJYP80JxbJxhC29MnGr">
     <mxGraphModel dx="1434" dy="1927" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -37,8 +37,8 @@
         <mxCell id="pnb352GZgsO-i2-xDFfo-1" value="可以吧PR的任务生成，加上一个抢单的功能！！！&lt;br&gt;&lt;br&gt;分布式环境下的！！！！&lt;br&gt;&lt;br&gt;redis可以用reddison来做分布式锁的框架！" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="340" y="-180" width="310" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="GLIDyd0n-ON3j2NHpdD_-1" value="Disruptor，在高并发下面报错：&lt;br&gt;&lt;br&gt;EnCache，在高并发下面报错：" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1150" y="-160" width="300" height="60" as="geometry" />
+        <mxCell id="GLIDyd0n-ON3j2NHpdD_-1" value="Disruptor，在高并发下面报错：&lt;br&gt;&lt;br&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;2023-12-14 09:26:15[disruptor-3]ER.OR c.m.m d.h. DatalTrapgerEventiandler - workiandler-3解析队列数据对象保存病人药品医嘱信息-mu1java . lang.NullPointerException: null&lt;br&gt;&amp;nbsp;at com.medicom.modules.disreptor.handler.DatawrapperEventiandler.onEvent(DatawrapperEventHandLer.java:40)&lt;br&gt;&amp;nbsp;at com.medicom.modules.disreptor.handler.DataWrapperEventHandler.onEvent (DatawrapperEventHandler.java:18)&lt;br&gt;at com.lmax.disruptor.workProcessor.run (WorkProcessor.java:143)&lt;br/&gt;&lt;br&gt;at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)&lt;br&gt;at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)&lt;br&gt;at java. lang. Thread.run (Thread.java : 748)&lt;br/&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;EnCache，在高并发下面报错：" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="-160" width="690" height="200" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
