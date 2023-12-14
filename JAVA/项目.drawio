@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-14T07:36:22.135Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="EHOMKVpOi_BktmPdVmAW" version="22.1.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-14T07:37:38.327Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="SATU2buAoVag_RzYI3XW" version="22.1.8" type="github">
   <diagram name="第 1 页" id="1XJYP80JxbJxhC29MnGr">
     <mxGraphModel dx="1434" dy="1927" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -38,7 +38,7 @@
           <mxGeometry x="340" y="-180" width="310" height="90" as="geometry" />
         </mxCell>
         <mxCell id="GLIDyd0n-ON3j2NHpdD_-1" value="Disruptor，在高并发下面报错：&lt;br&gt;&lt;br&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;2023-12-14 09:26:15[disruptor-3]ERROR c.m.m d.h. DatalWrapperEventHandler - workHandler-3解析队列数据对象 保存病人药品医嘱信息-&amp;gt;null&lt;br&gt;java.lang.NullPointerException: null&lt;br&gt;&amp;nbsp;at com.medicom.modules.disruptor.handler.DatawrapperEventHandler.onEvent(DatawrapperEventHandler.java:40)&lt;br&gt;&amp;nbsp;at com.medicom.modules.disruptor.handler.DataWrapperEventHandler.onEvent (DatawrapperEventHandler.java:18)&lt;br&gt;at com.lmax.disruptor.workProcessor.run (WorkProcessor.java:143)&lt;br&gt;&lt;br&gt;at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)&lt;br&gt;at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:624)&lt;br&gt;at java.lang.Thread.run (Thread.java : 748)&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;EnCache，在高并发下面报错：&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;存放encache+类有继承关系，类需要实现Serialzable接口，且在子类上需要加上@EqualsAndHashCode(callSuper=true)，防止从磁盘里面读取进行反序列化时父类为null。&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1110" y="-330" width="700" height="370" as="geometry" />
+          <mxGeometry x="1140" y="-350" width="670" height="390" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
