@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-13T08:41:46.868Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="5HGLU5h7IbuRjo18kn8T" version="22.1.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-15T02:48:34.678Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="svjbDz_mejncQLm0tUwt" version="22.1.9" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
-    <mxGraphModel dx="4044" dy="3601" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4044" dy="3581" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -343,13 +343,13 @@
         <mxCell id="cqHzi6L1h3COtgTWxIpi-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.29;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="cqHzi6L1h3COtgTWxIpi-3" target="RMwA_HqicnO8PUb4kJed-9" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="cqHzi6L1h3COtgTWxIpi-29" value="&lt;font color=&quot;#ff0000&quot;&gt;ObjectMonitor::enter()方法：&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1.首先CAS将当前线程指向OM对象的owner指针。成功表示获取了锁返回，不成功继续下一步。&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;2.&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" parent="1" vertex="1">
+        <mxCell id="cqHzi6L1h3COtgTWxIpi-29" value="&lt;font color=&quot;#ff0000&quot;&gt;ObjectMonitor::enter()方法：&lt;/font&gt;&lt;br&gt;&lt;span style=&quot;color: rgb(255, 0, 0); white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1.首先CAS将当前线程指向OM对象的owner指针。成功表示获取了锁返回，不成功继续下一步。&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;2.判断是不是重入，重入次数+1，返回执行。&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;3.判断是不是轻量级锁，如果是，则将_owner指针从BasicLock指向当前线程。&lt;br&gt;&lt;font color=&quot;#ff0000&quot;&gt;前面3步是处理无锁、重入、轻量级锁的简单情况。&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="5950" y="5880" width="1090" height="360" as="geometry" />
         </mxCell>
         <mxCell id="cqHzi6L1h3COtgTWxIpi-30" value="&lt;font color=&quot;#ff0000&quot;&gt;问题：这些流程中的自旋的目的是什么？？？&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="7110" y="5380" width="1010" height="370" as="geometry" />
         </mxCell>
-        <mxCell id="vvNJsNueuEG9Odb9S_mV-1" value="&lt;font color=&quot;#ff0000&quot;&gt;前期是CAS操作获取偏向、轻量级锁。&lt;br&gt;当轻量级CAS获取不到了之后，开始inflate方法膨胀，开始也是CAS修改锁对象的对象头，改成00，表示重量级锁状态，&lt;br&gt;然后inflate方法获取到了OM对象，调用enter方法，进行获取锁，执行代码。&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="vvNJsNueuEG9Odb9S_mV-1" value="&lt;font color=&quot;#ff0000&quot;&gt;前期是CAS操作获取偏向、轻量级锁。&lt;br&gt;当轻量级CAS获取不到了之后，开始inflate方法膨胀，开始也是CAS修改锁对象的对象头，改成00，表示重量级锁状态，&lt;br&gt;然后inflate方法获取到了OM对象，调用enter方法，进行获取锁，执行代码。&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="5910" y="6654" width="1090" height="360" as="geometry" />
         </mxCell>
       </root>
