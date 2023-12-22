@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2023-12-22T03:57:41.426Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="9sIMYUsiigKDA-2jHAUD" version="22.1.11" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-22T03:58:55.511Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="fPGEajmWtYjE_gjKKqQQ" version="22.1.11" type="github">
   <diagram name="第 1 页" id="dfQ2K8U6RCrprToEWXjN">
     <mxGraphModel dx="1434" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="kspal44cpr0UDIiF-O2j-1" value="网络：&lt;br&gt;七层模型和4层模型（ISO、TCP/IP）&lt;br&gt;&lt;br&gt;三次握手、四次挥手:&lt;br&gt;状态流转、为什么是三次不是四次或者2次？&lt;br&gt;为什么要四次挥手？&lt;br&gt;&lt;br&gt;IP地址用在网络层，Mac地址用在物理层，局域网使用？跟网卡绑定" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" parent="1" vertex="1">
+        <mxCell id="kspal44cpr0UDIiF-O2j-1" value="网络：&lt;br&gt;七层模型和4层模型（ISO、TCP/IP）&lt;br&gt;&lt;br&gt;三次握手、四次挥手:&lt;br&gt;状态流转、为什么是三次不是四次或者2次？&lt;br&gt;为什么要四次挥手？&lt;br&gt;&lt;br&gt;IP地址用在网络层，一个机器只能1个，Mac地址用在物理层，局域网使用？跟网卡绑定，可以多个网卡，所以可以多个Mac地址" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="90" y="230" width="620" height="220" as="geometry" />
         </mxCell>
       </root>
