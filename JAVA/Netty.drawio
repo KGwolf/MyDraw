@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-22T03:58:55.511Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="fPGEajmWtYjE_gjKKqQQ" version="22.1.11" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-25T05:11:37.197Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="hrEEh6XCQeDeRK8ElJhS" version="22.1.11" type="github">
   <diagram name="第 1 页" id="dfQ2K8U6RCrprToEWXjN">
     <mxGraphModel dx="1434" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -6,6 +6,12 @@
         <mxCell id="1" parent="0" />
         <mxCell id="kspal44cpr0UDIiF-O2j-1" value="网络：&lt;br&gt;七层模型和4层模型（ISO、TCP/IP）&lt;br&gt;&lt;br&gt;三次握手、四次挥手:&lt;br&gt;状态流转、为什么是三次不是四次或者2次？&lt;br&gt;为什么要四次挥手？&lt;br&gt;&lt;br&gt;IP地址用在网络层，一个机器只能1个，Mac地址用在物理层，局域网使用？跟网卡绑定，可以多个网卡，所以可以多个Mac地址" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="90" y="230" width="620" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0x3BzN4bDTh5bxxYxOY-1" value="为什么Mysql会有很多的time_waiting状态？" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="90" y="520" width="620" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0x3BzN4bDTh5bxxYxOY-2" value="从vmware转到hyper-v：先全量备份一个主机，生成vmdk文件，然后用V2V_Converter.exe转换成hyper-v需要的vhdx文件（win11貌似打不开这个exe，生成的vhdx文件可能有10G左右，可以用压缩软件分批量压缩，每个part2G，然后通过QQ邮箱大文件中转站进行传递），然后拿到vhdx，在Hyperv管理器，新建一个虚拟机，连接虚拟硬盘选项，选择vhdx文件即可。启动虚拟机，可能会出现启动不了的情况：Dracut模式，dev/centos/root does not exist&amp;nbsp; dev/centos/swap does not exist /dev/mapper/centos-root does not exist。&amp;nbsp; 这个时候，需要在引导界面选择第二个，然后打开终端，vi /etc/default/grub，找到GRUB_CMDLINE_LINUX，在最后添加 root=/dev/centos/root，（不确定是不是这个原因），然后dracut -f /boot/initramfs-$(uname -r).img $(uname -r)，执行完成后重启即可。" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="780" y="230" width="640" height="300" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
