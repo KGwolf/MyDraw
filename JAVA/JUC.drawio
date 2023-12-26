@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-12-26T09:21:51.787Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="nt_rbNPNC98BMZ3nla4z" version="22.1.11" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-26T09:24:25.401Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="87Wr4aeihgEaSshvBOE2" version="22.1.11" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="3341" dy="3230" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -357,6 +357,9 @@
         </mxCell>
         <mxCell id="SO_Famecsqjp8RytZ71Y-1" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;ExitEpilog：&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;1.将_owner设置为null，释放锁。&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;2.fence()内存屏障。&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;3.unpark()进行唤醒。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="7130" y="5230" width="1000" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="SO_Famecsqjp8RytZ71Y-2" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;释放总结：&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;在获取锁时，是将当前线程放到_cxq队列的最前面。释放锁，默认策略，将_cxq的元素放到_EntryList，并唤醒第一个线程。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="7130" y="5429.5" width="1000" height="110" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
