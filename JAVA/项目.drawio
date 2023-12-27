@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-25T09:06:41.326Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="rJJ-uxX4vxP-cglxqhI8" version="22.1.11" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-27T05:32:47.722Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="cgGmxcTwQt0w1iXvKHZT" version="22.1.12" type="github">
   <diagram name="第 1 页" id="1XJYP80JxbJxhC29MnGr">
-    <mxGraphModel dx="1434" dy="1915" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="1927" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -52,8 +52,8 @@
         <mxCell id="CAA8TabalaVCixUhrOd4-1" value="可以回退到12月份代码进行性能测试。" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="2160" y="-410" width="290" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="4FLja5BOqqyU_yTpesLY-1" value="IM，有一个问题，超过6个页面嵌套之后，会导致浏览器请求卡死。&lt;br&gt;&lt;p&gt;浏览器对同一个域名下并行连接数有限制，这一限制通常被称为&quot;并发连接数&quot;。这是因为浏览器为了避免过多的并发请求对网络性能造成负面影响，对同一个域名下的并发连接数进行了限制。&lt;/p&gt;&lt;p&gt;通常，对于 HTTP/1.1 协议，浏览器对同一域名下的并发连接数限制为 6-8 个&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
-          <mxGeometry x="560" y="-440" width="550" height="100" as="geometry" />
+        <mxCell id="4FLja5BOqqyU_yTpesLY-1" value="IM，有一个问题，超过6个页面嵌套之后，会导致浏览器请求卡死。&lt;br&gt;&lt;p&gt;浏览器对同一个域名下并行连接数有限制，这一限制通常被称为&quot;并发连接数&quot;。这是因为浏览器为了避免过多的并发请求对网络性能造成负面影响，对同一个域名下的并发连接数进行了限制。&lt;/p&gt;&lt;p&gt;通常，对于 HTTP/1.1 协议，浏览器对同一域名下的并发连接数限制为 6-8 个&lt;/p&gt;&lt;p&gt;具体原因：&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="1" vertex="1">
+          <mxGeometry x="400" y="-490" width="570" height="160" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
