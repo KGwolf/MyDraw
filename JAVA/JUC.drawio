@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-26T09:24:25.401Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="87Wr4aeihgEaSshvBOE2" version="22.1.11" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-27T08:48:56.563Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="ztHJvoeRk0YV0N6otJxt" version="22.1.12" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
-    <mxGraphModel dx="3341" dy="3230" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3703" dy="3421" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -355,11 +355,11 @@
         <mxCell id="G396C9pBtpPaUok4iq9P-1" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;_CXQ其实不是真正意义上的队列结构，是一个对象，里面有prev和next属性。&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="5990" y="6570" width="940" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="SO_Famecsqjp8RytZ71Y-1" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;ExitEpilog：&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;1.将_owner设置为null，释放锁。&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;2.fence()内存屏障。&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;3.unpark()进行唤醒。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="SO_Famecsqjp8RytZ71Y-1" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;ExitEpilog：&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;1.将_owner设置为null，释放锁。&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;2.fence()内存屏障。&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;3.unpark()进行唤醒。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="7130" y="5230" width="1000" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="SO_Famecsqjp8RytZ71Y-2" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;释放总结：&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;在获取锁时，是将当前线程放到_cxq队列的最前面。释放锁，默认策略，将_cxq的元素放到_EntryList，并唤醒第一个线程。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" vertex="1" parent="1">
-          <mxGeometry x="7130" y="5429.5" width="1000" height="110" as="geometry" />
+        <mxCell id="SO_Famecsqjp8RytZ71Y-2" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;释放总结：&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;在获取锁时，是将当前线程放到_cxq队列的最前面。释放锁，默认策略，将_cxq的元素放到_EntryList，并唤醒第一个线程。&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;这里需要说明_cxq和_EntryList并不是真正的队列，它们都是一个ObjectWaiter的一个实例，里面有prev和next属性。这样自然形成了一个链表（可以是双向链表），_cxq是单向链表，_EntryList是双向链表。&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;让我们回到竞争锁的EnterI方法，每来一个新的线程，都会被包装成ObjectWaiter类，next属性指向_cxq,然后自己cas代替成为新的_cxq，形成一个单向链表。_EntryList因为策略的问题，需要用到双向链表提高效率。&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;当解锁需要唤醒线程的时候，取的是_cxq，默认策略是将_cxq赋值给_EntryList，然后进行唤醒。那么结果就是&lt;font color=&quot;#ff0000&quot;&gt;后面进入_cxq的线程，反而先被唤醒&lt;/font&gt;，这里不敢说后面竞争锁的全部线程，因为有可能后面的这些线程在cas中就已经获取到了锁了。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="7130" y="5429.5" width="1010" height="310.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
