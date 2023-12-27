@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-27T12:48:18.480Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="iLAbo5Y34gvEN_EZKAx5" version="22.1.12" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-27T12:52:22.165Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="iEH4fIT0peeCvLKGhT0y" version="22.1.12" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
-    <mxGraphModel dx="3148" dy="2927" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2805" dy="2927" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -364,8 +364,8 @@
         <mxCell id="fFjvDHLMYEiiXQ2W8RZQ-4" value="JUC" style="rounded=0;whiteSpace=wrap;html=1;fontSize=43;" parent="1" vertex="1">
           <mxGeometry x="-1570" y="4590" width="8160" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="fFjvDHLMYEiiXQ2W8RZQ-6" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;为什么有了Synchronized，还需要Juc包下面的这些同步工具类呢？&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;Synchronized是java中最基本的同步机制，但是juc提供了更丰富、更灵活的同步工具&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" parent="1" vertex="1">
-          <mxGeometry x="-1520" y="4890" width="1010" height="310.5" as="geometry" />
+        <mxCell id="fFjvDHLMYEiiXQ2W8RZQ-6" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;为什么有了Synchronized，还需要Juc包下面的这些同步工具类呢？&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;Synchronized是java中最基本的同步机制，但是juc提供了更丰富、更灵活的同步工具：&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1.更灵活的机制：ReentrantLock允许手动控制锁的获取和释放，支持中断锁、超时锁。&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;2.更高级的数据结构：ConcurrentHashMap等。&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;3.简单的原子操作：AtomicInteger等。&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 136%;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="-1520" y="4890" width="1000" height="200" as="geometry" />
         </mxCell>
         <mxCell id="fFjvDHLMYEiiXQ2W8RZQ-7" value="JUC：Java Util Concurrent&amp;nbsp; java并发工具" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="-1150" y="4760" width="730" height="30" as="geometry" />
