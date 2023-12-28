@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2023-12-28T03:19:54.262Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="rCW5NJ1WTLpICfxUJSUI" version="22.1.15" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-28T03:26:12.058Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="LPE3qKr-DXTuf0Skchqz" version="22.1.15" type="github">
   <diagram name="第 1 页" id="dfQ2K8U6RCrprToEWXjN">
     <mxGraphModel dx="1434" dy="758" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="kspal44cpr0UDIiF-O2j-1" value="网络：&lt;br&gt;七层模型和4层模型（ISO、TCP/IP）&lt;br&gt;&lt;br&gt;三次握手、四次挥手:&lt;br&gt;状态流转、为什么是三次不是四次或者2次？SYN洪泛攻击是什么？&lt;br&gt;为什么要四次挥手？&lt;br&gt;&lt;br&gt;IP地址用在网络层，一个机器只能1个，Mac地址用在物理层，局域网使用？跟网卡绑定，可以多个网卡，所以可以多个Mac地址" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" parent="1" vertex="1">
+        <mxCell id="kspal44cpr0UDIiF-O2j-1" value="网络：&lt;br&gt;七层模型和4层模型（ISO、TCP/IP）&lt;br&gt;&lt;br&gt;三次握手、四次挥手:&lt;br&gt;状态流转、为什么是三次不是四次或者2次？SYN洪泛攻击是什么？&lt;br&gt;为什么要四次挥手？&lt;br&gt;&lt;br&gt;IP地址用在网络层，一个机器只能1个，Mac地址用在物理层，局域网使用？跟网卡绑定，可以多个网卡，所以可以多个Mac地址&lt;br&gt;&lt;br&gt;&lt;br&gt;什么是C10K问题？" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="90" y="230" width="630" height="360" as="geometry" />
         </mxCell>
         <mxCell id="Q0x3BzN4bDTh5bxxYxOY-1" value="为什么Mysql会有很多的time_waiting状态？&lt;br&gt;&lt;br&gt;&lt;br&gt;可以用TcpDump、WireShark 来抓取Tcp报文信息，可以看到三次握手、四次挥手的标记位信息。&lt;br&gt;&lt;br&gt;四次挥手其实某种情况下可以是三次挥手。&lt;br&gt;&lt;br&gt;TCP：一种面向连接的（需要三次握手）、可靠的传输控制协议。通过应答确认机制、超时重传机制确保可靠。TCP还有滑动窗口机制，来实现拥塞&lt;br&gt;&lt;br&gt;&lt;br&gt;UDP：不可靠但是高效传输协议。只负责发，不管对方有没有收到。需要应用层验证是否丢包。&lt;br&gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;UDT：基于UDP，引入新的拥塞控制和数据可靠控制。应用层协议？？用于互联网海量数据传输。&lt;br&gt;&lt;br&gt;QQ是UDP+TCP？" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" parent="1" vertex="1">
