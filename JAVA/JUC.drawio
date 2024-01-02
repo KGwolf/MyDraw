@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-02T03:39:25.423Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="IfydE5QTD2gdx4qJw-Bn" version="22.1.15" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-02T05:10:23.007Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="PD-BLJehBdxFSWVjn54G" version="22.1.15" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="4397" dy="3658" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -400,10 +400,10 @@
         <mxCell id="ABf24ozDNE_RPhAqXowE-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ABf24ozDNE_RPhAqXowE-4" target="ABf24ozDNE_RPhAqXowE-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ABf24ozDNE_RPhAqXowE-4" value="AQS&lt;br style=&quot;font-size: 18px;&quot;&gt;addWaiter()&lt;br&gt;cas失败后，包装成节点并且入队，自旋保证并发入队" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="ABf24ozDNE_RPhAqXowE-4" value="AQS&lt;br style=&quot;font-size: 18px;&quot;&gt;addWaiter()&lt;br&gt;cas失败后，包装成节点并且入队，&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;自旋&lt;/b&gt;&lt;/font&gt;保证并发入队" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="-1170" y="5690" width="150" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="ABf24ozDNE_RPhAqXowE-6" value="AQS&lt;br style=&quot;font-size: 18px;&quot;&gt;aquireQueued()&lt;br&gt;在队列中的节点获取锁：" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="ABf24ozDNE_RPhAqXowE-6" value="AQS&lt;br style=&quot;font-size: 18px;&quot;&gt;aquireQueued()&lt;br&gt;在队列中的节点获取锁：&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;自旋&lt;/font&gt;&lt;/b&gt;，找入队节点的前驱节点，" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="-960" y="5635" width="507" height="240" as="geometry" />
         </mxCell>
       </root>
