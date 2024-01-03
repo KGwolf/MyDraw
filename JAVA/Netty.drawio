@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-03T07:51:28.825Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="Xsh9G5WVLt2mlIar75Oa" version="22.1.16" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-03T07:53:07.214Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="2c86vWjsOETeNOGMmX9X" version="22.1.16" type="github">
   <diagram name="第 1 页" id="dfQ2K8U6RCrprToEWXjN">
     <mxGraphModel dx="2219" dy="2101" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -23,7 +23,7 @@
           <mxGeometry x="110.46000000000001" y="1190" width="669.54" height="300" as="geometry" />
         </mxCell>
         <mxCell id="lCpbr1A4xku0twNTKj-Q-1" value="java写的时候，2种内存方式：直接内存、堆内存&lt;br&gt;&lt;br&gt;为什么直接内存快？写在堆上，数据的流转过程是怎样的呢？跟零拷贝有关系吗？&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;jvm的IO写机制：使用堆内存，也会在堆外内存创建一个Buffer，先把堆内存里面的内容拷贝到新建的这个Buffer中，然后再开始从用户态到内核态拷贝数据（拷贝到socket的缓冲区），再进行发送socket数据。&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;为什么要有这个机制呢？因为防止发送数据的过程中堆内存被GC回收，地址变化了？（这个变化JVM不能支持吗？）&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;直接内存，省去了一个拷贝的步骤，所以就要快一些。但是在网络层面来看，并没有减少cpu的拷贝次数。跟零拷贝无关，零拷贝通常指的是减少传输文件时网络层面通信的拷贝。&lt;br&gt;&lt;br&gt;什么是零拷贝（减少cpu的拷贝就可以算作0拷贝？），什么是DMA？&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;零拷贝指计算机执行操作时，CPU不需要将数据从某处内存复制到另一个特定区域。&lt;font color=&quot;#ff0000&quot;&gt;通常用于网络传输文件&lt;/font&gt;时节省CPU周期和内存带宽。&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;零拷贝能增加数据传输的效率（少拷贝了）。同时减少了用户态内核态切换的开销&lt;br&gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;DMA：Direct Memory Access，直接内存访问器，是一个硬件设备。&lt;br&gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;为什么会存在DMA？因为DMA之前的IO读取是需要CPU来介入的，那么就需要CPU进行中断处理（cpu刚开始处理应用程序代码执行read()，那么这时候需要进行中断处理，去磁盘上拷贝文件，）" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" parent="1" vertex="1">
-          <mxGeometry x="127" y="2050" width="703" height="490" as="geometry" />
+          <mxGeometry x="127" y="2050" width="723" height="650" as="geometry" />
         </mxCell>
         <mxCell id="U53FBl25SFhaAgobu7Iv-1" value="Kafka是怎么实现零拷贝的？" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="900" y="2050" width="703" height="490" as="geometry" />
