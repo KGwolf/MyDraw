@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-09T08:36:19.245Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="62Yt07pm3ylhgePLkd8U" version="22.1.17" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-09T08:50:31.794Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="p_o2OV30gWoefLJeYmsR" version="22.1.17" type="github">
   <diagram name="第 1 页" id="dfQ2K8U6RCrprToEWXjN">
     <mxGraphModel dx="1985" dy="2003" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -98,7 +98,7 @@
         <mxCell id="PCxQuIPCm6C8dWF4XZpW-7" value="task_struct是Linux给每个进程创建的数据结构，这个数据结构本身是分配在内核空间的，其中保存了当前进程的进程号、socket信息、CPU的运行上下文以及其他信息。" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="4179" y="2100" width="740" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="A00SsgW6l6-uaj7V8k6i-1" value="Linux一切皆文件，这句话怎么理解？&lt;br&gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;这是Linux的设计哲学。Linux把一切（进程、Socket、设备）都抽象成文件，提供统一的操作接口，屏蔽了各种差异。&lt;br&gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;每个进程都会有一个PCB进程控制块。Linux里面的数据结构是task_struct，里面有pid进程ID，" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="A00SsgW6l6-uaj7V8k6i-1" value="Linux一切皆文件，这句话怎么理解？&lt;br&gt;&lt;br&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;这是Linux的设计哲学。Linux把一切（进程、Socket、设备）都抽象成文件，提供统一的操作接口，屏蔽了各种差异。&lt;br&gt;&lt;br&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;每个进程都会有一个PCB进程控制块。Linux里面的数据结构是task_struct，里面有pid进程ID，进程打开的文件信息files_struct，等等。&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;打开的文件信息files_struct里面，包含了文件描述符集合fdtable。&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;集合fdtable里面包含了file类型的fd，file类型里面有file_operations 文件操作类型，private_data（linux一切抽象成文件，那么具体的东西的属性就跟这个private_data关联起来了），" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="2010" y="-340" width="630" height="360" as="geometry" />
         </mxCell>
       </root>
