@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-01-11T07:58:10.037Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="nX6spqVoVdvXdNdyvKe-" version="22.1.18" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-11T08:06:54.727Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="Nt1sC3S3mNIqkej2d47H" version="22.1.18" type="github">
   <diagram name="第 1 页" id="dfQ2K8U6RCrprToEWXjN">
-    <mxGraphModel dx="2575" dy="2335" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2790" dy="2432" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -100,6 +100,12 @@
         </mxCell>
         <mxCell id="A00SsgW6l6-uaj7V8k6i-1" value="Linux一切皆文件，这句话怎么理解？&lt;br&gt;&lt;br&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;这是Linux的设计哲学。Linux把一切（进程、Socket、设备）都抽象成文件，提供统一的操作接口，屏蔽了各种差异。&lt;br&gt;&lt;br&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;每个进程都会有一个PCB进程控制块。Linux里面的数据结构是task_struct，里面有pid进程ID，进程打开的文件信息files_struct，等等。&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;打开的文件信息files_struct里面，包含了文件描述符集合fdtable。&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;集合fdtable里面包含了file类型的fd，file类型里面有file_operations 文件操作类型，private_data（linux一切抽象成文件，那么具体的东西的属性就跟这个private_data关联起来了，比如socket，这里的private_data就指向了一个struct socket，socket里面也有1个file属性，指向了这个file类型的fd），&lt;br&gt;&lt;br&gt;Linux下的所有文件，都能使用select\poll\epoll来实现监听变化吗？&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;不是，必须要实现file_operation（Linux抽象出来对文件的操作方法）中的poll方法才行。（这个poll方法跟poll\epoll没有一点关系，只是名字像而已） socket实现了这个poll方法，就是sock_poll()，" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="2010" y="-340" width="710" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="MhTTm1yWEv4rK6brtVvJ-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="3507" width="5310" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="MhTTm1yWEv4rK6brtVvJ-3" value="Netty的一些术语：&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Bootstrap：&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;EventLoop、EventLoopGroup：&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Channel：&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ChannelPipeline：&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ChannelHandler：&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="110.46000000000001" y="3700" width="650" height="270" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
