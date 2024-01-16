@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-16T14:25:39.721Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="dsVA0bs1hK_fjJPVH6Gu" version="22.1.16" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-16T14:34:50.443Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="jTIMBnCIL1XWjcY4gxqJ" version="22.1.16" type="github">
   <diagram name="第 1 页" id="1XJYP80JxbJxhC29MnGr">
     <mxGraphModel dx="1743" dy="1856" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -73,7 +73,7 @@
         <mxCell id="J9Vd1cQ4T2tUTU1RXiHH-2" value="把PR里面的TaskInfo改造成面向对象，并且从单纯的继承改造成组合。" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="1290" y="2240" width="740" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="J9Vd1cQ4T2tUTU1RXiHH-3" value="&lt;div&gt;贫血模型、充血模型（DDD）：&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;我们几乎所有的项目都是贫血模型，基于面向过程开发，每个类里面基本只有字段，将数据与操作进行分离，背离了面向对象的封装特性，&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
+        <mxCell id="J9Vd1cQ4T2tUTU1RXiHH-3" value="&lt;div&gt;贫血模型、充血模型（DDD）：&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;我们几乎所有的项目都是贫血模型，基于面向过程开发，每个类里面基本只有字段，将数据与业务逻辑操作进行分离，背离了面向对象的封装特性。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;DDD充血模型，则相反，将数据与业务逻辑封装到一个类里面，符合了面向对象编程风格。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;DDD实现的代码，也是基于三层架构，Controller层、Repository层都不变，变化的只是Service层。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;为什么我们都喜欢用贫血模型进行面向过程开发？&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;业务简单。设计简单，充血模型设计困难。学习成本。&amp;nbsp; &amp;nbsp;DDD充血模型适合业务复杂、稳定的项目。&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="1250" y="2620" width="1030" height="270" as="geometry" />
         </mxCell>
       </root>
