@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-16T03:05:57.596Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="ihY1bCw3Zu56X4uPJnsQ" version="22.1.18" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-16T03:22:58.882Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="mzOwO0c4seuFAc6g3iRR" version="22.1.18" type="github">
   <diagram name="第 1 页" id="1XJYP80JxbJxhC29MnGr">
     <mxGraphModel dx="1886" dy="1961" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -62,7 +62,7 @@
           <mxGeometry x="110" y="1420" width="1060" height="700" as="geometry" />
         </mxCell>
         <mxCell id="FN0yQ43i4ETcDHctbkBb-1" value="&lt;pre style=&quot;background-color:#2b2b2b;color:#a9b7c6;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:12.0pt;&quot;&gt;@Data&lt;br&gt;&lt;span style=&quot;color:#cc7832;&quot;&gt;public class &lt;/span&gt;OOPClass {&lt;br&gt;    &lt;span style=&quot;color:#cc7832;&quot;&gt;private &lt;/span&gt;String &lt;span style=&quot;color:#9876aa;&quot;&gt;name&lt;/span&gt;&lt;span style=&quot;color:#cc7832;&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#cc7832;&quot;&gt;    private int &lt;/span&gt;&lt;span style=&quot;color:#9876aa;&quot;&gt;age&lt;/span&gt;&lt;span style=&quot;color:#cc7832;&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#cc7832;&quot;&gt;    private &lt;/span&gt;List&amp;lt;String&amp;gt; &lt;span style=&quot;color:#9876aa;&quot;&gt;accountName&lt;/span&gt;&lt;span style=&quot;color:#cc7832;&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#cc7832;&quot;&gt;    private int &lt;/span&gt;&lt;span style=&quot;color:#9876aa;&quot;&gt;totalAccount&lt;/span&gt;&lt;span style=&quot;color:#cc7832;&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#cc7832;&quot;&gt;    private int &lt;/span&gt;&lt;span style=&quot;color:#9876aa;&quot;&gt;totalMoney&lt;/span&gt;&lt;span style=&quot;color:#cc7832;&quot;&gt;;&lt;br&gt;&lt;/span&gt;}&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="1220" y="1420" width="340" height="270" as="geometry" />
+          <mxGeometry x="1330" y="1690" width="340" height="270" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
