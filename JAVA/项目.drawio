@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-18T03:44:25.043Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="FXU76HlXTDldYTSbB21B" version="22.1.20" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-18T05:14:04.156Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="TsKz9l2oKq4rVR0VDdDl" version="22.1.20" type="github">
   <diagram name="第 1 页" id="1XJYP80JxbJxhC29MnGr">
     <mxGraphModel dx="1646" dy="1961" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -83,7 +83,10 @@
           <mxGeometry x="60" y="2820" width="1170" height="900" as="geometry" />
         </mxCell>
         <mxCell id="xBOe5HQ8ipK4dN4GoOSR-1" value="类之间有哪些关系：&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;泛化（继承）、实现（接口实现）、关联（作为成员变量用到了另外的类）、聚合、组合、依赖（方法参数或者返回值用到了另外的类）。 &lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;其中聚合、组合、关联，统一可以看做是组合，作为成员变量用到了另外的类。&lt;div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="1340" y="3530" width="1030" height="140" as="geometry" />
+          <mxGeometry x="1270" y="3450" width="1030" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="xBOe5HQ8ipK4dN4GoOSR-2" value="设计原则：&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="60" y="3790" width="1030" height="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
