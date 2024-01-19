@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-01-19T13:12:11.620Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="VWV12NQXE3C9EZnrqLMK" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-19T13:17:56.760Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="j4kZIB3b-bvcTyg13Hsn" version="22.1.21" type="github">
   <diagram name="第 1 页" id="1XJYP80JxbJxhC29MnGr">
-    <mxGraphModel dx="1516" dy="1918" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1101" dy="1603" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -124,8 +124,14 @@
         <mxCell id="yFXeJq9X8mHxC-HtToIo-6" value="PR的流程可否改造成类似netty的pipeline的方式？弄成1个1个的handler？" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="1650" y="-585" width="300" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="vVBWxAJ4765AQ51cDCxZ-1" value="&lt;div&gt;&lt;div&gt;如果一个功能的修改或添加，经常要跨团队、跨项目、跨系统才能完成，那说&lt;span style=&quot;color: rgb(53, 53, 53); font-family: 微软雅黑; font-size: 12.7559pt; background-color: initial;&quot;&gt;明模块划分的不够合理，职责不够清晰，耦合过于严重&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
+        <mxCell id="vVBWxAJ4765AQ51cDCxZ-1" value="&lt;div&gt;&lt;div&gt;做业务系统的分析和设计：&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1.合理的将功能划分到不同模块：&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;模块设计，跟之前的类设计是基本一样的：&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;如果一个功能的修改或添加，经常要跨团队、跨项目、跨系统才能完成，那说&lt;span style=&quot;color: rgb(53, 53, 53); font-family: 微软雅黑; font-size: 12.7559pt; background-color: initial;&quot;&gt;明模块划分的不够合理，职责不够清晰，耦合过于严重。&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="250" y="5780" width="1040" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="vVBWxAJ4765AQ51cDCxZ-2" value="抽象、分层、底层要足够通用" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="10" y="5850" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="vVBWxAJ4765AQ51cDCxZ-3" value="感觉DDD就是基于面向对象编程的，这样的代码容易扩展。" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry y="5990" width="180" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
