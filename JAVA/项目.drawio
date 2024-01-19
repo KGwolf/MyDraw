@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-19T07:18:56.409Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="ajyRmBTYcQ1oxZMKRgAN" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-19T07:19:04.876Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="43qhghDOQYfaxjwH_gat" version="22.1.21" type="github">
   <diagram name="第 1 页" id="1XJYP80JxbJxhC29MnGr">
     <mxGraphModel dx="2358" dy="2159" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -121,7 +121,7 @@
         <mxCell id="yFXeJq9X8mHxC-HtToIo-5" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;设计思想有哪些，跟设计原则的关系是什么？&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="327" y="5040" width="500" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="yFXeJq9X8mHxC-HtToIo-6" value="PR的流程可否改造成类似netty的pipeline的方式？弄成1个1个的pipeline？" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
+        <mxCell id="yFXeJq9X8mHxC-HtToIo-6" value="PR的流程可否改造成类似netty的pipeline的方式？弄成1个1个的handler？" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
           <mxGeometry x="1650" y="-585" width="300" height="60" as="geometry" />
         </mxCell>
       </root>
