@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-19T06:20:36.825Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="EqKYT-A4PP1sTtfMjMjV" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-19T06:27:23.375Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="ijJ17emxcjqClnXSNwJL" version="22.1.21" type="github">
   <diagram name="第 1 页" id="1XJYP80JxbJxhC29MnGr">
     <mxGraphModel dx="2902" dy="2387" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -115,8 +115,11 @@
         <mxCell id="yFXeJq9X8mHxC-HtToIo-3" value="&lt;div&gt;&lt;div&gt;&lt;b&gt;YAGNI 原则跟 KISS 原则并非一回事儿。KISS 原则讲的&lt;/b&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;是“如何做”的问题（尽量保持简单），而 YAGNI 原则说的是“要不要做”的问题（当前&lt;/b&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;不需要的就不要做）。&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;KISS原则实践：&lt;/b&gt;&lt;/div&gt;&lt;b&gt;不要使用同事可能不懂的技术来实现代码；不要重复造轮子，要善于使用已经有的工具类库；不要过度优化。&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;DRY：不要重复自己原则，&lt;/b&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;实现逻辑重复、功能语义重复、代码执行重复。实现逻&lt;/b&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;辑重复，但功能语义不重复的代码，并不违反 DRY 原则。实现逻辑不重复，但功能语义重&lt;/b&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;复的代码，也算是违反 DRY 原则。除此之外，代码执行重复也算是违反 DRY 原则。&lt;br&gt;&lt;/b&gt;&lt;br&gt;&lt;b&gt;如何做到代码复用性：&lt;/b&gt;&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;减少代码耦合&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;满足单一职责原则&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;模块化&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;业务与非业务逻辑分离&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;通用代码下沉&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;继承、多态、抽象、封装&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;b&gt;应用模板等设计模式&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="260" y="4530" width="1040" height="430" as="geometry" />
         </mxCell>
-        <mxCell id="yFXeJq9X8mHxC-HtToIo-4" value="&lt;div&gt;&lt;div&gt;&lt;b&gt;LOD 迪米特法则：&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;一个对象应该对其他对象有最少的了解。一个类应该对自己需要调用的方法知之甚少，尽量降低类之间的耦合度。&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="280" y="5046" width="1040" height="430" as="geometry" />
+        <mxCell id="yFXeJq9X8mHxC-HtToIo-4" value="&lt;div&gt;&lt;div&gt;&lt;b&gt;LOD 迪米特法则：&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;一个对象应该对其他对象有最少的了解。一个类应该对自己需要调用的方法知之甚少，尽量降低类之间的耦合度。&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;高内聚、低耦合：&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="240" y="5220" width="1040" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="yFXeJq9X8mHxC-HtToIo-5" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;设计思想有哪些，跟设计原则的关系是什么？&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="327" y="5040" width="500" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
