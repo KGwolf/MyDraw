@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-20T13:00:08.885Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="TN3P3Ztu6NyyenasibpR" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-20T13:23:05.672Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="Q2zj6H8-eDmHKe-qGhNZ" version="22.1.21" type="github">
   <diagram name="第 1 页" id="1XJYP80JxbJxhC29MnGr">
     <mxGraphModel dx="2006" dy="1957" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -134,10 +134,13 @@
           <mxGeometry y="5990" width="180" height="100" as="geometry" />
         </mxCell>
         <mxCell id="vVBWxAJ4765AQ51cDCxZ-4" value="&lt;div&gt;&lt;div&gt;&lt;b&gt;非业务功能的开发设计（通用框架）：&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;除了功能性需求分析之外，还需要&lt;span style=&quot;color: rgb(53, 53, 53); font-family: 微软雅黑; font-size: 12.7559pt; background-color: initial;&quot;&gt;考虑框架的非功能性需求。比如，框架的易用性、性能、扩展性、容错性、通用性等。&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(53, 53, 53); font-family: 微软雅黑; font-size: 12.7559pt; background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;画产品线框图、聚焦简单应用场景、设计实现最小原型、画系统设计图等。这些方法的目的&lt;span style=&quot;color: rgb(53, 53, 53); font-family: 微软雅黑; font-size: 12.7559pt; background-color: initial;&quot;&gt;都是为了让问题简化、具体、明确，提供一个迭代设计开发的基础，逐步推进&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" parent="1" vertex="1">
-          <mxGeometry x="1370" y="5790" width="1040" height="430" as="geometry" />
+          <mxGeometry x="1370" y="5790" width="1030" height="190" as="geometry" />
         </mxCell>
         <mxCell id="XVt_O5pLmTvRJdW2flsF-1" value="&lt;font color=&quot;#ff0000&quot;&gt;系统设计或者需求设计，我们把功能点列出来，然后找出需要扩展的哪些功能点、方法。然后把它们抽象成抽象方法，或者接口方法&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="30" y="5670" width="1110" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="yvHY59e5LVk5bjqh0QID-1" value="&lt;div&gt;&lt;div&gt;重构的目的（why）、对象（what）、时机（when）、方&lt;span style=&quot;color: rgb(53, 53, 53); font-family: 微软雅黑; font-size: 12.7559pt; background-color: initial;&quot;&gt;法（how）&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(53, 53, 53); font-family: 微软雅黑; font-size: 12.7559pt; background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;保证重构不出错的手段：单元测试和代码的可测试性；&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;不同规模的重构：大规模高层次重构（比如系统、模块、代码结构、类与类之&lt;span style=&quot;color: rgb(53, 53, 53); font-family: 微软雅黑; font-size: 12.7559pt; background-color: initial;&quot;&gt;间的交互等的重构）和小规模低层次重构（类、函数、变量等的重构）&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="6090" width="1030" height="190" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
