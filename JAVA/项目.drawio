@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-20T02:43:51.456Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="EXJESQE6evnQmEQMo2na" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-20T02:44:14.120Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="HNuZ-KSpV08yZRnv5sWG" version="22.1.21" type="github">
   <diagram name="第 1 页" id="1XJYP80JxbJxhC29MnGr">
     <mxGraphModel dx="1494" dy="1758" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -136,7 +136,7 @@
         <mxCell id="vVBWxAJ4765AQ51cDCxZ-4" value="&lt;div&gt;&lt;div&gt;&lt;b&gt;非业务功能的开发设计（通用框架）：&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="1370" y="5790" width="1040" height="430" as="geometry" />
         </mxCell>
-        <mxCell id="XVt_O5pLmTvRJdW2flsF-1" value="系统设计或者需求设计，我们把功能点列出来，然后找出需要扩展的哪些功能点、方法。然后把它们抽象成抽象方法，或者接口方法" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="XVt_O5pLmTvRJdW2flsF-1" value="&lt;font color=&quot;#ff0000&quot;&gt;系统设计或者需求设计，我们把功能点列出来，然后找出需要扩展的哪些功能点、方法。然后把它们抽象成抽象方法，或者接口方法&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="30" y="5670" width="1110" height="90" as="geometry" />
         </mxCell>
       </root>
