@@ -1,14 +1,17 @@
-<mxfile host="app.diagrams.net" modified="2024-01-19T12:42:48.555Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="uTxIfR7lQz9-YED1wxAJ" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-22T12:33:38.130Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="U4jyn6gLFjkra6CxB6Vx" version="22.1.21" type="github">
   <diagram name="第 1 页" id="TzDZJ18uVH2BrXoznrYu">
-    <mxGraphModel dx="834" dy="412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="791" dy="394" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="oE_ixGBvfXvZEjppzsO--1" value="分布式协调框架&lt;br&gt;ZAB(zk写用的协议，除了zk很少用了) RAFT(重点)&amp;nbsp; PAXIO(共识的有缺陷)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="350" y="360" width="470" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="EsCJ1PF5g06sX3PIpRF--1" value="Zookeeper的客户端和服务端通信是怎么实现的？服务端和服务端呢？很多框架底层用的是Netty，而且Netty和Zk都是基于java开发的，为什么不用呢？难道zk出来的时候还没有netty？" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="EsCJ1PF5g06sX3PIpRF--1" value="Zookeeper的客户端和服务端通信是怎么实现的？服务端和服务端呢？很多框架底层用的是Netty，而且Netty和Zk都是基于java开发的，为什么不用呢？难道zk出来的时候还没有netty？" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="370" y="480" width="330" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="aoBaY2fR4_1X0Lq2eARB-2" value="zookeeper大家用得最多得是临时节点 、watch监听机制。" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="640" width="330" height="130" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
