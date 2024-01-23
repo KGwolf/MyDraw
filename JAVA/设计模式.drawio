@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-01-23T13:17:09.910Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="ENrBNpnehEExhRocg3F8" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-23T13:32:41.976Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="TtTlcFpbF13hRfY_5Ow4" version="22.1.21" type="github">
   <diagram name="第 1 页" id="3uKooOr-jPmKd_cmfSqT">
-    <mxGraphModel dx="3326" dy="1826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2926" dy="1826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -46,8 +46,11 @@
         <mxCell id="fvTyMGF2L9mwG_t9CQHD-1" value="工厂模式和依赖注入容器DI的关联：&lt;br&gt;DI底层容器就是基于工厂模式的。一个简单的 DI 容器的核心功能一般有三个：配置解析、对象创建和对象生命周期管理。&lt;br&gt;&lt;br&gt;实现一个最小模型的DI框架：" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
           <mxGeometry x="-810" y="2090" width="1060" height="680" as="geometry" />
         </mxCell>
-        <mxCell id="fvTyMGF2L9mwG_t9CQHD-2" value="建造者模式：&lt;br&gt;&lt;div&gt;直接使用构造函数或者配合 set 方法就能创建对象，为什么还需要建造者模式来创建呢？建造者模式和工厂模式都可以创建对象，那它们两个的区别在哪里呢？&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;如果构造函数的参数过多，代码在可读性和易用性上都会变差。在使用构造函数的时候，我们就容易搞错各参数的顺序，传递进错误的参数值，导致非常隐蔽的 bug。这个问题用set方法可以解决。那还有其他问题：&lt;/div&gt;&lt;/div&gt;&lt;div&gt;1.如果有需求，new对象的时候，有参数是必填的怎么办，&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
+        <mxCell id="fvTyMGF2L9mwG_t9CQHD-2" value="建造者模式：&lt;br&gt;&lt;div&gt;直接使用构造函数或者配合 set 方法就能创建对象，为什么还需要建造者模式来创建呢？建造者模式和工厂模式都可以创建对象，那它们两个的区别在哪里呢？&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;如果构造函数的参数过多，代码在可读性和易用性上都会变差。在使用构造函数的时候，我们就容易搞错各参数的顺序，传递进错误的参数值，导致非常隐蔽的 bug。这个问题用set方法可以解决。那还有其他问题：&lt;/div&gt;&lt;/div&gt;&lt;div&gt;1.如果有需求，new对象的时候，有参数是必填的，如果这种参数多了，也会出现上面的问题。&lt;/div&gt;&lt;div&gt;2.如果类的属性之间有一定的依赖关系或者约束条件，我们继续使用构造函数配合 set() 方法的设计思路，那这些依赖关系或约束条件的校验逻辑就无处安放了。&lt;/div&gt;&lt;div&gt;3.如果我们希望创建不可变对象，也就是说，对象在创建好之后，就不能再修改内部的属性值，要实现这个功能，我们就不能在类中暴露 set() 方法。构造函数配合 set() 方法来设置属性值的方式就不适用了。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;出现上面的3个问题，就可以考虑使用建造者模式了。。。。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;如何写建造者模式：&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;工厂模式是用来创建不同但是相关类型的对象（继承同一父类或者接口的一组子类），由给定的参数来决定创建哪种类型的对象。建造者模式是用来创建一种类型的复杂对象，通过设置不同的可选参数，“定制化”地创建不同的对象。&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
           <mxGeometry x="-840" y="3180" width="1060" height="680" as="geometry" />
+        </mxCell>
+        <mxCell id="fvTyMGF2L9mwG_t9CQHD-3" value="原型模式：&lt;br&gt;&lt;div&gt;如果对象的创建成本比较大，而同一个类的不同对象之间差别不大（大部分字段都相同），在这种情况下，我们可以利用对已有对象（原型）进行复制（或者叫拷贝）的方式来创建新对象，以达到节省创建时间的目的。这种基于原型来创建对象的方式就叫作原型设计模式（Prototype Design Pattern），简称原型模式。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;原型模式的实现方式：深拷贝和浅拷贝&amp;nbsp;：&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial; font-size: 12.7559pt; font-family: 微软雅黑; color: rgb(53, 53, 53);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-850" y="3970" width="1060" height="680" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
