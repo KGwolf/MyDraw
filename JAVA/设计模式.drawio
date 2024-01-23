@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-23T07:50:05.503Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="tmfgHcI4NR3j40UnrZEs" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-23T07:51:16.574Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="OUbFCQlBGa7Xq8aTPO4J" version="22.1.21" type="github">
   <diagram name="第 1 页" id="3uKooOr-jPmKd_cmfSqT">
     <mxGraphModel dx="2876" dy="1083" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -22,7 +22,7 @@
         <mxCell id="h9diVwNSZwyLOE3jBIlE-7" value="&lt;div&gt;如果项目中已经用了很多单例模式，我们该如何在尽量减少代码改&lt;span style=&quot;background-color: initial;&quot;&gt;动的情况下，通过重构代码来提高代码的可测试性呢？&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;div&gt;把代码“User cachedUser = CacheManager.getInstance().getUser(userId);”单独&lt;span style=&quot;background-color: initial;&quot;&gt;提取出来做成一个单独的函数，这样这个函数就可以进行mock了，进而方便测试validate&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;CachedUser&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
           <mxGeometry x="300" y="860" width="670" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="h9diVwNSZwyLOE3jBIlE-8" value="&lt;div&gt;我们所说的单例，是进程内的实例唯一，那么线程内的单例怎么做呢？&lt;/div&gt;&lt;div&gt;用ThreadLocal可以实现，底层是hashmap。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;如何实现集群间的单例呢？分布式锁不就实现了么。。。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;如何实现一个多例模式呢？&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
+        <mxCell id="h9diVwNSZwyLOE3jBIlE-8" value="&lt;div&gt;我们所说的单例，是进程内的实例唯一，那么线程内的单例怎么做呢？&lt;/div&gt;&lt;div&gt;用ThreadLocal可以实现，底层是hashmap。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;如何实现集群间的单例呢？分布式锁不就实现了么。。。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;如何实现一个多例模式呢？&lt;/div&gt;&lt;div&gt;&lt;div&gt;“多例”指的就是一个类可以创建多个&lt;span style=&quot;background-color: initial;&quot;&gt;对象，但是个数是有限制的，比如只能创建 3 个对象。多例的实现也比较简单，通过一个&lt;/span&gt;Map 来存储对象类型和对象之间的对应关系，来控制对象的个数。&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
           <mxGeometry x="1060" y="860" width="670" height="220" as="geometry" />
         </mxCell>
       </root>
