@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-01-23T07:53:26.911Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="1wAm4jtjtzKMGSViCu3n" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-23T07:55:04.834Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="M8GpVpeeowtXSzDhB0NC" version="22.1.21" type="github">
   <diagram name="第 1 页" id="3uKooOr-jPmKd_cmfSqT">
-    <mxGraphModel dx="3703" dy="2252" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4348" dy="2300" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -31,8 +31,8 @@
         <mxCell id="h9diVwNSZwyLOE3jBIlE-9" value="&lt;div style=&quot;font-size: 18px;&quot;&gt;对于 Java 语言来说，单例类&lt;span style=&quot;background-color: initial;&quot;&gt;对象的唯一性的作用范围并非进程，而是类加载器（Class Loader）&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="340" y="740" width="830" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="h9diVwNSZwyLOE3jBIlE-10" value="工厂模式：&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
-          <mxGeometry x="-790" y="1350" width="1050" height="1150" as="geometry" />
+        <mxCell id="h9diVwNSZwyLOE3jBIlE-10" value="工厂模式：&lt;br&gt;简单工厂、工厂方法和抽象工厂" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-800" y="1390" width="1050" height="1150" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
