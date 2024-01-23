@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2024-01-23T02:01:19.447Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="0Ysj7RYrgic9l6GOoiiS" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-23T02:19:05.013Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="Aq-x5fX99ARGDdEMWLV6" version="22.1.21" type="github">
   <diagram name="第 1 页" id="3uKooOr-jPmKd_cmfSqT">
     <mxGraphModel dx="3046" dy="932" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="h9diVwNSZwyLOE3jBIlE-1" value="1.单例模式：&lt;br&gt;&lt;div&gt;为什么要使用单例？&lt;/div&gt;&lt;div&gt;单例存在哪些问题？&lt;/div&gt;&lt;div&gt;单例与静态类的区别？&lt;/div&gt;&lt;div&gt;有何替代的解决方案？&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;构造函数需要是 private 访问权限的，这样才能避免外部通过 new 创建实例；&lt;/div&gt;&lt;div&gt;考虑对象创建时的线程安全问题；&lt;/div&gt;&lt;div&gt;考虑是否支持延迟加载；&lt;/div&gt;&lt;div&gt;考虑 getInstance() 性能是否高（是否加锁）。&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
-          <mxGeometry x="-790" y="50" width="730" height="300" as="geometry" />
+        <mxCell id="h9diVwNSZwyLOE3jBIlE-1" value="单例模式：&lt;br&gt;&lt;div&gt;为什么要使用单例？&lt;/div&gt;&lt;div&gt;第一，有些情况使用new对象来操作可能会有并发问题，比如写日志，几个service里面单独new Log().write()，同一行写，&lt;span style=&quot;background-color: initial;&quot;&gt;那么可能就会覆盖日志。当然有锁的方式（分布式锁、jvm锁）来处理、或者塞入消息队列，但是更简单的还是单例来解决。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;第二，有些类就适合在整个程序里面存一份。比如配置类、工具类等等。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;单例存在哪些问题？&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;单例与静态类的区别？&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;有何替代的解决方案？&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;如何实现单例：&lt;/div&gt;&lt;div&gt;&lt;div&gt;构造函数需要是 private 访问权限的，这样才能避免外部通过 new 创建实例；&lt;/div&gt;&lt;div&gt;考虑对象创建时的线程安全问题；&lt;/div&gt;&lt;div&gt;考虑是否支持延迟加载；&lt;/div&gt;&lt;div&gt;考虑 getInstance() 性能是否高（是否加锁）。&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1.饿汉式单例：&lt;/div&gt;&lt;div&gt;&lt;div&gt;在类加载的时候，instance 静态实例就已经创建并初始化好&lt;span style=&quot;background-color: initial;&quot;&gt;了，所以，instance 实例的创建过程是线程安全的。缺点是不支持延迟加载。但是延迟加载也不怎么需要，没卵用！&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-790" y="50" width="1020" height="500" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
