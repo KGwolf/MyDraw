@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-01-24T13:46:28.658Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="FJn6VUl0pVCSMRVLkZ7x" version="22.1.21" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-24T14:00:36.248Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="JwnRmLZp_1foGVC036qe" version="22.1.21" type="github">
   <diagram name="第 1 页" id="3uKooOr-jPmKd_cmfSqT">
-    <mxGraphModel dx="2997" dy="1856" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3397" dy="1856" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -81,6 +81,9 @@
         </mxCell>
         <mxCell id="PeWg4AiwFO6YCsHLee7R-9" value="桥接模式：&lt;br&gt;&lt;div&gt;对于这个模式有两种不同的理解方式。在 GoF 的《设计模式》一书中，桥接模式被定义&lt;span style=&quot;background-color: initial;&quot;&gt;为：“将抽象和实现解耦，让它们可以独立变化。”在其他资料和书籍中，还有另外一种更&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;加简单的理解方式：“一个类存在两个（或多个）独立变化的维度，我们通过组合的方式，&lt;/span&gt;&lt;/div&gt;&lt;div&gt;让这两个（或多个）维度可以独立进行扩展。”。通&lt;span style=&quot;background-color: initial;&quot;&gt;过组合关系来替代继承关系，避免继承层次的指数级爆炸。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;桥接模式常常用于处理&lt;font color=&quot;#ff0000&quot;&gt;一个类有两个或更多独立变化的维度的情况&lt;/font&gt;。例如，一个图形可以根据颜色和形状进行变化。&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;在不使用桥接模式的情况下，为了支持两个维度的扩展，可能需要创建多个子类的组合，会组合爆炸。&lt;br&gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="-730" y="5250" width="1060" height="680" as="geometry" />
+        </mxCell>
+        <mxCell id="sCLwV2QDZWm7Fu5_kib5-1" value="装饰器模式：&lt;br&gt;&lt;br&gt;java IO类库里面很多。&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-740" y="6010" width="1060" height="680" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
