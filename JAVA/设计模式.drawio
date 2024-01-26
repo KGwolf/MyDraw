@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-26T09:37:48.915Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="ziC2Lnq1sq0OgQ6KsnKC" version="23.0.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-26T09:38:22.059Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="0oO839fXkj8_4YI6APQN" version="23.0.1" type="github">
   <diagram name="第 1 页" id="3uKooOr-jPmKd_cmfSqT">
     <mxGraphModel dx="4348" dy="2300" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -126,6 +126,9 @@
         </mxCell>
         <mxCell id="Vt2ITBj4GFt1leEdtp9k-11" value="行为型设计模式主要解决的就是“类或对象之间的交互”问题。观&lt;span style=&quot;background-color: initial;&quot;&gt;察者模式、模板模式、策略模式、职责链模式、状态模式、迭代器模式、访问者模式、备忘&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;录模式、命令模式、解释器模式、中介模式。&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
           <mxGeometry x="-770" y="9770" width="750" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Vt2ITBj4GFt1leEdtp9k-12" value="&lt;span style=&quot;background-color: initial;&quot;&gt;观察者模式：&lt;br&gt;&lt;div&gt;有同步阻塞的实现&lt;span style=&quot;background-color: initial;&quot;&gt;方式，也有异步非阻塞的实现方式；有进程内的实现方式，也有跨进程的实现方式。&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-790" y="10080" width="750" height="130" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
