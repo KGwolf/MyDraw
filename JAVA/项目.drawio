@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-30T05:10:52.879Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="nb2p_hvMR8ZiIHBYiU9e" version="23.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-30T05:27:59.513Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="HA9VIBH4MU9Ow2p6U4Ws" version="23.0.2" type="github">
   <diagram name="第 1 页" id="1XJYP80JxbJxhC29MnGr">
     <mxGraphModel dx="2575" dy="3504" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -192,6 +192,12 @@
         </mxCell>
         <mxCell id="X4gIuDQMgGbzYlLwu_02-1" value="众阳云，几十家医院一起使用，1个nginx，几万的连接数量，其中IM的长链接多少。。。。" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
           <mxGeometry x="3110" y="-585" width="510" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="X4gIuDQMgGbzYlLwu_02-2" value="我们的系统为什么需要使用微服务呢？" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="3810" y="-590" width="510" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="X4gIuDQMgGbzYlLwu_02-3" value="上传的小文件太多，其中linux的句柄数量优先，1个小文件占用1个，很浪费。。。" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="3710" y="-430" width="510" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
