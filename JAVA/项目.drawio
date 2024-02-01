@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-02-01T02:54:49.197Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="lH-SCIfnMlajw28ofd4I" version="23.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-01T03:02:32.697Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="KOC8iI3cLF73_99O-OP3" version="23.0.2" type="github">
   <diagram name="第 1 页" id="1XJYP80JxbJxhC29MnGr">
-    <mxGraphModel dx="1674" dy="3096" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1886" dy="3130" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -213,6 +213,9 @@
         </mxCell>
         <mxCell id="ymOjzKHmSlNGQPWHCZKW-2" value="分布式ID：&lt;br&gt;1.UUID：1.体积太大，浪费空间。2.不是有序的，引起数据库索引频繁的进行树重建操作。&lt;br&gt;2.雪花算法：由哪几部分组成，分别的作用。有问题：时间回溯问题，算法依赖本机的时间，如果本机的时间如果出问题了，比如有1秒不走了，那么这1s内生成的ID就可能会重复。美团Leaf和百度的都是进行了优化的。&lt;br&gt;3.数据库生成：专门拿一个数据库表来生成。并发度低。&lt;br&gt;4.redis：incr 递增。" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="5398" y="-560" width="660" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ymOjzKHmSlNGQPWHCZKW-3" value="我们公司用的是：&lt;br style=&quot;font-size: 18px;&quot;&gt;分布式高效有序ID生成器,参考开源项目：http://git.oschina.net/yu120/sequence" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="5403" y="-670" width="650" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
