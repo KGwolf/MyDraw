@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-01T03:02:32.697Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="KOC8iI3cLF73_99O-OP3" version="23.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-01T03:09:50.094Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="JnZBvSan4wTA1w6c3OlK" version="23.0.2" type="github">
   <diagram name="第 1 页" id="1XJYP80JxbJxhC29MnGr">
     <mxGraphModel dx="1886" dy="3130" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -211,7 +211,7 @@
         <mxCell id="ymOjzKHmSlNGQPWHCZKW-1" value="filebeat可以在任何需要采集日志的机器上面启动，里面有配置，输入（从哪个文件进行采集），输出（输出到logstash、es）。&lt;br&gt;&lt;br&gt;logstash单独部署到一台机器上面。启动慢， 然后logstash也有配置输入输出，输入（http从部署的那些filebeat里面拉取日志？），输出（通过配置一定的格式，比如根据nginx里面的日志格式，转化成json串的格式），然后传送到es里面？&lt;br&gt;&lt;br&gt;&lt;div&gt;ES通常会跟Kibana部署在一起，由&lt;span style=&quot;background-color: initial;&quot;&gt;Kibana提供图形化的操作功能。&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="4670" y="-550" width="660" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="ymOjzKHmSlNGQPWHCZKW-2" value="分布式ID：&lt;br&gt;1.UUID：1.体积太大，浪费空间。2.不是有序的，引起数据库索引频繁的进行树重建操作。&lt;br&gt;2.雪花算法：由哪几部分组成，分别的作用。有问题：时间回溯问题，算法依赖本机的时间，如果本机的时间如果出问题了，比如有1秒不走了，那么这1s内生成的ID就可能会重复。美团Leaf和百度的都是进行了优化的。&lt;br&gt;3.数据库生成：专门拿一个数据库表来生成。并发度低。&lt;br&gt;4.redis：incr 递增。" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
+        <mxCell id="ymOjzKHmSlNGQPWHCZKW-2" value="分布式ID：&lt;br&gt;1.UUID：1.体积太大，浪费空间。2.不是有序的，引起数据库索引频繁的进行树重建操作。&lt;br&gt;2.雪花算法：由哪几部分组成，分别的作用。有问题：时间回拨问题，算法依赖本机的时间，如果本机的时间如果出问题了，比如有1秒不走了，那么这1s内生成的ID就可能会重复。美团Leaf和百度的都是进行了优化的。&lt;br&gt;3.数据库生成：专门拿一个数据库表来生成。并发度低。&lt;br&gt;4.redis：incr 递增。" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="5398" y="-560" width="660" height="200" as="geometry" />
         </mxCell>
         <mxCell id="ymOjzKHmSlNGQPWHCZKW-3" value="我们公司用的是：&lt;br style=&quot;font-size: 18px;&quot;&gt;分布式高效有序ID生成器,参考开源项目：http://git.oschina.net/yu120/sequence" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
