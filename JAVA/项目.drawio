@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-02-02T01:47:03.587Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="jOjXaHJZUfCkktc7bNAc" version="23.1.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-02T08:12:02.788Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="w5-F_qCqCMLe3xYjBtcM" version="23.1.0" type="github">
   <diagram name="第 1 页" id="1XJYP80JxbJxhC29MnGr">
-    <mxGraphModel dx="1674" dy="3096" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2391" dy="3421" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -222,6 +222,9 @@
         </mxCell>
         <mxCell id="1jPeruVGs3N3ZBkXr8D2-2" value="分布式事务是否可用在药师通过之后，跟用药指导单微服务之间？" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="4726" y="-275" width="650" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="1jPeruVGs3N3ZBkXr8D2-3" value="OAuth 2.0：&lt;br&gt;4种模式。&lt;br&gt;&lt;br&gt;Spring Security。" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="4620" y="-160" width="660" height="200" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
