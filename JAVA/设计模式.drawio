@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-06T03:22:06.982Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="JG2oyGheaXGzYO_5hFdz" version="23.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-06T03:23:01.670Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="7z6fA3brF4F_aaDH18us" version="23.1.1" type="github">
   <diagram name="第 1 页" id="3uKooOr-jPmKd_cmfSqT">
     <mxGraphModel dx="4871" dy="2432" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -265,8 +265,11 @@
         <mxCell id="vWia7BE8tsygQOP-nlWv-1" value="桥接模式和装饰器模式都是为了防止变化的点过多，使用继承就会导致继承爆炸。但是关注的点不一样，桥接模式关注是抽象和实现进行分离，单独扩展。&lt;br&gt;&lt;br&gt;装饰器模式关注的是，不改变原来类功能的前提下，进行扩展功能。" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="-1130" y="5940" width="620" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="M8qGgeYVIscOI3wftOXW-2" value="JDK中的设计模式：&lt;br&gt;&lt;br&gt;1.Calendar类：工厂模式、构造者模式。&lt;br&gt;&lt;br&gt;2.Collections类：装饰器模式（UnmodifiableCollection&amp;nbsp;）、适配器模式（Enumeration&amp;nbsp;）、模版模式（Sort方法）、观察者模式（Observer、Observable）。&lt;br&gt;&lt;br&gt;3.InputStream类：装饰器模式。" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;align=left;" vertex="1" parent="1">
+        <mxCell id="M8qGgeYVIscOI3wftOXW-2" value="JDK中的设计模式：&lt;br&gt;&lt;br&gt;1.Calendar类：工厂模式、构造者模式。&lt;br&gt;&lt;br&gt;2.Collections类：装饰器模式（UnmodifiableCollection&amp;nbsp;）、适配器模式（Enumeration&amp;nbsp;）、模版模式（Sort方法）、观察者模式（Observer、Observable）。&lt;br&gt;&lt;br&gt;3.InputStream类：装饰器模式。&lt;br&gt;&lt;br&gt;4.AQS：模版模式。" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;align=left;" vertex="1" parent="1">
           <mxGeometry x="4876" y="100" width="500" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="M8qGgeYVIscOI3wftOXW-3" value="Spring中的设计模式：" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;align=left;" vertex="1" parent="1">
+          <mxGeometry x="5560" y="100" width="500" height="300" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
