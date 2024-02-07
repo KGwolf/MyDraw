@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-02-06T13:36:02.817Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="vz0wM8SaBUinVFNtsx0C" version="22.1.16" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-07T07:28:46.103Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="8mYPNd5y_pyAknnfri-m" version="23.1.1" type="github">
   <diagram name="第 1 页" id="3uKooOr-jPmKd_cmfSqT">
-    <mxGraphModel dx="4274" dy="2102" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="5383" dy="2387" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -273,6 +273,12 @@
         </mxCell>
         <mxCell id="M8qGgeYVIscOI3wftOXW-4" value="发布订阅的升级之路：&lt;br&gt;&lt;br&gt;1.普通的发布订阅模式，addSubscribe()方法接收的参数是 订阅者 的接口" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;align=left;" parent="1" vertex="1">
           <mxGeometry x="6360" y="90" width="650" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="9Tpp7eopZGpBc9Hqtyiq-1" value="&lt;p&gt;在 JDK 1.0 中，&lt;code&gt;Observable&lt;/code&gt; 和 &lt;code&gt;Observer&lt;/code&gt; 的实现存在一些缺点：&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;strong&gt;语言级支持不足：&lt;/strong&gt; &lt;code&gt;Observable&lt;/code&gt; 类并不是一个接口，而是一个具体类，因此继承了它的类就无法再继承其他类。&lt;/li&gt;&lt;li&gt;&lt;strong&gt;通知方式单一：&lt;/strong&gt; &lt;code&gt;Observable&lt;/code&gt; 的 &lt;code&gt;notifyObservers()&lt;/code&gt; 方法只能通知所有的观察者，而不能根据具体情况选择性地通知某个观察者或者部分观察者。&lt;/li&gt;&lt;/ol&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;align=left;" vertex="1" parent="1">
+          <mxGeometry x="7120" y="90" width="660" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="9Tpp7eopZGpBc9Hqtyiq-2" value="&lt;p&gt;为了解决这些问题，JDK 1.1 引入了 &lt;code&gt;EventListener&lt;/code&gt; 和 &lt;code&gt;EventObject&lt;/code&gt;。这种事件模型更灵活，提供了更好的解耦性和可扩展性。主要的优点包括：&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;strong&gt;接口隔离原则：&lt;/strong&gt; &lt;code&gt;EventListener&lt;/code&gt; 是一个接口，使得事件监听器可以独立于被监听的对象进行开发，不受被监听对象的限制。&lt;/li&gt;&lt;li&gt;&lt;strong&gt;多样化的事件类型：&lt;/strong&gt; 通过不同的事件类型和对应的事件对象，可以实现更丰富的事件传递和处理。&lt;/li&gt;&lt;li&gt;&lt;strong&gt;事件广播灵活：&lt;/strong&gt; 通过向事件对象添加属性和方法，可以在事件触发时携带更多的信息，实现更灵活的事件广播。&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;总的来说，&lt;code&gt;EventListener&lt;/code&gt; 和 &lt;code&gt;EventObject&lt;/code&gt; 提供了一种更加灵活和可扩展的事件模型，相比于早期的观察者模式，更适合于构建大型的、复杂的应用程序。&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;align=left;" vertex="1" parent="1">
+          <mxGeometry x="7120" y="290" width="690" height="300" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
