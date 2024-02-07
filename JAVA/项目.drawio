@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-02-04T02:10:37.880Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="7-E0nXfHkkavKXkC2xc3" version="23.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-07T05:22:11.553Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="UsBSbrjBZuG2Ibw8XfJ8" version="23.1.1" type="github">
   <diagram name="第 1 页" id="1XJYP80JxbJxhC29MnGr">
-    <mxGraphModel dx="1434" dy="3096" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1674" dy="3096" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -226,8 +226,11 @@
         <mxCell id="1jPeruVGs3N3ZBkXr8D2-3" value="OAuth 2.0：&lt;br&gt;4种模式。&lt;br&gt;&lt;br&gt;Spring Security。" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="4620" y="-160" width="660" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="MWaZ_qwu3w01RLhXYMhe-1" value="DataX，数据同步利器，能不能用到项目中？&lt;br&gt;Doris，数据分析工具。&lt;br&gt;&lt;br&gt;&lt;h3 style=&quot;margin: 24px 0px 16px; padding: 0px; outline: 0px; max-width: 100%; line-height: 1.25; box-sizing: border-box !important; overflow-wrap: break-word !important;&quot; dir=&quot;auto&quot; tabindex=&quot;-1&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Netdata，性能监测工具，很强，不支持windows?&lt;/span&gt;&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
+        <mxCell id="MWaZ_qwu3w01RLhXYMhe-1" value="DataX，数据同步利器，能不能用到项目中？&lt;br&gt;Doris，数据分析工具。&lt;br&gt;&lt;br&gt;&lt;h3 style=&quot;margin: 24px 0px 16px; padding: 0px; outline: 0px; max-width: 100%; line-height: 1.25; box-sizing: border-box !important; overflow-wrap: break-word !important;&quot; dir=&quot;auto&quot; tabindex=&quot;-1&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Netdata，性能监测工具，很强，不支持windows?&lt;/span&gt;&lt;/h3&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="2400" y="-880" width="530" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="5p9hporx1gG_VuMuJPxo-1" value="PR的nacos用的2.2.0版本" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1654" y="-700" width="300" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
