@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-08T07:20:32.985Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="NAlpB_8qxsubnehkbh0L" version="23.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-08T07:37:32.999Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="wwN-3Wf1xXksKc6Uiism" version="23.1.1" type="github">
   <diagram name="第 1 页" id="3uKooOr-jPmKd_cmfSqT">
     <mxGraphModel dx="5271" dy="2432" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -268,8 +268,8 @@
         <mxCell id="M8qGgeYVIscOI3wftOXW-2" value="JDK中的设计模式：&lt;br&gt;&lt;br&gt;1.Calendar类：工厂模式、构造者模式。&lt;br&gt;&lt;br&gt;2.Collections类：装饰器模式（UnmodifiableCollection&amp;nbsp;）、适配器模式（Enumeration&amp;nbsp;）、模版模式（Sort方法）、观察者模式（Observer、Observable）。&lt;br&gt;&lt;br&gt;3.InputStream类：装饰器模式。&lt;br&gt;&lt;br&gt;4.AQS：模版模式。" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;align=left;" parent="1" vertex="1">
           <mxGeometry x="4876" y="100" width="1274" height="280" as="geometry" />
         </mxCell>
-        <mxCell id="M8qGgeYVIscOI3wftOXW-3" value="Spring中的设计模式：&lt;br&gt;&lt;br&gt;1.观察者模式：&lt;br&gt;&lt;br&gt;2.模版模式：事件发送到 ApplicationContext 中，然后ApplicationConext 将消息发送给事&lt;span style=&quot;background-color: initial;&quot;&gt;先注册好的监听者。&lt;br&gt;&lt;br&gt;3.工厂模式：&lt;br&gt;&lt;br&gt;4.适配器模式：处理url请求的时候，判断是不是Controller的实例、Servlet实例、注解实例。&lt;br&gt;&lt;br&gt;5.策略模式：&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;align=left;" parent="1" vertex="1">
-          <mxGeometry x="4920" y="560" width="990" height="300" as="geometry" />
+        <mxCell id="M8qGgeYVIscOI3wftOXW-3" value="Spring中的设计模式：&lt;br&gt;&lt;br&gt;1.观察者模式：事件发送到 ApplicationContext 中，然后ApplicationConext 将消息发送给事先注册好的监听者。&lt;br&gt;&lt;br&gt;2.模版模式：&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;br&gt;3.工厂模式：&lt;br&gt;&lt;br&gt;4.适配器模式：处理url请求的时候，判断是不是Controller的实例、Servlet实例、注解实例。&lt;br&gt;&lt;br&gt;5.策略模式：AOP代理实现方式。&lt;br&gt;&lt;br&gt;6.组合模式：CompositeCacheManager&amp;nbsp; 用于缓存管理。&lt;br&gt;&lt;br&gt;7.装饰器模式：TransactionAwareCacheDecorator 缓存和数据库相关的回滚问题。&lt;br&gt;&lt;br&gt;8.责任链：拦截器。&lt;br&gt;&lt;br&gt;9.代理模式：AOP。&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;align=left;" parent="1" vertex="1">
+          <mxGeometry x="4920" y="560" width="1010" height="420" as="geometry" />
         </mxCell>
         <mxCell id="M8qGgeYVIscOI3wftOXW-4" value="发布订阅的升级之路：&lt;br&gt;&lt;br&gt;1.普通的发布订阅模式，addSubscribe()方法接收的参数是 订阅者 的接口" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;align=left;" parent="1" vertex="1">
           <mxGeometry x="6360" y="90" width="650" height="260" as="geometry" />
@@ -282,6 +282,12 @@
         </mxCell>
         <mxCell id="az8uGPjsdyxcqP_ZSAXE-1" value="&lt;div class=&quot;flex flex-grow flex-col max-w-full&quot;&gt;&lt;div class=&quot;min-h-[20px] text-message flex flex-col items-start gap-3 whitespace-pre-wrap break-words [.text-message+&amp;amp;]:mt-5 overflow-x-auto&quot; data-message-id=&quot;ef4e5664-baf5-4f98-bb0a-b6b84dee17bc&quot; data-message-author-role=&quot;assistant&quot;&gt;&lt;div class=&quot;markdown prose w-full break-words dark:prose-invert light&quot;&gt;&lt;p&gt;在事件驱动的编程模型中，常见的对象包括事件源对象、事件对象、事件监听器对象和事件处理器对象。它们各自代表着不同的角色和含义：&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;事件源对象（Event Source）：&lt;/strong&gt; 事件源对象是能够触发事件的对象。它通常具有触发事件的能力，并在事件发生时产生相应的事件对象，并将事件对象传递给注册的事件监听器。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;事件对象（Event Object）：&lt;/strong&gt; 事件对象用于封装事件的相关信息。它包含了事件源对象、事件类型、事件发生的时间等信息。在事件发生时，事件源对象会创建相应的事件对象，并将事件对象传递给事件监听器。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;事件监听器对象（Event Listener）：&lt;/strong&gt; 事件监听器对象用于处理特定类型的事件。它通常实现了特定的事件监听器接口，并注册到事件源对象上。当事件发生时，事件监听器会被调用，处理事件对象中的信息。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;事件处理器对象（Event Handler）：&lt;/strong&gt; 事件处理器对象是一个用于处理事件的功能模块或方法。它可以是一个事件监听器对象，也可以是一个独立的函数或方法。事件处理器负责根据事件对象中的信息执行相应的逻辑。&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;这些对象共同构成了事件驱动的编程模型，通过事件源对象产生事件，并将事件传递给事件监听器对象进行处理，从而实现了对象之间的松耦合和分离关注点。&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;align=left;" vertex="1" parent="1">
           <mxGeometry x="7900" y="90" width="710" height="490" as="geometry" />
+        </mxCell>
+        <mxCell id="az8uGPjsdyxcqP_ZSAXE-4" value="&lt;span style=&quot;background-color: initial;&quot;&gt;MyBatis中的设计模式：&lt;br&gt;&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;align=left;" vertex="1" parent="1">
+          <mxGeometry x="4930" y="1080" width="1010" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="az8uGPjsdyxcqP_ZSAXE-5" value="模版方法：JdbcTemplate&lt;br&gt;&lt;div&gt;我们只需要编写跟业务相关的代码（比如，SQL 语&lt;span style=&quot;background-color: initial;&quot;&gt;句、数据库中数据与对象之间的互相转化的代码），其他流程性质的代码（比如，加载驱&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;动、创建数据库连接、创建 statement、关闭连接、关闭 statement 等）都封装在了&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;JdbcTemplate 类中，不需要我们重复编写。&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;align=left;" vertex="1" parent="1">
+          <mxGeometry x="6100" y="660" width="790" height="170" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
