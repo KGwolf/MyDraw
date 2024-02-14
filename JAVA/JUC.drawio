@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-14T14:48:32.691Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="qPEi2D9KcHM3C3BZQuhm" version="23.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-14T14:49:51.090Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="hiahSh19qAVyd3CTEuBp" version="23.1.4" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="3703" dy="3404" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -413,7 +413,7 @@
           <mxGeometry x="990" y="5440" width="1159.5" height="800" as="geometry" />
         </mxCell>
         <mxCell id="51VSMa9UwbkylrlR72oT-3" value="&lt;div style=&quot;line-height: 146%;&quot;&gt;AQS里面的Node节点数据结构是怎样的？&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;AQS有：state、head、tail。&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;Node里面有 wateStatus、prev、next、thread。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" vertex="1" parent="1">
-          <mxGeometry x="-230" y="6270" width="530" height="190" as="geometry" />
+          <mxGeometry x="-260" y="6240" width="530" height="190" as="geometry" />
         </mxCell>
         <mxCell id="51VSMa9UwbkylrlR72oT-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="51VSMa9UwbkylrlR72oT-7" target="51VSMa9UwbkylrlR72oT-9">
           <mxGeometry relative="1" as="geometry" />
@@ -429,6 +429,9 @@
         </mxCell>
         <mxCell id="51VSMa9UwbkylrlR72oT-11" value="AQS&lt;br style=&quot;font-size: 18px;&quot;&gt;unparkSuccessor()&lt;br&gt;这里会对后一个节点进行LockSupport.unpark()释放" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="-1140" y="6255" width="213" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="51VSMa9UwbkylrlR72oT-13" value="&lt;div style=&quot;line-height: 146%;&quot;&gt;哪些同步器，会进行中断标志捕捉处理？&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;tryAcquire、tryRelease方法，哪些同步器实现了哪些不同的额外功能？&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" vertex="1" parent="1">
+          <mxGeometry x="-270" y="6480" width="530" height="190" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
