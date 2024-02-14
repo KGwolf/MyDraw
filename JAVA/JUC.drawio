@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-14T11:37:55.535Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="CJusG7k19-XVhcynSyot" version="23.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-14T11:38:21.514Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="8gIXCjs1A5BwhpJxDNEu" version="23.1.4" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="3703" dy="3404" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -371,7 +371,7 @@
           <mxGeometry x="-1150" y="4760" width="730" height="30" as="geometry" />
         </mxCell>
         <mxCell id="yP8qV2O5jgCDOIUQax57-1" value="&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;AQS：&lt;/font&gt;AbstractQueuedSynchronizer 抽象队列同步器的简称，前有&lt;font color=&quot;#ff0000&quot;&gt;Synchronized是JVM级别的管程实现，AQS则是java层面的管程实现。&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;AQS用到了模板方法，把一些不变的逻辑抽象出来，然后子类去实现这些抽象出来的方法。比如子类只需要实现tryAcquire和tryRelease即可，具体线程等待队列的维护AQS已经做成模板方法了。这也是需要我们学习的设计方法。&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;不同的自定义同步器竞争共享资源的方式也不同。自定义同步器在实现时只需要实现共享资源state的获取与释放方式即可，至于具体线程等待队列的维护（如获取资源失败入队/唤醒出&lt;span style=&quot;border-color: var(--border-color); background-color: initial;&quot;&gt;队等），AQS已经在顶层实现好了。&lt;/span&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;我们实现这样一个管程模型，应该关注哪些点呢？&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;1.用哪种方式实现加锁、解锁、唤醒？&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;2.公平、非公平如何实现？&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;3.条件唤醒如何实现？&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;4.锁的状态如何管理？&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;5.重入锁如何处理？&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;6.竞争失败，如何入队？&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;跟Sync一样，在进入等待队列之前，应该尽可能的进行CAS操作，减少用户态内核态切换的开销。&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;AQS的CAS操作，其实是将status值换成1（这里的1代表1个资源，独占。也可以是大于1，表示多个资源），tryAcquire()方法就是这个cas操作，公平和非公平的实现是公平多了个hasQueuedPredecessors()方法，如果队列有节点且自己不是第一个，就返回true。&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;acquireQueued()：在队列中的线程获取锁。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" parent="1" vertex="1">
-          <mxGeometry x="-1560" y="5170" width="1260" height="780" as="geometry" />
+          <mxGeometry x="-1560" y="5170" width="1260" height="870" as="geometry" />
         </mxCell>
         <mxCell id="yP8qV2O5jgCDOIUQax57-2" value="&lt;div style=&quot;line-height: 146%;&quot;&gt;AQS的特性有哪些？&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;阻塞队列、共享/独占、公平/非公平、可重入、允许中断。&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;AQS内部维护属性：volatile int state&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;在独占锁时表示资源的可用状态，共享锁表示资源的可用数量？&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;AQS有2种队列：同步等待队列、条件等待队列&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;AQS队列中节点的状态：&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;0：在队列中等待获取锁。&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1：CANCELED,表示当前的线程被取消&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-1：SIGNAL，&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-2：CONDITION,表示在条件队列中等待。&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;-3：PROPAGATE，&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" parent="1" vertex="1">
           <mxGeometry x="-1560" y="6330" width="1010" height="330" as="geometry" />
@@ -389,25 +389,25 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ABf24ozDNE_RPhAqXowE-1" value="AQS&lt;br style=&quot;font-size: 18px;&quot;&gt;acquire()&lt;br&gt;提供给子类调用获取锁的方法" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;" parent="1" vertex="1">
-          <mxGeometry x="-1497" y="5690" width="117" height="130" as="geometry" />
+          <mxGeometry x="-1510" y="5815" width="117" height="130" as="geometry" />
         </mxCell>
         <mxCell id="ABf24ozDNE_RPhAqXowE-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ABf24ozDNE_RPhAqXowE-2" target="ABf24ozDNE_RPhAqXowE-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ABf24ozDNE_RPhAqXowE-2" value="AQS&lt;br style=&quot;font-size: 18px;&quot;&gt;tryAcquire()&lt;br&gt;抽象方法，给子类自定义实现如何获取锁" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;" parent="1" vertex="1">
-          <mxGeometry x="-1330" y="5690" width="120" height="130" as="geometry" />
+          <mxGeometry x="-1343" y="5815" width="120" height="130" as="geometry" />
         </mxCell>
         <mxCell id="ABf24ozDNE_RPhAqXowE-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ABf24ozDNE_RPhAqXowE-4" target="ABf24ozDNE_RPhAqXowE-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ABf24ozDNE_RPhAqXowE-4" value="AQS&lt;br style=&quot;font-size: 18px;&quot;&gt;addWaiter()&lt;br&gt;cas失败后，包装成节点并且入队，&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;自旋&lt;/b&gt;&lt;/font&gt;保证并发入队" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;" parent="1" vertex="1">
-          <mxGeometry x="-1170" y="5690" width="150" height="130" as="geometry" />
+          <mxGeometry x="-1183" y="5815" width="150" height="130" as="geometry" />
         </mxCell>
         <mxCell id="ABf24ozDNE_RPhAqXowE-6" value="AQS&lt;br style=&quot;font-size: 18px;&quot;&gt;aquireQueued()&lt;br&gt;在队列中的节点获取锁：&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;自旋&lt;/font&gt;&lt;/b&gt;，找入队节点的前驱节点，如果前驱节点是头结点，并且当前节点获取到锁了，则返回执行业务代码，如果前驱节点不是头结点，或者当前节点没有获取到锁，调用shouldParkAfterFailedAcquire()方法" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;" parent="1" vertex="1">
-          <mxGeometry x="-960" y="5635" width="507" height="240" as="geometry" />
+          <mxGeometry x="-973" y="5760" width="507" height="240" as="geometry" />
         </mxCell>
         <mxCell id="51VSMa9UwbkylrlR72oT-1" value="&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;div&gt;不同的自定义同步器竞争共享资源的方式也不同。自定义同步器在实现时只需要实现共享&lt;span style=&quot;background-color: initial;&quot;&gt;资源state的获取与释放方式即可，至于具体线程等待队列的维护（如获取资源失败入队/唤醒出&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;队等），AQS已经在顶层实现好了&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" vertex="1" parent="1">
-          <mxGeometry x="-1550" y="6000" width="950" height="140" as="geometry" />
+          <mxGeometry x="-1540" y="6100" width="950" height="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
