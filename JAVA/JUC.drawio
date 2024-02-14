@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-14T15:04:53.555Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="ZpZe9fGjvOjSVfYjDmb6" version="23.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-14T15:24:57.631Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="BpMzyippkgHzPH34_OA5" version="23.1.4" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="3703" dy="3404" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -432,6 +432,12 @@
         </mxCell>
         <mxCell id="51VSMa9UwbkylrlR72oT-13" value="&lt;div style=&quot;line-height: 146%;&quot;&gt;哪些同步器，会进行中断标志捕捉处理？&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;为什么AQS还有个acquireInterruptibly()方法呢？&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;tryAcquire、tryRelease方法，哪些同步器实现了哪些不同的额外功能？&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" vertex="1" parent="1">
           <mxGeometry x="-260" y="6250" width="530" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="51VSMa9UwbkylrlR72oT-14" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;p style=&quot;padding: 0px; margin: 0px 0px 20px; overflow-wrap: break-word;&quot;&gt;在最早期java中的同步机制是通过关键字synchronized实现，这个锁是java原生的，jvm层面实现的。在1.6之前synchronized的性能比较低，是一把纯重量级锁。&lt;/p&gt;&lt;p style=&quot;padding: 0px; margin: 0px 0px 20px; overflow-wrap: break-word;&quot;&gt;后来，Doug Lea开发并引入了java.util.concurrent包，这个包基本涵盖了java并发操作的半壁江山，该包内的并发工具类基本是以AQS为基础的，AQS提高了同步操作的性能，在性能上远超当时的synchronized，后来synchronized做了优化，java1.6及之后两者的性能就差不多了。&lt;/p&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="-480" y="4890" width="970" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="51VSMa9UwbkylrlR72oT-15" value="&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;p style=&quot;padding: 0px; margin: 0px 0px 20px; overflow-wrap: break-word;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;AQS比较好的博客：&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;padding: 0px; margin: 0px 0px 20px; overflow-wrap: break-word;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;https://www.ydisp.cn/developer/219710.html&lt;/font&gt;&lt;br&gt;&lt;/p&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="570" y="4890" width="970" height="150" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
