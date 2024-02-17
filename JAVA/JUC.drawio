@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2024-02-17T14:31:28.106Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="3d7sRgeW9ahL0UGfrDDk" version="23.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-17T14:32:08.560Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="OZ1UGjOnG4os9Opk8mtU" version="23.1.5" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="3703" dy="3404" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="00e71dX4CTLMCf1-2EDL-7" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-1630" y="7150" width="2370" height="1050" as="geometry" />
+        </mxCell>
         <mxCell id="51VSMa9UwbkylrlR72oT-6" value="&lt;div style=&quot;line-height: 146%;&quot;&gt;AQS如何进行唤醒的：&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;release和acquire一样，典型的模板方法设计模式，final修饰，方法里面有调用抽象方法，由子类实现。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" parent="1" vertex="1">
           <mxGeometry x="-1550" y="6140" width="1160" height="310" as="geometry" />
         </mxCell>
