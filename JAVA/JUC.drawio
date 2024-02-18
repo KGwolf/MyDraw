@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-02-18T14:09:39.175Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="7g9nE2ckNGw9_CYp5-mg" version="23.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-18T14:11:19.882Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="FjSfTV9FU357Usg_q51-" version="23.1.5" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
-    <mxGraphModel dx="4687" dy="3486" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="6066" dy="4203" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -490,7 +490,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="0sq3IFtSvmr8_of0WTy--11" value="&lt;div style=&quot;line-height: 146%; font-size: 19px;&quot;&gt;&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 19px;&quot;&gt;AQS进行acquire和release的时候，节点状态是如何变化的？以及同步等待队列中的节点是否需要进行移除，什么时候进行移除？&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%; font-size: 19px;&quot;&gt;&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 19px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%; font-size: 19px;&quot;&gt;&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;首先，入队的时候，会new一个头结点，waitStatus为0，当插入一个节点之后，进行阻塞的时候，调用shouldParkAfterFailedAcquire方法里面，会对前驱节点的状态赋值为-1（signal）。&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%; font-size: 19px;&quot;&gt;&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;release时，将头节点的状态改为0，并唤醒头结点的next节点。&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%; font-size: 19px;&quot;&gt;&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 19px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%; font-size: 19px;&quot;&gt;&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;唤醒之后，继续执行acquireQueued方法里面的逻辑：获取锁成功，setHead(node)，p.next=null，node是当前节点，p是前驱节点，这2行代码就是进行移除节点。 获取失败，将前驱节点的状态改为-1，继续park阻塞等待，等待下一个release继续唤醒获取锁。&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px; font-size: 19px;&quot;&gt;&lt;font style=&quot;font-size: 19px;&quot; color=&quot;#ff0000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" parent="1" vertex="1">
-          <mxGeometry x="-1555" y="7100" width="1075" height="280" as="geometry" />
+          <mxGeometry x="-1560" y="7100" width="1080" height="300" as="geometry" />
         </mxCell>
         <mxCell id="IAgaV7B-xfa82LkWCDCl-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="-235" y="7140" width="1405" height="470" as="geometry" />
