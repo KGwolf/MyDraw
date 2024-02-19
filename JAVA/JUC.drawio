@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-19T12:56:22.060Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="U2SIy49GhyPugs2T449v" version="23.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-19T13:00:45.412Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="Y87ZZkOTPdc4xMskQL0V" version="23.1.5" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="4871" dy="3581" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -739,6 +739,58 @@
         </mxCell>
         <mxCell id="zEqcIcVNa7Psk9aJJKPi-1" value="&lt;div style=&quot;line-height: 146%;&quot;&gt;左边展示了waitStatus的0和-1的变化情况，那么1、-2、-3是在哪种条件下进行变化呢？&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;首先condition（-2）：条件队列中的状态，在调用await的时候，会组织一个Node节点，初始化的状态就是-2。&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;propagate（-3）：在doReleaseShared释放共享锁的时候，&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;cancel（1）：在抛出异常的时候，比如超时、中断。会将节点设置成1。&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;共享模式和独占模式，在释放和获取锁时有什么区别？状态不同？&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" parent="1" vertex="1">
           <mxGeometry x="990" y="6570" width="930" height="540" as="geometry" />
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-3" value="线程：null&lt;br&gt;waitStatus：0" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="347.5" y="7770" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" source="krWkHPWGKNhosNfxy9QW-8" target="krWkHPWGKNhosNfxy9QW-3" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-5" value="prev" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="krWkHPWGKNhosNfxy9QW-4">
+          <mxGeometry x="-0.0877" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" source="krWkHPWGKNhosNfxy9QW-8" target="krWkHPWGKNhosNfxy9QW-13" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-7" value="next" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="krWkHPWGKNhosNfxy9QW-6">
+          <mxGeometry x="0.1368" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-8" value="线程：Thread1&lt;br&gt;waitStatus：-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="527.5" y="7770" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" source="krWkHPWGKNhosNfxy9QW-13" target="krWkHPWGKNhosNfxy9QW-8" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-10" value="prev" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="krWkHPWGKNhosNfxy9QW-9">
+          <mxGeometry x="-0.0947" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" source="krWkHPWGKNhosNfxy9QW-13" target="krWkHPWGKNhosNfxy9QW-16" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-12" value="next" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="krWkHPWGKNhosNfxy9QW-11">
+          <mxGeometry x="-0.0947" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-13" value="线程：Thread2&lt;br&gt;waitStatus：-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="697.5" y="7770" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" source="krWkHPWGKNhosNfxy9QW-16" target="krWkHPWGKNhosNfxy9QW-13" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-15" value="prev" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="krWkHPWGKNhosNfxy9QW-14">
+          <mxGeometry x="-0.2842" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-16" value="线程：Thread3&lt;br&gt;waitStatus：0" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="867.5" y="7770" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
