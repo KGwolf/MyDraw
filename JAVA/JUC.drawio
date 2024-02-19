@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-19T14:30:57.420Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="UqJdBfrZoOIkKgGDkb62" version="23.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-19T14:37:22.587Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="_jM9E7KjUdx6d2tTI25F" version="23.1.5" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="3990" dy="3123" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -855,8 +855,8 @@
         <mxCell id="krWkHPWGKNhosNfxy9QW-49" value="lastWaiter" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="1662.5" y="7295" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="krWkHPWGKNhosNfxy9QW-55" value="入队之后就park，等待release唤醒同步队列？" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1795" y="7230" width="270" height="30" as="geometry" />
+        <mxCell id="krWkHPWGKNhosNfxy9QW-55" value="入队之后就park，等待signal信号重新进入同步队列。&lt;br style=&quot;font-size: 15px;&quot;&gt;进入同步队列，进行判断，如果前驱节点waitStatus&lt;br style=&quot;font-size: 15px;&quot;&gt;大于0，或者不能将前驱节点的状态改成-1，这时候&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;主动进行唤醒这个节点&lt;/font&gt;。 如果这个判断结果为flase，&lt;br style=&quot;font-size: 15px;&quot;&gt;则&lt;font color=&quot;#ff0000&quot;&gt;等待release进行唤醒节点&lt;/font&gt;。然后再继续执行&lt;br style=&quot;font-size: 15px;&quot;&gt;await的后续逻辑（acquireQueued方法）" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="1790" y="7200" width="380" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
