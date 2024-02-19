@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-02-19T13:00:45.412Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="Y87ZZkOTPdc4xMskQL0V" version="23.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-19T14:30:57.420Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="UqJdBfrZoOIkKgGDkb62" version="23.1.5" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
-    <mxGraphModel dx="4871" dy="3581" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3990" dy="3123" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -492,8 +492,8 @@
         <mxCell id="0sq3IFtSvmr8_of0WTy--11" value="&lt;div style=&quot;line-height: 146%; font-size: 19px;&quot;&gt;&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 19px;&quot;&gt;AQS进行acquire和release的时候，节点状态是如何变化的？以及同步等待队列中的节点是否需要进行移除，什么时候进行移除？&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%; font-size: 19px;&quot;&gt;独占模式：&lt;/div&gt;&lt;div style=&quot;line-height: 146%; font-size: 19px;&quot;&gt;&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;首先，入队的时候，会new一个头结点，waitStatus为0，当插入一个节点之后，进行阻塞的时候，调用shouldParkAfterFailedAcquire方法里面，会对前驱节点的状态赋值为-1（signal）。&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%; font-size: 19px;&quot;&gt;&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;release时，将头节点的状态改为0，并唤醒头结点的next节点。&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%; font-size: 19px;&quot;&gt;&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 19px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%; font-size: 19px;&quot;&gt;&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;唤醒之后，继续执行acquireQueued方法里面的逻辑：获取锁成功，setHead(node)，p.next=null，node是当前节点，p是前驱节点，这2行代码就是进行移除节点。 获取失败，将前驱节点的状态改为-1，继续park阻塞等待，等待下一个release继续唤醒获取锁。&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%; font-size: 19px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%; font-size: 19px;&quot;&gt;共享模式：&lt;/div&gt;&lt;div style=&quot;line-height: 19px; font-size: 19px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" parent="1" vertex="1">
           <mxGeometry x="-1560" y="7100" width="1100" height="510" as="geometry" />
         </mxCell>
-        <mxCell id="IAgaV7B-xfa82LkWCDCl-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="-235" y="7140" width="1405" height="470" as="geometry" />
+        <mxCell id="IAgaV7B-xfa82LkWCDCl-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="-230" y="7140" width="2520" height="470" as="geometry" />
         </mxCell>
         <mxCell id="IAgaV7B-xfa82LkWCDCl-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="IAgaV7B-xfa82LkWCDCl-4" target="IAgaV7B-xfa82LkWCDCl-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -740,57 +740,123 @@
         <mxCell id="zEqcIcVNa7Psk9aJJKPi-1" value="&lt;div style=&quot;line-height: 146%;&quot;&gt;左边展示了waitStatus的0和-1的变化情况，那么1、-2、-3是在哪种条件下进行变化呢？&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;首先condition（-2）：条件队列中的状态，在调用await的时候，会组织一个Node节点，初始化的状态就是-2。&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;propagate（-3）：在doReleaseShared释放共享锁的时候，&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;cancel（1）：在抛出异常的时候，比如超时、中断。会将节点设置成1。&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;共享模式和独占模式，在释放和获取锁时有什么区别？状态不同？&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" parent="1" vertex="1">
           <mxGeometry x="990" y="6570" width="930" height="540" as="geometry" />
         </mxCell>
-        <mxCell id="krWkHPWGKNhosNfxy9QW-3" value="线程：null&lt;br&gt;waitStatus：0" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="347.5" y="7770" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="krWkHPWGKNhosNfxy9QW-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" source="krWkHPWGKNhosNfxy9QW-8" target="krWkHPWGKNhosNfxy9QW-3" parent="1">
+        <mxCell id="krWkHPWGKNhosNfxy9QW-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="krWkHPWGKNhosNfxy9QW-8" target="krWkHPWGKNhosNfxy9QW-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="krWkHPWGKNhosNfxy9QW-5" value="prev" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="krWkHPWGKNhosNfxy9QW-4">
-          <mxGeometry x="-0.0877" y="4" relative="1" as="geometry">
+        <mxCell id="krWkHPWGKNhosNfxy9QW-24" value="nextWaiter" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="krWkHPWGKNhosNfxy9QW-17">
+          <mxGeometry x="-0.1478" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="krWkHPWGKNhosNfxy9QW-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" source="krWkHPWGKNhosNfxy9QW-8" target="krWkHPWGKNhosNfxy9QW-13" parent="1">
+        <mxCell id="krWkHPWGKNhosNfxy9QW-8" value="线程：Thread1&lt;br&gt;waitStatus：-2" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="526.25" y="7882" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="krWkHPWGKNhosNfxy9QW-13" target="krWkHPWGKNhosNfxy9QW-16">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="krWkHPWGKNhosNfxy9QW-7" value="next" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="krWkHPWGKNhosNfxy9QW-6">
-          <mxGeometry x="0.1368" y="-3" relative="1" as="geometry">
+        <mxCell id="krWkHPWGKNhosNfxy9QW-25" value="nextWaiter" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="krWkHPWGKNhosNfxy9QW-18">
+          <mxGeometry x="-0.0521" y="-2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="krWkHPWGKNhosNfxy9QW-8" value="线程：Thread1&lt;br&gt;waitStatus：-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="527.5" y="7770" width="120" height="60" as="geometry" />
+        <mxCell id="krWkHPWGKNhosNfxy9QW-13" value="线程：Thread2&lt;br&gt;waitStatus：-2" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="733.75" y="7882" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="krWkHPWGKNhosNfxy9QW-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" source="krWkHPWGKNhosNfxy9QW-13" target="krWkHPWGKNhosNfxy9QW-8" parent="1">
+        <mxCell id="krWkHPWGKNhosNfxy9QW-16" value="线程：Thread3&lt;br&gt;waitStatus：-2" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="948.75" y="7882" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-26" value="fitstWaiter" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="541.25" y="7852" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-27" value="lastWaiter" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="956.25" y="7850" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-37" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;条件等待队列&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1160" y="7160" width="1010" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="krWkHPWGKNhosNfxy9QW-30" target="krWkHPWGKNhosNfxy9QW-33" parent="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="krWkHPWGKNhosNfxy9QW-10" value="prev" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="krWkHPWGKNhosNfxy9QW-9">
-          <mxGeometry x="-0.0947" relative="1" as="geometry">
-            <mxPoint x="1" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="krWkHPWGKNhosNfxy9QW-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" source="krWkHPWGKNhosNfxy9QW-13" target="krWkHPWGKNhosNfxy9QW-16" parent="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="krWkHPWGKNhosNfxy9QW-12" value="next" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="krWkHPWGKNhosNfxy9QW-11">
-          <mxGeometry x="-0.0947" relative="1" as="geometry">
-            <mxPoint x="-1" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="krWkHPWGKNhosNfxy9QW-13" value="线程：Thread2&lt;br&gt;waitStatus：-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="697.5" y="7770" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="krWkHPWGKNhosNfxy9QW-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" source="krWkHPWGKNhosNfxy9QW-16" target="krWkHPWGKNhosNfxy9QW-13" parent="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="krWkHPWGKNhosNfxy9QW-15" value="prev" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="krWkHPWGKNhosNfxy9QW-14">
-          <mxGeometry x="-0.2842" y="3" relative="1" as="geometry">
+        <mxCell id="krWkHPWGKNhosNfxy9QW-29" value="nextWaiter" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="krWkHPWGKNhosNfxy9QW-28">
+          <mxGeometry x="-0.1478" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="krWkHPWGKNhosNfxy9QW-16" value="线程：Thread3&lt;br&gt;waitStatus：0" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="867.5" y="7770" width="120" height="60" as="geometry" />
+        <mxCell id="krWkHPWGKNhosNfxy9QW-30" value="线程：Thread1&lt;br&gt;waitStatus：-2" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1297.5" y="7230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="krWkHPWGKNhosNfxy9QW-33" target="krWkHPWGKNhosNfxy9QW-34" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-32" value="nextWaiter" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="krWkHPWGKNhosNfxy9QW-31">
+          <mxGeometry x="-0.0521" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-33" value="线程：Thread2&lt;br&gt;waitStatus：-2" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1480" y="7230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-34" value="线程：Thread3&lt;br&gt;waitStatus：-2" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1660" y="7230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-35" value="fitstWaiter" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1312.5" y="7200" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-36" value="lastWaiter" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1670" y="7200" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-39" value="await()&lt;br&gt;addConditionWaiter" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1165" y="7240" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-40" value="signal()&lt;br&gt;transferForSignal" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="7310" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="krWkHPWGKNhosNfxy9QW-43" target="krWkHPWGKNhosNfxy9QW-46" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-42" value="nextWaiter" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="krWkHPWGKNhosNfxy9QW-41">
+          <mxGeometry x="-0.1478" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;shape=flexArrow;" edge="1" parent="1" source="krWkHPWGKNhosNfxy9QW-43" target="IAgaV7B-xfa82LkWCDCl-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1100" y="7355" />
+              <mxPoint x="1100" y="7260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-54" value="&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;signal把状态改成0之后&lt;br&gt;把这1个node入等待队列&lt;/font&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="krWkHPWGKNhosNfxy9QW-53">
+          <mxGeometry x="0.2216" y="4" relative="1" as="geometry">
+            <mxPoint x="-6" y="-27" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-43" value="线程：Thread1&lt;br&gt;waitStatus：0" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="7325" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" source="krWkHPWGKNhosNfxy9QW-46" target="krWkHPWGKNhosNfxy9QW-47" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-45" value="nextWaiter" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="krWkHPWGKNhosNfxy9QW-44">
+          <mxGeometry x="-0.0521" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-46" value="线程：Thread2&lt;br&gt;waitStatus：-2" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1472.5" y="7325" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-47" value="线程：Thread3&lt;br&gt;waitStatus：-2" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1652.5" y="7325" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-48" value="fitstWaiter" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1305" y="7295" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-49" value="lastWaiter" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1662.5" y="7295" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="krWkHPWGKNhosNfxy9QW-55" value="入队之后就park，等待release唤醒同步队列？" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1795" y="7230" width="270" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
