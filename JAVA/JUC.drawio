@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-02-20T14:20:55.054Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="aRw0762bekQ1W3jzJu-3" version="23.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-20T14:34:17.524Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="ekpIuD7VYDsTJQ0HC7n3" version="23.1.5" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
-    <mxGraphModel dx="3023" dy="3018" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3447" dy="3271" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -673,14 +673,6 @@
         <mxCell id="IAgaV7B-xfa82LkWCDCl-76" value="线程：null&lt;br&gt;waitStatus：0" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="390" y="7500" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="IAgaV7B-xfa82LkWCDCl-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="IAgaV7B-xfa82LkWCDCl-81" target="IAgaV7B-xfa82LkWCDCl-76" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="IAgaV7B-xfa82LkWCDCl-78" value="prev" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="IAgaV7B-xfa82LkWCDCl-77" vertex="1" connectable="0">
-          <mxGeometry x="-0.0877" y="4" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="IAgaV7B-xfa82LkWCDCl-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="IAgaV7B-xfa82LkWCDCl-81" target="IAgaV7B-xfa82LkWCDCl-86" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -689,7 +681,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IAgaV7B-xfa82LkWCDCl-81" value="线程：Thread1&lt;br&gt;waitStatus：-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;" parent="1" vertex="1">
+        <mxCell id="IAgaV7B-xfa82LkWCDCl-81" value="线程：null&lt;br&gt;waitStatus：-1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="570" y="7500" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="IAgaV7B-xfa82LkWCDCl-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="IAgaV7B-xfa82LkWCDCl-86" target="IAgaV7B-xfa82LkWCDCl-81" edge="1">
@@ -866,7 +858,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="krWkHPWGKNhosNfxy9QW-57" value="&lt;div style=&quot;line-height: 146%; font-size: 19px;&quot;&gt;&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 19px;&quot;&gt;AQS进行acquire和release的时候，节点状态是如何变化的？以及同步等待队列中的节点是否需要进行移除，什么时候进行移除？&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%; font-size: 19px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%; font-size: 19px;&quot;&gt;共享模式：&lt;/div&gt;&lt;div style=&quot;line-height: 19px; font-size: 19px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;acquireShread()，首先，入队的时候，会new一个头结点，waitStatus为0，当插入一个节点之后，进行阻塞的时候，调用shouldParkAfterFailedAcquire方法里面，会对前驱节点的状态赋值为-1（signal）。&lt;br&gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;doReleaseShared()，把head的状态改为0，调用unparkSuccessor(方法进行unpark头结点的next)，再判断如果head发生了改变，则继续for循环执行一次刚刚的操作。&lt;br&gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;唤醒之后，tryAcquireShared，没获取到锁，则将前驱节点状态改为-1，继续park阻塞等待下一个releaseShared，如果获取到了锁之后，调用setHeadAndPropagate方法(将唤醒的节点设置为头结点，如果下一个节点是共享模式，并继续调用doReleaseShared方法继续唤醒下一个共享节点。)&lt;br&gt;&lt;div style=&quot;line-height: 19px; font-size: 19px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px; font-size: 19px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;PROPAGATE状态在正常状态下不会出现，只有在临界点会出现" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" parent="1" vertex="1">
+        <mxCell id="krWkHPWGKNhosNfxy9QW-57" value="&lt;div style=&quot;line-height: 146%; font-size: 19px;&quot;&gt;&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 19px;&quot;&gt;AQS进行acquire和release的时候，节点状态是如何变化的？以及同步等待队列中的节点是否需要进行移除，什么时候进行移除？&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%; font-size: 19px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%; font-size: 19px;&quot;&gt;共享模式：&lt;/div&gt;&lt;div style=&quot;line-height: 19px; font-size: 19px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;acquireShread()，首先，入队的时候，会new一个头结点，waitStatus为0，当插入一个节点之后，进行阻塞的时候，调用shouldParkAfterFailedAcquire方法里面，会对前驱节点的状态赋值为-1（signal）。&lt;br&gt;&lt;br&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;doReleaseShared()，把head的状态改为0，调用unparkSuccessor(方法进行unpark头结点的next)，再判断如果head发生了改变，则继续for循环执行一次刚刚的操作。&lt;br&gt;&lt;br&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;唤醒之后，tryAcquireShared，没获取到锁，则将前驱节点状态改为-1，继续park阻塞等待下一个releaseShared，如果获取到了锁之后，调用setHeadAndPropagate方法(将唤醒的节点设置为头结点，如果下一个节点是共享模式，并继续调用doReleaseShared方法继续唤醒下一个共享节点。)&lt;br&gt;&lt;div style=&quot;line-height: 19px; font-size: 19px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 19px; font-size: 19px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;PROPAGATE状态在正常状态下不会出现，只有在临界点会出现。&lt;br&gt;&lt;br&gt;当连续多个release的时候，第一个可能把head赋值成了0，第二个又来了，这时候第二个就会把head赋值成-3（PROPAGATE&lt;br&gt;）" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" parent="1" vertex="1">
           <mxGeometry x="-1560" y="7750" width="1100" height="510" as="geometry" />
         </mxCell>
         <mxCell id="krWkHPWGKNhosNfxy9QW-58" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#FF0000;" parent="1" vertex="1">
@@ -1100,9 +1092,6 @@
         <mxCell id="krWkHPWGKNhosNfxy9QW-124" value="tail" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="942.5" y="8120" width="60" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="krWkHPWGKNhosNfxy9QW-125" value="1.head移位置。2.头结点的next干掉" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="697.5" y="8120" width="200" height="20" as="geometry" />
-        </mxCell>
         <mxCell id="krWkHPWGKNhosNfxy9QW-126" value="如果获取失败，则又回到release之前的状态：1.前驱节点的状态设置为-1,。2.继续park，等待下一次release." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="210" y="8220" width="880" height="20" as="geometry" />
         </mxCell>
@@ -1192,6 +1181,9 @@
         </mxCell>
         <mxCell id="krWkHPWGKNhosNfxy9QW-150" value="入队之后就park，等待signal信号重新进入同步队列。&lt;br style=&quot;font-size: 15px;&quot;&gt;进入同步队列，进行判断，如果前驱节点waitStatus&lt;br style=&quot;font-size: 15px;&quot;&gt;大于0，或者不能将前驱节点的状态改成-1，这时候&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;主动进行唤醒这个节点&lt;/font&gt;。 如果这个判断结果为flase，&lt;br style=&quot;font-size: 15px;&quot;&gt;则&lt;font color=&quot;#ff0000&quot;&gt;等待release进行唤醒节点&lt;/font&gt;。然后再继续执行&lt;br style=&quot;font-size: 15px;&quot;&gt;await的后续逻辑（acquireQueued方法）" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="1790" y="7850" width="380" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ZaR6MeujdDUClyhFNydg-5" value="如果这个节点为共享，则继续唤醒" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="743.75" y="8120" width="112.5" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
