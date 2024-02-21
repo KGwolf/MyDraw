@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-02-20T14:34:17.524Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="ekpIuD7VYDsTJQ0HC7n3" version="23.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-21T01:40:25.786Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="1sNUt_oDx_VAlA3wNI8r" version="23.1.5" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
-    <mxGraphModel dx="3447" dy="3271" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4044" dy="3601" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1182,8 +1182,11 @@
         <mxCell id="krWkHPWGKNhosNfxy9QW-150" value="入队之后就park，等待signal信号重新进入同步队列。&lt;br style=&quot;font-size: 15px;&quot;&gt;进入同步队列，进行判断，如果前驱节点waitStatus&lt;br style=&quot;font-size: 15px;&quot;&gt;大于0，或者不能将前驱节点的状态改成-1，这时候&lt;br style=&quot;font-size: 15px;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;主动进行唤醒这个节点&lt;/font&gt;。 如果这个判断结果为flase，&lt;br style=&quot;font-size: 15px;&quot;&gt;则&lt;font color=&quot;#ff0000&quot;&gt;等待release进行唤醒节点&lt;/font&gt;。然后再继续执行&lt;br style=&quot;font-size: 15px;&quot;&gt;await的后续逻辑（acquireQueued方法）" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="1790" y="7850" width="380" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="ZaR6MeujdDUClyhFNydg-5" value="如果这个节点为共享，则继续唤醒" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="ZaR6MeujdDUClyhFNydg-5" value="如果这个节点为共享，则继续唤醒" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="743.75" y="8120" width="112.5" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="xEQxw3LxKGRdFi9RBkEt-1" value="在引入了PROPAGATE状态后，可以避免在高并发场景下可能出现的线程没有被成功唤醒的情况。" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="-1560" y="7650" width="930" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
