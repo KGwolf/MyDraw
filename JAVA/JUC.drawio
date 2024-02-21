@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2024-02-21T13:26:35.139Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="wO7ySdZ5GJwjPJRdkUqa" version="23.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-21T13:38:31.016Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="csKrHlrEbTl0Y011jVG6" version="23.1.5" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
-    <mxGraphModel dx="3341" dy="3216" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4044" dy="3581" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="gZw1r_cEjlwUHu87S-kC-4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="2530" y="5930" width="2230" height="800" as="geometry" />
+        </mxCell>
         <mxCell id="0sq3IFtSvmr8_of0WTy--4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="5000" y="4930" width="1860" height="710" as="geometry" />
         </mxCell>
@@ -478,7 +481,7 @@
         <mxCell id="0sq3IFtSvmr8_of0WTy--6" value="&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;CountDownLatch：&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;也是共享模式。&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;是一个同步协作类，允许一个或多个线程等待，直到其它线程完成操作集，也是基于AQS实现的。&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;初始化需要传入一个count参数，表示需要调用多少次countDown方法才能让等待的线程继续执行。&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;注意：这是一个一次性的操作，count不会被重置。如果业务需要重置，使用CyclicBarrier。&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color); line-height: 26.28px;&quot;&gt;使用场景：&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); line-height: 26.28px;&quot;&gt;1.多个线程等待，模拟并发线程执行。&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); line-height: 26.28px;&quot;&gt;2.让单个线程等待，多个线程任务完成后，进行汇总合并。&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;2种场景的区别是看阻塞的是主线程，还是其他的线程。&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" parent="1" vertex="1">
           <mxGeometry x="2590" y="5960" width="967.5" height="260" as="geometry" />
         </mxCell>
-        <mxCell id="0sq3IFtSvmr8_of0WTy--9" value="&lt;div style=&quot;line-height: 146%;&quot;&gt;源码：&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;只有1个Sync内部类，不是抽象的了，继承AQS。&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;加锁：await方法，调用&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;解锁：countDown方法&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;为什么CountDownLatch没有公平和非公平的说法？&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" parent="1" vertex="1">
+        <mxCell id="0sq3IFtSvmr8_of0WTy--9" value="&lt;div style=&quot;line-height: 146%;&quot;&gt;源码：&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;只有1个Sync内部类，不是抽象的了，继承AQS。&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;加锁：await方法，调用acquireShreadInterruptibly方法，tryAcquireShared模板方法，进行判断state的值是否为0，为0则获取成功，不进行入队等待，不为0，则进行AQS的入队操作。&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;注意：这里阻塞被唤醒一样的要进行传递唤醒。&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;解锁：countDown方法&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;为什么CountDownLatch没有公平和非公平的说法？默认就是非公平的实现&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" parent="1" vertex="1">
           <mxGeometry x="2597.5" y="6260" width="1075" height="400" as="geometry" />
         </mxCell>
         <mxCell id="IAgaV7B-xfa82LkWCDCl-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="0sq3IFtSvmr8_of0WTy--11" target="IAgaV7B-xfa82LkWCDCl-1" edge="1">
@@ -1210,7 +1213,13 @@
           <mxGeometry x="297.5" y="8588" width="842.5" height="292" as="geometry" />
         </mxCell>
         <mxCell id="gZw1r_cEjlwUHu87S-kC-3" value="&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;CountDownLatch也是调用共享可中断的获取锁，为什么也要可中断呢？&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" vertex="1" parent="1">
-          <mxGeometry x="3722" y="5960" width="967.5" height="260" as="geometry" />
+          <mxGeometry x="3722" y="5960" width="918" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="gZw1r_cEjlwUHu87S-kC-5" value="&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;CountDownLatch与Thread.join的区别？&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" vertex="1" parent="1">
+          <mxGeometry x="3722" y="6120" width="967.5" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="gZw1r_cEjlwUHu87S-kC-6" value="&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;CountDownLatch与CyclicBarrier的区别？&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" vertex="1" parent="1">
+          <mxGeometry x="3722" y="6410" width="967.5" height="260" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
