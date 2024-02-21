@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-21T09:24:29.446Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="LShUbhnZleo3v9CYbZ0B" version="23.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-21T09:38:04.709Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="JsNYMXn30mt5N_P1SxJ7" version="23.1.5" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="3860" dy="3504" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1191,7 +1191,7 @@
         <mxCell id="xEQxw3LxKGRdFi9RBkEt-18" value="如果产生了并发问题，就可能出现PROPAGATE状态" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="637.5" y="8330" width="310" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="xEQxw3LxKGRdFi9RBkEt-19" value="为什么AQS需要用双向链表呢？&lt;br&gt;1.当超时或者中断，节点状态变为cancel之后，后续有操作发生需要移除cancel的节点，&lt;br&gt;2.唤醒节点时，需要判断前驱节点的状态，前驱节点是头结点才会去竞争锁。&lt;br&gt;3.入队的时候，需要检测" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
+        <mxCell id="xEQxw3LxKGRdFi9RBkEt-19" value="为什么AQS需要用双向链表呢？&lt;br&gt;1.当超时或者中断，节点状态变为cancel之后，后续有操作发生需要移除cancel的节点，&lt;br&gt;2.唤醒节点时，需要判断前驱节点的状态，前驱节点是头结点才会去竞争锁。" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
           <mxGeometry x="-1567" y="8560" width="787" height="150" as="geometry" />
         </mxCell>
         <mxCell id="xEQxw3LxKGRdFi9RBkEt-20" value="为什么当release时发现有cancel节点后，需要从队列尾部开始查找，找到一个状态小于0的节点进行唤醒？这样不会产生公平性问题吗？cancel节点是什么时候进行删除的呢？&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;这里唤醒并不等于获取了锁，后续获取锁的时候还要判断前驱节点是不是头结点。所以不存在公平性问题。当发现不是头结点或者获取锁失败的时候，就要判断是否进行阻塞，里面有判断状态大于0的时候，进行do while循环，&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
