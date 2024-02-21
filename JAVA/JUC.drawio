@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-02-21T05:32:57.704Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="bq4uYAAfH7W1rQD6NyU2" version="23.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-21T05:47:06.644Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="nBdnPvMVtLVC8oXMlBxl" version="23.1.5" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
-    <mxGraphModel dx="3341" dy="3230" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3703" dy="3421" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1221,6 +1221,9 @@
         </mxCell>
         <mxCell id="xEQxw3LxKGRdFi9RBkEt-18" value="如果产生了并发问题，就可能出现PROPAGATE状态" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="637.5" y="8330" width="310" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="xEQxw3LxKGRdFi9RBkEt-19" value="为什么AQS需要用双向链表呢？&lt;br&gt;因为AQS是根据前一个节点的状态来决定是否阻塞入队，不是双向链表查询起来费时间。" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-1550" y="7510" width="740" height="130" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
