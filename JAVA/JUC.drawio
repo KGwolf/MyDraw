@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-02-21T06:17:20.986Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="oP5kEjJv7NeiMH1pasZ6" version="23.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-21T07:03:57.102Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="FiZZug9i3qQ8RZwH7-Wm" version="23.1.5" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
-    <mxGraphModel dx="8824" dy="6128" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3860" dy="3504" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,7 +8,7 @@
           <mxGeometry x="5000" y="4930" width="1860" height="710" as="geometry" />
         </mxCell>
         <mxCell id="p9zBkdNsjDQQ430s8H-Z-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-          <mxGeometry x="-1630" y="4630" width="4170" height="3870" as="geometry" />
+          <mxGeometry x="-1650" y="4630" width="4080" height="4660" as="geometry" />
         </mxCell>
         <mxCell id="00e71dX4CTLMCf1-2EDL-7" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="2481" y="4795" width="2370" height="1050" as="geometry" />
@@ -476,10 +476,10 @@
           <mxGeometry x="5960" y="4980" width="820" height="170" as="geometry" />
         </mxCell>
         <mxCell id="0sq3IFtSvmr8_of0WTy--6" value="&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;CountDownLatch：&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;是一个同步协作类，允许一个或多个线程等待，直到其它线程完成操作集，也是基于AQS实现的。&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;初始化需要传入一个count参数，表示需要调用多少次countDown方法才能让等待的线程继续执行。&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;注意：这是一个一次性的操作，count不会被重置。如果业务需要重置，使用CyclicBarrier。&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color); line-height: 26.28px;&quot;&gt;使用场景：&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); line-height: 26.28px;&quot;&gt;1.多个线程等待，模拟并发线程执行。&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color); line-height: 26.28px;&quot;&gt;2.让单个线程等待，多个线程任务完成后，进行汇总合并。&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" parent="1" vertex="1">
-          <mxGeometry x="2510" y="6090" width="960" height="200" as="geometry" />
+          <mxGeometry x="3030" y="6055" width="960" height="200" as="geometry" />
         </mxCell>
         <mxCell id="0sq3IFtSvmr8_of0WTy--9" value="&lt;div style=&quot;line-height: 146%;&quot;&gt;源码：&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;只有1个Sync内部类，不是抽象的了，继承AQS。&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" parent="1" vertex="1">
-          <mxGeometry x="2510" y="6300" width="1075" height="400" as="geometry" />
+          <mxGeometry x="2970" y="6350" width="1075" height="400" as="geometry" />
         </mxCell>
         <mxCell id="IAgaV7B-xfa82LkWCDCl-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="0sq3IFtSvmr8_of0WTy--11" target="IAgaV7B-xfa82LkWCDCl-1" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -1192,7 +1192,13 @@
           <mxGeometry x="637.5" y="8330" width="310" height="20" as="geometry" />
         </mxCell>
         <mxCell id="xEQxw3LxKGRdFi9RBkEt-19" value="为什么AQS需要用双向链表呢？&lt;br&gt;因为AQS是根据前一个节点的状态来决定是否阻塞入队，不是双向链表查询起来费时间。" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
-          <mxGeometry x="-1550" y="7510" width="740" height="130" as="geometry" />
+          <mxGeometry x="-1567" y="8560" width="787" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="xEQxw3LxKGRdFi9RBkEt-20" value="为什么当发现有cancel节点后，需要从队列尾部开始查找，找到一个状态小于0的节点进行唤醒？这样不会产生公平性问题吗？" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-1570" y="8840" width="787" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="xEQxw3LxKGRdFi9RBkEt-21" value="cancel节点是什么时候进行删除的呢？" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-1570" y="9050" width="787" height="150" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
