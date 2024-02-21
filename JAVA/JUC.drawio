@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-21T09:09:48.877Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="TMYDCN1MApte8Ri7gPtX" version="23.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-21T09:24:29.446Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="LShUbhnZleo3v9CYbZ0B" version="23.1.5" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="3860" dy="3504" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1200,8 +1200,8 @@
         <mxCell id="xEQxw3LxKGRdFi9RBkEt-21" value="什么时候进行cancel节点删除？&lt;br&gt;acquireQueued实际上不会调用cancelAcquire方法，因为acquireQueued不会处理中断，只有等待return才会走到finally代码块，而return之前已经设置了failed为false，所以不执行。&lt;br&gt;只有在acquireInterruptibly或者tryAcquireNanos方法里面会调用。" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
           <mxGeometry x="-1570" y="9050" width="787" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="xEQxw3LxKGRdFi9RBkEt-22" value="独占锁的情况下，acquire方法是不会出现cancel节点的。。因为并不会处理中断！！！&lt;br&gt;只有acquireInterruptibly或者tryAcquireNanos会出现。" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="-1540" y="8753" width="700" height="57" as="geometry" />
+        <mxCell id="xEQxw3LxKGRdFi9RBkEt-22" value="Cancel状态只有在interruptibly后缀方法或者Nano后缀方法里面才会存在（不管共享还是独占）" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="-1540" y="8753" width="800" height="57" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
