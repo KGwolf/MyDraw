@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-21T05:32:14.011Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="GjvovLcKXhMDQCznk4cd" version="23.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-21T05:32:57.704Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="bq4uYAAfH7W1rQD6NyU2" version="23.1.5" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="3341" dy="3230" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1188,7 +1188,7 @@
         <mxCell id="xEQxw3LxKGRdFi9RBkEt-1" value="在引入了PROPAGATE状态后，可以避免在高并发场景下可能出现的线程没有被成功唤醒的情况。" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#FF0000;" vertex="1" parent="1">
           <mxGeometry x="-1520" y="7680" width="890" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="xEQxw3LxKGRdFi9RBkEt-2" value="执行setHeadAndPropagate方法。判断是否还有剩下的state，有就继续唤醒Thread2" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="xEQxw3LxKGRdFi9RBkEt-2" value="执行setHeadAndPropagate方法。判断是否还有剩下的state（多个线程进行释放后），有就继续唤醒Thread2" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="-210" y="8330" width="310" height="20" as="geometry" />
         </mxCell>
         <mxCell id="xEQxw3LxKGRdFi9RBkEt-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" source="xEQxw3LxKGRdFi9RBkEt-11" target="xEQxw3LxKGRdFi9RBkEt-14" parent="1">
