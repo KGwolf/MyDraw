@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-02-21T06:16:56.694Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="owydpQ9_2Mjnc9WqbOdK" version="23.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-21T06:17:20.986Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="oP5kEjJv7NeiMH1pasZ6" version="23.1.5" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
-    <mxGraphModel dx="3703" dy="3421" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="8824" dy="6128" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -731,37 +731,6 @@
         </mxCell>
         <mxCell id="zEqcIcVNa7Psk9aJJKPi-1" value="&lt;div style=&quot;line-height: 146%;&quot;&gt;左边展示了waitStatus的0和-1的变化情况，那么1、-2、-3是在哪种条件下进行变化呢？&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;首先condition（-2）：条件队列中的状态，在调用await的时候，会组织一个Node节点，初始化的状态就是-2。&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;propagate（-3）：在doReleaseShared释放共享锁的时候，&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;cancel（1）：在抛出异常的时候，比如超时、中断。会将节点设置成1。&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 146%;&quot;&gt;共享模式和独占模式，在释放和获取锁时有什么区别？状态不同？&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" parent="1" vertex="1">
           <mxGeometry x="990" y="6570" width="930" height="540" as="geometry" />
-        </mxCell>
-        <mxCell id="krWkHPWGKNhosNfxy9QW-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="krWkHPWGKNhosNfxy9QW-8" target="krWkHPWGKNhosNfxy9QW-13" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="krWkHPWGKNhosNfxy9QW-24" value="nextWaiter" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="krWkHPWGKNhosNfxy9QW-17" vertex="1" connectable="0">
-          <mxGeometry x="-0.1478" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="krWkHPWGKNhosNfxy9QW-8" value="线程：Thread1&lt;br&gt;waitStatus：-2" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;" parent="1" vertex="1">
-          <mxGeometry x="-230" y="8722" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="krWkHPWGKNhosNfxy9QW-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="krWkHPWGKNhosNfxy9QW-13" target="krWkHPWGKNhosNfxy9QW-16" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="krWkHPWGKNhosNfxy9QW-25" value="nextWaiter" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="krWkHPWGKNhosNfxy9QW-18" vertex="1" connectable="0">
-          <mxGeometry x="-0.0521" y="-2" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="krWkHPWGKNhosNfxy9QW-13" value="线程：Thread2&lt;br&gt;waitStatus：-2" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;" parent="1" vertex="1">
-          <mxGeometry x="-22.5" y="8722" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="krWkHPWGKNhosNfxy9QW-16" value="线程：Thread3&lt;br&gt;waitStatus：-2" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;" parent="1" vertex="1">
-          <mxGeometry x="192.5" y="8722" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="krWkHPWGKNhosNfxy9QW-26" value="fitstWaiter" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="-215" y="8692" width="80" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="krWkHPWGKNhosNfxy9QW-27" value="lastWaiter" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="200" y="8690" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="krWkHPWGKNhosNfxy9QW-37" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;条件等待队列&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="1160" y="7160" width="1010" height="390" as="geometry" />
