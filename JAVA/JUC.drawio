@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-03-10T03:09:45.298Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="W5_SxLUhxK0h_kmCStmT" version="24.0.3" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-10T05:36:54.408Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="fOV3_el1une2ggmi_1WO" version="24.0.3" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
-    <mxGraphModel dx="6434" dy="4825" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3020" dy="3048" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1259,6 +1259,9 @@
         </mxCell>
         <mxCell id="aY2G8K-wmq4zU0Pg2S2M-1" value="线程池和阻塞队列" style="rounded=0;whiteSpace=wrap;html=1;fontSize=43;" vertex="1" parent="1">
           <mxGeometry x="-1270" y="9900" width="8160" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="aY2G8K-wmq4zU0Pg2S2M-2" value="Queue：队列&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Queue和BlockingQueue接口都是jdk1.5提供的。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Queue是队列的父接口，提供了一系列队列的基础操作接口：&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;add（入队1个元素，满了会抛异常）&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;offer（入队1个元素，满了返回false）&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;remove（删除队首元素，并返回这个值，队列为空会抛异常）&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;poll（删除队首元素，并返回这个值，队列为空返回null）&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;element（返回队首元素，队列为空会抛异常）&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;peek（返回队首元素，队列为空返回null）&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;可以看出来，2套方法，区别是返回null还是抛出异常。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;BlockingQueue：&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" vertex="1" parent="1">
+          <mxGeometry x="-1195" y="10320" width="1005" height="510" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
