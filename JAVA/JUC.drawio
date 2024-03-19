@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-19T09:46:16.511Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="IRVCFGlfNyiXjVaMt41b" version="24.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-19T09:46:25.379Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="ufd0DLp5RGSkgjLQdHlN" version="24.0.7" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="3703" dy="3421" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1285,7 +1285,7 @@
           <mxGeometry x="1500" y="10270" width="995" height="480" as="geometry" />
         </mxCell>
         <mxCell id="gEs7zv34PXuvhezjXrts-2" value="&lt;div&gt;1.为什么要设计成2个锁：putLock 和 takeLock？为什么ArrayBlockingQueue不这样设计呢？&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;看了下往上的答案，完全可以把ABQ改造成2个锁来实现，并且性能还有很高的提升。&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;https://blog.csdn.net/icepigeon314/article/details/93792519&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2.为什么方法里面用到了lock和count的地方需要用final进行修饰？&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;final表示不可变性，比如 final A a = putLock；这里如果不用final，其它方法里面对公共资源putLock进行了修改，那么这个a变量也会跟着一起变化，如果使用了final，则不会变化。&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" parent="1" vertex="1">
-          <mxGeometry x="1515" y="10940" width="845" height="170" as="geometry" />
+          <mxGeometry x="1515" y="10940" width="855" height="200" as="geometry" />
         </mxCell>
         <mxCell id="lVGqjf2DItfT4V1mEWNY-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lVGqjf2DItfT4V1mEWNY-1" target="lVGqjf2DItfT4V1mEWNY-2">
           <mxGeometry relative="1" as="geometry" />
