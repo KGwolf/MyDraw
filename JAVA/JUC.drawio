@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-03-25T03:23:01.758Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="2rG0U0sYtlF145U-cYcc" version="24.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-25T07:04:09.754Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="bM1WoXHg2UOaCBcNwYHI" version="24.0.7" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
-    <mxGraphModel dx="3703" dy="3404" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3447" dy="3271" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1358,19 +1358,25 @@
           <mxGeometry x="-30" y="12360" width="1100" height="880" as="geometry" />
         </mxCell>
         <mxCell id="CM0TH2cKVFkQ66Jp50pg-1" value="强、软、弱、虚引用：&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" parent="1" vertex="1">
-          <mxGeometry x="-1430" y="13310" width="1100" height="880" as="geometry" />
+          <mxGeometry x="1330" y="12370" width="1100" height="880" as="geometry" />
         </mxCell>
-        <mxCell id="fRCozPYRFymt4NrE_iwZ-1" value="Thread1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="-1400" y="12110" width="130" height="190" as="geometry" />
+        <mxCell id="fRCozPYRFymt4NrE_iwZ-1" value="Thread1&lt;div&gt;&lt;pre style=&quot;&quot;&gt;ThreadLocal.&lt;font color=&quot;#ff0000&quot;&gt;ThreadLocalMap &lt;/font&gt;threadLocals = null;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="-1436.5" y="12070" width="436.5" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="fRCozPYRFymt4NrE_iwZ-2" value="ThreadLocal" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="-1150" y="12110" width="130" height="190" as="geometry" />
+        <mxCell id="fRCozPYRFymt4NrE_iwZ-3" value="ThreadLocalMap&lt;div&gt;tlm1&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Entry[] table&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="-1200" y="11810" width="180" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="fRCozPYRFymt4NrE_iwZ-3" value="ThreadLocalMap" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="-920" y="12110" width="160" height="190" as="geometry" />
+        <mxCell id="fRCozPYRFymt4NrE_iwZ-5" value="Thread2&lt;div&gt;&lt;pre style=&quot;&quot;&gt;ThreadLocal.&lt;font color=&quot;#ff0000&quot;&gt;ThreadLocalMap &lt;/font&gt;threadLocals = null;&lt;/pre&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="-804.8" y="12070" width="436.5" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="fRCozPYRFymt4NrE_iwZ-4" value="Thread2" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="-640" y="12110" width="130" height="190" as="geometry" />
+        <mxCell id="fRCozPYRFymt4NrE_iwZ-6" value="ThreadLocal&amp;lt;&lt;font color=&quot;#ff0000&quot;&gt;String&lt;/font&gt;&amp;gt;&lt;div&gt;tl1&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;get()&lt;/div&gt;&lt;div&gt;set()&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="-1360" y="11595" width="170" height="195" as="geometry" />
+        </mxCell>
+        <mxCell id="fRCozPYRFymt4NrE_iwZ-7" value="ThreadLocalMap&lt;div&gt;tlm2&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Entry[] table&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="-790" y="11810" width="160" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="fRCozPYRFymt4NrE_iwZ-9" value="ThreadLocal&amp;lt;&lt;font color=&quot;#ff0000&quot;&gt;Integer&lt;/font&gt;&amp;gt;&lt;div&gt;tl2&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;get()&lt;/div&gt;&lt;div&gt;set()&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="-490" y="11592.5" width="170" height="195" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
