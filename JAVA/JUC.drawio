@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-26T09:16:25.970Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="S5Vh5-bnWE_MJVZwGWC5" version="24.1.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-26T09:29:31.185Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="0Vk6PtMbvNIeJn7KiHoe" version="24.1.0" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="4397" dy="3638" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1421,7 +1421,7 @@
         <mxCell id="fRCozPYRFymt4NrE_iwZ-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.361;entryY=1.001;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#FF00FF;" parent="1" source="fRCozPYRFymt4NrE_iwZ-20" target="fRCozPYRFymt4NrE_iwZ-9" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="8Ayl87qtAhnUbGWIoU_O-1" value="&lt;div&gt;&lt;div&gt;线程池：&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" vertex="1" parent="1">
+        <mxCell id="8Ayl87qtAhnUbGWIoU_O-1" value="&lt;div&gt;&lt;div&gt;线程池：&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;为什么阿里不建议使用Executors来创建线程池？而是建议使用ThreadPoolExecutor来创建自定义线程池？&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" vertex="1" parent="1">
           <mxGeometry x="1447.5" y="12360" width="1100" height="880" as="geometry" />
         </mxCell>
         <mxCell id="8Ayl87qtAhnUbGWIoU_O-2" value="&lt;div&gt;阻塞队列的应用场景：&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1.线程池。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;2.生产者-消费者模型。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;3.消息队列&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;4.缓存系统&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;5.并发任务处理&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" vertex="1" parent="1">
