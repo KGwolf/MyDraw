@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2024-03-27T08:30:25.550Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="6_qk7JCtwDkuUhyHUQZy" version="24.1.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-27T08:57:32.314Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="LdwYCFwx17lC5eW8FVze" version="24.1.0" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="3703" dy="3404" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="8B4nZ7V3M8nfVqYqiknf-20" value="线程池5种状态转换图" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;verticalAlign=top;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="1370" y="13284" width="1230" height="486" as="geometry" />
+        </mxCell>
         <mxCell id="o4AKkmNwbf8bh7jgpbY7-16" value="线程池的继承关系图" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;verticalAlign=top;fontSize=18;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="2660" y="12380" width="1060" height="820" as="geometry" />
         </mxCell>
@@ -1472,20 +1475,68 @@
         <mxCell id="8B4nZ7V3M8nfVqYqiknf-1" value="&lt;div&gt;线程池：&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;使用线程池的几种方式：&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&#x9;&lt;/span&gt;1.直接使用ThreadPoolExecutor来创建线程。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&#x9;&lt;/span&gt;2.使用Excutors工厂方法创建：就是使用ThreadPoolExecutor类给你封装了一些常用的方法。阿里不推荐。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&#x9;&lt;/span&gt;3.使用ForkJoinPool：如果任务是递归分解的任务。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&#x9;&lt;/span&gt;4.Spring里面，使用TaskExecutor接口相关的实现类：ThreadPoolTaskExecutor、SimpleAsyncTaskExecutor等。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;ThreadPoolExecutor:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&#x9;&lt;/span&gt;1.私有内部类：Worker&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&#x9;&lt;/span&gt;2.一系列的拒绝策略类&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&#x9;&lt;/span&gt;3.构造方法：7个参数。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&#x9;&lt;/span&gt;excute方法（模版方法）：判断当前线程数和设置的核心线程数，如果小于，则创建1个新的线程，将当前Runnable作为线程要执行的第一个任务。如果大于，将Runnable加入workerQueue中，判断workerQueue是否满了，没满就入队等待执行。满了，再判断当前线程数和最大线程数，如果小于，&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;则创建1个新的线程，将当前Runnable作为线程要执行的第一个任务。如果大于，根据拒绝策略进行拒绝任务。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;线程池的5中状态，以及状态之间是如何进行转换的？跟线程的状态的区别？&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1.RUNNING：会接收新任务并处理队列中的任务。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;2.SHUTDOWN：不会接收新任务但是会处理队列中的任务。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;3.STOP：不会接收新任务并且不会处理队列中的任务，并且会中断在处理的任务（应该是发出中断异常，是否中断看线程自己）&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;4.TIDYING：所有任务都已经终止，线程池中没有线程了，到了这个状态就会调用terminated()方法。&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;5.TERMINATED：terminated方法执行完成后就是这个状态。&#x9;&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;为什么阿里不建议使用Executors来创建线程池？而是建议使用ThreadPoolExecutor来创建自定义线程池？&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" vertex="1" parent="1">
           <mxGeometry x="1380" y="12360" width="1100" height="880" as="geometry" />
         </mxCell>
+        <mxCell id="8B4nZ7V3M8nfVqYqiknf-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8B4nZ7V3M8nfVqYqiknf-2" target="8B4nZ7V3M8nfVqYqiknf-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8B4nZ7V3M8nfVqYqiknf-8" value="手动调用&lt;font color=&quot;#ff0000&quot;&gt;shutDown&lt;/font&gt;方法触发&lt;div&gt;或者线程池对象GC时调用&lt;/div&gt;&lt;div&gt;finaize()进而调用shutDown&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=15;" vertex="1" connectable="0" parent="8B4nZ7V3M8nfVqYqiknf-7">
+          <mxGeometry x="-0.0839" y="1" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8B4nZ7V3M8nfVqYqiknf-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8B4nZ7V3M8nfVqYqiknf-2" target="8B4nZ7V3M8nfVqYqiknf-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8B4nZ7V3M8nfVqYqiknf-10" value="调用shoutDownNow方法" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=15;" vertex="1" connectable="0" parent="8B4nZ7V3M8nfVqYqiknf-9">
+          <mxGeometry x="-0.3225" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="8B4nZ7V3M8nfVqYqiknf-2" value="RUNNING" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
-          <mxGeometry x="1400" y="13344" width="140" height="100" as="geometry" />
+          <mxGeometry x="1397.5" y="13344" width="140" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="8B4nZ7V3M8nfVqYqiknf-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8B4nZ7V3M8nfVqYqiknf-3" target="8B4nZ7V3M8nfVqYqiknf-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8B4nZ7V3M8nfVqYqiknf-13" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;调用shoutDownNow方法&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8B4nZ7V3M8nfVqYqiknf-11">
+          <mxGeometry x="-0.2153" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8B4nZ7V3M8nfVqYqiknf-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="8B4nZ7V3M8nfVqYqiknf-3" target="8B4nZ7V3M8nfVqYqiknf-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8B4nZ7V3M8nfVqYqiknf-15" value="队列为空，并且线程池没有线程时自动转换" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" vertex="1" connectable="0" parent="8B4nZ7V3M8nfVqYqiknf-14">
+          <mxGeometry x="-0.1651" y="-3" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="8B4nZ7V3M8nfVqYqiknf-3" value="SHUTDOWN" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
-          <mxGeometry x="1392.5" y="13520" width="140" height="100" as="geometry" />
+          <mxGeometry x="1397.5" y="13570" width="140" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="8B4nZ7V3M8nfVqYqiknf-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="8B4nZ7V3M8nfVqYqiknf-4" target="8B4nZ7V3M8nfVqYqiknf-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8B4nZ7V3M8nfVqYqiknf-17" value="线程池中没有线程&lt;div style=&quot;font-size: 15px;&quot;&gt;时自动转换&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=15;" vertex="1" connectable="0" parent="8B4nZ7V3M8nfVqYqiknf-16">
+          <mxGeometry x="-0.0558" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="8B4nZ7V3M8nfVqYqiknf-4" value="STOP" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="1707" y="13444" width="140" height="100" as="geometry" />
         </mxCell>
+        <mxCell id="8B4nZ7V3M8nfVqYqiknf-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8B4nZ7V3M8nfVqYqiknf-5" target="8B4nZ7V3M8nfVqYqiknf-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8B4nZ7V3M8nfVqYqiknf-19" value="terminated方法&lt;div style=&quot;font-size: 14px;&quot;&gt;执行完成后&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;自动转换&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="8B4nZ7V3M8nfVqYqiknf-18">
+          <mxGeometry x="-0.0732" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="8B4nZ7V3M8nfVqYqiknf-5" value="TIDYING" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
-          <mxGeometry x="1962.5" y="13444" width="140" height="100" as="geometry" />
+          <mxGeometry x="2080" y="13444" width="140" height="100" as="geometry" />
         </mxCell>
         <mxCell id="8B4nZ7V3M8nfVqYqiknf-6" value="TERMINATED" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
-          <mxGeometry x="2230" y="13444" width="140" height="100" as="geometry" />
+          <mxGeometry x="2430" y="13444" width="140" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
