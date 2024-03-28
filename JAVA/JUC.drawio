@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-28T08:42:40.275Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="sLbEX4MC6PKVSZn6rFk2" version="24.2.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-28T08:49:10.172Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="piN7i-Aut8Vkg2XHUtAM" version="24.2.0" type="github">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
     <mxGraphModel dx="3703" dy="3404" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1550,7 +1550,7 @@
         <mxCell id="BH3cM9FPTk5j9JIuaoX_-4" value="Fork/Join 计算框架主要包含两部分，一部分是分治任务的线程池 ForkJoinPool，另一部分是分治任务 ForkJoinTask。&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ForkJoinPool 是用于执行 ForkJoinTask 任务的执行池，不再是传统执行池Worker+Queue 的组合式，而是维护了一个队列数组 WorkQueue（WorkQueue[]），&lt;span style=&quot;background-color: initial;&quot;&gt;这样&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;在提交任务和线程任务的时候大幅度减少碰撞。&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" vertex="1" parent="1">
           <mxGeometry x="4400" y="12850" width="1020" height="480" as="geometry" />
         </mxCell>
-        <mxCell id="BH3cM9FPTk5j9JIuaoX_-5" value="&lt;div&gt;Future、Callable、FutureTask&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;直接继承Thread或者实现Runnable接口都可以创建线程，但是这两种方法都有一个问题就是：没有返回值，也就是不能获取执行完的结果。因此java1.5就提供了Callable接口来实现这一场景，而Future和FutureTask就可以和Callable接口配合起来使用。&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" vertex="1" parent="1">
+        <mxCell id="BH3cM9FPTk5j9JIuaoX_-5" value="&lt;div&gt;Future、Callable、FutureTask&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;直接继承Thread或者实现Runnable接口都可以创建线程，但是这两种方法都有一个问题就是：没有返回值，也就是不能获取执行完的结果。因此java1.5就提供了Callable接口来实现这一场景，而Future和FutureTask就可以和Callable接口配合起来使用。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Callable的call方法可以有返回值，可以声明抛出异常。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Thread---&amp;gt;Runnable&amp;nbsp; &amp;nbsp; &amp;nbsp;FutureTask-----&amp;gt;Callable&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontStyle=1;fontSize=18;spacingTop=2;" vertex="1" parent="1">
           <mxGeometry x="5621" y="12290" width="995" height="480" as="geometry" />
         </mxCell>
       </root>
