@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-03-11T05:32:32.631Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="pJh0ur87kJxpbtJtt-4P" version="24.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-07T03:58:18.376Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="jh4bEqQ3WTU_rWG-pFBX" version="24.2.1" type="github">
   <diagram id="c6MPomSf8zc9xdUtyQ0a" name="第 1 页">
-    <mxGraphModel dx="5357" dy="2252" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="5357" dy="2235" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -429,8 +429,11 @@
         <mxCell id="Pc6EA4D_d4uomxyGBglH-1" value="跨代引用的问题怎么解决呢？&lt;br&gt;当yongGC的时候，肯定是从yong区去找根root扫描吧，如果这时候有老年代里面的对象引用年轻代里面的对象（虽然这种情况比较少），这时候，其实年轻代里面的对象不应该是垃圾。这难道要把老年代里面的对象也都扫描一遍吗？&lt;br&gt;&lt;br&gt;记忆集与卡表&amp;nbsp; &amp;nbsp;就是解决这个问题的。大概就是年轻代里面有一张表记录着老年代引用了年轻代的哪些对象？" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="-807" y="3560" width="787" height="390" as="geometry" />
         </mxCell>
-        <mxCell id="xotG-ohIpx6J_cZZ5swE-1" value="一个列里面的变量，比如 是固定的字符串,可能需要多个地方用到，这时候需要提出来当做一个公共变量， private string name = &quot;xht&quot;;&amp;nbsp; 但是扫描建议修改成&amp;nbsp; private static final name = &quot;xht&quot;;&amp;nbsp; 这是为什么么？jvm加载这个类的时候，或者多次实例化这个类的时候，这个变量是以怎样的形式存在在内存里面呢？" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="xotG-ohIpx6J_cZZ5swE-1" value="一个列里面的变量，比如 是固定的字符串,可能需要多个地方用到，这时候需要提出来当做一个公共变量， private string name = &quot;xht&quot;;&amp;nbsp; 但是扫描建议修改成&amp;nbsp; private static final name = &quot;xht&quot;;&amp;nbsp; 这是为什么么？jvm加载这个类的时候，或者多次实例化这个类的时候，这个变量是以怎样的形式存在在内存里面呢？" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="-1590" y="2840" width="590" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="8kRnETCYmdDJ_TSoFEYe-1" value="ASM技术是什么" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="30" y="3150" width="787" height="390" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
