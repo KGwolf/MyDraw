@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-10T06:08:20.361Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="NcBz3yfNN6sF-VxlOnVB" version="24.2.3" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-10T06:43:26.708Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="tyC98ik-8mBuyZqvNSz8" version="24.2.3" type="github">
   <diagram name="第 1 页" id="L6XU-YJSm6NN8EeBNm4k">
     <mxGraphModel dx="2390" dy="3581" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -283,6 +283,9 @@
         </mxCell>
         <mxCell id="WcvE29F62vYGQ8S2hI66-1" value="&lt;div style=&quot;&quot;&gt;Mysql生产高可用集群架构：&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Mysql主从同步原理：&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="8380" y="3190" width="1200" height="950" as="geometry" />
+        </mxCell>
+        <mxCell id="aZQjQTHkUvr2IN2AQKSF-1" value="IOPS表示在一秒钟内存储系统能够完成的读取或写入操作的数量。较高的IOPS通常意味着存储系统具有更好的性能。" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="7030" y="3010" width="1050" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
