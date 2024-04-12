@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2024-04-12T07:54:39.954Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="diLMsmnw3uLvWnhixGVf" version="24.2.3" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-12T07:58:09.486Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="xxnN78iVBAAMd5igL39K" version="24.2.3" type="github">
   <diagram id="c6MPomSf8zc9xdUtyQ0a" name="第 1 页">
     <mxGraphModel dx="5357" dy="2235" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="HXNcOwU4YCtGxFrcV2Fv-4" value="jdk" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-1950" y="-1030" width="390" height="220" as="geometry" />
+        </mxCell>
         <mxCell id="YBLSV3wSIFu5p-33r_xj-119" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=17;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="-2220" y="267.5" width="660" height="552.5" as="geometry" />
         </mxCell>
@@ -377,6 +380,18 @@
         </mxCell>
         <mxCell id="HXNcOwU4YCtGxFrcV2Fv-2" value="一台新的机器，如何通过idea写代码，编译，打包，运行呢？&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;开发：如果需要开发代码，先安装jdk，jdk里面包含了 jre（java运行时环境，包括jvm + 核心类库）+&amp;nbsp; exe文件（编译、运行等）。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;打包：通过maven打包后生成jar包（类文件、资源文件、元数据文件、三方依赖库）。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;运行：可以只安装jre就能运行jar包了。&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="-3270" y="-1020" width="1150" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="HXNcOwU4YCtGxFrcV2Fv-3" value="jre" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-1940" y="-960" width="230" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="HXNcOwU4YCtGxFrcV2Fv-5" value="jvm" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="-1930" y="-920" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="HXNcOwU4YCtGxFrcV2Fv-7" value="核心类库" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="-1820" y="-920" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="HXNcOwU4YCtGxFrcV2Fv-8" value="exe编译文件" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="-1690" y="-930" width="120" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
