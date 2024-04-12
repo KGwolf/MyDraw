@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-04-07T09:37:45.847Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="ShYvR31s680OlRvSvRt7" version="24.2.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-12T03:58:06.665Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="o3t1s_B8pZ0z8Fv4c1hD" version="24.2.3" type="github">
   <diagram id="c6MPomSf8zc9xdUtyQ0a" name="第 1 页">
-    <mxGraphModel dx="5357" dy="2235" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="6495" dy="2827" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -369,8 +369,11 @@
         <mxCell id="xotG-ohIpx6J_cZZ5swE-1" value="一个列里面的变量，比如 是固定的字符串,可能需要多个地方用到，这时候需要提出来当做一个公共变量， private string name = &quot;xht&quot;;&amp;nbsp; 但是扫描建议修改成&amp;nbsp; private static final name = &quot;xht&quot;;&amp;nbsp; 这是为什么么？jvm加载这个类的时候，或者多次实例化这个类的时候，这个变量是以怎样的形式存在在内存里面呢？" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="-1590" y="2840" width="590" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="8kRnETCYmdDJ_TSoFEYe-1" value="ASM技术是什么" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="8kRnETCYmdDJ_TSoFEYe-1" value="ASM技术是什么" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="30" y="3150" width="787" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="HXNcOwU4YCtGxFrcV2Fv-1" value="为什么要有双亲委派机制？&lt;div&gt;1.沙箱安全&amp;nbsp; 2.避免重复加载&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-2540" y="-40" width="610" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
