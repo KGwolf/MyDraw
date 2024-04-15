@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-15T08:46:52.580Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="QJE9dOjpqp547eLKf3Hb" version="24.2.3" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-15T08:49:57.983Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="SM_zieZp-qtxKz04_V_2" version="24.2.3" type="github">
   <diagram id="c6MPomSf8zc9xdUtyQ0a" name="第 1 页">
     <mxGraphModel dx="6525" dy="2412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -461,6 +461,9 @@
         </mxCell>
         <mxCell id="WDqaony3_b5ynpCtKfGB-21" value="&lt;div&gt;&lt;div&gt;tomcat是如何打破双亲委派的？为什么要打破双亲委派？&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;为什么：首先tomcat是可以部署多个spring程序的，那么就完全有可能程序A用的是Spring4的框架，程序B是用的Spring5框架，如果严格遵守双亲委派机制，那么加载框架类都是用同一个加载器加载，首先加载Spring4的类，并且保存到缓存。 后面加载Spring5的类，就会从缓存里去找，找的是全限定类名，就会找到Spring4对应的类返回。这样就可能会有版本冲突问题。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;如何做的：&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;tomcat中jsp文件如何实现热更新的？&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="-983" y="-330" width="1233" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="WDqaony3_b5ynpCtKfGB-22" value="同一个JVM内，两个相同包名和类名的对象可以共存，只要它们的类加载器不一样就行。" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=19;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="-3270" y="-115" width="930" height="45" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
