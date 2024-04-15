@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-04-15T08:49:57.983Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="SM_zieZp-qtxKz04_V_2" version="24.2.3" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-15T09:20:04.930Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="6JqUwr1DncdK1nYrhxcl" version="24.2.3" type="github">
   <diagram id="c6MPomSf8zc9xdUtyQ0a" name="第 1 页">
-    <mxGraphModel dx="6525" dy="2412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="8232" dy="3300" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -464,6 +464,9 @@
         </mxCell>
         <mxCell id="WDqaony3_b5ynpCtKfGB-22" value="同一个JVM内，两个相同包名和类名的对象可以共存，只要它们的类加载器不一样就行。" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=19;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="-3270" y="-115" width="930" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="WDqaony3_b5ynpCtKfGB-23" value="jvm 空间担保机制" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-2790" y="3710" width="1200" height="600" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
