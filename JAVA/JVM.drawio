@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-04-15T08:00:09.153Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="hkFDfwZ8xNNZj4UelOsZ" version="24.2.3" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-15T08:41:04.567Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="KY9Fig8mqyl9kLwakf3g" version="24.2.3" type="github">
   <diagram id="c6MPomSf8zc9xdUtyQ0a" name="第 1 页">
-    <mxGraphModel dx="6742" dy="2525" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="6525" dy="2412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -458,6 +458,9 @@
         </mxCell>
         <mxCell id="WDqaony3_b5ynpCtKfGB-20" value="&lt;div&gt;&lt;div&gt;&lt;font color=&quot;#0000ff&quot;&gt;为什么要设计双亲委派的机制呢？&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1.沙箱安全机制：自己写的java.lang.String.class类不会被加载，防止核心类库被随意篡改。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;2.避免类的重复加载，保证唯一性。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;当A类里面引用了B类，加载B类的加载器跟A是一样的，这叫做全盘负责委托机制。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#0000ff&quot;&gt;如何自定义一个类加载器呢？&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;继承ClassLoader类，然后实现其findClass方法即可。（调用defineClass，将1个字节数组转换为Class对象）&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#0000ff&quot;&gt;如何打破双亲委派机制呢？&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;继承ClassLoader类，在自定义类加载器的视线基础上（重写findClass方法），还要重写loadClass，原来是递归parent.loadClass，现在自己重写就不要这段逻辑了。&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="-980" y="-670" width="1230" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="WDqaony3_b5ynpCtKfGB-21" value="&lt;div&gt;&lt;div&gt;tomcat是如何打破双亲委派的？为什么要打破双亲委派？&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;首先tomcat是可以部署多个spring程序的，那么就完全有可能程序A用的是Spring4的框架，程序B是用的Spring5框架，&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-983" y="-330" width="1230" height="350" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
