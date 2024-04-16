@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-04-16T06:38:24.410Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="B14mHHYUDqAfbPwmVMx9" version="24.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-16T08:12:18.645Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="_HKGAqfxC290qyOQHMIt" version="24.2.5" type="github">
   <diagram name="第 1 页" id="Ui-6xDZG4yXv-m0ysYRE">
-    <mxGraphModel dx="1366" dy="710" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1366" dy="1879" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -43,8 +43,8 @@
         <mxCell id="PmKBo2iVZgAvUI2_gapM-1" value="分布式锁可能会失效吗？失效的场景有哪些？&lt;br&gt;主从节点宕机的情况。" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="1180" y="2460" width="880" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="s1NAATfUFBlg2rDjxCet-1" value="&lt;div&gt;jemeter压测的时候报错：&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;2024-04-16 14;08;04([redisson-netty-6-17]EREOR o..c.handler.ErorsLoggingiandler - Exception occured. Channel: [id:0x21483b，L:/172.18.3.154:22786 - R: 172.18.3.154/172.18.3.154:6380]&lt;br&gt;java.io.IOException:远程主机强迫关闭了一个现有的连接。&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;大Key的问题？&lt;/div&gt;&lt;div&gt;好像是rdb设置的问题&amp;nbsp; 60s内1w次修改就持久化一次？屏蔽了持久化之后还有问题。&lt;/div&gt;&lt;div&gt;后面看日志，outofmemory，内存溢出了，发现redis是32位的程序，内存支持很小，windows上面大约2G。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;这种情况改怎么去查找原因呢？&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="930" y="10" width="880" height="270" as="geometry" />
+        <mxCell id="s1NAATfUFBlg2rDjxCet-1" value="&lt;div&gt;jemeter压测的时候报错：&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;2024-04-16 14;08;04([redisson-netty-6-17]EREOR o..c.handler.ErorsLoggingiandler - Exception occured. Channel: [id:0x21483b，L:/172.18.3.154:22786 - R: 172.18.3.154/172.18.3.154:6380]&lt;br&gt;java.io.IOException:远程主机强迫关闭了一个现有的连接。&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;大Key的问题？&lt;/div&gt;&lt;div&gt;好像是rdb设置的问题&amp;nbsp; 60s内1w次修改就持久化一次？屏蔽了持久化之后还有问题。&lt;/div&gt;&lt;div&gt;后面看日志，outofmemory，内存溢出了，发现redis是32位的程序，内存支持很小，windows上面大约2G。&lt;/div&gt;&lt;div&gt;换成64位的程序之后，报错不报错了，但是性能下降非常厉害，门诊30，住院6，总共qps才36。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;这种情况改怎么去查找原因呢？&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="930" y="-30" width="890" height="320" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
