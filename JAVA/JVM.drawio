@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-18T07:28:09.585Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="zfueF9Aen2x1Bpu5lJuo" version="24.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-18T07:55:30.255Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="bBKXkV858EnikO5Dc-B-" version="24.2.5" type="github">
   <diagram id="c6MPomSf8zc9xdUtyQ0a" name="第 1 页">
     <mxGraphModel dx="7352" dy="2412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -501,7 +501,7 @@
         <mxCell id="uZKuKFXrEX7r81481sws-2" value="方法区的类元信息什么时候会被回收，哪些类元信息会被回收？&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="4200" y="950" width="1280" height="540" as="geometry" />
         </mxCell>
-        <mxCell id="uZKuKFXrEX7r81481sws-3" value="实战案例 之 对象动态年龄判断机制&amp;nbsp; 引发的频繁Full GC：&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;背景：&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+        <mxCell id="uZKuKFXrEX7r81481sws-3" value="实战案例 之 对象动态年龄判断机制&amp;nbsp; 引发的频繁Full GC：&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;全国三甲2023年估计有2000个，还不包括私立，以及三甲之下的，医疗机构估计有100多W个，所以我们客户每天2500w个请求不多吧？&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;背景：云审方，每天门诊住院的审核量是2500万级别（大点的医院每天门诊量差不多2w的审方，住院1w ），集中在7个小时（25200秒），那么每秒差不多1000个并发， 后端PR3台机器，4核8G。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;如何分配内存呢？&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1.&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="2780" y="950" width="1280" height="540" as="geometry" />
         </mxCell>
       </root>
