@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-25T05:49:14.937Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="UXFg2pnF1YSV6nkBN-2P" version="24.2.8" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-25T05:52:23.300Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="qsl5tqw5EyxmrLpw13oz" version="24.2.8" type="github">
   <diagram name="第 1 页" id="1XJYP80JxbJxhC29MnGr">
     <mxGraphModel dx="2390" dy="2412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -33,6 +33,9 @@
         </mxCell>
         <mxCell id="E5HeOITvc19GQo7BnL5s-10" value="&lt;div&gt;RocketMq、Kafka&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;RocketMq：并发量10W，适用于Topic很多的情况。往1个文件里面写？&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Kafka：并发量100W。Topic很多（超过100）并发量下降。可能丢数据。往多个文件里面写？磁盘可能是瓶颈。&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
           <mxGeometry x="1800" y="60" width="810" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="E5HeOITvc19GQo7BnL5s-12" value="&lt;div&gt;估算资源消耗：100W流量&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;DNS不用管。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;网络带宽：1个请求1k，100W个请求=977M，那么万兆网卡就够用了。&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="100" y="490" width="710" height="320" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
