@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2024-04-25T03:12:44.283Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="pZFwnjRlVCAGH9G9aS-a" version="24.2.8" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-25T03:13:13.142Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="yQJLNT7dm5U_gKQwZ0St" version="24.2.8" type="github">
   <diagram name="第 1 页" id="1XJYP80JxbJxhC29MnGr">
-    <mxGraphModel dx="2049" dy="2235" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2390" dy="2412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="E5HeOITvc19GQo7BnL5s-1" value="qps百万流量的架构：&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
-          <mxGeometry x="130" y="510" width="710" height="330" as="geometry" />
+          <mxGeometry x="130" y="1090" width="710" height="330" as="geometry" />
         </mxCell>
         <mxCell id="E5HeOITvc19GQo7BnL5s-2" value="各种媒介的延时情况：&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;CPU：&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;L1缓存：1ns。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;L2缓存：4ns。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;主内存：100ns。（ddr4 10ns左右&amp;nbsp; 100ns也不是没有）&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;网络请求一次来回：150ms。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;磁盘：&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;HDD：1-10ms&amp;nbsp; 读写延时。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;SSD：0.1-1ms 读写延时。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
           <mxGeometry x="110" y="-280" width="710" height="240" as="geometry" />
@@ -24,6 +24,9 @@
         </mxCell>
         <mxCell id="E5HeOITvc19GQo7BnL5s-7" value="&lt;div&gt;网络、磁盘：&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;万兆带宽：bit单位的。 实际 10000Mbps/8 = 1250M/s。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;以太网延迟：100-150ms。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;光纤延迟：1-10ms。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;内网延迟：1us-30us。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;传输1M数据，大致需要1-10ms。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;HDD：读写 100M/s。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;SSD：写1000M/s，读5000M/s。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
           <mxGeometry x="2530" y="-360" width="710" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="E5HeOITvc19GQo7BnL5s-8" value="&lt;div&gt;F5、LVS、Nginx、Tomcat&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="110" y="80" width="710" height="240" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
