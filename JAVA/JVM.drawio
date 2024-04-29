@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-29T08:05:15.318Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="z3H9yamfyVaiPatk2U2G" version="24.3.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-29T08:15:36.222Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="IM3WwoC9gv9Bw8MXQBVA" version="24.3.1" type="github">
   <diagram id="c6MPomSf8zc9xdUtyQ0a" name="第 1 页">
     <mxGraphModel dx="6184" dy="2235" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -155,7 +155,7 @@
           <mxGeometry x="2253.51" y="2505" width="570" height="185.25" as="geometry" />
         </mxCell>
         <mxCell id="9V-4rvxTD5Y-lfJg0i9R-1" value="所有垃圾收集器，什么时候触发Full GC？&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;CMS，有设置参数：&amp;nbsp;‐XX:CMSInitiatingOccupancyFraction=75&amp;nbsp; 表示超过老年代75%就会Full GC。&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="1150" y="2150" width="880" height="240" as="geometry" />
+          <mxGeometry x="1470" y="2110" width="880" height="240" as="geometry" />
         </mxCell>
         <mxCell id="9V-4rvxTD5Y-lfJg0i9R-2" value="&lt;div&gt;&lt;div&gt;&lt;div&gt;-XX:+UseG1GC:使用G1收集器&lt;/div&gt;&lt;div&gt;&amp;nbsp; -XX:ParallelGCThreads:指定GC工作的线程数量&lt;/div&gt;&lt;div&gt;&amp;nbsp; -XX:G1HeapRegionSize:指定分区大小(1MB~32MB，且必须是2的N次幂)，默认将整堆划分为2048个分区&lt;/div&gt;&lt;div&gt;&amp;nbsp; -XX:MaxGCPauseMillis:目标暂停时间(默认200ms)&lt;/div&gt;&lt;div&gt;&amp;nbsp; -XX:G1NewSizePercent:新生代内存初始空间(默认整堆5%，值配置整数，默认就是百分比)&lt;/div&gt;&lt;div&gt;&amp;nbsp; -XX:G1MaxNewSizePercent:新生代内存最大空间&lt;/div&gt;&lt;div&gt;&amp;nbsp; -XX:TargetSurvivorRatio:Survivor区的填充容量(默认50%)，Survivor区域里的一批对象(年龄1+年龄2+年龄n的多个年龄对象)总和超过了Survivor区域的50%，此时就会把年龄n(含)以上的对象都放入老年代&lt;/div&gt;&lt;div&gt;&amp;nbsp; -XX:MaxTenuringThreshold:最大年龄阈值(默认15)&lt;/div&gt;&lt;div&gt;&amp;nbsp; -XX:InitiatingHeapOccupancyPercent:老年代占用空间达到整堆内存阈值(默认45%)，则执行新生代和老年代的混合收集(MixedGC)，比如我们之前说的堆默认有2048个region，如果有接近1000个region都是老年代的region，则可能就要触发MixedGC了&lt;/div&gt;&lt;div&gt;&amp;nbsp;-XX:G1MixedGCLiveThresholdPercent(默认85%)&amp;nbsp; region中的存活对象低于这个值时才会回收该region，如果超过这个值，存活对象过多，回收的的意义不大。&lt;/div&gt;&lt;div&gt;&amp;nbsp; -XX:G1MixedGCCountTarget:在一次回收过程中指定做几次筛选回收(默认8次)，在最后一个筛选回收阶段可以回收一会，然后暂停回收，恢复系统运行，一会再开始回收，这样可以让系统不至于单次停顿时间过长。&lt;/div&gt;&lt;div&gt;&amp;nbsp; -XX:G1HeapWastePercent(默认5%): gc过程中空出来的region是否充足阈值，在混合回收的时候，对Region回收都是基于复制算法进行的，都是把要回收的Region里的存活对象放入其他Region，然后这个Region中的垃圾对象全部清理掉，这样的话在回收过程就会不断空出来新的Region，一旦空闲出来的Region数量达到了堆内存的5%，此时就会立即停止混合回收，意味着本次混合回收就结束了。&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
           <mxGeometry x="2253.51" y="2745" width="1167.49" height="460" as="geometry" />
@@ -185,7 +185,10 @@
           <mxGeometry x="-430" y="4160" width="940" height="244.04" as="geometry" />
         </mxCell>
         <mxCell id="Uc8aSB9zjZUs_qI04fRZ-1" value="什么对象会进入老年代;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1.大对象。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;2.顽固的对象（yong gc 15次之后）。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;3.对象动态年龄判断机制。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;4.老年代空间分配担保机制。&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="2130" y="2150" width="880" height="240" as="geometry" />
+          <mxGeometry x="1020" y="2120" width="460" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="Uc8aSB9zjZUs_qI04fRZ-2" value="什么情况下，FullGC比YongGC还多，还频繁？" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="2470" y="2110" width="880" height="240" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
