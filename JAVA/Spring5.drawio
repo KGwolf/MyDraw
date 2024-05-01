@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-01T07:03:54.293Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="jpzOKwEVQm2KkvFad4ji" version="24.1.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-01T09:25:21.237Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="63jHYd7VJIDkyxQU0pNh" version="24.1.0" type="github">
   <diagram name="第 1 页" id="j0T0W_XY4i96COsHRtta">
-    <mxGraphModel dx="1055" dy="2782" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2556" dy="3523" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -457,8 +457,8 @@
         <mxCell id="M39qVLBIAdEOk3E70RZc-1" value="Spring创建类，是先初始化还是先实例化？" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="1650" y="-1790" width="1210" height="380" as="geometry" />
         </mxCell>
-        <mxCell id="GvqGTiElUNmYjcPFba12-1" value="BeanDefinition是什么？" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;fontStyle=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="205" y="230" width="385" height="130" as="geometry" />
+        <mxCell id="GvqGTiElUNmYjcPFba12-1" value="BeanDefinition是什么？&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;声明式定义Bean，&lt;/div&gt;&lt;div&gt;编程式定义Bean&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;fontStyle=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="750" y="-360" width="880" height="560" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
