@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-04T03:00:11.783Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="69LvlxOCbUWAhgSMAHoV" version="24.1.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-04T03:09:06.222Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="h2MGhSHcTbjlYGImS-kP" version="24.1.0" type="github">
   <diagram name="第 1 页" id="j0T0W_XY4i96COsHRtta">
-    <mxGraphModel dx="1227" dy="3024" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1004" dy="2989" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -457,8 +457,49 @@
         <mxCell id="M39qVLBIAdEOk3E70RZc-1" value="Spring创建类，是先初始化还是先实例化？" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="1650" y="-1790" width="1210" height="380" as="geometry" />
         </mxCell>
-        <mxCell id="GvqGTiElUNmYjcPFba12-1" value="&lt;div&gt;Spring的一些核心概念、类：&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;BeanDefinition是什么？&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;定义了Bean的一些属性：class表示bean的类型，scope表示bean的作用域（单例或者原型），lazyinit表示是否懒加载，等等。&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;定义bean的方式：&lt;br&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;声明式定义Bean：@Bean、@Component（@Service、@Controller）。这些会被Spring框架解析为对应的BeanDefinition对象，并放入Spring容器中&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;编程式定义Bean：通过代码，生成1个BeanDefinition对象，并注册到ApplicationContext中，然后再赋值属性（scope、lazyinit等）。&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;BeanDefinitionReader：BeanDefinition读取器，Spring源码内部使用很多。&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;AnnotatedBeanDefinitionReader：&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;构造&lt;/span&gt;方法传入AnnotationConfigApplicationContext，再调用register方法，Bean就注册成功了。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;读取出来的类型是AnnotatedGenericBeanDefinition&amp;nbsp; 继承了&amp;nbsp; GenericBeanDefinition&amp;nbsp; 实现了BeanDefinition接口。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;XmlBeanDefinitionReder：&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;构造方法传入AnnotationConfigApplicationContext，再调用loadBeanDefinition方法传入xml文件名字来注册Bean。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ClassPathBeanDefinitionScanner：&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;构造方法传入AnnotationConfigApplicationContext，再调用scan方法传入包名路径。会扫描这个路径下面的Bean。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;读取出来的类型是ScannedGenericBeanDefinition&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;继承了&amp;nbsp; GenericBeanDefinition&amp;nbsp; 实现了BeanDefinition接口。&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;fontStyle=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="700" y="-360" width="930" height="560" as="geometry" />
+        <mxCell id="GvqGTiElUNmYjcPFba12-1" value="&lt;div&gt;Spring的一些核心概念、类：&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;BeanDefinition是什么？&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;定义了Bean的一些属性：class表示bean的类型，scope表示bean的作用域（单例或者原型），lazyinit表示是否懒加载，等等。&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;定义bean的方式：&lt;br&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;声明式定义Bean：@Bean、@Component（@Service、@Controller）。这些会被Spring框架解析为对应的BeanDefinition对象，并放入Spring容器中&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;编程式定义Bean：通过代码，生成1个BeanDefinition对象，并注册到ApplicationContext中，然后再赋值属性（scope、lazyinit等）。&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;BeanDefinitionReader：BeanDefinition读取器，Spring源码内部使用很多。&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;AnnotatedBeanDefinitionReader：&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;构造&lt;/span&gt;方法传入AnnotationConfigApplicationContext，再调用register方法，Bean就注册成功了。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;读取出来的类型是AnnotatedGenericBeanDefinition&amp;nbsp; 继承了&amp;nbsp; GenericBeanDefinition&amp;nbsp; 继承了 AbstractBeanDefinition 实现了BeanDefinition接口。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;XmlBeanDefinitionReder：&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;构造方法传入AnnotationConfigApplicationContext，再调用loadBeanDefinition方法传入xml文件名字来注册Bean。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ClassPathBeanDefinitionScanner：&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;构造方法传入AnnotationConfigApplicationContext，再调用scan方法传入包名路径。会扫描这个路径下面的Bean。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;读取出来的类型是ScannedGenericBeanDefinition&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;继承了&amp;nbsp; GenericBeanDefinition&amp;nbsp; 继承了 AbstractBeanDefinition 实现了BeanDefinition接口。&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;fontStyle=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="700" y="-360" width="930" height="620" as="geometry" />
+        </mxCell>
+        <mxCell id="GvqGTiElUNmYjcPFba12-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GvqGTiElUNmYjcPFba12-4" target="GvqGTiElUNmYjcPFba12-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GvqGTiElUNmYjcPFba12-4" value="«interface»&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;BeanDefinition&lt;/span&gt;" style="html=1;whiteSpace=wrap;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="2130.25" y="-420" width="194.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GvqGTiElUNmYjcPFba12-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="GvqGTiElUNmYjcPFba12-5" target="GvqGTiElUNmYjcPFba12-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GvqGTiElUNmYjcPFba12-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="GvqGTiElUNmYjcPFba12-5" target="GvqGTiElUNmYjcPFba12-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GvqGTiElUNmYjcPFba12-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="GvqGTiElUNmYjcPFba12-5" target="GvqGTiElUNmYjcPFba12-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2230" y="-210" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GvqGTiElUNmYjcPFba12-5" value="AbstrctBeanDefinition" style="html=1;whiteSpace=wrap;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="2105" y="-300" width="245" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GvqGTiElUNmYjcPFba12-6" value="RootBeanDefinition" style="html=1;whiteSpace=wrap;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1820" y="-170" width="245" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GvqGTiElUNmYjcPFba12-7" value="ChildBeanDefinition" style="html=1;whiteSpace=wrap;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="2380" y="-170" width="245" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GvqGTiElUNmYjcPFba12-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="GvqGTiElUNmYjcPFba12-8" target="GvqGTiElUNmYjcPFba12-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GvqGTiElUNmYjcPFba12-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GvqGTiElUNmYjcPFba12-8" target="GvqGTiElUNmYjcPFba12-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GvqGTiElUNmYjcPFba12-8" value="GenericBeanDefinition" style="html=1;whiteSpace=wrap;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="2105" y="-170" width="245" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GvqGTiElUNmYjcPFba12-9" value="ScannedGenericBeanDefinition" style="html=1;whiteSpace=wrap;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1890" y="-30" width="290" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GvqGTiElUNmYjcPFba12-11" value="AnnotatedGenericBeanDefinition" style="html=1;whiteSpace=wrap;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="2242.5" y="-30" width="317.5" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
