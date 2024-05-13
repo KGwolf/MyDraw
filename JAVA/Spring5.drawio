@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-13T08:14:21.586Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="4jYP4emFhEoGFNsSZuND" version="24.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-13T09:37:24.563Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="THdghLvguxOK9LACWr49" version="24.4.0" type="github">
   <diagram name="第 1 页" id="j0T0W_XY4i96COsHRtta">
-    <mxGraphModel dx="2049" dy="3404" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3187" dy="3996" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -530,8 +530,14 @@
         <mxCell id="D0tMUq0APOCBl6L36fft-1" value="&lt;div&gt;BeanDefinition 和 ParentBeanDefinition&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;BeanFactory 和&amp;nbsp; ParentBeanFactory（Spring boot中会使用到）&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;new多个AnnotationConfigApplicationContext ，指定不同的扫描类，同时设置context.setParent，这样，子context.getBean，找不到的话，会去父context里面找。&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;fontStyle=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="3342" y="1910" width="1020" height="140" as="geometry" />
         </mxCell>
+        <mxCell id="bwJsfqsvKPsk8CTJIlO6-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="bwJsfqsvKPsk8CTJIlO6-2" target="UheaUjV01zv5PhRMcysD-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="bwJsfqsvKPsk8CTJIlO6-2" value="&lt;div&gt;阶段总结：&lt;/div&gt;&lt;div&gt;ioc开始扫描的时候，每个类会生成1个beanDefinition，存到一个map里面。后面准备创建类的时候，循环这些beanDefinition集合，对每个beanDefinition进行合并生成RootBeanDefinition，存到一个新的map里面。创建类是根据这个合并后的RootBeanDefinition来进行创建的。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;FactoryBean的处理：&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;通过合并后的RootBeanDefinition会创建一个FactoryBean实现类的实例。存到单例池里面。如果实现了SmartFactoryBean接口，会在这个时候&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;调用getObject方法，来new我们的对象。不用等到我们手动getBean的时候创建了。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;通过&amp;amp;开头的beanName会获取到FactoryBean实现类的实例。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;通过getBean调用非&amp;amp;开头的beanName，会调用getObject方法，来new我们的对象。并放到一个单独的单例池里面去。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;fontStyle=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="3020" y="1450" width="1080" height="240" as="geometry" />
+          <mxGeometry x="3040" y="1480" width="1080" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="bwJsfqsvKPsk8CTJIlO6-4" value="Spring 到底是怎么创建bean的：&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;fontStyle=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="4750" y="459" width="1820" height="931" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
