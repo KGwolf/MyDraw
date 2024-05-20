@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-16T09:29:30.403Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="C1_HLoOlXymkji-vipRN" version="24.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-20T02:36:54.302Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="LHUaqo0ZPrjrqk2k7bau" version="24.4.3" type="github">
   <diagram name="第 1 页" id="j0T0W_XY4i96COsHRtta">
-    <mxGraphModel dx="2049" dy="3404" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2390" dy="3581" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -536,7 +536,7 @@
         <mxCell id="bwJsfqsvKPsk8CTJIlO6-2" value="&lt;div&gt;阶段总结：&lt;/div&gt;&lt;div&gt;ioc开始扫描的时候，每个类会生成1个beanDefinition，存到一个map里面。后面准备创建类的时候，循环这些beanDefinition集合，对每个beanDefinition进行合并生成RootBeanDefinition，存到一个新的map里面。创建类是根据这个合并后的RootBeanDefinition来进行创建的。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;FactoryBean的处理：&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;通过合并后的RootBeanDefinition会创建一个FactoryBean实现类的实例。存到单例池里面。如果实现了SmartFactoryBean接口，会在这个时候&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;调用getObject方法，来new我们的对象。不用等到我们手动getBean的时候创建了。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;通过&amp;amp;开头的beanName会获取到FactoryBean实现类的实例。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;通过getBean调用非&amp;amp;开头的beanName，会调用getObject方法，来new我们的对象。并放到一个单独的单例池里面去。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;fontStyle=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="3040" y="1480" width="1080" height="240" as="geometry" />
         </mxCell>
-        <mxCell id="bwJsfqsvKPsk8CTJIlO6-4" value="Spring 到底是怎么创建bean的：&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;fontStyle=1;align=left;" parent="1" vertex="1">
+        <mxCell id="bwJsfqsvKPsk8CTJIlO6-4" value="Spring 到底是怎么创建bean的：&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;MergedBeanDefinitionPostProcessor#postProcessMergedBeanDefinition()DefaultListableBeanFactory#getBean()----》AbstractBeanFactory#doGetBean()----》AbstractAutowireCapableBeanFactory#createBean()----》AbstractAutowireCapableBeanFactory#doCreateBean()&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;fontStyle=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="4750" y="459" width="1820" height="931" as="geometry" />
         </mxCell>
       </root>
