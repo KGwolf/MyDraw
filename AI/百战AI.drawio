@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-29T08:24:43.340Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="0K5l13K8-cWM8Gt1SGlL" version="24.4.9" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-29T08:35:18.557Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="FihfzwcdjPCmdy4wBwyT" version="24.4.9" type="github">
   <diagram name="第 1 页" id="s3n8gG0fuKqffe70A_rA">
-    <mxGraphModel dx="1674" dy="1915" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2391" dy="2235" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -13,7 +13,7 @@
         <mxCell id="pCqtwlNCeUda_szj-wWr-3" value="AI教育&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;针对每个人单独的个性化AI。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=18;verticalAlign=top;align=left;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="390" y="60" width="400" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="UERRzto7p0Ywzh5H4U2g-1" value="python基础有点印象就行&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;数学基础，知道公式是干嘛的就行，不要去推导。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;机器学习，现在很少用到了，里面很多算法都比较难，面试用的多，可以先不看：理解算法的流程，建模的思想。&lt;/div&gt;&lt;div&gt;数据挖掘也是面试前看一看&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;开始直接看深度学习即可。&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;直播课：神经网络、CNN卷积神经网络、Transformer、VIT Debug。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;PyTorch框架：1周了解。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;OpenCV：视觉，了解就行，现用现查，掉包，1周了解。&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=18;verticalAlign=top;align=left;fontStyle=1" vertex="1" parent="1">
+        <mxCell id="UERRzto7p0Ywzh5H4U2g-1" value="python基础有点印象就行&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;数学基础，知道公式是干嘛的就行，不要去推导。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;机器学习，现在很少用到了，里面很多算法都比较难，面试用的多，可以先不看：理解算法的流程，建模的思想。&lt;/div&gt;&lt;div&gt;数据挖掘也是面试前看一看&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;开始直接看深度学习即可。&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;直播课：神经网络、CNN卷积神经网络、Transformer、VIT Debug。重要&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;PyTorch框架：1周了解。重要&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;OpenCV：视觉，了解就行，现用现查，调包，1周了解。不太重要。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;综合项目：跟着视频走，1.算法思想原理。2.论文。&amp;nbsp; &amp;nbsp;3.源码&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;fontSize=18;verticalAlign=top;align=left;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="930" y="-60" width="950" height="310" as="geometry" />
         </mxCell>
       </root>
