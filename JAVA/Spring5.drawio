@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" version="24.7.6">
   <diagram name="第 1 页" id="j0T0W_XY4i96COsHRtta">
-    <mxGraphModel dx="2868" dy="3830" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3187" dy="3996" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -552,10 +552,13 @@
           <mxGeometry x="8320" y="330" width="1070" height="150" as="geometry" />
         </mxCell>
         <mxCell id="VwCA2_ZhlR9G2gFqnyRf-4" value="&lt;div&gt;@Resource：&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;这是java提供的一个注解， 跟@Autowire差不太多。为什么要有2个注入的注解呢？因为spring要支持java的@Resource注解。这样就算换依赖注入框架了，这个@Resource还是能用。&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;fontStyle=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="10120" y="510" width="1820" height="1061" as="geometry" />
+          <mxGeometry x="10140" y="510" width="1800" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="N-Qvm8r343798RhVx9xi-1" value="&lt;div style=&quot;&quot;&gt;Bean生命周期&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;fontStyle=1;align=center;" vertex="1" parent="1">
+        <mxCell id="N-Qvm8r343798RhVx9xi-1" value="&lt;div style=&quot;&quot;&gt;Bean生命周期&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;fontStyle=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="6190" y="-471.5" width="1820" height="931" as="geometry" />
+        </mxCell>
+        <mxCell id="wqO39brmgy46Yg4rh6TY-1" value="&lt;div&gt;填充属性完成之后，接着继续进行下去：初始化bean。&lt;/div&gt;&lt;div&gt;initializeBean：&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;applyBeanPostProcessorsBeforeInitialization：bean初始化前的操作。&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;invokeInitMethods：调用初始化方法。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;applyBeanPostProcessorsAfterInitialization：bean初始化后的操作。&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;fontStyle=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="10140" y="670" width="1780" height="560" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
