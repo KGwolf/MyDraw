@@ -732,7 +732,7 @@
         <mxCell id="h44oYwFNUk1gUKmLUQAU-43" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Spring AOP跟 ProxyFactory的关联：&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="3966" y="2470" width="1000" height="561" as="geometry" />
         </mxCell>
-        <mxCell id="h44oYwFNUk1gUKmLUQAU-44" value="Spring Aop只有4个Advice，但是AspectJ有5个。&lt;div&gt;AfterReturningAdvice、AroundAdvice、BeforeAdvice、ThrowsAdvice。&lt;/div&gt;&lt;div&gt;@After就是多的一个，类似finally？&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;fontStyle=1" vertex="1" parent="1">
+        <mxCell id="h44oYwFNUk1gUKmLUQAU-44" value="Spring Aop只有4个Advice，但是AspectJ有5个。&lt;div&gt;AfterReturningAdvice、AroundAdvice（其实是MethodInterceptor）、BeforeAdvice、ThrowsAdvice。&lt;/div&gt;&lt;div&gt;@After就是多的一个，类似finally？&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="3966" y="3070" width="1000" height="561" as="geometry" />
         </mxCell>
       </root>
