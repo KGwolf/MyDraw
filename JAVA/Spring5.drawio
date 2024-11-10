@@ -726,6 +726,9 @@
         <mxCell id="h44oYwFNUk1gUKmLUQAU-41" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;MethodInterceptor是最灵活的&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="2003.25" y="2230" width="264.5" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="h44oYwFNUk1gUKmLUQAU-42" value="Spring AOP跟 ProxyFactory的关联：" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="2920" y="2860" width="960" height="580" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
