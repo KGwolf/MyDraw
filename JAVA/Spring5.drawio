@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.4">
   <diagram name="第 1 页" id="j0T0W_XY4i96COsHRtta">
-    <mxGraphModel dx="3623" dy="3213" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4044" dy="3581" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -604,6 +604,75 @@
         </mxCell>
         <mxCell id="NJHlRpuy6pZzN0k-YDw0-3" value="&lt;div&gt;DefaultAdvisorAutoProxyCreator ：&lt;/div&gt;&lt;div&gt;可以写很多的&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;DefaultPointcutAdvisor 来定义不同的 advisor。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;DefaultPointcutAdvisor 本质上也是一个BPP，会去找所有的Advisor，找到之后确定这个类是不是应该被代理，以及如何进行代理逻辑。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;@Bean&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; public DefaultPointcutAdvisor defaultPointcutAdvisor(){&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; NameMatchMethodPointcut pointcut = new NameMatchMethodPointcut();&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; pointcut.addMethodName(&quot;testAop&quot;);&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; DefaultPointcutAdvisor defaultPointcutAdvisor = new DefaultPointcutAdvisor();&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; defaultPointcutAdvisor.setPointcut(pointcut);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; defaultPointcutAdvisor.setAdvice(new AfterReturningAdvice() {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; @Override&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; public void afterReturning(Object o, Method method, Object[] objects, Object o1) throws Throwable {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; if (o!= null) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; System.out.println(&quot;方法 &quot; + method.getName() + &quot; 返回值为：&quot; + o);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; } else {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; System.out.println(&quot;方法 &quot; + method.getName() + &quot; 没有返回值。&quot;);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; });&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; return defaultPointcutAdvisor;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; @Bean&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; public DefaultAdvisorAutoProxyCreator defaultAdvisorAutoProxyCreator() {&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; DefaultAdvisorAutoProxyCreator defaultAdvisorAutoProxyCreator = new DefaultAdvisorAutoProxyCreator();&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; return defaultAdvisorAutoProxyCreator;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;fontStyle=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="-850" y="2640" width="970" height="750" as="geometry" />
+        </mxCell>
+        <mxCell id="h44oYwFNUk1gUKmLUQAU-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h44oYwFNUk1gUKmLUQAU-2" target="h44oYwFNUk1gUKmLUQAU-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h44oYwFNUk1gUKmLUQAU-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="h44oYwFNUk1gUKmLUQAU-2" target="h44oYwFNUk1gUKmLUQAU-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h44oYwFNUk1gUKmLUQAU-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="h44oYwFNUk1gUKmLUQAU-2" target="h44oYwFNUk1gUKmLUQAU-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h44oYwFNUk1gUKmLUQAU-2" value="«interface»&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;Advice&lt;/span&gt;" style="html=1;whiteSpace=wrap;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="2370" y="1960" width="230" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="h44oYwFNUk1gUKmLUQAU-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="h44oYwFNUk1gUKmLUQAU-3" target="h44oYwFNUk1gUKmLUQAU-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h44oYwFNUk1gUKmLUQAU-3" value="«interface»&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;Interceptor&lt;/span&gt;" style="html=1;whiteSpace=wrap;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="1980" y="2170" width="230" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="h44oYwFNUk1gUKmLUQAU-4" value="«interface»&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;MethodInterceptor&lt;/span&gt;" style="html=1;whiteSpace=wrap;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="1980" y="2350" width="230" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="h44oYwFNUk1gUKmLUQAU-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="h44oYwFNUk1gUKmLUQAU-5" target="h44oYwFNUk1gUKmLUQAU-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h44oYwFNUk1gUKmLUQAU-5" value="«interface»&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;BeforeAdvice&lt;/span&gt;" style="html=1;whiteSpace=wrap;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="2270" y="2170" width="230" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="h44oYwFNUk1gUKmLUQAU-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="h44oYwFNUk1gUKmLUQAU-6" target="h44oYwFNUk1gUKmLUQAU-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h44oYwFNUk1gUKmLUQAU-6" value="«interface»&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;MethodBeforeAdvice&lt;/span&gt;" style="html=1;whiteSpace=wrap;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="2270" y="2338" width="230" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="h44oYwFNUk1gUKmLUQAU-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="h44oYwFNUk1gUKmLUQAU-7" target="h44oYwFNUk1gUKmLUQAU-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h44oYwFNUk1gUKmLUQAU-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="h44oYwFNUk1gUKmLUQAU-7" target="h44oYwFNUk1gUKmLUQAU-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h44oYwFNUk1gUKmLUQAU-7" value="«interface»&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;AfterAdvice&lt;/span&gt;" style="html=1;whiteSpace=wrap;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="2675" y="2170" width="230" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="h44oYwFNUk1gUKmLUQAU-8" value="«interface»&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;ThrowsAdcice&lt;/span&gt;" style="html=1;whiteSpace=wrap;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="2560" y="2330" width="230" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="h44oYwFNUk1gUKmLUQAU-9" value="«interface»&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;AfterReturningAdcice&lt;/span&gt;" style="html=1;whiteSpace=wrap;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="2830" y="2330" width="230" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="h44oYwFNUk1gUKmLUQAU-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="h44oYwFNUk1gUKmLUQAU-18" target="h44oYwFNUk1gUKmLUQAU-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h44oYwFNUk1gUKmLUQAU-18" value="AspectJMethodBeforeAdvice" style="html=1;whiteSpace=wrap;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="2255" y="2510" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="h44oYwFNUk1gUKmLUQAU-19" value="@Before" style="html=1;whiteSpace=wrap;fontSize=18;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="2285" y="2680" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h44oYwFNUk1gUKmLUQAU-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="h44oYwFNUk1gUKmLUQAU-22" target="h44oYwFNUk1gUKmLUQAU-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h44oYwFNUk1gUKmLUQAU-22" value="AspectJAfterReturningAdvice" style="html=1;whiteSpace=wrap;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="2830" y="2510" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="h44oYwFNUk1gUKmLUQAU-23" value="@AfterReturning" style="html=1;whiteSpace=wrap;fontSize=18;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="2860" y="2670" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h44oYwFNUk1gUKmLUQAU-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.446;entryY=0.021;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="h44oYwFNUk1gUKmLUQAU-9" target="h44oYwFNUk1gUKmLUQAU-22">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
