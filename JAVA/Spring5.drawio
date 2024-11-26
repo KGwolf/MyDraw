@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.9.0">
   <diagram name="第 1 页" id="j0T0W_XY4i96COsHRtta">
-    <mxGraphModel dx="3341" dy="3216" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4044" dy="3581" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -306,6 +306,9 @@
         </mxCell>
         <mxCell id="L8sj91GdE4BC496Hn-29-2" value="&lt;div style=&quot;font-size: 18px;&quot;&gt;&lt;div&gt;Spring事务传播级别：&lt;/div&gt;&lt;div&gt;int PROPAGATION_REQUIRED = 0;&lt;/div&gt;&lt;div&gt;int PROPAGATION_SUPPORTS = 1;&lt;/div&gt;&lt;div&gt;int PROPAGATION_MANDATORY = 2;&lt;/div&gt;&lt;div&gt;int PROPAGATION_REQUIRES_NEW = 3;&lt;/div&gt;&lt;div&gt;int PROPAGATION_NOT_SUPPORTED = 4;&lt;/div&gt;&lt;div&gt;int PROPAGATION_NEVER = 5;&lt;/div&gt;&lt;div&gt;int PROPAGATION_NESTED = 6;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Spring事务隔离级别：&lt;/div&gt;&lt;div&gt;int ISOLATION_DEFAULT = -1;&lt;/div&gt;&lt;div&gt;int ISOLATION_READ_UNCOMMITTED = 1;&lt;/div&gt;&lt;div&gt;int ISOLATION_READ_COMMITTED = 2;&lt;/div&gt;&lt;div&gt;int ISOLATION_REPEATABLE_READ = 4;&lt;/div&gt;&lt;div&gt;int ISOLATION_SERIALIZABLE = 8;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;int TIMEOUT_DEFAULT = -1;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fontStyle=1;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="6360" y="1840" width="850" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="zVuzrLNmkFbllxcp8zSO-1" value="&lt;div style=&quot;font-size: 18px;&quot;&gt;为什么不建议使用@Transancation注解呢？&lt;/div&gt;&lt;div style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 18px;&quot;&gt;什么情况下spring aop会失效？&lt;/div&gt;&lt;div style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 18px;&quot;&gt;什么情况下Spring 事务会失效？&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fontStyle=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="7320" y="1830" width="850" height="380" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
