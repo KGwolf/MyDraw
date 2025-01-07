@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.3">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.4">
   <diagram name="第 1 页" id="oAc0U7i2WO9zVuW95_pL">
-    <mxGraphModel dx="3774" dy="3711" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4044" dy="3581" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1558,6 +1558,9 @@
         </mxCell>
         <mxCell id="negOpcR7e_rV5vFlphEG-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;CountDownLatch：在ZK的客户端里面会有使用，new 一个ZK客户端的时候，会用CountDownLatch(1) 来等待new操作的完成？还有连接的时候，也会使用这个来等待连接的完成。&amp;nbsp; &amp;nbsp;因为zk这些操作比较耗时，使用线程同步等待可以减少错误的发生。&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;div style=&quot;font-size: 12px;&quot;&gt;ZK做分布式锁，N个线程去抢锁，只能有1个成功，其他的需要等待，那么第一个完了之后，需要唤醒所有的等待线程，那么这个消耗是很大的，线程的唤醒和等待还是费资源的。所以可以借用zk实现分布式队列。没抢到锁的全部进入队列，一次唤醒。&lt;/div&gt;&lt;div style=&quot;font-size: 12px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 12px;&quot;&gt;Redis的分布式锁redisson是不是这样弄得呢？&lt;/div&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="-618.3" y="-2100" width="1070" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="BF8a9ud_xqPQ9R3s91bJ-1" value="总结：&lt;div&gt;并发编程中需要处理的2个问题。多线程之间如何进行通信、多线程间如何进行同步(顺序问题)。&lt;/div&gt;&lt;div&gt;针对多线程通信的问题，也有2中解决方式，共享内存、消息传递。 那么java中选择的是共享内存模型。&lt;/div&gt;&lt;div&gt;那么JMM就是用来控制多线程之间如何进行通信的。JMM规定了线程之间的共享变量存储在主内存中，每个线程中有自己的私有内存，存储的是主内存中共享变量的副本。并且线程的所有操作都必须在自己的本地内存中运行，不能直接从主内存中获取。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="-610" y="-460" width="450" height="240" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
