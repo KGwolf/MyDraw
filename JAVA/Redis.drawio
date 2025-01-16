@@ -1,14 +1,14 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.6">
   <diagram name="第 1 页" id="Ui-6xDZG4yXv-m0ysYRE">
-    <mxGraphModel dx="4044" dy="2412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3703" dy="2235" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="iayUrk5L2lRTLvckCghS-1" value="redis有几种存储形式？底层存储是怎样的数据结构？&lt;br&gt;&lt;br&gt;redis为什么快？单线程为什么快？为什么设计成单线程呢？&lt;br&gt;&lt;br&gt;redis的架构模型" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="1320" y="570" width="720" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="iayUrk5L2lRTLvckCghS-2" value="redis的持久化有哪些？&lt;br&gt;&lt;br&gt;rdb和aof的优缺点有哪些？&lt;br&gt;&lt;br&gt;混合模式是怎样操作的呢（具体的流程）？&lt;br&gt;&lt;br&gt;redis什么时候用到了写时复制的原理？（主从复制的时候？cluster模式下增加节点的时候？）" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" parent="1" vertex="1">
-          <mxGeometry x="100" y="380" width="790" height="170" as="geometry" />
+        <mxCell id="iayUrk5L2lRTLvckCghS-2" value="redis的持久化有哪些？&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;RDB：快照模式，在N秒内有M个改动，就进行一次快照保存。保存的底层用到了写时复制 Copy On Write，在复制的时候，如果主节点上的数据没有进行修改操作，那么就正常读取主节点的数据。如果主节点来了写命令，这时候就要复制出来一个副本，写命令在主节点的正常内存上面执行。复制的操作就从副本上去读数据。这样就不影响主节点的写数据了。&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;AOF:&lt;br&gt;&lt;br&gt;rdb和aof的优缺点有哪些？&lt;br&gt;&lt;br&gt;混合模式是怎样操作的呢（具体的流程）？&lt;br&gt;&lt;br&gt;redis什么时候用到了写时复制的原理？（主从复制的时候？cluster模式下增加节点的时候？）&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="90" y="280" width="800" height="270" as="geometry" />
         </mxCell>
         <mxCell id="iayUrk5L2lRTLvckCghS-3" value="redis的高可用有哪些方式呢？（主从、哨兵、cluster集群）&lt;br&gt;&lt;br&gt;redis是往分布式的哪方面进行设计的CAP中的AP？&lt;br&gt;&lt;br&gt;主从需要几个节点呢？这个节点数量貌似没有要求，至少得有1个从节点吧？&lt;br&gt;&lt;br&gt;主从的数据是怎么同步的呢？如何保证主从数据同步不会出现丢失数据的情况？&lt;br&gt;&lt;br&gt;如果只有主从，那么主节点挂掉了之后，是需要手动找一个从节点来升级成主节点？那期间的程序访问redis就不可用了？&lt;br&gt;&lt;br&gt;那么就加哨兵来保证自动故障转移？哨兵是怎么一个运作模式呢？哨兵节点的数量有没有要求呢？哨兵的作用是在出现故障时候，进行自动选主？那么涉及到选主，就建议节点的数量是奇数个，但是也不一定。你要偶数个也没问题，2个、3个、4个都行？反正要超过半数以上的节点选举成功才行。&lt;br&gt;哨兵自己也是主备架构，它自己也有单点故障的风险，那么一旦挂掉一个，也需要进行选主的操作。&lt;br&gt;&lt;br&gt;哨兵选举的过程流程是怎样的呢？节点间的通信机制是怎样的呢？socket？使用了哪些协议？gossp？不管是哨兵还是cluster，节点之间是不是都需要有心跳机制？&lt;br&gt;&lt;br&gt;当主从出现故障的时候，这时候，" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="100" y="610" width="1080" height="430" as="geometry" />
