@@ -52,7 +52,7 @@
         <mxCell id="a138Q77CWcjG1b8q-LW_-12" value="......." style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-760" y="-55" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="IuTUAlNMjMsG8cdk08z8-1" value="ZK关注的点：Leader选举、数据主从同步、Watcher机制。&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;其中ZAB协议包括了leader选举 和 数据的主从同步规则。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;事务ID，是由2部分组成的：高32位是 根据AutomicLong来进行获取的自增Long值，低32位是选举的轮数。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;fontStyle=1" vertex="1" parent="1">
+        <mxCell id="IuTUAlNMjMsG8cdk08z8-1" value="ZK关注的点：Leader选举、数据主从同步、Watcher机制。&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;其中ZAB协议包括了leader选举 和 数据的主从同步规则。主从数据同步基于二阶段提交来的。其中Leader发送之后，也会有一个ack，这样才能保证半数提交。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;事务ID，是由2部分组成的：高32位是 根据AutomicLong来进行获取的自增Long值，低32位是选举的轮数。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="970" y="-290" width="660" height="590" as="geometry" />
         </mxCell>
       </root>
