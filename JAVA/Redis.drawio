@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.6">
   <diagram name="第 1 页" id="Ui-6xDZG4yXv-m0ysYRE">
-    <mxGraphModel dx="3341" dy="2047" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3703" dy="2235" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -11,7 +11,7 @@
           <mxGeometry x="50" y="280" width="840" height="500" as="geometry" />
         </mxCell>
         <mxCell id="iayUrk5L2lRTLvckCghS-3" value="redis的高可用有哪些方式呢？（主从、哨兵、cluster集群）&lt;br&gt;&lt;br&gt;redis是往分布式的哪方面进行设计的CAP中的AP？&lt;br&gt;&lt;br&gt;主从需要几个节点呢？这个节点数量貌似没有要求，至少得有1个从节点吧？&lt;br&gt;&lt;br&gt;主从的数据是怎么同步的呢？如何保证主从数据同步不会出现丢失数据的情况？&lt;br&gt;&lt;br&gt;如果只有主从，那么主节点挂掉了之后，是需要手动找一个从节点来升级成主节点？那期间的程序访问redis就不可用了？&lt;br&gt;&lt;br&gt;那么就加哨兵来保证自动故障转移？哨兵是怎么一个运作模式呢？哨兵节点的数量有没有要求呢？哨兵的作用是在出现故障时候，进行自动选主？那么涉及到选主，就建议节点的数量是奇数个，但是也不一定。你要偶数个也没问题，2个、3个、4个都行？反正要超过半数以上的节点选举成功才行。&lt;br&gt;哨兵自己也是主备架构，它自己也有单点故障的风险，那么一旦挂掉一个，也需要进行选主的操作。&lt;br&gt;&lt;br&gt;哨兵选举的过程流程是怎样的呢？节点间的通信机制是怎样的呢？socket？使用了哪些协议？gossp？不管是哨兵还是cluster，节点之间是不是都需要有心跳机制？&lt;br&gt;&lt;br&gt;当主从出现故障的时候，这时候，" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" parent="1" vertex="1">
-          <mxGeometry x="106.5" y="1430" width="1080" height="430" as="geometry" />
+          <mxGeometry x="966.5" y="280" width="1083.5" height="550" as="geometry" />
         </mxCell>
         <mxCell id="iayUrk5L2lRTLvckCghS-4" value="redis的缓存淘汰策略有哪些？LRU算法是什么？操作系统是不是也有一个LRU算法？&lt;br&gt;&lt;br&gt;redis cluster如何解决key偏向的问题。可能大量请求key都打到同一个服务器了。" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;align=left;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="1326.5" y="1600" width="720" height="160" as="geometry" />
