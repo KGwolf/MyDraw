@@ -10,6 +10,9 @@
         <mxCell id="t9MxABzWcRTLGMJupPC0-2" value="连接nacos的服务挂掉了之后，nacos客户端上的服务列表不会及时更新，如果客户端用到了这个错误的服务地址怎么办？有重试机制，在rebin、open feign里面有重试的机制。" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fontStyle=1;verticalAlign=top;align=left;" vertex="1" parent="1">
           <mxGeometry x="10" y="240" width="590" height="150" as="geometry" />
         </mxCell>
+        <mxCell id="t9MxABzWcRTLGMJupPC0-3" value="如果没有idea的专业版，构建Spring boot项目，可以用阿里云的脚手架来生成项目：https://start.aliyun.com/" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fontStyle=1;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry y="450" width="980" height="160" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
