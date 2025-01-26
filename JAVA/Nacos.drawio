@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.7">
   <diagram name="第 1 页" id="EoKzsfYvX2hHvfft86sc">
-    <mxGraphModel dx="3247" dy="1998" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3341" dy="2047" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -31,8 +31,11 @@
         <mxCell id="hLo54JjVyiB9AwnYPj0C-1" value="Nacos客户端会有定时任务进行拉取服务端的服务列表&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Nacos服务端会在服务Instance有修改的时候，用UDP进行推送服务列表给客户端，短连接的方式，请求完就释放连接。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;UDP肯定是不可靠的。那么还有一个客户端轮询兜底。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ZK 是 NIO或者Netty 来实现客户端服务端的通信，这是长连接的方式，并且客户端会发送ping心跳来检查是否断开链接（间隔多久？trycatch捕捉到了异常说明就断了？就调用watch事件通知？）&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Nacos 2.x版本，使用grpc代替了http。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fontStyle=1;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry y="1140" width="650" height="320" as="geometry" />
         </mxCell>
-        <mxCell id="sSkAC0mX2W8-ggTYoPnb-1" value="Nacos配置中心：&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;如何实现的热更新？多个地方配置的优先级？集群如何实现？节点间如何传递数据的？&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fontStyle=1;verticalAlign=top;align=left;" vertex="1" parent="1">
+        <mxCell id="sSkAC0mX2W8-ggTYoPnb-1" value="Nacos配置中心：&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;如何实现的热更新？多个地方配置的优先级？集群如何实现？节点间如何传递数据的？&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fontStyle=1;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="20" y="1580" width="650" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="JOK7G2EgOuDC62pwGcgq-1" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;CAP：为什么只能满足CP 或者 AP架构呢？&lt;/span&gt;&lt;div style=&quot;font-weight: 400;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;分区容错性：分布式节点之间，很有可能因为网络问题而连接不上。这就是分区。如果因为分区，系统就不对外提供服务了，那么肯定是不行的，&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fontStyle=1;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-830" y="1280" width="630" height="720" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
