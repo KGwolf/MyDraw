@@ -114,7 +114,7 @@
           <mxGeometry x="2330.46" y="6210" width="1180" height="810" as="geometry" />
         </mxCell>
         <mxCell id="2IVsV5QD4vlGc0TE6rvr-4" value="Netty支持的序列化框架：&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;如何支持单机的百万连接：&lt;br&gt;1.操作系统需要修改配置，文件描述符的个数等。&lt;br&gt;2.netty代码需要进行优化，线程的数量等&lt;br&gt;3.jvm需要优化，减少fullGC的次数，减少每次fullGC的时间。" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" parent="1" vertex="1">
-          <mxGeometry x="70.46000000000001" y="6846" width="670" height="300" as="geometry" />
+          <mxGeometry x="85.23" y="6900" width="670" height="300" as="geometry" />
         </mxCell>
         <mxCell id="MsS69ueM_uQjcNkRj2Aj-1" value="Netty开发，主要就是各种Handller的开发！！！！！" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="130.46" y="6090" width="400" height="30" as="geometry" />
