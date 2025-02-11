@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" version="26.0.11">
   <diagram name="第 1 页" id="dfQ2K8U6RCrprToEWXjN">
-    <mxGraphModel dx="4044" dy="2412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3703" dy="2235" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -167,7 +167,7 @@
         <mxCell id="90duXTg3l-EAfw0rSPbg-1" value="&lt;div&gt;写入文件数据太多，写入太慢怎么办？&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;将批量 flush 和 MappedByteBuffer 结合使用，可以进一步优化大量数据写入文件的性能。结合的核心思路是在使用 MappedByteBuffer 进行数据写入时，采用批量操作的方式，减少不必要的磁盘同步操作，只有在达到一定批量大小时才进行强制刷新。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="-910.46" y="3250" width="730" height="250" as="geometry" />
         </mxCell>
-        <mxCell id="xxkh3VT9T2ANbIIU-Edo-1" value="Netty里面如何实现线程安全的？并没有使用lock，ThreadLocal肯定是不行的。&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="xxkh3VT9T2ANbIIU-Edo-1" value="Netty里面如何实现线程安全的？并没有使用lock，ThreadLocal肯定是不行的。&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Netty的内存泄漏是怎么回事呢？跟NIO的buffer有关？我们写NIO的程序时，在write还是read的时候，会将buffer当做一个挂件传入进channel？后续需要我们手动去进行释放这个buffer，否则就会导致内存泄漏？ netty会自动在pipeline中维护2个handler，head和tail，这里面会自动处理buffer的释放？ 但是如果pipline中间的一个handler出错了，没有进行fire的传递操作，那么很有可能到达不了默认的那2个handler，就容易出现内存泄漏，所以，要么fire、要么手动释放，要么继承自simple的这个类，它里面帮我们处理了的。&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="1140" y="7200" width="670" height="300" as="geometry" />
         </mxCell>
       </root>
