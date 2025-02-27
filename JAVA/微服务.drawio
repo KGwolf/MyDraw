@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.16">
   <diagram name="第 1 页" id="bNRUMGfdpHtpgNB-Gve9">
-    <mxGraphModel dx="2876" dy="2235" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2514" dy="2047" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -16,8 +16,11 @@
         <mxCell id="8Nu4Ka4w16lwiklZhjRO-1" value="微服务架构演进：&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;单体：一个jar包，一台服务器运行&lt;/div&gt;&lt;div&gt;垂直：拆分业务，不同的项目，打不同的jar包。&lt;/div&gt;&lt;div&gt;SOA：也是拆分成服务，服务之间的通信有统一的规则，比如ESB企业服务总线来管理服务之间的依赖。webservice也算SOA的一种实现。&lt;/div&gt;&lt;div&gt;微服务：粒度更小的服务。&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="-70" y="-260" width="700" height="310" as="geometry" />
         </mxCell>
-        <mxCell id="JkpguMBfyvvDvHadpzbC-1" value="&lt;div&gt;负载均衡算法：可以用在&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;轮询、加权轮询、随机、加权随机、最少连接、IP哈希、一致性哈希等&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
+        <mxCell id="JkpguMBfyvvDvHadpzbC-1" value="&lt;div&gt;负载均衡算法：可以用在&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;轮询、加权轮询、随机、加权随机、最少连接、IP哈希、一致性哈希等&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="1080" y="150" width="580" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="VfdaiQWPS9US5twS7hE0-1" value="&lt;div&gt;普通哈希：&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;一致性哈希：" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="420" width="580" height="220" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
