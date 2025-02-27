@@ -19,8 +19,8 @@
         <mxCell id="JkpguMBfyvvDvHadpzbC-1" value="&lt;div&gt;负载均衡算法：可以用在&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;轮询、加权轮询、随机、加权随机、最少连接、IP哈希、一致性哈希等&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="1080" y="150" width="580" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="VfdaiQWPS9US5twS7hE0-1" value="&lt;div&gt;哈希算法：应用在负载均衡、缓存数据分区等场景。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;普通哈希：通过哈希函数得到一个散列值，然后 跟机器数量取模运算，得到一个索引值。然后根据索引值找到对应机器，分发请求、或者读写数据。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;一致性哈希：是一个环形的结构，分成了 2的32次方个节点，然后把服务器映射到这个环形结构中的一个节点（通过服务器ip地址进行hash运算，对 2的32次方取模）。 然后再把传过来的key值，进行哈希运算，同样对 2的32次方取模，得到一个值，然后顺时针方向找到第1个服务器。这个服务器就是我们一致性哈希得到的结果。" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1080" y="420" width="590" height="280" as="geometry" />
+        <mxCell id="VfdaiQWPS9US5twS7hE0-1" value="&lt;div&gt;哈希算法：应用在负载均衡、缓存数据分区等场景。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;普通哈希：通过哈希函数得到一个散列值，然后 跟机器数量取模运算，得到一个索引值。然后根据索引值找到对应机器，分发请求、或者读写数据。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;一致性哈希：是一个环形的结构，分成了 2的32次方个节点，然后把服务器映射到这个环形结构中的一个节点（通过服务器ip地址进行hash运算，对 2的32次方取模）。 然后再把传过来的key值，进行哈希运算，同样对 2的32次方取模，得到一个值，然后顺时针方向找到第1个服务器。这个服务器就是我们一致性哈希得到的结果。&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;问题：1.集群的缩容和扩容，&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="420" width="600" height="360" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
