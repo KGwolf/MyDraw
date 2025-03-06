@@ -19,8 +19,8 @@
         <mxCell id="g64Nd9Q6wCNAMY9zqfhi-2" value="右边是一个简单的sharding-jdbc的配置：&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;有2个表test、test2，它们里面分别有accout、account_1、account_2 这3张表，需要用带下划线的这2张表和2个库来进行分库分表。注意，配置里面的test0和test1命名是有讲究的。要跟数据库的分片算法有关系，右边的只是根据2来取模，所以要么后缀是0，要么是1，所以只能是xxx0、xxx1。坑了半天。&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fontStyle=1;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="1020" y="840" width="700" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="IS5SeAK-RxhiQx-ziOcB-1" value="&lt;div&gt;select * from account where aid = xxx，这个sql会自己寻找具体在哪个库哪个表。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;INLINE 策略：就是简单的一个表达式。 支持 等于、 支持 in 查询。 但是必须带上aid，如果不带aid，那么就会全扫描，2个库2张表，就是4个sql，但是后面5.x版本优化成2个sql，同一个库里面的sql会用 UNION ALL 来优化。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fontStyle=1;verticalAlign=top;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1010" y="1020" width="710" height="190" as="geometry" />
+        <mxCell id="IS5SeAK-RxhiQx-ziOcB-1" value="&lt;div&gt;select * from account where aid = xxx，这个sql会自己寻找具体在哪个库哪个表。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;INLINE 策略：就是简单的一个表达式。 支持 等于、 支持 in 查询。 但是必须带上aid，如果不带aid，那么就会全扫描，2个库2张表，就是4个sql，但是后面5.x版本优化成2个sql，同一个库里面的sql会用 UNION ALL 来优化。 应该极力避免全扫描。 in 查询虽然是支持的，但是in里面的值如果都在一个分片上，那么就1个sql就行。如果in里面的不止1个分片，那么它就偷懒，也去全分片路由去扫描查询。这算是一个坑！所以用in查询要保证都在一个分片上。不能随便乱写sql。&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;如果是between呢，就直接给你抛异常。。&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fontStyle=1;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="1020" width="700" height="280" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
