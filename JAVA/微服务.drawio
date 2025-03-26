@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.1">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.2">
   <diagram name="第 1 页" id="bNRUMGfdpHtpgNB-Gve9">
     <mxGraphModel dx="2876" dy="2235" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -36,6 +36,9 @@
         </mxCell>
         <mxCell id="xb5FwsVI7nqsQViI3kiX-1" value="Nacos使用的时候不需要在类上面加注解，而OpenFeign需要加上@EnableFeginClients" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="210" y="50" width="250" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="lFDamCLCkBhxT8NYs803-1" value="&lt;div&gt;分布式事务：Seata&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Seata提供了几种模式：AT、TCC、SAGA和XA事务模式。首推AT模式，这种对业务代码侵入少，性能比XA好。TCC性能比AT好，但是业务代码侵入强。&lt;/div&gt;&lt;div&gt;这些都是基于两阶段提交的。&lt;/div&gt;&lt;div&gt;ZK里面的ZAB协议实现的时候，是类似两阶段提交，不是严格意义上的。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2PC存在什么问题？AT模式是怎么解决的呢？&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;两阶段提交是算法，XA是具体的一个协议。所以说XA是2pc的一种实现。&lt;/div&gt;&lt;div&gt;主流的关系型数据库基本都实现了XA协议：mysql、pgsql、oracle、sqlserver等。xa在数据库中。&lt;/div&gt;&lt;div&gt;XA不局限于数据库中，有些消息队列也实现了XA的：RabbitMQ、ActiveMQ。还有MongDB 4.0+版本也实现了XA。 但是Redis、kafka、rocketmq这些不支持xa，rocketmq本身支持事务消息。 redis、kafka等可能需要用到TCC\Saga等。&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="2470" y="1510" width="700" height="440" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
