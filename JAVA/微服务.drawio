@@ -43,7 +43,7 @@
         <mxCell id="gp-tOEH7vBiZSUj95nvB-3" value="&lt;div&gt;网关GateWay：&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
           <mxGeometry x="2330" y="2070" width="780" height="530" as="geometry" />
         </mxCell>
-        <mxCell id="gp-tOEH7vBiZSUj95nvB-4" value="&lt;div&gt;Arthas+promethus的使用，和线上如何搭建一个监控系统：&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
+        <mxCell id="gp-tOEH7vBiZSUj95nvB-4" value="&lt;div&gt;Arthas+Prometheus+Grafana的使用，和线上如何搭建一个监控系统：&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
           <mxGeometry x="1370" y="2120" width="780" height="530" as="geometry" />
         </mxCell>
       </root>
