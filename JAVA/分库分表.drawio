@@ -38,19 +38,19 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="LC5DSaiPnJGlSjBCNs0M-2" value="Master1&lt;div&gt;3306&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="2340" y="2430" width="120" height="60" as="geometry" />
+          <mxGeometry x="2100" y="2390" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="LC5DSaiPnJGlSjBCNs0M-3" value="Slaver1&lt;div&gt;3307&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="2340" y="2560" width="120" height="60" as="geometry" />
+          <mxGeometry x="2100" y="2520" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="LC5DSaiPnJGlSjBCNs0M-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="LC5DSaiPnJGlSjBCNs0M-4" target="LC5DSaiPnJGlSjBCNs0M-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="LC5DSaiPnJGlSjBCNs0M-4" value="Master2&lt;div&gt;3308&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="2540" y="2430" width="120" height="60" as="geometry" />
+          <mxGeometry x="2300" y="2390" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="LC5DSaiPnJGlSjBCNs0M-6" value="Slaver2&lt;div&gt;3309&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="2540" y="2560" width="120" height="60" as="geometry" />
+          <mxGeometry x="2300" y="2520" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
