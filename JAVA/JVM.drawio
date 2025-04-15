@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2024-05-08T06:01:52.385Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="s2J4weOQkJNCg7cow8u4" version="24.3.1" type="github">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.12">
   <diagram id="c6MPomSf8zc9xdUtyQ0a" name="第 1 页">
-    <mxGraphModel dx="6184" dy="2235" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="6991" dy="2671" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="KMykvNVoYazlertQHYwg-6" value="类加载机制" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=18;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-3280" y="10" width="1110" height="210" as="geometry" />
+        </mxCell>
         <mxCell id="HXNcOwU4YCtGxFrcV2Fv-4" value="jdk" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="-1950" y="-1030" width="390" height="220" as="geometry" />
         </mxCell>
@@ -195,6 +198,21 @@
         </mxCell>
         <mxCell id="EzLQS_h-ya4KqhqOrf5a-2" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Arthas：&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;能在线修改变量值，比如static List&amp;lt;int&amp;gt; list，可以在线往这个集合里面去添加想要的值，一般可能用于修改缓存里面的东西。&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;打印日志参数：&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ps+po：&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;-Xloggc:./gc-%t.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+PrintGCTimeStamps -XX:+PrintGCCause -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=10 -XX:GCLogFileSize=100M&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;其中，%t代表当前时间，./代表在程序同级目录下，也可以指定路径。&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;NumberOfGCLogFiles=10，&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;GCLogFileSize=100M，表示10个文件，每个文件100M，最大能记录1G的GC日志，多了就要开始覆盖了。可以自行调到想要的参数。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;得到的文件名：&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;gc-2024-05-08_11-30-48.log.0.current&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;GcEasy：日志分析工具。有的功能是收费的：建议优化方案&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;verticalAlign=top;align=left;fontStyle=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="-3470" y="5220" width="1210" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="KMykvNVoYazlertQHYwg-1" value="初始化" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=middle;align=center;fontSize=18;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-2730" y="70" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KMykvNVoYazlertQHYwg-2" value="链接&lt;div&gt;验证、准备、解析&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=18;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-3010" y="70" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KMykvNVoYazlertQHYwg-3" value="装载" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=middle;align=center;fontSize=18;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-3210" y="70" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KMykvNVoYazlertQHYwg-4" value="使用" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=middle;align=center;fontSize=18;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-2540" y="70" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KMykvNVoYazlertQHYwg-5" value="卸载" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=middle;align=center;fontSize=18;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-2337" y="70" width="130" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
