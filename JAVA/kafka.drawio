@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-03-09T08:59:44.194Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="wNoQ5xFWCXPpr8qkJSgt" version="24.0.1" type="github">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.8">
   <diagram name="第 1 页" id="GcrNvst_PpiNvorq7mOm">
-    <mxGraphModel dx="1366" dy="710" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1698" dy="1025" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -16,11 +16,14 @@
         <mxCell id="wxyglImcHe592JvwWwKs-2" value="RocketMq架构的几大角色：&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;NameServerCluster（有点类似Hadoop呢），brokerCluster、Producer、Consumer&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;rocketMq的事务消息是什么意思？&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;保证生产者本地事务和发送消息到Broker之间的一致性。&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="290" y="1609" width="780" height="290" as="geometry" />
         </mxCell>
-        <mxCell id="8C4UVIK4LGHGpcc9LimP-1" value="消息中间件，消息丢失的几种可能：&lt;div&gt;1.生产者到broker之间丢失消息。-----rocketmq&amp;nbsp; 同步消息、事务消息&lt;/div&gt;&lt;div&gt;2.broker跟从节点副本之间同步消息时，断电丢失消息。&lt;/div&gt;&lt;div&gt;3.broker进行存盘时，断电丢失消息。&lt;/div&gt;&lt;div&gt;4.broker到消费者之间丢失消息。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="8C4UVIK4LGHGpcc9LimP-1" value="消息中间件，消息丢失的几种可能：&lt;div&gt;1.生产者到broker之间丢失消息。-----rocketmq&amp;nbsp; 同步消息、事务消息&lt;/div&gt;&lt;div&gt;2.broker跟从节点副本之间同步消息时，断电丢失消息。&lt;/div&gt;&lt;div&gt;3.broker进行存盘时，断电丢失消息。&lt;/div&gt;&lt;div&gt;4.broker到消费者之间丢失消息。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="1300" y="1609" width="780" height="290" as="geometry" />
         </mxCell>
-        <mxCell id="8C4UVIK4LGHGpcc9LimP-2" value="如果你自己设计一个消息队列，你应该怎么设计，应该注意哪些方面的点？" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="8C4UVIK4LGHGpcc9LimP-2" value="如果你自己设计一个消息队列，你应该怎么设计，应该注意哪些方面的点？" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="140" y="760" width="780" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="eaKYazP-EuHQEtGpPtN_-1" value="为什么一定要使用消息队列？直接用rpc 或者 http调用下游服务不行吗？" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="10" width="780" height="290" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
