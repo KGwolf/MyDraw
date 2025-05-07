@@ -17,7 +17,7 @@
           <mxGeometry x="290" y="1609" width="780" height="290" as="geometry" />
         </mxCell>
         <mxCell id="8C4UVIK4LGHGpcc9LimP-1" value="消息中间件，消息丢失的几种可能：&lt;div&gt;1.生产者到broker之间丢失消息。-----rocketmq&amp;nbsp; 同步消息、事务消息&lt;/div&gt;&lt;div&gt;2.broker跟从节点副本之间同步消息时，断电丢失消息。&lt;/div&gt;&lt;div&gt;3.broker进行存盘时，断电丢失消息。&lt;/div&gt;&lt;div&gt;4.broker到消费者之间丢失消息。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" parent="1" vertex="1">
-          <mxGeometry x="1300" y="1609" width="780" height="290" as="geometry" />
+          <mxGeometry x="1250" y="1790" width="780" height="290" as="geometry" />
         </mxCell>
         <mxCell id="8C4UVIK4LGHGpcc9LimP-2" value="如果你自己设计一个消息队列，你应该怎么设计，应该注意哪些方面的点？" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="140" y="760" width="780" height="290" as="geometry" />
