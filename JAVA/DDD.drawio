@@ -7,7 +7,7 @@
         <mxCell id="rPxvf-ZjiWcw2DGCV5X8-1" value="1.系统设置的规则可以单独设计一个子领域？还是单独设计一个充血模型实体？&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2.json串里面的每一个节点，比如病人、诊断等，都可以设计一个子领域？还是一个充血模型实体？&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
           <mxGeometry x="30" y="280" width="760" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="rPxvf-ZjiWcw2DGCV5X8-2" value="1.刚开始的系统需求很少：&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;系统审核--&amp;gt;提交人工审核---&amp;gt;通过。&lt;br&gt;&lt;/div&gt;&lt;div&gt;经过需求迭代：系统审核（可能根据规则有不同的逻辑了：重复过滤、自动干预等。还有药师监测标准、自动监测标准的影响设置任务状态）。提交人工审核（药师中途离场怎么办，转交？直接通过？双签等逻辑）。都会极大的让代码复杂化，维护成本高。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
+        <mxCell id="rPxvf-ZjiWcw2DGCV5X8-2" value="刚开始的系统需求很少：&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;系统审核--&amp;gt;提交人工审核---&amp;gt;通过。&lt;br&gt;&lt;/div&gt;&lt;div&gt;经过需求迭代：系统审核（可能根据规则有不同的逻辑了：重复过滤、自动干预等。还有药师监测标准、自动监测标准的影响设置任务状态）。提交人工审核（药师中途离场怎么办，转交？直接通过？双签等逻辑）。都会极大的让代码复杂化，维护成本高。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
           <mxGeometry x="20" y="10" width="760" height="220" as="geometry" />
         </mxCell>
       </root>
