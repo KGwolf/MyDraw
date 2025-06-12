@@ -23,7 +23,7 @@
           <mxGeometry x="-280" y="1320" width="80" height="100" as="geometry" />
         </mxCell>
         <mxCell id="gnJr-7EvzNWWMDGhGdW_-2" value="已系统审核" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="-50" y="1320" width="80" height="100" as="geometry" />
+          <mxGeometry x="-80" y="1320" width="80" height="100" as="geometry" />
         </mxCell>
         <mxCell id="gnJr-7EvzNWWMDGhGdW_-3" value="已提请审核" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="130" y="1120" width="80" height="100" as="geometry" />
@@ -33,6 +33,24 @@
         </mxCell>
         <mxCell id="gnJr-7EvzNWWMDGhGdW_-5" value="已双自动干预双签通过" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="130" y="1390" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="gnJr-7EvzNWWMDGhGdW_-6" value="已关闭" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="130" y="1520" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="gnJr-7EvzNWWMDGhGdW_-7" value="已确定" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="130" y="1640" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="gnJr-7EvzNWWMDGhGdW_-8" value="已接收任务" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1120" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="gnJr-7EvzNWWMDGhGdW_-9" value="已暂停任务" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1240" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="gnJr-7EvzNWWMDGhGdW_-10" value="已恢复暂停" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1360" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="gnJr-7EvzNWWMDGhGdW_-11" value="已处置任务" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1480" width="80" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
