@@ -82,8 +82,8 @@
         <mxCell id="6s6nFs7jCtKUOPHDce3J-6" value="药品信息" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;" parent="1" vertex="1">
           <mxGeometry x="-890" y="1580" width="83" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="6s6nFs7jCtKUOPHDce3J-7" value="检验信息" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;" parent="1" vertex="1">
-          <mxGeometry x="-893.5" y="1490" width="90" height="40" as="geometry" />
+        <mxCell id="6s6nFs7jCtKUOPHDce3J-7" value="检验信息" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=25;" parent="1" vertex="1">
+          <mxGeometry x="-890" y="1490" width="90" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6s6nFs7jCtKUOPHDce3J-8" value="诊断信息" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;" parent="1" vertex="1">
           <mxGeometry x="-1020" y="1570" width="90" height="40" as="geometry" />
@@ -106,16 +106,6 @@
         <mxCell id="XrLTzuQOqRox4YsAUSmF-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.422;entryY=-0.05;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="XrLTzuQOqRox4YsAUSmF-1" target="6s6nFs7jCtKUOPHDce3J-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="XrLTzuQOqRox4YsAUSmF-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.267;entryY=-0.025;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="XrLTzuQOqRox4YsAUSmF-1" target="6s6nFs7jCtKUOPHDce3J-7">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="-1020" y="1390" />
-              <mxPoint x="-848" y="1390" />
-              <mxPoint x="-848" y="1480" />
-              <mxPoint x="-826" y="1480" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="XrLTzuQOqRox4YsAUSmF-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=30;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="XrLTzuQOqRox4YsAUSmF-1" target="6s6nFs7jCtKUOPHDce3J-9">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -136,6 +126,14 @@
               <mxPoint x="-1020" y="1400" />
               <mxPoint x="-912" y="1400" />
               <mxPoint x="-912" y="1600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XrLTzuQOqRox4YsAUSmF-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="XrLTzuQOqRox4YsAUSmF-1" target="6s6nFs7jCtKUOPHDce3J-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-1020" y="1420" />
+              <mxPoint x="-845" y="1420" />
             </Array>
           </mxGeometry>
         </mxCell>
