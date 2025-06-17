@@ -143,7 +143,7 @@
         <mxCell id="2qjOrgIN7pxOFJ-UjnAb-2" value="这里聚合设计不合理！！！&lt;div&gt;1.聚合应该尽量的小！&lt;/div&gt;&lt;div&gt;2.任务聚合根应该包括：任务操作流程记录，history信息？&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
           <mxGeometry x="30" y="1090" width="360" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="2qjOrgIN7pxOFJ-UjnAb-3" value="读写分离，写库我们可以用Mysql，如果数据量很大，还可以用分布式数据库比如tidb等。 读数据库的话，可以用ES、clickhouse等大数据架构，但是我们怎么同步数据呢？ 如果实时性要求不高，一般晚上进行同步昨天的数据，会有一个T+1的等待时间。&amp;nbsp; 如果实时性要求高，通过事件的通知机制，查询库订阅领域事件，进而伪实时存储信息，去join化，实现宽表查询。&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;跨库关联查询方案：微服务只能通过接口来进行查询，不能直接join 人家的表。比如查询订单信息，里面有用户信息和饭店信息，那么就要请求多个接口，但是这个相比较join表来说，感觉还更能接受一些。还可以通过并发请求的方式，花费的网络时间是最慢的那一个。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
+        <mxCell id="2qjOrgIN7pxOFJ-UjnAb-3" value="读写分离，写库我们可以用Mysql，如果数据量很大，还可以用分布式数据库比如tidb等。 读数据库的话，可以用ES、clickhouse等大数据架构，但是我们怎么同步数据呢？ 如果实时性要求不高，一般晚上进行同步昨天的数据，会有一个T+1的等待时间。&amp;nbsp; 如果实时性要求高，通过事件的通知机制，查询库订阅领域事件，进而伪实时存储信息，去join化，实现宽表查询。&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;跨库关联查询方案：微服务只能通过接口来进行查询，不能直接join 人家的表。比如查询订单信息，里面有用户信息和饭店信息，那么就要请求多个接口来实现数据补填，但是这个相比较join表来说，感觉还更能接受一些。还可以通过并发请求的方式，花费的网络时间是最慢的那一个。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
           <mxGeometry x="-990" y="1790" width="890" height="310" as="geometry" />
         </mxCell>
       </root>
