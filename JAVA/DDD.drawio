@@ -134,7 +134,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="XrLTzuQOqRox4YsAUSmF-12" value="系统" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=11;" parent="1" vertex="1">
+        <mxCell id="XrLTzuQOqRox4YsAUSmF-12" value="系统" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;size=11;" parent="1" vertex="1">
           <mxGeometry x="980" y="1280" width="43" height="30" as="geometry" />
         </mxCell>
         <mxCell id="2qjOrgIN7pxOFJ-UjnAb-2" value="这里聚合设计不合理！！！&lt;div&gt;1.聚合应该尽量的小！&lt;/div&gt;&lt;div&gt;2.任务聚合根应该包括：任务操作流程记录，history信息？&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=18;verticalAlign=top;align=left;" parent="1" vertex="1">
@@ -148,6 +148,15 @@
         </mxCell>
         <mxCell id="b4eOAo32wEtSpM1Dnjza-1" value="除了事件风暴外，还有原文分析法 和四色建模法" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=18;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="-1810" y="-40" width="720" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="6uNeNy6mhB05G5vdWmJJ-1" value="系统审核时间" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="1260" width="76" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6uNeNy6mhB05G5vdWmJJ-2" value="系统审核规则" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" vertex="1" parent="1">
+          <mxGeometry x="950" y="1360" width="76" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6uNeNy6mhB05G5vdWmJJ-3" value="系统审核结果" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="1370" width="76" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
