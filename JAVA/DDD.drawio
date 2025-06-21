@@ -165,7 +165,7 @@
           <mxGeometry x="780" y="1530" width="150" height="90" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-5" value="pr系统设置规则" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" vertex="1" parent="1">
-          <mxGeometry x="690" y="1560" width="100" height="40" as="geometry" />
+          <mxGeometry x="984" y="1550" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-6" value="PR" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;size=11;" vertex="1" parent="1">
           <mxGeometry x="746.5" y="1510" width="43" height="30" as="geometry" />
@@ -211,6 +211,12 @@
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-24" value="互联网按任务" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" vertex="1" parent="1">
           <mxGeometry x="1090" y="1870" width="76" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6uNeNy6mhB05G5vdWmJJ-27" value="超时设置" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="1505" width="80" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="6uNeNy6mhB05G5vdWmJJ-28" value="自动干预设置" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="1557.5" width="100" height="32.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
