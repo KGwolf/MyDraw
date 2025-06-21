@@ -26,7 +26,7 @@
           <mxGeometry x="400" y="1260" width="80" height="100" as="geometry" />
         </mxCell>
         <mxCell id="gnJr-7EvzNWWMDGhGdW_-2" value="已PASS审核" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="810" y="1250" width="80" height="100" as="geometry" />
+          <mxGeometry x="760" y="1200" width="80" height="100" as="geometry" />
         </mxCell>
         <mxCell id="gnJr-7EvzNWWMDGhGdW_-3" value="已提请审核" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="1250" y="1200" width="90" height="80" as="geometry" />
@@ -138,7 +138,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="XrLTzuQOqRox4YsAUSmF-12" value="PASS" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;size=11;" parent="1" vertex="1">
-          <mxGeometry x="780" y="1250" width="43" height="30" as="geometry" />
+          <mxGeometry x="730" y="1200" width="43" height="30" as="geometry" />
         </mxCell>
         <mxCell id="2qjOrgIN7pxOFJ-UjnAb-2" value="这里聚合设计不合理！！！&lt;div&gt;1.聚合应该尽量的小！&lt;/div&gt;&lt;div&gt;2.任务聚合根应该包括：任务操作流程记录，history信息？&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=18;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="30" y="1090" width="360" height="110" as="geometry" />
@@ -153,13 +153,13 @@
           <mxGeometry x="-1810" y="-40" width="720" height="130" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-1" value="PASS审核时间" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=14;" vertex="1" parent="1">
-          <mxGeometry x="860" y="1230" width="76" height="40" as="geometry" />
+          <mxGeometry x="810" y="1180" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-2" value="PASS审核规则" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" vertex="1" parent="1">
-          <mxGeometry x="750" y="1330" width="76" height="40" as="geometry" />
+          <mxGeometry x="700" y="1280" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-3" value="PASS审核结果" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" vertex="1" parent="1">
-          <mxGeometry x="860" y="1340" width="76" height="40" as="geometry" />
+          <mxGeometry x="810" y="1290" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-4" value="已PR审核" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;size=17;" vertex="1" parent="1">
           <mxGeometry x="780" y="1530" width="150" height="90" as="geometry" />
