@@ -230,17 +230,29 @@
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-34" value="医生理由" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=14;" vertex="1" parent="1">
           <mxGeometry x="1540" y="1255" width="76" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="6uNeNy6mhB05G5vdWmJJ-35" value="药师" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;size=11;" vertex="1" parent="1">
+        <mxCell id="6uNeNy6mhB05G5vdWmJJ-35" value="药师" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;size=9;" vertex="1" parent="1">
           <mxGeometry x="1870" y="1144" width="43" height="30" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-36" value="接收时间" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=14;" vertex="1" parent="1">
           <mxGeometry x="1950" y="1134" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-37" value="已开始监测" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="1810" y="1320" width="80" height="100" as="geometry" />
+          <mxGeometry x="1793.5" y="1420" width="80" height="100" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-38" value="已退出监测" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="1980" y="1330" width="80" height="100" as="geometry" />
+          <mxGeometry x="2180" y="1400" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="6uNeNy6mhB05G5vdWmJJ-39" value="药师" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;size=9;" vertex="1" parent="1">
+          <mxGeometry x="1763.5" y="1400" width="43" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6uNeNy6mhB05G5vdWmJJ-40" value="药师" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;size=9;" vertex="1" parent="1">
+          <mxGeometry x="2170" y="1390" width="43" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6uNeNy6mhB05G5vdWmJJ-42" value="监测时间" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=14;" vertex="1" parent="1">
+          <mxGeometry x="1837" y="1400" width="76" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6uNeNy6mhB05G5vdWmJJ-43" value="退出时间" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=14;" vertex="1" parent="1">
+          <mxGeometry x="2230" y="1380" width="76" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
