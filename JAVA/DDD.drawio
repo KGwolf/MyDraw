@@ -257,7 +257,7 @@
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-44" value="定时监测收集时间" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" vertex="1" parent="1">
           <mxGeometry x="1266" y="1557.5" width="110" height="35" as="geometry" />
         </mxCell>
-        <mxCell id="6uNeNy6mhB05G5vdWmJJ-45" value="初始化任务池" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=14;" vertex="1" parent="1">
+        <mxCell id="6uNeNy6mhB05G5vdWmJJ-45" value="任务池" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=14;" vertex="1" parent="1">
           <mxGeometry x="1860" y="1510" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-46" value="已有任务处理规则" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=14;" vertex="1" parent="1">
