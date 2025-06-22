@@ -1,11 +1,11 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.1.6">
   <diagram name="第 1 页" id="4cmuizqChZSZ_57hS7zJ">
-    <mxGraphModel dx="4058" dy="2207" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3832" dy="2059" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-25" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="870" y="1720" width="330" height="200" as="geometry" />
+          <mxGeometry x="970" y="1750" width="330" height="200" as="geometry" />
         </mxCell>
         <mxCell id="rPxvf-ZjiWcw2DGCV5X8-1" value="1.系统设置的规则可以单独设计一个子领域？还是单独设计一个充血模型实体？&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2.json串里面的每一个节点，比如病人、诊断等，都可以设计一个子领域？还是一个充血模型实体？&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=18;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="1070" y="90" width="760" height="220" as="geometry" />
@@ -188,29 +188,26 @@
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=40;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="6uNeNy6mhB05G5vdWmJJ-4" target="6uNeNy6mhB05G5vdWmJJ-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6uNeNy6mhB05G5vdWmJJ-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6uNeNy6mhB05G5vdWmJJ-14" target="6uNeNy6mhB05G5vdWmJJ-25">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-14" value="PR审核模式" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" vertex="1" parent="1">
-          <mxGeometry x="900" y="1640" width="76" height="40" as="geometry" />
+          <mxGeometry x="1154" y="1660" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-15" value="门诊分药房" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" vertex="1" parent="1">
-          <mxGeometry x="896" y="1750" width="76" height="40" as="geometry" />
+          <mxGeometry x="996" y="1780" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-16" value="门诊按处方" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" vertex="1" parent="1">
-          <mxGeometry x="996" y="1750" width="76" height="40" as="geometry" />
+          <mxGeometry x="1096" y="1780" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-17" value="门诊按任务" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" vertex="1" parent="1">
-          <mxGeometry x="1100" y="1750" width="76" height="40" as="geometry" />
+          <mxGeometry x="1200" y="1780" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-21" value="住院分药房" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" vertex="1" parent="1">
-          <mxGeometry x="894" y="1810" width="76" height="40" as="geometry" />
+          <mxGeometry x="994" y="1840" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-23" value="住院按任务" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" vertex="1" parent="1">
-          <mxGeometry x="1098" y="1810" width="76" height="40" as="geometry" />
+          <mxGeometry x="1198" y="1840" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-24" value="互联网按任务" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" vertex="1" parent="1">
-          <mxGeometry x="1090" y="1870" width="76" height="40" as="geometry" />
+          <mxGeometry x="1190" y="1900" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-27" value="超时设置" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" vertex="1" parent="1">
           <mxGeometry x="1150" y="1505" width="80" height="35" as="geometry" />
@@ -223,6 +220,9 @@
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-30" value="审核药房设置" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" vertex="1" parent="1">
           <mxGeometry x="1290" y="1505" width="110" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="6uNeNy6mhB05G5vdWmJJ-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.573;entryY=-0.003;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="6uNeNy6mhB05G5vdWmJJ-14" target="6uNeNy6mhB05G5vdWmJJ-25">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
