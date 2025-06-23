@@ -514,6 +514,15 @@
         <mxCell id="7PMgpyLwp2OJ-WJmsRvE-97" value="泳道图" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;" vertex="1" parent="1">
           <mxGeometry x="860" y="2333" width="80" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="7PMgpyLwp2OJ-WJmsRvE-98" value="聚合根：可以叫处方、也可以叫做审查串JsonData" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fontStyle=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="626.5" y="2790" width="193.5" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="7PMgpyLwp2OJ-WJmsRvE-99" value="聚合根：审查任务对象" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fontStyle=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="851.25" y="2790" width="193.5" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="7PMgpyLwp2OJ-WJmsRvE-100" value="聚合根：审查任务对象" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fontStyle=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="1074.25" y="2790" width="193.5" height="110" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
