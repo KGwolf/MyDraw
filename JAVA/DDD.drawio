@@ -275,6 +275,18 @@
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-49" value="任务预分配药师" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=14;" parent="1" vertex="1">
           <mxGeometry x="1176" y="1323" width="76" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="7PMgpyLwp2OJ-WJmsRvE-2" value="20250623：&lt;div&gt;按照gpt的说法，先建立泳道图。那么有几个泳道呢？怎么确定泳道的？ 泳道就是事件是由哪个来触发的。&lt;/div&gt;&lt;div&gt;怎么确定这是一个事件的？&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="40" y="2370" width="420" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="7PMgpyLwp2OJ-WJmsRvE-4" value="医生" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="654" y="2360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7PMgpyLwp2OJ-WJmsRvE-5" value="系统引擎" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="994" y="2360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7PMgpyLwp2OJ-WJmsRvE-6" value="药师" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="2360" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
