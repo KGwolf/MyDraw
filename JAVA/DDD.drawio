@@ -275,7 +275,7 @@
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-49" value="任务预分配药师" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=14;" parent="1" vertex="1">
           <mxGeometry x="1176" y="1323" width="76" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="7PMgpyLwp2OJ-WJmsRvE-2" value="20250623：&lt;div&gt;按照gpt的说法，先建立泳道图。那么有几个泳道呢？怎么确定泳道的？ 泳道就是事件是由哪个来触发的。&lt;/div&gt;&lt;div&gt;怎么确定这是一个事件的？领域事件永远是“已发生的事实”，它可以被审计、记录、监听、溯源。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;意图是命令，结果是事件；主语是泳道，流程是时间线；状态变化才值得建事件，UI 动作只是命令入口。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
+        <mxCell id="7PMgpyLwp2OJ-WJmsRvE-2" value="20250623：&lt;div&gt;按照gpt的说法：&lt;/div&gt;&lt;div&gt;1.先建立泳道图。那么有几个泳道呢？怎么确定泳道的？ 泳道就是事件是由哪个来触发的。&lt;/div&gt;&lt;div&gt;怎么确定这是一个事件的？领域事件永远是“已发生的事实”，它可以被审计、记录、监听、溯源。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;意图是命令，结果是事件；主语是泳道，流程是时间线；状态变化才值得建事件，UI 动作只是命令入口。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
           <mxGeometry x="-61.5" y="2380" width="480" height="230" as="geometry" />
         </mxCell>
         <mxCell id="7PMgpyLwp2OJ-WJmsRvE-43" value="" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fontSize=16;" vertex="1" parent="1">
