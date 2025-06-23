@@ -524,7 +524,7 @@
           <mxGeometry x="1172" y="2780" width="193.5" height="110" as="geometry" />
         </mxCell>
         <mxCell id="7PMgpyLwp2OJ-WJmsRvE-101" value="至于说系统设置和任务分配设置，都是另外的限界上下文了。" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
-          <mxGeometry x="-70" y="3030" width="580" height="190" as="geometry" />
+          <mxGeometry x="-70" y="3030" width="570" height="60" as="geometry" />
         </mxCell>
         <mxCell id="7PMgpyLwp2OJ-WJmsRvE-102" value="命令：PrescSubmitCommand，貌似这个没啥用。。" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fontStyle=1;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="610" y="2920" width="210" height="110" as="geometry" />
