@@ -523,6 +523,9 @@
         <mxCell id="7PMgpyLwp2OJ-WJmsRvE-100" value="聚合根：这里的事件都是操作的任务聚合根的，所以药师泳道不存在聚合根" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fontStyle=1;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="1074.25" y="2790" width="193.5" height="110" as="geometry" />
         </mxCell>
+        <mxCell id="7PMgpyLwp2OJ-WJmsRvE-101" value="至于说系统设置和任务分配设置，都是另外的限界上下文了。" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="2930" width="570" height="70" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
