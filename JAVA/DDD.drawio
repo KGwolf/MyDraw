@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.1.6">
   <diagram name="第 1 页" id="4cmuizqChZSZ_57hS7zJ">
-    <mxGraphModel dx="5184" dy="2949" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3594" dy="1902" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -13,8 +13,8 @@
         <mxCell id="4gDzzRFHk90RKLrOx4Kq-2" value="处方域" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="50" y="1190" width="580" height="520" as="geometry" />
         </mxCell>
-        <mxCell id="7PMgpyLwp2OJ-WJmsRvE-1" value="PR任务域" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;" parent="1" vertex="1">
-          <mxGeometry x="1119.75" y="1542" width="1460" height="740" as="geometry" />
+        <mxCell id="7PMgpyLwp2OJ-WJmsRvE-1" value="PR任务域" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" parent="1" vertex="1">
+          <mxGeometry x="1119.75" y="1530" width="1460" height="740" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-25" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="109" y="2191.5" width="330" height="200" as="geometry" />
@@ -177,7 +177,7 @@
           <mxGeometry x="1289.75" y="1652" width="150" height="90" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-5" value="pr系统设置规则" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" parent="1" vertex="1">
-          <mxGeometry x="1493.75" y="1672" width="100" height="40" as="geometry" />
+          <mxGeometry x="1410" y="1714" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-6" value="PR" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;size=11;" parent="1" vertex="1">
           <mxGeometry x="1256.25" y="1632" width="43" height="30" as="geometry" />
