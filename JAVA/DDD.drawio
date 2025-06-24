@@ -252,19 +252,19 @@
           <mxGeometry x="1709.75" y="1752" width="80" height="100" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-38" value="已退出监测" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="1665.75" y="1942" width="80" height="100" as="geometry" />
+          <mxGeometry x="1630" y="1975.5" width="80" height="100" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-39" value="药师" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;size=9;" parent="1" vertex="1">
           <mxGeometry x="1679.75" y="1732" width="43" height="30" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-40" value="药师" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;size=9;" parent="1" vertex="1">
-          <mxGeometry x="1655.75" y="1932" width="43" height="30" as="geometry" />
+          <mxGeometry x="1620" y="1965.5" width="43" height="30" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-42" value="pr系统设置规则" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=14;" parent="1" vertex="1">
           <mxGeometry x="1646.75" y="1837" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-43" value="退出时间" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=14;" parent="1" vertex="1">
-          <mxGeometry x="1715.75" y="1922" width="76" height="40" as="geometry" />
+          <mxGeometry x="1680" y="1955.5" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-44" value="定时监测收集时间" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" parent="1" vertex="1">
           <mxGeometry x="375.5" y="2013" width="110" height="35" as="geometry" />
@@ -273,7 +273,7 @@
           <mxGeometry x="1776.25" y="1842" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-46" value="已有任务处理规则" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=14;" parent="1" vertex="1">
-          <mxGeometry x="1605.75" y="2022" width="76" height="40" as="geometry" />
+          <mxGeometry x="1570" y="2055.5" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-47" value="任务分配规则" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=14;" parent="1" vertex="1">
           <mxGeometry x="1766.25" y="1732" width="76" height="40" as="geometry" />
