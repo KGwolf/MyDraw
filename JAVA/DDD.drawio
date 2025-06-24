@@ -1,11 +1,11 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.1.6">
   <diagram name="第 1 页" id="4cmuizqChZSZ_57hS7zJ">
-    <mxGraphModel dx="3832" dy="2059" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="5184" dy="2949" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="4gDzzRFHk90RKLrOx4Kq-6" value="PR审查规则域" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;" vertex="1" parent="1">
-          <mxGeometry x="1480" y="2303.5" width="810" height="656.5" as="geometry" />
+          <mxGeometry x="40" y="1772" width="810" height="656.5" as="geometry" />
         </mxCell>
         <mxCell id="4gDzzRFHk90RKLrOx4Kq-3" value="PASS审查域" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="760.25" y="1190" width="359.5" height="249" as="geometry" />
@@ -14,10 +14,10 @@
           <mxGeometry x="50" y="1190" width="580" height="520" as="geometry" />
         </mxCell>
         <mxCell id="7PMgpyLwp2OJ-WJmsRvE-1" value="PR任务域" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=18;" parent="1" vertex="1">
-          <mxGeometry x="523" y="1920" width="850" height="610" as="geometry" />
+          <mxGeometry x="1119.75" y="1542" width="1460" height="740" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-25" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1549" y="2723" width="330" height="200" as="geometry" />
+          <mxGeometry x="109" y="2191.5" width="330" height="200" as="geometry" />
         </mxCell>
         <mxCell id="rPxvf-ZjiWcw2DGCV5X8-1" value="1.系统设置的规则可以单独设计一个子领域？还是单独设计一个充血模型实体？&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2.json串里面的每一个节点，比如病人、诊断等，都可以设计一个子领域？还是一个充血模型实体？&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=18;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="1070" y="90" width="760" height="220" as="geometry" />
@@ -41,40 +41,40 @@
           <mxGeometry x="860.25" y="1270" width="80" height="100" as="geometry" />
         </mxCell>
         <mxCell id="gnJr-7EvzNWWMDGhGdW_-3" value="已提请审核" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="677.25" y="2264" width="90" height="80" as="geometry" />
+          <mxGeometry x="1274" y="1886" width="90" height="80" as="geometry" />
         </mxCell>
         <mxCell id="gnJr-7EvzNWWMDGhGdW_-4" value="已返回修改" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="1560" y="1650" width="80" height="100" as="geometry" />
+          <mxGeometry x="1939.75" y="1642" width="80" height="100" as="geometry" />
         </mxCell>
         <mxCell id="gnJr-7EvzNWWMDGhGdW_-5" value="已双自动干预双签通过" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="1560" y="1780" width="80" height="100" as="geometry" />
+          <mxGeometry x="1939.75" y="1812" width="80" height="100" as="geometry" />
         </mxCell>
         <mxCell id="gnJr-7EvzNWWMDGhGdW_-6" value="已关闭" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="1560" y="1910" width="80" height="100" as="geometry" />
+          <mxGeometry x="1939.75" y="1942" width="80" height="100" as="geometry" />
         </mxCell>
         <mxCell id="gnJr-7EvzNWWMDGhGdW_-7" value="已确定" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="1560" y="2030" width="80" height="100" as="geometry" />
+          <mxGeometry x="1939.75" y="2062" width="80" height="100" as="geometry" />
         </mxCell>
         <mxCell id="gnJr-7EvzNWWMDGhGdW_-8" value="已接收任务" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="1536" y="1153" width="80" height="100" as="geometry" />
+          <mxGeometry x="1711.75" y="1588" width="80" height="100" as="geometry" />
         </mxCell>
         <mxCell id="gnJr-7EvzNWWMDGhGdW_-9" value="已暂停任务" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="1790" y="1630" width="80" height="100" as="geometry" />
+          <mxGeometry x="2169.75" y="1662" width="80" height="100" as="geometry" />
         </mxCell>
         <mxCell id="gnJr-7EvzNWWMDGhGdW_-10" value="已恢复暂停" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="1790" y="1750" width="80" height="100" as="geometry" />
+          <mxGeometry x="2169.75" y="1782" width="80" height="100" as="geometry" />
         </mxCell>
         <mxCell id="gnJr-7EvzNWWMDGhGdW_-11" value="已处置任务" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="1790" y="1870" width="80" height="100" as="geometry" />
+          <mxGeometry x="2169.75" y="1902" width="80" height="100" as="geometry" />
         </mxCell>
         <mxCell id="gnJr-7EvzNWWMDGhGdW_-12" value="已手动双签通过" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="1780" y="2010" width="80" height="100" as="geometry" />
+          <mxGeometry x="2159.75" y="2042" width="80" height="100" as="geometry" />
         </mxCell>
         <mxCell id="gnJr-7EvzNWWMDGhGdW_-13" value="已手动双签复核" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="1780" y="2130" width="80" height="100" as="geometry" />
+          <mxGeometry x="2159.75" y="2162" width="80" height="100" as="geometry" />
         </mxCell>
         <mxCell id="gnJr-7EvzNWWMDGhGdW_-14" value="已修改系统设置" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="1980" y="1639" width="80" height="100" as="geometry" />
+          <mxGeometry x="2359.75" y="1671" width="80" height="100" as="geometry" />
         </mxCell>
         <mxCell id="gnJr-7EvzNWWMDGhGdW_-16" value="不必要对每一个任务状态都进建领域事件：&lt;div&gt;1.&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;它是&lt;/span&gt;&lt;strong style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data-end=&quot;283&quot; data-start=&quot;268&quot;&gt;业务领域中已发生的事实&lt;/strong&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;？&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2.&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;它有助于&lt;/span&gt;&lt;strong style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data-end=&quot;319&quot; data-start=&quot;306&quot;&gt;其他上下文做出反应&lt;/strong&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;？（&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;是否对其他上下文有意义、是否影响其他系统？&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;）。从这点来看，不是每一个状态都要做出领域事件。&lt;/span&gt;&lt;strong style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data-end=&quot;732&quot; data-start=&quot;703&quot;&gt;关键状态变更用领域事件建模，细节内部用领域服务封装。&lt;/strong&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3.&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;它具备&lt;/span&gt;&lt;strong style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data-end=&quot;361&quot; data-start=&quot;346&quot;&gt;清晰的业务语义、不可逆&lt;/strong&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;？&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=18;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="470" y="860" width="760" height="190" as="geometry" />
@@ -174,115 +174,115 @@
           <mxGeometry x="910.25" y="1360" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-4" value="已PR审核" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;size=17;" parent="1" vertex="1">
-          <mxGeometry x="693" y="2030" width="150" height="90" as="geometry" />
+          <mxGeometry x="1289.75" y="1652" width="150" height="90" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-5" value="pr系统设置规则" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" parent="1" vertex="1">
-          <mxGeometry x="897" y="2050" width="100" height="40" as="geometry" />
+          <mxGeometry x="1493.75" y="1672" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-6" value="PR" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;size=11;" parent="1" vertex="1">
-          <mxGeometry x="659.5" y="2010" width="43" height="30" as="geometry" />
+          <mxGeometry x="1256.25" y="1632" width="43" height="30" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-8" value="PR审核时间" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=14;" parent="1" vertex="1">
-          <mxGeometry x="723" y="1960" width="76" height="40" as="geometry" />
+          <mxGeometry x="1319.75" y="1582" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-9" value="PR审核结果" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" parent="1" vertex="1">
-          <mxGeometry x="823" y="1960" width="76" height="40" as="geometry" />
+          <mxGeometry x="1419.75" y="1582" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-10" value="医生" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;size=11;" parent="1" vertex="1">
-          <mxGeometry x="647.25" y="2254" width="43" height="30" as="geometry" />
+          <mxGeometry x="1244" y="1876" width="43" height="30" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-11" value="医生提请时间" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=14;" parent="1" vertex="1">
-          <mxGeometry x="737.25" y="2249" width="76" height="40" as="geometry" />
+          <mxGeometry x="1334" y="1871" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-12" value="审核任务单" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="631" y="2170" width="100" height="40" as="geometry" />
+          <mxGeometry x="1227.75" y="1792" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=40;entryDy=0;entryPerimeter=0;" parent="1" source="6uNeNy6mhB05G5vdWmJJ-4" target="6uNeNy6mhB05G5vdWmJJ-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-14" value="PR审核模式" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" parent="1" vertex="1">
-          <mxGeometry x="1703.5" y="2647" width="76" height="40" as="geometry" />
+          <mxGeometry x="263.5" y="2115.5" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-15" value="门诊分药房" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" parent="1" vertex="1">
-          <mxGeometry x="1575" y="2753" width="76" height="40" as="geometry" />
+          <mxGeometry x="135" y="2221.5" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-16" value="门诊按处方" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" parent="1" vertex="1">
-          <mxGeometry x="1675" y="2753" width="76" height="40" as="geometry" />
+          <mxGeometry x="235" y="2221.5" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-17" value="门诊按任务" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" parent="1" vertex="1">
-          <mxGeometry x="1779" y="2753" width="76" height="40" as="geometry" />
+          <mxGeometry x="339" y="2221.5" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-21" value="住院分药房" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" parent="1" vertex="1">
-          <mxGeometry x="1573" y="2813" width="76" height="40" as="geometry" />
+          <mxGeometry x="133" y="2281.5" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-23" value="住院按任务" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" parent="1" vertex="1">
-          <mxGeometry x="1777" y="2813" width="76" height="40" as="geometry" />
+          <mxGeometry x="337" y="2281.5" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-24" value="互联网按任务" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" parent="1" vertex="1">
-          <mxGeometry x="1769" y="2873" width="76" height="40" as="geometry" />
+          <mxGeometry x="329" y="2341.5" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-27" value="超时设置" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" parent="1" vertex="1">
-          <mxGeometry x="1699.5" y="2492" width="80" height="35" as="geometry" />
+          <mxGeometry x="259.5" y="1960.5" width="80" height="35" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-28" value="自动干预设置" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" parent="1" vertex="1">
-          <mxGeometry x="1699.5" y="2544.5" width="100" height="32.5" as="geometry" />
+          <mxGeometry x="259.5" y="2013" width="100" height="32.5" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-29" value="重点关注设置" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" parent="1" vertex="1">
-          <mxGeometry x="1699.5" y="2594.5" width="100" height="32.5" as="geometry" />
+          <mxGeometry x="259.5" y="2063" width="100" height="32.5" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-30" value="审核药房设置" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" parent="1" vertex="1">
-          <mxGeometry x="1809.5" y="2492" width="110" height="35" as="geometry" />
+          <mxGeometry x="369.5" y="1960.5" width="110" height="35" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.573;entryY=-0.003;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="6uNeNy6mhB05G5vdWmJJ-14" target="6uNeNy6mhB05G5vdWmJJ-25" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-32" value="审核任务单" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=14;" parent="1" vertex="1">
-          <mxGeometry x="601.25" y="2330" width="76" height="40" as="geometry" />
+          <mxGeometry x="1198" y="1952" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-34" value="医生理由" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=14;" parent="1" vertex="1">
-          <mxGeometry x="727.25" y="2335" width="76" height="40" as="geometry" />
+          <mxGeometry x="1324" y="1957" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-35" value="药师" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;size=9;" parent="1" vertex="1">
-          <mxGeometry x="1506" y="1147" width="43" height="30" as="geometry" />
+          <mxGeometry x="1681.75" y="1582" width="43" height="30" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-36" value="接收时间" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=14;" parent="1" vertex="1">
-          <mxGeometry x="1586" y="1137" width="76" height="40" as="geometry" />
+          <mxGeometry x="1761.75" y="1572" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-37" value="已开始监测" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="1599" y="1370" width="80" height="100" as="geometry" />
+          <mxGeometry x="1709.75" y="1752" width="80" height="100" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-38" value="已退出监测" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="1985.5" y="1350" width="80" height="100" as="geometry" />
+          <mxGeometry x="1665.75" y="1942" width="80" height="100" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-39" value="药师" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;size=9;" parent="1" vertex="1">
-          <mxGeometry x="1569" y="1350" width="43" height="30" as="geometry" />
+          <mxGeometry x="1679.75" y="1732" width="43" height="30" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-40" value="药师" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;size=9;" parent="1" vertex="1">
-          <mxGeometry x="1975.5" y="1340" width="43" height="30" as="geometry" />
+          <mxGeometry x="1655.75" y="1932" width="43" height="30" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-42" value="pr系统设置规则" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=14;" parent="1" vertex="1">
-          <mxGeometry x="1536" y="1455" width="76" height="40" as="geometry" />
+          <mxGeometry x="1646.75" y="1837" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-43" value="退出时间" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=14;" parent="1" vertex="1">
-          <mxGeometry x="2035.5" y="1330" width="76" height="40" as="geometry" />
+          <mxGeometry x="1715.75" y="1922" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-44" value="定时监测收集时间" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" parent="1" vertex="1">
-          <mxGeometry x="1815.5" y="2544.5" width="110" height="35" as="geometry" />
+          <mxGeometry x="375.5" y="2013" width="110" height="35" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-45" value="任务池" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=14;" parent="1" vertex="1">
-          <mxGeometry x="1665.5" y="1460" width="76" height="40" as="geometry" />
+          <mxGeometry x="1776.25" y="1842" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-46" value="已有任务处理规则" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=14;" parent="1" vertex="1">
-          <mxGeometry x="1925.5" y="1430" width="76" height="40" as="geometry" />
+          <mxGeometry x="1605.75" y="2022" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-47" value="任务分配规则" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=14;" parent="1" vertex="1">
-          <mxGeometry x="1655.5" y="1350" width="76" height="40" as="geometry" />
+          <mxGeometry x="1766.25" y="1732" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-48" value="进入任务池" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=14;" parent="1" vertex="1">
-          <mxGeometry x="617.25" y="2400" width="76" height="40" as="geometry" />
+          <mxGeometry x="1214" y="2022" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6uNeNy6mhB05G5vdWmJJ-49" value="任务预分配药师" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=14;" parent="1" vertex="1">
-          <mxGeometry x="727.25" y="2400" width="76" height="40" as="geometry" />
+          <mxGeometry x="1324" y="2022" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="7PMgpyLwp2OJ-WJmsRvE-2" value="20250623：&lt;div&gt;按照gpt的说法：&lt;/div&gt;&lt;div&gt;1.整理事件的时间线，先建立泳道图。那么有几个泳道呢？怎么确定泳道的？ 泳道就是事件是由哪个来触发的。&lt;/div&gt;&lt;div&gt;怎么确定这是一个事件的？领域事件永远是“已发生的事实”，它可以被审计、记录、监听、溯源。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2.对每条泳道识别 聚合根 和 状态机。聚合根是一个有身份、有状态、能做事、能守规则的业务对象，通常用“充血模型类”来实现它。比如任务聚合根，有充血方法，预分配药师方法，里面先判断任务状态，只有合适的任务状态，和没有预分配过的才进行预分配。&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;什么类才该被建立成聚合根：有没有自己独立的业务意义？别人会不会单独操作它？需不需要对外提供ID被引用？&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3.把流程控制语义 换成 命令。命令 = 想做 的事；事件 = 已经做完 的事。 比如：处方提交command，是要放在处方这个聚合根中的。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;4.划分限界上下文 。感觉可以初步分为：处方上下文、passcore审核上下文、任务流转上下文、系统设置上下文、药师分配上下文&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;限界上下文协作事件和领域事件是不同的。每个限界上下文产生的领域事件，由 ApplicationService 负责决定哪些对外有用，再投递成 “跨上下文协作事件”。&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;意图是命令，结果是事件；主语是泳道，流程是时间线；状态变化才值得建事件，UI 动作只是命令入口。&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=18;verticalAlign=top;align=left;" parent="1" vertex="1">
           <mxGeometry x="-2467" y="2287" width="571.5" height="580" as="geometry" />
@@ -551,16 +551,19 @@
           <mxGeometry x="1220" y="1290" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="4gDzzRFHk90RKLrOx4Kq-7" value="pr系统设置规则" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=20;" vertex="1" parent="1">
-          <mxGeometry x="1569" y="2440" width="100" height="40" as="geometry" />
+          <mxGeometry x="129" y="1908.5" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="4gDzzRFHk90RKLrOx4Kq-8" value="已 修改PR系统设置" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;size=17;" vertex="1" parent="1">
-          <mxGeometry x="1680" y="2375" width="150" height="90" as="geometry" />
+          <mxGeometry x="240" y="1843.5" width="150" height="90" as="geometry" />
         </mxCell>
         <mxCell id="4gDzzRFHk90RKLrOx4Kq-9" value="药师" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;size=0;" vertex="1" parent="1">
-          <mxGeometry x="1665.5" y="2370" width="43" height="30" as="geometry" />
+          <mxGeometry x="225.5" y="1838.5" width="43" height="30" as="geometry" />
         </mxCell>
         <mxCell id="4gDzzRFHk90RKLrOx4Kq-10" value="修改时间" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;size=14;" vertex="1" parent="1">
-          <mxGeometry x="1840" y="2360" width="76" height="40" as="geometry" />
+          <mxGeometry x="400" y="1828.5" width="76" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4gDzzRFHk90RKLrOx4Kq-11" value="已修改任务分配规则" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;size=17;" vertex="1" parent="1">
+          <mxGeometry x="600" y="1843.5" width="150" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
