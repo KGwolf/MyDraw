@@ -604,8 +604,8 @@
         <mxCell id="zRsV8kUraHiLAVKXnc8l-9" value="&lt;div&gt;&lt;br&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;层&lt;/th&gt;&lt;th&gt;职责&lt;/th&gt;&lt;th&gt;应调用谁&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Controller&lt;/td&gt;&lt;td&gt;接收用户输入，封装为命令&lt;/td&gt;&lt;td&gt;✅ 应用服务&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;应用服务&lt;/td&gt;&lt;td&gt;协调命令，加载聚合、调用聚合行为、发布事件&lt;/td&gt;&lt;td&gt;✅ 聚合根 / 领域服务&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;聚合根&lt;/td&gt;&lt;td&gt;执行业务行为、发出领域事件&lt;/td&gt;&lt;td&gt;❌ 不该被 Controller 直接调&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;领域服务&lt;/td&gt;&lt;td&gt;表达多个聚合之间的领域逻辑&lt;/td&gt;&lt;td&gt;由应用服务协调调用&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
           <mxGeometry x="-2620" y="4690" width="720" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="zRsV8kUraHiLAVKXnc8l-10" value="&lt;div&gt;简单来讲，就是controller接收command类型的参数，调用应用服务，应用服务生成&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
-          <mxGeometry x="-2660" y="4940" width="720" height="190" as="geometry" />
+        <mxCell id="zRsV8kUraHiLAVKXnc8l-10" value="&lt;div&gt;简单来讲，就是controller接收command类型的参数，调用应用服务，应用服务调用工厂生成聚合根，然后调用聚合方法，再调用仓储实现持久化，再发布事件&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-2660" y="4940" width="730" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
