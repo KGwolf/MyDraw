@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.6">
   <diagram name="第 1 页" id="4cmuizqChZSZ_57hS7zJ">
-    <mxGraphModel dx="5213" dy="2591" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="5236" dy="2173" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -585,6 +585,12 @@
         </mxCell>
         <mxCell id="zRsV8kUraHiLAVKXnc8l-3" value="Text" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="-1705" y="1988" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zRsV8kUraHiLAVKXnc8l-4" value="一个行为到底放聚合根还是放领域服务？&lt;div&gt;能在一个聚合内部处理，&lt;strong data-end=&quot;666&quot; data-start=&quot;658&quot;&gt;就放聚合。&lt;/strong&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;需要多个聚合之间协作，&lt;/span&gt;&lt;strong style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot; data-end=&quot;692&quot; data-start=&quot;682&quot;&gt;就放领域服务&lt;/strong&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-2570" y="3170" width="674.5" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="zRsV8kUraHiLAVKXnc8l-5" value="&lt;div&gt;com.pharmacyreview.task&lt;/div&gt;&lt;div&gt;├── application&lt;/div&gt;&lt;div&gt;│&amp;nbsp; &amp;nbsp;└── ReviewingAppService.java&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;lt;-- 应用服务&lt;/div&gt;&lt;div&gt;├── domain&lt;/div&gt;&lt;div&gt;│&amp;nbsp; &amp;nbsp;├── service&lt;/div&gt;&lt;div&gt;│&amp;nbsp; &amp;nbsp;│&amp;nbsp; &amp;nbsp;└── AutoAssignService.java&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;lt;-- 领域服务&lt;/div&gt;&lt;div&gt;│&amp;nbsp; &amp;nbsp;├── model&lt;/div&gt;&lt;div&gt;│&amp;nbsp; &amp;nbsp;│&amp;nbsp; &amp;nbsp;└── ReviewTask.java&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;lt;-- 聚合&lt;/div&gt;&lt;div&gt;│&amp;nbsp; &amp;nbsp;└── event&lt;/div&gt;&lt;div&gt;│&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;└── TaskCreatedEvent.java&lt;/div&gt;&lt;div&gt;├── command&lt;/div&gt;&lt;div&gt;│&amp;nbsp; &amp;nbsp;└── ClaimTaskCommand.java&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;lt;-- 命令对象&lt;/div&gt;&lt;div&gt;└── controller&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; └── ReviewingController.java&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=18;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-2527.75" y="3330" width="707.75" height="380" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
